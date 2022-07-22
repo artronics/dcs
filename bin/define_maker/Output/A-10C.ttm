@@ -1,0 +1,412 @@
+
+
+
+// Cheat**********************
+
+define        A_10C_Start_Procedure                                   R_WIN+USB[0x4A]                                   //Start Procedure
+define        A_10C_Stop_Procedure                                    R_WIN+USB[0x4D]                                   //Stop Procedure
+
+
+
+// Debug**********************
+
+define        A_10C_Toggle_Console                                    L_ALT+USB[0x35]                                   //Toggle Console
+
+
+
+// Cheat**********************
+
+define        A_10C_Active_Pause                                      L_SHIFT+L_WIN+USB[0x48]                           //Active Pause
+
+
+
+// General**********************
+
+define        A_10C_End_mission                                       USB[0x29]                                         //End mission
+define        A_10C_View_briefing_on_off                              L_ALT+USB[0x05]                                   //View briefing on/off
+define        A_10C_Pause                                             USB[0x48]                                         //Pause
+define        A_10C_Time_accelerate                                   L_CTL+USB[0x1D]                                   //Time accelerate
+define        A_10C_Time_decelerate                                   L_ALT+USB[0x1D]                                   //Time decelerate
+define        A_10C_Time_normal                                       L_SHIFT+USB[0x1D]                                 //Time normal
+define        A_10C_Multiplayer_chat___mode_All                       USB[0x2B]                                         //Multiplayer chat - mode All
+define        A_10C_Multiplayer_chat___mode_Allies                    L_CTL+USB[0x2B]                                   //Multiplayer chat - mode Allies
+define        A_10C_Info_bar_view_toggle                              L_CTL+USB[0x1C]                                   //Info bar view toggle
+define        A_10C_Get_new_plane___respawn                           R_CTL+R_SHIFT+USB[0x2B]                           //Get new plane - respawn
+define        A_10C_Screenshot                                        USB[0x46]                                         //Screenshot
+define        A_10C_Playback_track_cancel                             L_SHIFT+USB[0x2B]                                 //Playback track cancel
+define        A_10C_One_frame_mode                                    R_SHIFT+USB[0x48]                                 //One frame mode
+define        A_10C_Frame_rate_counter___Service_info                 R_CTL+USB[0x48]                                   //Frame rate counter - Service info
+define        A_10C_Info_bar_coordinate_units_toggle                  L_ALT+USB[0x1C]                                   //Info bar coordinate units toggle
+define        A_10C_Clickable_mouse_cockpit_mode_On_Off               L_ALT+USB[0x06]                                   //Clickable mouse cockpit mode On/Off
+define        A_10C_Show_controls_indicator                           R_CTL+USB[0x28]                                   //Show controls indicator
+define        A_10C_Jump_into_selected_aircraft                       R_ALT+USB[0x0D]                                   //Jump into selected aircraft
+
+
+
+// Communications**********************
+
+define        A_10C_Flight___Complete_mission_and_RTB                 L_WIN+USB[0x08]                                   //Flight - Complete mission and RTB
+define        A_10C_Flight___Complete_mission_and_rejoin              L_WIN+USB[0x15]                                   //Flight - Complete mission and rejoin
+define        A_10C_Toggle_formation                                  L_WIN+USB[0x17]                                   //Toggle formation
+define        A_10C_Join_up_formation                                 L_WIN+USB[0x1C]                                   //Join up formation
+define        A_10C_Attack_my_target                                  L_WIN+USB[0x14]                                   //Attack my target
+define        A_10C_Cover_me                                          L_WIN+USB[0x1A]                                   //Cover me
+define        A_10C_Ask_AWACS_home_airbase                            L_WIN+USB[0x18]                                   //Ask AWACS home airbase
+define        A_10C_Ask_AWACS_available_tanker                        L_WIN+USB[0x0C]                                   //Ask AWACS available tanker
+define        A_10C_Flight___Attack_ground_targets                    L_WIN+USB[0x0A]                                   //Flight - Attack ground targets
+define        A_10C_Flight___Attack_air_defenses                      L_WIN+USB[0x07]                                   //Flight - Attack air defenses
+define        A_10C_Communication_menu                                USB[0x31]                                         //Communication menu
+define        A_10C_Switch_dialog                                     L_SHIFT+USB[0x31]                                 //Switch dialog
+define        A_10C_Switch_to_main_menu                               L_CTL+USB[0x31]                                   //Switch to main menu
+
+
+
+// View**********************
+
+define        A_10C_View_Left_slow                                    USB[0x5C]                                         //View Left slow
+define        A_10C_View_Right_slow                                   USB[0x5E]                                         //View Right slow
+define        A_10C_View_Up_slow                                      USB[0x60]                                         //View Up slow
+define        A_10C_View_Down_slow                                    USB[0x5A]                                         //View Down slow
+define        A_10C_View_Up_Right_slow                                USB[0x61]                                         //View Up Right slow
+define        A_10C_View_Down_Right_slow                              USB[0x5B]                                         //View Down Right slow
+define        A_10C_View_Down_Left_slow                               USB[0x59]                                         //View Down Left slow
+define        A_10C_View_Up_Left_slow                                 USB[0x5F]                                         //View Up Left slow
+define        A_10C_View_Center                                       USB[0x5D]                                         //View Center
+define        A_10C_Zoom_in_slow                                      USB[0x55]                                         //Zoom in slow
+define        A_10C_Zoom_out_slow                                     USB[0x54]                                         //Zoom out slow
+define        A_10C_Zoom_normal                                       USB[0x58]                                         //Zoom normal
+define        A_10C_Zoom_external_in                                  R_CTL+USB[0x55]                                   //Zoom external in
+define        A_10C_Zoom_external_out                                 R_CTL+USB[0x54]                                   //Zoom external out
+define        A_10C_Zoom_external_normal                              R_CTL+USB[0x58]                                   //Zoom external normal
+define        A_10C_F11_camera_moving_forward                         L_ALT+USB[0x55]                                   //F11 camera moving forward
+define        A_10C_F11_camera_moving_backward                        L_ALT+USB[0x54]                                   //F11 camera moving backward
+define        A_10C_F1_Cockpit_view                                   USB[0x3A]                                         //F1 Cockpit view
+define        A_10C_F1_Natural_head_movement_view                     L_CTL+USB[0x3A]                                   //F1 Natural head movement view
+define        A_10C_F1_HUD_only_view_switch                           L_ALT+USB[0x3A]                                   //F1 HUD only view switch
+define        A_10C_F2_Aircraft_view                                  USB[0x3B]                                         //F2 Aircraft view
+define        A_10C_F2_View_own_aircraft                              L_CTL+USB[0x3B]                                   //F2 View own aircraft
+define        A_10C_F2_Toggle_camera_position                         R_ALT+USB[0x3B]                                   //F2 Toggle camera position
+define        A_10C_F2_Toggle_local_camera_control                    L_ALT+USB[0x3B]                                   //F2 Toggle local camera control
+define        A_10C_F3_Fly_By_view                                    USB[0x3C]                                         //F3 Fly-By view
+define        A_10C_F3_Fly_By_jump_view                               L_CTL+USB[0x3C]                                   //F3 Fly-By jump view
+define        A_10C_F4_Arcade_View                                    USB[0x3D]                                         //F4 Arcade View
+define        A_10C_F4_Look_back_view                                 L_SHIFT+USB[0x3D]                                 //F4 Look back view
+define        A_10C_F4_Chase_view                                     L_CTL+USB[0x3D]                                   //F4 Chase view
+define        A_10C_F5_nearest_AC_view                                USB[0x3E]                                         //F5 nearest AC view
+define        A_10C_F5_Ground_hostile_view                            L_CTL+USB[0x3E]                                   //F5 Ground hostile view
+define        A_10C_F6_Released_weapon_view                           USB[0x3F]                                         //F6 Released weapon view
+define        A_10C_F6_Weapon_to_target_view                          L_CTL+USB[0x3F]                                   //F6 Weapon to target view
+define        A_10C_F7_Ground_unit_view                               USB[0x40]                                         //F7 Ground unit view
+define        A_10C_F7_Ground_JFO_JTAC_view                           L_CTL+USB[0x40]                                   //F7 Ground JFO/JTAC view
+define        A_10C_F9_Ship_view                                      USB[0x42]                                         //F9 Ship view
+define        A_10C_F9_Landing_signal_officer_view                    L_ALT+USB[0x42]                                   //F9 Landing signal officer view
+define        A_10C_F10_Theater_map_view                              USB[0x43]                                         //F10 Theater map view
+define        A_10C_F10_Jump_to_theater_map_view_over_current_point   L_CTL+USB[0x43]                                   //F10 Jump to theater map view over current point
+define        A_10C_F11_Airport_free_camera                           USB[0x44]                                         //F11 Airport free camera
+define        A_10C_F11_Jump_to_free_camera                           L_CTL+USB[0x44]                                   //F11 Jump to free camera
+define        A_10C_F12_Static_object_view                            USB[0x45]                                         //F12 Static object view
+define        A_10C_F12_Civil_traffic_view                            L_CTL+USB[0x45]                                   //F12 Civil traffic view
+define        A_10C_F12_Trains_cars_toggle                            L_SHIFT+USB[0x45]                                 //F12 Trains/cars toggle
+define        A_10C_F1_Head_shift_movement_on___off                   L_WIN+USB[0x3A]                                   //F1 Head shift movement on / off
+define        A_10C_Camera_view_keyboard_rate_fast                    L_SHIFT+USB[0x30]                                 //Camera view keyboard rate fast
+define        A_10C_Camera_view_keyboard_rate_slow                    L_CTL+USB[0x30]                                   //Camera view keyboard rate slow
+define        A_10C_Camera_view_keyboard_rate_normal                  L_ALT+USB[0x30]                                   //Camera view keyboard rate normal
+define        A_10C_Camera_view_mouse_rate_fast                       L_SHIFT+USB[0x2F]                                 //Camera view mouse rate fast
+define        A_10C_Camera_view_mouse_rate_slow                       L_CTL+USB[0x2F]                                   //Camera view mouse rate slow
+define        A_10C_Camera_view_mouse_rate_normal                     L_ALT+USB[0x2F]                                   //Camera view mouse rate normal
+
+
+
+// View Cockpit**********************
+
+define        A_10C_Cockpit_panel_view_in                             USB[0x62]                                         //Cockpit panel view in
+define        A_10C_Cockpit_panel_view_toggle                         R_CTL+USB[0x62]                                   //Cockpit panel view toggle
+define        A_10C_Save_Cockpit_Angles                               R_ALT+USB[0x62]                                   //Save Cockpit Angles
+define        A_10C_View_up                                           R_SHIFT+USB[0x60]                                 //View up
+define        A_10C_View_down                                         R_SHIFT+USB[0x5A]                                 //View down
+define        A_10C_View_left                                         R_SHIFT+USB[0x5C]                                 //View left
+define        A_10C_View_right                                        R_SHIFT+USB[0x5E]                                 //View right
+define        A_10C_View_up_right                                     R_SHIFT+USB[0x61]                                 //View up right
+define        A_10C_View_down_right                                   R_SHIFT+USB[0x5B]                                 //View down right
+define        A_10C_View_down_left                                    R_SHIFT+USB[0x59]                                 //View down left
+define        A_10C_View_up_left                                      R_SHIFT+USB[0x5F]                                 //View up left
+define        A_10C_Camera_view_up                                    R_CTL+USB[0x60]                                   //Camera view up
+define        A_10C_Camera_view_down                                  R_CTL+USB[0x5A]                                   //Camera view down
+define        A_10C_Camera_view_left                                  R_CTL+USB[0x5C]                                   //Camera view left
+define        A_10C_Camera_view_right                                 R_CTL+USB[0x5E]                                   //Camera view right
+define        A_10C_Camera_view_up_left                               R_CTL+USB[0x5F]                                   //Camera view up-left
+define        A_10C_Camera_view_down_left                             R_CTL+USB[0x59]                                   //Camera view down-left
+define        A_10C_Camera_view_up_right                              R_CTL+USB[0x61]                                   //Camera view up-right
+define        A_10C_Camera_view_down_right                            R_CTL+USB[0x5B]                                   //Camera view down-right
+define        A_10C_Camera_view_up_slow                               R_ALT+USB[0x60]                                   //Camera view up slow
+define        A_10C_Camera_view_down_slow                             R_ALT+USB[0x5A]                                   //Camera view down slow
+define        A_10C_Camera_view_left_slow                             R_ALT+USB[0x5C]                                   //Camera view left slow
+define        A_10C_Camera_view_right_slow                            R_ALT+USB[0x5E]                                   //Camera view right slow
+define        A_10C_Camera_view_up_left_slow                          R_ALT+USB[0x5F]                                   //Camera view up-left slow
+define        A_10C_Camera_view_down_left_slow                        R_ALT+USB[0x59]                                   //Camera view down-left slow
+define        A_10C_Camera_view_down_right_slow                       R_ALT+USB[0x61]                                   //Camera view down-right slow
+define        A_10C_Camera_view_up_right_slow                         R_ALT+USB[0x5B]                                   //Camera view up-right slow
+define        A_10C_Center_camera_view                                R_SHIFT+USB[0x5D]                                 //Center camera view
+define        A_10C_Return_camera                                     R_CTL+USB[0x5D]                                   //Return camera
+define        A_10C_Return_camera_base                                R_ALT+USB[0x5D]                                   //Return camera base
+define        A_10C_Snap_View_0                                       L_WIN+USB[0x62]                                   //Snap View 0
+define        A_10C_Snap_View_1                                       L_WIN+USB[0x59]                                   //Snap View 1
+define        A_10C_Snap_View_2                                       L_WIN+USB[0x5A]                                   //Snap View 2
+define        A_10C_Snap_View_3                                       L_WIN+USB[0x5B]                                   //Snap View 3
+define        A_10C_Snap_View_4                                       L_WIN+USB[0x5C]                                   //Snap View 4
+define        A_10C_Snap_View_5                                       L_WIN+USB[0x5D]                                   //Snap View 5
+define        A_10C_Snap_View_6                                       L_WIN+USB[0x5E]                                   //Snap View 6
+define        A_10C_Snap_View_7                                       L_WIN+USB[0x5F]                                   //Snap View 7
+define        A_10C_Snap_View_8                                       L_WIN+USB[0x60]                                   //Snap View 8
+define        A_10C_Snap_View_9                                       L_WIN+USB[0x61]                                   //Snap View 9
+define        A_10C_Left_Mirror_On                                    R_WIN+USB[0x11]                                   //Left Mirror On
+define        A_10C_Right_Mirror_On                                   R_WIN+USB[0x10]                                   //Right Mirror On
+define        A_10C_Zoom_in                                           R_SHIFT+USB[0x55]                                 //Zoom in
+define        A_10C_Zoom_out                                          R_SHIFT+USB[0x54]                                 //Zoom out
+define        A_10C_Cockpit_Camera_Move_Up                            R_CTL+R_SHIFT+USB[0x60]                           //Cockpit Camera Move Up
+define        A_10C_Cockpit_Camera_Move_Down                          R_CTL+R_SHIFT+USB[0x5A]                           //Cockpit Camera Move Down
+define        A_10C_Cockpit_Camera_Move_Left                          R_CTL+R_SHIFT+USB[0x5C]                           //Cockpit Camera Move Left
+define        A_10C_Cockpit_Camera_Move_Right                         R_CTL+R_SHIFT+USB[0x5E]                           //Cockpit Camera Move Right
+define        A_10C_Cockpit_Camera_Move_Forward                       R_CTL+R_SHIFT+USB[0x55]                           //Cockpit Camera Move Forward
+define        A_10C_Cockpit_Camera_Move_Back                          R_CTL+R_SHIFT+USB[0x54]                           //Cockpit Camera Move Back
+define        A_10C_Cockpit_Camera_Move_Center                        R_CTL+R_SHIFT+USB[0x5D]                           //Cockpit Camera Move Center
+define        A_10C_Camera_transpose_mode__press_and_hold_            L_SHIFT+USB[0x3A]                                 //Camera transpose mode (press and hold)
+
+
+
+// View Extended**********************
+
+define        A_10C_Camera_jiggle_toggle                              L_SHIFT+USB[0x0D]                                 //Camera jiggle toggle
+define        A_10C_Keep_terrain_camera_altitude                      L_ALT+USB[0x0E]                                   //Keep terrain camera altitude
+define        A_10C_View_friends_mode                                 R_CTL+R_SHIFT+USB[0x4A]                           //View friends mode
+define        A_10C_View_enemies_mode                                 R_CTL+R_SHIFT+USB[0x4D]                           //View enemies mode
+define        A_10C_View_all_mode                                     R_CTL+USB[0x4C]                                   //View all mode
+define        A_10C_Camera_ordnance_tracking                          R_CTL+USB[0x57]                                   //Camera ordnance tracking
+define        A_10C_Objects_switching_direction_forward_              L_CTL+USB[0x4E]                                   //Objects switching direction forward 
+define        A_10C_Objects_switching_direction_reverse_              L_CTL+USB[0x4B]                                   //Objects switching direction reverse 
+define        A_10C_Object_exclude_                                   L_ALT+USB[0x4C]                                   //Object exclude 
+define        A_10C_Objects_all_excluded___include                    L_ALT+USB[0x49]                                   //Objects all excluded - include
+
+
+
+// View Padlock**********************
+
+define        A_10C_All_missiles_padlock                              R_SHIFT+USB[0x63]                                 //All missiles padlock
+define        A_10C_Threat_missile_padlock                            R_ALT+USB[0x63]                                   //Threat missile padlock
+define        A_10C_Lock_view__cycle_padlock_                         USB[0x63]                                         //Lock view (cycle padlock)
+define        A_10C_Unlock_view__stop_padlock_                        USB[0x53]                                         //Unlock view (stop padlock)
+define        A_10C_Lock_terrain_view                                 R_CTL+USB[0x63]                                   //Lock terrain view
+
+
+
+// Labels**********************
+
+define        A_10C_All_Labels                                        L_SHIFT+USB[0x43]                                 //All Labels
+define        A_10C_Aircraft_Labels                                   L_SHIFT+USB[0x3B]                                 //Aircraft Labels
+define        A_10C_Missile_Labels                                    L_SHIFT+USB[0x3F]                                 //Missile Labels
+define        A_10C_Vehicle_&_Ship_Labels                             L_SHIFT+USB[0x42]                                 //Vehicle & Ship Labels
+
+
+
+// HOTAS**********************
+
+define        A_10C_Weapon_release                                    R_ALT+USB[0x2C]                                   //Weapon release
+define        A_10C_Gun_Trigger                                       USB[0x2C]                                         //Gun Trigger
+define        A_10C_Gun_Trigger__first_stage_                         USB[0x13]                                         //Gun Trigger (first stage)
+define        A_10C_HOTAS_DMS_Forward                                 USB[0x4A]                                         //HOTAS DMS Forward
+define        A_10C_HOTAS_DMS_Aft                                     USB[0x4D]                                         //HOTAS DMS Aft
+define        A_10C_HOTAS_DMS_Left                                    USB[0x4C]                                         //HOTAS DMS Left
+define        A_10C_HOTAS_DMS_Right                                   USB[0x4E]                                         //HOTAS DMS Right
+define        A_10C_HOTAS_TMS_Forward                                 L_CTL+USB[0x52]                                   //HOTAS TMS Forward
+define        A_10C_HOTAS_TMS_Aft                                     L_CTL+USB[0x51]                                   //HOTAS TMS Aft
+define        A_10C_HOTAS_TMS_Left                                    L_CTL+USB[0x50]                                   //HOTAS TMS Left
+define        A_10C_HOTAS_TMS_Right                                   L_CTL+USB[0x4F]                                   //HOTAS TMS Right
+define        A_10C_HOTAS_CMS_Forward                                 USB[0x24]                                         //HOTAS CMS Forward
+define        A_10C_HOTAS_CMS_Aft                                     USB[0x25]                                         //HOTAS CMS Aft
+define        A_10C_HOTAS_CMS_Left                                    USB[0x26]                                         //HOTAS CMS Left
+define        A_10C_HOTAS_CMS_Right                                   USB[0x27]                                         //HOTAS CMS Right
+define        A_10C_HOTAS_CMS_Z_Axis                                  USB[0x2D]                                         //HOTAS CMS Z Axis
+define        A_10C_HOTAS_Slew_Up                                     USB[0x33]                                         //HOTAS Slew Up
+define        A_10C_HOTAS_Slew_Down                                   USB[0x37]                                         //HOTAS Slew Down
+define        A_10C_HOTAS_Slew_Left                                   USB[0x36]                                         //HOTAS Slew Left
+define        A_10C_HOTAS_Slew_Right                                  USB[0x38]                                         //HOTAS Slew Right
+define        A_10C_HOTAS_Coolie_Switch_Up                            USB[0x18]                                         //HOTAS Coolie Switch Up
+define        A_10C_HOTAS_Coolie_Switch_Down                          USB[0x0D]                                         //HOTAS Coolie Switch Down
+define        A_10C_HOTAS_Coolie_Switch_Left                          USB[0x0B]                                         //HOTAS Coolie Switch Left
+define        A_10C_HOTAS_Coolie_Switch_Right                         USB[0x0E]                                         //HOTAS Coolie Switch Right
+define        A_10C_HOTAS_Boat_Switch_Aft                             R_ALT+USB[0x50]                                   //HOTAS Boat Switch Aft
+define        A_10C_HOTAS_Boat_Switch_Center                          R_ALT+USB[0x51]                                   //HOTAS Boat Switch Center
+define        A_10C_HOTAS_Boat_Switch_Forward                         R_ALT+USB[0x4F]                                   //HOTAS Boat Switch Forward
+define        A_10C_HOTAS_China_Hat_Aft                               USB[0x06]                                         //HOTAS China Hat Aft
+define        A_10C_HOTAS_China_Hat_Forward                           USB[0x19]                                         //HOTAS China Hat Forward
+define        A_10C_HOTAS_Left_Throttle_Button                        USB[0x14]                                         //HOTAS Left Throttle Button
+define        A_10C_HOTAS_Master_Mode_Control_Button                  USB[0x10]                                         //HOTAS Master Mode Control Button
+define        A_10C_HOTAS_Nosewheel_Steering_Button                   USB[0x49]                                         //HOTAS Nosewheel Steering Button
+define        A_10C_HOTAS_Speed_Brake_Switch_Aft                      L_CTL+USB[0x05]                                   //HOTAS Speed Brake Switch Aft
+define        A_10C_HOTAS_Speed_Brake_Switch_Forward                  L_SHIFT+USB[0x05]                                 //HOTAS Speed Brake Switch Forward
+define        A_10C_HOTAS_Pinky_Switch_Aft                            L_CTL+USB[0x13]                                   //HOTAS Pinky Switch Aft
+define        A_10C_HOTAS_Pinky_Switch_Forward                        L_ALT+USB[0x13]                                   //HOTAS Pinky Switch Forward
+define        A_10C_HOTAS_Pinky_Switch_Center                         L_SHIFT+USB[0x13]                                 //HOTAS Pinky Switch Center
+define        A_10C_HOTAS_MIC_Switch_Up                               L_SHIFT+USB[0x57]                                 //HOTAS MIC Switch Up
+define        A_10C_HOTAS_MIC_Switch_Down                             L_ALT+USB[0x56]                                   //HOTAS MIC Switch Down
+define        A_10C_HOTAS_MIC_Switch_Aft                              L_SHIFT+USB[0x56]                                 //HOTAS MIC Switch Aft
+define        A_10C_HOTAS_MIC_Switch_Forward                          L_ALT+USB[0x57]                                   //HOTAS MIC Switch Forward
+define        A_10C_Trim_Nose_Down                                    R_CTL+USB[0x33]                                   //Trim: Nose Down
+define        A_10C_Trim_Nose_Up                                      R_CTL+USB[0x37]                                   //Trim: Nose Up
+define        A_10C_Trim_Left_Wing_Down                               R_CTL+USB[0x36]                                   //Trim: Left Wing Down
+define        A_10C_Trim_Right_Wing_Down                              R_CTL+USB[0x38]                                   //Trim: Right Wing Down
+define        A_10C_Trim_Reset                                        L_CTL+USB[0x17]                                   //Trim: Reset
+define        A_10C_Emergency_Disconnect_Lever                        L_ALT+USB[0x08]                                   //Emergency Disconnect Lever
+
+
+
+// Flight Control**********************
+
+define        A_10C_Aircraft_Pitch_Down                               USB[0x52]                                         //Aircraft Pitch Down
+define        A_10C_Aircraft_Pitch_Up                                 USB[0x51]                                         //Aircraft Pitch Up
+define        A_10C_Aircraft_Bank_Left                                USB[0x50]                                         //Aircraft Bank Left
+define        A_10C_Aircraft_Bank_Right                               USB[0x4F]                                         //Aircraft Bank Right
+define        A_10C_Aircraft_Rudder_Left                              USB[0x1D]                                         //Aircraft Rudder Left
+define        A_10C_Aircraft_Rudder_Right                             USB[0x1B]                                         //Aircraft Rudder Right
+define        A_10C_Throttle_Both_Up                                  USB[0x57]                                         //Throttle Both Up
+define        A_10C_Throttle_Both_Down                                USB[0x56]                                         //Throttle Both Down
+define        A_10C_Throttle_Left_Up                                  L_ALT+L_WIN+USB[0x57]                             //Throttle Left Up
+define        A_10C_Throttle_Left_Down                                L_ALT+L_WIN+USB[0x56]                             //Throttle Left Down
+define        A_10C_Throttle_Right_Up                                 L_CTL+USB[0x57]                                   //Throttle Right Up
+define        A_10C_Throttle_Right_Down                               L_CTL+USB[0x56]                                   //Throttle Right Down
+define        A_10C_Throttle_Step_Up_Left                             R_ALT+USB[0x4B]                                   //Throttle Step Up Left
+define        A_10C_Throttle_Step_Down_Left                           R_ALT+USB[0x4E]                                   //Throttle Step Down Left
+define        A_10C_Throttle_Step_Up_Right                            R_CTL+USB[0x4B]                                   //Throttle Step Up Right
+define        A_10C_Throttle_Step_Down_Right                          R_CTL+USB[0x4E]                                   //Throttle Step Down Right
+
+
+
+// Systems**********************
+
+define        A_10C_Flaps_Down                                        USB[0x09]                                         //Flaps Down
+define        A_10C_Flaps_Up                                          L_SHIFT+USB[0x09]                                 //Flaps Up
+define        A_10C_Wheel_Brake_On_Off                                USB[0x1A]                                         //Wheel Brake On/Off
+define        A_10C_Wheel_Brake_Left_On_Off                           L_SHIFT+USB[0x1A]                                 //Wheel Brake Left On/Off
+define        A_10C_Wheel_Brake_Right_On_Off                          L_ALT+USB[0x1A]                                   //Wheel Brake Right On/Off
+define        A_10C_Emergency_Wheel_Brake                             R_WIN+USB[0x1A]                                   //Emergency Wheel Brake
+define        A_10C_Engine_Start_Left                                 R_ALT+USB[0x4A]                                   //Engine Start Left
+define        A_10C_Engine_Start_Right                                R_CTL+USB[0x4A]                                   //Engine Start Right
+define        A_10C_Engine_Stop_Left                                  R_ALT+USB[0x4D]                                   //Engine Stop Left
+define        A_10C_Engine_Stop_Right                                 R_CTL+USB[0x4D]                                   //Engine Stop Right
+define        A_10C_Canopy_Open_Close                                 L_CTL+USB[0x06]                                   //Canopy Open/Close
+define        A_10C_Eject                                             L_CTL+USB[0x08]                                   //Eject
+define        A_10C_Cockpit_Illumination                              USB[0x0F]                                         //Cockpit Illumination
+define        A_10C_Navigation_lights                                 R_CTL+USB[0x0F]                                   //Navigation lights
+define        A_10C_Jettison_Weapons                                  L_CTL+USB[0x1A]                                   //Jettison Weapons
+define        A_10C_Start_Stop_Reset_Flight_Clock                     R_WIN+USB[0x06]                                   //Start/Stop/Reset Flight Clock
+
+
+
+// LASTE Control Panel**********************
+
+define        A_10C_LAAP_Path_Hold                                    USB[0x1F]                                         //LAAP Path Hold
+define        A_10C_LAAP_Altitude_Heading_Hold                        USB[0x20]                                         //LAAP Altitude/Heading Hold
+
+
+
+// Sensors**********************
+
+define        A_10C_Toggle_goggles                                    R_SHIFT+USB[0x0B]                                 //Toggle goggles
+define        A_10C_Gain_goggles_up                                   R_SHIFT+R_CTL+USB[0x0B]                           //Gain goggles up
+define        A_10C_Gain_goggles_down                                 R_SHIFT+R_ALT+USB[0x0B]                           //Gain goggles down
+
+
+
+// Stability Augmentation System**********************
+
+define        A_10C_Yaw_Trim_Left                                     R_CTL+USB[0x1D]                                   //Yaw Trim Left
+define        A_10C_Yaw_Trim_Right                                    R_CTL+USB[0x1B]                                   //Yaw Trim Right
+
+
+
+// Auxiliary lighting control panel**********************
+
+define        A_10C_Signal_lights_lamp_test                           L_SHIFT+USB[0x0F]                                 //Signal lights lamp test
+
+
+
+// CDU panel**********************
+
+define        A_10C_CDU_1_Key                                         L_CTL+L_WIN+USB[0x59]                             //CDU 1 Key
+define        A_10C_CDU_2_Key                                         L_CTL+L_WIN+USB[0x5A]                             //CDU 2 Key
+define        A_10C_CDU_3_Key                                         L_CTL+L_WIN+USB[0x5B]                             //CDU 3 Key
+define        A_10C_CDU_4_Key                                         L_CTL+L_WIN+USB[0x5C]                             //CDU 4 Key
+define        A_10C_CDU_5_Key                                         L_CTL+L_WIN+USB[0x5D]                             //CDU 5 Key
+define        A_10C_CDU_6_Key                                         L_CTL+L_WIN+USB[0x5E]                             //CDU 6 Key
+define        A_10C_CDU_7_Key                                         L_CTL+L_WIN+USB[0x5F]                             //CDU 7 Key
+define        A_10C_CDU_8_Key                                         L_CTL+L_WIN+USB[0x60]                             //CDU 8 Key
+define        A_10C_CDU_9_Key                                         L_CTL+L_WIN+USB[0x61]                             //CDU 9 Key
+define        A_10C_CDU_0_Key                                         L_CTL+L_WIN+USB[0x62]                             //CDU 0 Key
+define        A_10C_CDU_Point_Key                                     L_CTL+L_WIN+USB[0x63]                             //CDU Point Key
+define        A_10C_CDU_Slash_Key                                     L_CTL+L_WIN+USB[0x54]                             //CDU Slash Key
+define        A_10C_CDU_A_Key                                         L_CTL+L_WIN+USB[0x04]                             //CDU A Key
+define        A_10C_CDU_B_Key                                         L_CTL+L_WIN+USB[0x05]                             //CDU B Key
+define        A_10C_CDU_C_Key                                         L_CTL+L_WIN+USB[0x06]                             //CDU C Key
+define        A_10C_CDU_D_Key                                         L_CTL+L_WIN+USB[0x07]                             //CDU D Key
+define        A_10C_CDU_E_Key                                         L_CTL+L_WIN+USB[0x08]                             //CDU E Key
+define        A_10C_CDU_F_Key                                         L_CTL+L_WIN+USB[0x09]                             //CDU F Key
+define        A_10C_CDU_G_Key                                         L_CTL+L_WIN+USB[0x0A]                             //CDU G Key
+define        A_10C_CDU_H_Key                                         L_CTL+L_WIN+USB[0x0B]                             //CDU H Key
+define        A_10C_CDU_I_Key                                         L_CTL+L_WIN+USB[0x0C]                             //CDU I Key
+define        A_10C_CDU_J_Key                                         L_CTL+L_WIN+USB[0x0D]                             //CDU J Key
+define        A_10C_CDU_K_Key                                         L_CTL+L_WIN+USB[0x0E]                             //CDU K Key
+define        A_10C_CDU_L_Key                                         L_CTL+L_WIN+USB[0x0F]                             //CDU L Key
+define        A_10C_CDU_M_Key                                         L_CTL+L_WIN+USB[0x10]                             //CDU M Key
+define        A_10C_CDU_N_Key                                         L_CTL+L_WIN+USB[0x11]                             //CDU N Key
+define        A_10C_CDU_O_Key                                         L_CTL+L_WIN+USB[0x12]                             //CDU O Key
+define        A_10C_CDU_P_Key                                         L_CTL+L_WIN+USB[0x13]                             //CDU P Key
+define        A_10C_CDU_Q_Key                                         L_CTL+L_WIN+USB[0x14]                             //CDU Q Key
+define        A_10C_CDU_R_Key                                         L_CTL+L_WIN+USB[0x15]                             //CDU R Key
+define        A_10C_CDU_S_Key                                         L_CTL+L_WIN+USB[0x16]                             //CDU S Key
+define        A_10C_CDU_T_Key                                         L_CTL+L_WIN+USB[0x17]                             //CDU T Key
+define        A_10C_CDU_U_Key                                         L_CTL+L_WIN+USB[0x18]                             //CDU U Key
+define        A_10C_CDU_V_Key                                         L_CTL+L_WIN+USB[0x19]                             //CDU V Key
+define        A_10C_CDU_W_Key                                         L_CTL+L_WIN+USB[0x1A]                             //CDU W Key
+define        A_10C_CDU_X_Key                                         L_CTL+L_WIN+USB[0x1B]                             //CDU X Key
+define        A_10C_CDU_Y_Key                                         L_CTL+L_WIN+USB[0x1C]                             //CDU Y Key
+define        A_10C_CDU_Z_Key                                         L_CTL+L_WIN+USB[0x1D]                             //CDU Z Key
+define        A_10C_CDU_PLUS_Key                                      L_CTL+L_WIN+USB[0x57]                             //CDU PLUS Key
+define        A_10C_CDU_MINUS_Key                                     L_CTL+L_WIN+USB[0x56]                             //CDU MINUS Key
+define        A_10C_CDU_PG_UP_Key                                     L_CTL+L_WIN+USB[0x4B]                             //CDU PG UP Key
+define        A_10C_CDU_PG_DN_Key                                     L_CTL+L_WIN+USB[0x4E]                             //CDU PG DN Key
+
+
+
+// UFC**********************
+
+define        A_10C_UFC_1_Key                                         L_CTL+L_SHIFT+USB[0x59]                           //UFC 1 Key
+define        A_10C_UFC_2_Key                                         L_CTL+L_SHIFT+USB[0x5A]                           //UFC 2 Key
+define        A_10C_UFC_3_Key                                         L_CTL+L_SHIFT+USB[0x5B]                           //UFC 3 Key
+define        A_10C_UFC_4_Key                                         L_CTL+L_SHIFT+USB[0x5C]                           //UFC 4 Key
+define        A_10C_UFC_5_Key                                         L_CTL+L_SHIFT+USB[0x5D]                           //UFC 5 Key
+define        A_10C_UFC_6_Key                                         L_CTL+L_SHIFT+USB[0x5E]                           //UFC 6 Key
+define        A_10C_UFC_7_Key                                         L_CTL+L_SHIFT+USB[0x5F]                           //UFC 7 Key
+define        A_10C_UFC_8_Key                                         L_CTL+L_SHIFT+USB[0x60]                           //UFC 8 Key
+define        A_10C_UFC_9_Key                                         L_CTL+L_SHIFT+USB[0x61]                           //UFC 9 Key
+define        A_10C_UFC_0_Key                                         L_CTL+L_SHIFT+USB[0x62]                           //UFC 0 Key
+define        A_10C_UFC_ENT_Key                                       L_CTL+L_SHIFT+USB[0x58]                           //UFC ENT Key
+define        A_10C_UFC_Master_Caution_Key                            L_CTL+USB[0x10]                                   //UFC Master Caution Key
+
+
+
+// Landing gear panel**********************
+
+define        A_10C_Landing_Gear_Up_Down                              USB[0x0A]                                         //Landing Gear Up/Down
+define        A_10C_Landing_Gear_Up                                   L_CTL+USB[0x0A]                                   //Landing Gear Up
+define        A_10C_Landing_Gear_Down                                 L_SHIFT+USB[0x0A]                                 //Landing Gear Down
+define        A_10C_Auxiliary_gear_handle                             R_ALT+USB[0x0A]                                   //Auxiliary gear handle
+
+
+
+// Kneeboard**********************
+
+define        A_10C_Kneeboard_Next_Page                               USB[0x30]                                         //Kneeboard Next Page
+define        A_10C_Kneeboard_Previous_Page                           USB[0x2F]                                         //Kneeboard Previous Page
+define        A_10C_Kneeboard_ON_OFF                                  R_SHIFT+USB[0x0E]                                 //Kneeboard ON/OFF
+define        A_10C_Kneeboard_glance_view                             R_ALT+USB[0x0E]                                   //Kneeboard glance view
+define        A_10C_Kneeboard_current_position_mark_point             R_CTL+USB[0x0E]                                   //Kneeboard current position mark point

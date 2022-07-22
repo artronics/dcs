@@ -1,0 +1,64 @@
+include "target.tmh"
+int main()
+{
+	Configure(&HCougar, MODE_EXCLUDED);
+	Configure(&JoystickF18, MODE_EXCLUDED);
+	Configure(&A320Pilot, MODE_EXCLUDED);
+	Configure(&A320Copilot, MODE_EXCLUDED);
+	Configure(&TCAQuadrant12, MODE_EXCLUDED);
+	Configure(&TCAQuadrant34, MODE_EXCLUDED);
+	Configure(&TCAYokeBoeing, MODE_EXCLUDED);
+	Configure(&TCAQBoeing12, MODE_EXCLUDED);
+	Configure(&TCAQBoeing34, MODE_EXCLUDED);
+	Configure(&T16000, MODE_EXCLUDED);
+	Configure(&T16000L, MODE_EXCLUDED);
+	Configure(&LMFD, MODE_EXCLUDED);
+	Configure(&RMFD, MODE_EXCLUDED);
+	Configure(&TFRPRudder, MODE_EXCLUDED);
+	Configure(&TWCSThrottle, MODE_EXCLUDED);
+	Configure(&TFRPHARudder, MODE_EXCLUDED);
+	if(Init(&EventHandle)) return 1;
+	SetKBRate(32, 50);
+	SetKBLayout(KB_ENG);
+	SetShiftButton(&Throttle, CHF, &Throttle, 0, FLAPD, 0);
+	MapKeyIOUMD(&Joystick, S2, 0, 0, 0, PULSE+R_ALT+SPC, 0, 0);
+	MapKeyIOUMD(&Joystick, TG2, 0, 0, 0, SPC, 0, 0);
+	MapKeyIOUMD(&Joystick, H2U, 0, 0, PULSE+F1, PULSE+R_ALT+';', 0, 0);
+	MapKeyIOUMD(&Joystick, H2R, 0, 0, PULSE+F10, PULSE+R_ALT+'/', 0, SEQ( PULSE+F9, PULSE+F9));
+	MapKeyIOUMD(&Joystick, H2D, 0, 0, 0, PULSE+R_ALT+'.', 0, 0);
+	MapKeyIOUMD(&Joystick, H2L, 0, 0, PULSE+F2, PULSE+L_ALT+',', 0, 0);
+	MapKeyIOUMD(&Joystick, H3U, 0, 0, USB[85], 0, 0, 0);
+	MapKeyIOUMD(&Joystick, H3R, 0, 0, PULSE+KP5, 0, 0, 0);
+	MapKeyIOUMD(&Joystick, H3D, 0, 0, USB[84], 0, 0, 0);
+	MapKeyIOUMD(&Joystick, H3L, 0, 0, PULSE+F12, 0, 0, 0);
+	MapKeyIOUMD(&Joystick, H4U, 0, 0, 0, PULSE+L_SHIFT+'w', 0, 0);
+	MapKeyIOUMD(&Joystick, H4R, 0, 0, 0, PULSE+L_SHIFT+'d', 0, 0);
+	MapKeyIOUMD(&Joystick, H4D, 0, 0, 0, PULSE+L_SHIFT+'x', 0, 0);
+	MapKeyIOUMD(&Joystick, H4L, 0, 0, 0, PULSE+L_SHIFT+'s', 0, 0);
+	MapKeyIOUMD(&Joystick, H1U, 0, 0, KP8, PULSE+R_CTL+';', 0, 0);
+	MapKeyIOUMD(&Joystick, H1D, 0, 0, KP2, PULSE+R_CTL+'.', 0, 0);
+	MapKeyIOUMD(&Joystick, H1L, 0, 0, KP4, PULSE+R_CTL+',', 0, 0);
+	MapKeyIOUMD(&Joystick, H1R, 0, 0, KP6, PULSE+R_CTL+'/', 0, 0);
+	MapAxis(&Joystick, JOYX, DX_X_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Joystick, JOYX, 0, 3, 0, 2, 0);
+	MapAxis(&Joystick, JOYY, DX_Y_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Joystick, JOYY, 0, 3, 0, 2, 0);
+	MapKeyIOUMD(&Throttle, SC, 0, 0, 0, PULSE+USB[40], 0, 0);
+	KeyAxis(&Throttle, SCX, 'om', AXMAP2( LIST( 0, 40, 60 ), USB[54], 0, USB[56] ));
+	KeyAxis(&Throttle, SCY, 'om', AXMAP2( LIST( 0, 40, 60 ), USB[51], 0, USB[55] ));
+	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, SCX, 0, 0, 0, 0, 0);
+	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, SCY, 0, 0, 0, 0, 0);
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, THR_RIGHT, 0, 0, 0, 2, 0);
+	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, THR_LEFT, 0, 0, 0, 0, 0);
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, THR_FC, 0, 0, 0, 0, 0);
+
+}
+int EventHandle(int type, alias o, int x)
+{
+	DefaultMapping(&o, x);
+}

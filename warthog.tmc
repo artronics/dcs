@@ -1,0 +1,26 @@
+include "target.tmh"
+include "bindings/FA18-C_default.ttm"
+
+//program startup
+int main()
+{
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+
+    MapAxis(&Joystick, JOYY, DX_Y_AXIS);
+    MapAxis(&Joystick, JOYX, DX_X_AXIS);
+    MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);
+    MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS);
+    MapAxis(&Throttle, SCX, DX_XROT_AXIS);
+    MapAxis(&Throttle, SCY, DX_YROT_AXIS);
+    MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
+
+    MapKey(&Joystick, S1, PULSE+'a');
+}
+
+//event handler
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}

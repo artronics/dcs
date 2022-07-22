@@ -1,0 +1,72 @@
+
+
+
+// Autopilot**********************
+
+define        SU_25T_Autopilot                                        USB[0x04]                                         //Autopilot
+define        SU_25T_Autopilot___Barometric_Altitude_Hold_\           USB[0x0B]                                         //Autopilot - Barometric Altitude Hold \
+define        SU_25T_Autopilot_override__Su_25T_                      L_ALT+USB[0x04]                                   //Autopilot override (Su-25T)
+define        SU_25T_Autopilot___Attitude_Hold                        L_ALT+USB[0x1E]                                   //Autopilot - Attitude Hold
+define        SU_25T_Autopilot___Altitude_And_Roll_Hold               L_ALT+USB[0x1F]                                   //Autopilot - Altitude And Roll Hold
+define        SU_25T_Autopilot___Transition_To_Level_Flight_Control   L_ALT+USB[0x20]                                   //Autopilot - Transition To Level Flight Control
+define        SU_25T_Autopilot___Barometric_Altitude_Hold             L_ALT+USB[0x21]                                   //Autopilot - Barometric Altitude Hold
+define        SU_25T_Autopilot___Radar_Altitude_Hold                  L_ALT+USB[0x22]                                   //Autopilot - Radar Altitude Hold
+define        SU_25T_Autopilot___\                                    L_ALT+USB[0x23]                                   //Autopilot - \
+define        SU_25T_Autopilot_Disengage                              L_ALT+USB[0x26]                                   //Autopilot Disengage
+
+
+
+// Systems**********************
+
+define        SU_25T_Jettison_Fuel_Tanks                              L_ALT+USB[0x15]                                   //Jettison Fuel Tanks
+define        SU_25T_Altimeter_Pressure_Increase_Su_25T               R_SHIFT+USB[0x2E]                                 //Altimeter Pressure Increase Su-25T
+define        SU_25T_Altimeter_Pressure_Decrease_Su_25T               R_SHIFT+USB[0x2D]                                 //Altimeter Pressure Decrease Su-25T
+
+
+
+// Modes**********************
+
+define        SU_25T__6__Longitudinal_Missile_Aiming_Mode             USB[0x23]                                         //(6) Longitudinal Missile Aiming Mode
+define        SU_25T__7__Air_To_Ground_Mode                           USB[0x24]                                         //(7) Air-To-Ground Mode
+define        SU_25T__8__Gunsight_Reticle_Switch                      USB[0x25]                                         //(8) Gunsight Reticle Switch
+
+
+
+// Sensors**********************
+
+define        SU_25T_Target_Lock                                      USB[0x28]                                         //Target Lock
+define        SU_25T_Target_Unlock                                    USB[0x2A]                                         //Target Unlock
+define        SU_25T_ELINT_Pod_On_Off                                 USB[0x0C]                                         //ELINT Pod On/Off
+define        SU_25T_Target_Designator_To_Center                      R_CTL+USB[0x0C]                                   //Target Designator To Center
+define        SU_25T_Electro_Optical_System_On_Off                    USB[0x12]                                         //Electro-Optical System On/Off
+define        SU_25T_Laser_Ranger_On_Off                              R_SHIFT+USB[0x12]                                 //Laser Ranger On/Off
+define        SU_25T_Night_Vision__FLIR_or_LLTV__On_Off               R_CTL+USB[0x12]                                   //Night Vision (FLIR or LLTV) On/Off
+define        SU_25T_Target_Designator_Up                             USB[0x33]                                         //Target Designator Up
+define        SU_25T_Target_Designator_Down                           USB[0x37]                                         //Target Designator Down
+define        SU_25T_Target_Designator_Left                           USB[0x36]                                         //Target Designator Left
+define        SU_25T_Target_Designator_Right                          USB[0x38]                                         //Target Designator Right
+define        SU_25T_Display_Zoom_In                                  USB[0x2E]                                         //Display Zoom In
+define        SU_25T_Display_Zoom_Out                                 USB[0x2D]                                         //Display Zoom Out
+define        SU_25T_Target_Size___Gunpod_Elevation_Decrease_Stepping R_ALT+USB[0x30]                                   //Target Size / Gunpod Elevation Decrease Stepping
+define        SU_25T_Target_Size___Gunpod_Elevation_Increase_Stepping R_ALT+USB[0x2F]                                   //Target Size / Gunpod Elevation Increase Stepping
+define        SU_25T_Target_Size___Gunpod_Elevation_Increase          R_CTL+USB[0x30]                                   //Target Size / Gunpod Elevation Increase
+define        SU_25T_Target_Size___Gunpod_Elevation_Decrease          R_CTL+USB[0x2F]                                   //Target Size / Gunpod Elevation Decrease
+define        SU_25T_RWR_SPO_Mode_Select                              R_SHIFT+USB[0x15]                                 //RWR/SPO Mode Select
+define        SU_25T_RWR_SPO_Sound_Signals_Volume_Down                R_ALT+USB[0x36]                                   //RWR/SPO Sound Signals Volume Down
+define        SU_25T_RWR_SPO_Sound_Signals_Volume_Up                  R_ALT+USB[0x37]                                   //RWR/SPO Sound Signals Volume Up
+
+
+
+// Weapons**********************
+
+define        SU_25T_Salvo_Mode                                       L_CTL+USB[0x19]                                   //Salvo Mode
+define        SU_25T_Cut_Of_Burst_select                              L_SHIFT+USB[0x06]                                 //Cut Of Burst select
+define        SU_25T_Ripple_Quantity_Select_SPPU_select               L_CTL+USB[0x2C]                                   //Ripple Quantity Select/SPPU select
+define        SU_25T_Ripple_Interval_Increase                         USB[0x19]                                         //Ripple Interval Increase
+define        SU_25T_Ripple_Interval_Decrease                         L_SHIFT+USB[0x19]                                 //Ripple Interval Decrease
+
+
+
+// Countermeasures**********************
+
+define        SU_25T_IR_Jamming                                       L_SHIFT+USB[0x08]                                 //IR Jamming

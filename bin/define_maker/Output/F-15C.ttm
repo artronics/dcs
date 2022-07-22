@@ -1,0 +1,73 @@
+
+
+
+// Autopilot**********************
+
+define        F_15C_Autopilot___Attitude_Hold                         L_ALT+USB[0x04]                                   //Autopilot - Attitude Hold
+define        F_15C_Autopilot___Altitude_Hold                         L_ALT+USB[0x0B]                                   //Autopilot - Altitude Hold
+define        F_15C_Autopilot_Disengage                               L_ALT+USB[0x26]                                   //Autopilot Disengage
+define        F_15C_CAS_Pitch                                         L_CTL+USB[0x1E]                                   //CAS Pitch
+define        F_15C_CAS_Roll                                          L_CTL+USB[0x1F]                                   //CAS Roll
+define        F_15C_CAS_Yaw                                           L_CTL+USB[0x20]                                   //CAS Yaw
+
+
+
+// Flight Control**********************
+
+define        F_15C_T_O_Trim                                          L_ALT+USB[0x17]                                   //T/O Trim
+
+
+
+// Systems**********************
+
+define        F_15C_Refueling_Boom                                    L_CTL+USB[0x15]                                   //Refueling Boom
+define        F_15C_Jettison_Fuel_Tanks                               L_ALT+USB[0x15]                                   //Jettison Fuel Tanks
+define        F_15C_Nose_Gear_Maneuvering_Range                       USB[0x16]                                         //Nose Gear Maneuvering Range
+define        F_15C_Nose_Gear_Steering_Disengage                      L_ALT+USB[0x14]                                   //Nose Gear Steering Disengage
+define        F_15C_Wheel_Brake_Left_On_Off                           L_CTL+USB[0x04]                                   //Wheel Brake Left On/Off
+define        F_15C_Wheel_Brake_Right_On_Off                          L_ALT+USB[0x04]                                   //Wheel Brake Right On/Off
+define        F_15C_Elapsed_Time_Clock_Start_Stop_Reset               L_SHIFT+USB[0x17]                                 //Elapsed Time Clock Start/Stop/Reset
+define        F_15C_Fuel_Quantity_Selector                            L_SHIFT+USB[0x07]                                 //Fuel Quantity Selector
+define        F_15C_Fuel_Quantity_Test                                L_CTL+USB[0x07]                                   //Fuel Quantity Test
+
+
+
+// Modes**********************
+
+define        F_15C__2__Beyond_Visual_Range_Mode                      USB[0x1F]                                         //(2) Beyond Visual Range Mode
+define        F_15C__3__Close_Air_Combat_Vertical_Scan_Mode           USB[0x20]                                         //(3) Close Air Combat Vertical Scan Mode
+define        F_15C__4__Close_Air_Combat_Bore_Mode                    USB[0x21]                                         //(4) Close Air Combat Bore Mode
+define        F_15C__6__Longitudinal_Missile_Aiming_Mode_FLOOD_mode   USB[0x23]                                         //(6) Longitudinal Missile Aiming Mode/FLOOD mode
+
+
+
+// Sensors**********************
+
+define        F_15C_Target_Lock                                       USB[0x28]                                         //Target Lock
+define        F_15C_Radar___Return_To_Search_NDTWS                    USB[0x2A]                                         //Radar - Return To Search/NDTWS
+define        F_15C_Radar_On_Off                                      USB[0x0C]                                         //Radar On/Off
+define        F_15C_Radar_RWS_TWS_Mode_Select                         R_ALT+USB[0x0C]                                   //Radar RWS/TWS Mode Select
+define        F_15C_Target_Designator_To_Center                       R_CTL+USB[0x0C]                                   //Target Designator To Center
+define        F_15C_Radar_Pulse_Repeat_Frequency_Select               R_SHIFT+USB[0x0C]                                 //Radar Pulse Repeat Frequency Select
+define        F_15C_Target_Designator_Up                              USB[0x33]                                         //Target Designator Up
+define        F_15C_Target_Designator_Down                            USB[0x37]                                         //Target Designator Down
+define        F_15C_Target_Designator_Left                            USB[0x36]                                         //Target Designator Left
+define        F_15C_Target_Designator_Right                           USB[0x38]                                         //Target Designator Right
+define        F_15C_Scan_Zone_Up                                      R_SHIFT+USB[0x33]                                 //Scan Zone Up
+define        F_15C_Scan_Zone_Down                                    R_SHIFT+USB[0x37]                                 //Scan Zone Down
+define        F_15C_Scan_Zone_Left                                    R_SHIFT+USB[0x36]                                 //Scan Zone Left
+define        F_15C_Scan_Zone_Right                                   R_SHIFT+USB[0x38]                                 //Scan Zone Right
+define        F_15C_Display_Zoom_In                                   USB[0x2E]                                         //Display Zoom In
+define        F_15C_Display_Zoom_Out                                  USB[0x2D]                                         //Display Zoom Out
+define        F_15C_Radar_Scan_Zone_Decrease                          R_CTL+USB[0x2D]                                   //Radar Scan Zone Decrease
+define        F_15C_Radar_Scan_Zone_Increase                          R_CTL+USB[0x2E]                                   //Radar Scan Zone Increase
+define        F_15C_RWR_SPO_Mode_Select                               R_SHIFT+USB[0x15]                                 //RWR/SPO Mode Select
+define        F_15C_RWR_SPO_Sound_Signals_Volume_Down                 R_ALT+USB[0x36]                                   //RWR/SPO Sound Signals Volume Down
+define        F_15C_RWR_SPO_Sound_Signals_Volume_Up                   R_ALT+USB[0x37]                                   //RWR/SPO Sound Signals Volume Up
+
+
+
+// Weapons**********************
+
+define        F_15C_Salvo_Mode                                        L_CTL+USB[0x19]                                   //Salvo Mode
+define        F_15C_Weapon_Release                                    R_ALT+USB[0x2C]                                   //Weapon Release

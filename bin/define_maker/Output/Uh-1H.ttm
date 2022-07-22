@@ -1,0 +1,625 @@
+
+
+
+// Cheat**********************
+
+define        Uh_1H_Auto_execute_full_start_procedure                 L_WIN+USB[0x4A]                                   //Auto execute full start procedure
+define        Uh_1H_Auto_execute_full_stop_procedure                  L_WIN+USB[0x4D]                                   //Auto execute full stop procedure
+
+
+
+// Debug**********************
+
+define        Uh_1H_Toggle_Console                                    L_ALT+USB[0x35]                                   //Toggle Console
+
+
+
+// General**********************
+
+define        Uh_1H_End_mission                                       USB[0x29]                                         //End mission
+define        Uh_1H_Pause                                             USB[0x48]                                         //Pause
+define        Uh_1H_Time_accelerate                                   L_CTL+USB[0x1D]                                   //Time accelerate
+define        Uh_1H_Time_decelerate                                   L_ALT+USB[0x1D]                                   //Time decelerate
+define        Uh_1H_Time_normal                                       L_SHIFT+USB[0x1D]                                 //Time normal
+define        Uh_1H_Multiplayer_chat___mode_All                       USB[0x2B]                                         //Multiplayer chat - mode All
+define        Uh_1H_Multiplayer_chat___mode_Allies                    L_CTL+USB[0x2B]                                   //Multiplayer chat - mode Allies
+define        Uh_1H_Info_bar_toggle                                   L_CTL+USB[0x1C]                                   //Info bar toggle
+define        Uh_1H_Get_New_Plane___respawn                           R_CTL+R_SHIFT+USB[0x2B]                           //Get New Plane - respawn
+define        Uh_1H_Clickable_mouse_cockpit_mode_On_Off               L_ALT+USB[0x06]                                   //Clickable mouse cockpit mode On/Off
+define        Uh_1H_Jump_into_other_aircraft                          R_ALT+USB[0x0D]                                   //Jump into other aircraft
+define        Uh_1H_Screenshot                                        USB[0x46]                                         //Screenshot
+define        Uh_1H_Frame_rate_counter___Service_info                 R_CTL+USB[0x48]                                   //Frame rate counter - Service info
+define        Uh_1H_Info_bar_coordinate_units_toggle                  L_ALT+USB[0x1C]                                   //Info bar coordinate units toggle
+define        Uh_1H_Show_Pilot_Body                                   R_SHIFT+USB[0x13]                                 //Show Pilot Body
+define        Uh_1H_Show_controls_indicator                           R_CTL+USB[0x28]                                   //Show controls indicator
+
+
+
+// Cheat**********************
+
+define        Uh_1H_Active_Pause                                      L_SHIFT+L_WIN+USB[0x48]                           //Active Pause
+
+
+
+// General**********************
+
+define        Uh_1H_Briefing_window                                   L_ALT+USB[0x05]                                   //Briefing window
+
+
+
+// View**********************
+
+define        Uh_1H_View_Left_slow                                    USB[0x5C]                                         //View Left slow
+define        Uh_1H_View_Right_slow                                   USB[0x5E]                                         //View Right slow
+define        Uh_1H_View_Up_slow                                      USB[0x60]                                         //View Up slow
+define        Uh_1H_View_Down_slow                                    USB[0x5A]                                         //View Down slow
+define        Uh_1H_View_Up_Right_slow                                USB[0x61]                                         //View Up Right slow
+define        Uh_1H_View_Down_Right_slow                              USB[0x5B]                                         //View Down Right slow
+define        Uh_1H_View_Down_Left_slow                               USB[0x59]                                         //View Down Left slow
+define        Uh_1H_View_Up_Left_slow                                 USB[0x5F]                                         //View Up Left slow
+define        Uh_1H_Center_View                                       USB[0x5D]                                         //Center View
+define        Uh_1H_Zoom_in_slow                                      USB[0x55]                                         //Zoom in slow
+define        Uh_1H_Zoom_out_slow                                     USB[0x54]                                         //Zoom out slow
+define        Uh_1H_Zoom_normal                                       USB[0x58]                                         //Zoom normal
+define        Uh_1H_Zoom_external_in                                  R_CTL+USB[0x55]                                   //Zoom external in
+define        Uh_1H_Zoom_external_out                                 R_CTL+USB[0x54]                                   //Zoom external out
+define        Uh_1H_Zoom_external_normal                              R_CTL+USB[0x58]                                   //Zoom external normal
+define        Uh_1H_F11_camera_moving_forward                         L_ALT+USB[0x55]                                   //F11 camera moving forward
+define        Uh_1H_F11_camera_moving_backward                        L_ALT+USB[0x54]                                   //F11 camera moving backward
+define        Uh_1H_Objects_switching_direction_forward_              L_CTL+USB[0x4E]                                   //Objects switching direction forward 
+define        Uh_1H_Objects_switching_direction_reverse_              L_CTL+USB[0x4B]                                   //Objects switching direction reverse 
+define        Uh_1H_Object_exclude_                                   L_ALT+USB[0x4C]                                   //Object exclude 
+define        Uh_1H_Objects_all_excluded___include                    L_ALT+USB[0x49]                                   //Objects all excluded - include
+define        Uh_1H_F1_Cockpit_view                                   USB[0x3A]                                         //F1 Cockpit view
+define        Uh_1H_F1_Natural_head_movement_view                     L_CTL+USB[0x3A]                                   //F1 Natural head movement view
+define        Uh_1H_F1_HUD_only_view_switch                           L_ALT+USB[0x3A]                                   //F1 HUD only view switch
+define        Uh_1H_F2_Aircraft_view                                  USB[0x3B]                                         //F2 Aircraft view
+define        Uh_1H_F2_View_own_aircraft                              L_CTL+USB[0x3B]                                   //F2 View own aircraft
+define        Uh_1H_F2_Toggle_camera_position                         R_ALT+USB[0x3B]                                   //F2 Toggle camera position
+define        Uh_1H_F2_Toggle_local_camera_control                    L_ALT+USB[0x3B]                                   //F2 Toggle local camera control
+define        Uh_1H_F3_Fly_By_view                                    USB[0x3C]                                         //F3 Fly-By view
+define        Uh_1H_F3_Fly_By_jump_view                               L_CTL+USB[0x3C]                                   //F3 Fly-By jump view
+define        Uh_1H_F4_Look_back_view                                 USB[0x3D]                                         //F4 Look back view
+define        Uh_1H_F4_Chase_view                                     L_CTL+USB[0x3D]                                   //F4 Chase view
+define        Uh_1H_F4_Arcade_Chase_view                              L_SHIFT+USB[0x3D]                                 //F4 Arcade Chase view
+define        Uh_1H_F5_Nearest_AC_view                                USB[0x3E]                                         //F5 Nearest AC view
+define        Uh_1H_F5_Ground_hostile_view                            L_CTL+USB[0x3E]                                   //F5 Ground hostile view
+define        Uh_1H_F6_Released_weapon_view                           USB[0x3F]                                         //F6 Released weapon view
+define        Uh_1H_F6_Weapon_to_target_view                          L_CTL+USB[0x3F]                                   //F6 Weapon to target view
+define        Uh_1H_F7_Ground_unit_view                               USB[0x40]                                         //F7 Ground unit view
+define        Uh_1H_F8_Target_view                                    USB[0x41]                                         //F8 Target view
+define        Uh_1H_F8_Player_targets_All_targets_filter              R_ALT+USB[0x41]                                   //F8 Player targets/All targets filter
+define        Uh_1H_F9_Ship_view                                      USB[0x42]                                         //F9 Ship view
+define        Uh_1H_F9_Landing_signal_officer_view                    L_ALT+USB[0x42]                                   //F9 Landing signal officer view
+define        Uh_1H_F10_Theater_map_view                              USB[0x43]                                         //F10 Theater map view
+define        Uh_1H_F10_Jump_to_theater_map_view_over_current_point   L_CTL+USB[0x43]                                   //F10 Jump to theater map view over current point
+define        Uh_1H_F11_Airport_free_camera                           USB[0x44]                                         //F11 Airport free camera
+define        Uh_1H_F11_Jump_to_free_camera                           L_CTL+USB[0x44]                                   //F11 Jump to free camera
+define        Uh_1H_F12_Static_object_view                            USB[0x45]                                         //F12 Static object view
+define        Uh_1H_F12_Civil_traffic_view                            L_CTL+USB[0x45]                                   //F12 Civil traffic view
+define        Uh_1H_F12_Trains_cars_toggle                            L_SHIFT+USB[0x45]                                 //F12 Trains/cars toggle
+define        Uh_1H_Camera_view_keyboard_rate_fast                    L_SHIFT+USB[0x30]                                 //Camera view keyboard rate fast
+define        Uh_1H_Camera_view_keyboard_rate_slow                    L_CTL+USB[0x30]                                   //Camera view keyboard rate slow
+define        Uh_1H_Camera_view_keyboard_rate_normal                  L_ALT+USB[0x30]                                   //Camera view keyboard rate normal
+define        Uh_1H_Camera_view_mouse_rate_fast                       L_SHIFT+USB[0x2F]                                 //Camera view mouse rate fast
+define        Uh_1H_Camera_view_mouse_rate_slow                       L_CTL+USB[0x2F]                                   //Camera view mouse rate slow
+define        Uh_1H_Camera_view_mouse_rate_normal                     L_ALT+USB[0x2F]                                   //Camera view mouse rate normal
+
+
+
+// View Cockpit**********************
+
+define        Uh_1H_Cockpit_panel_view_in                             USB[0x62]                                         //Cockpit panel view in
+define        Uh_1H_Cockpit_panel_view_toggle                         R_CTL+USB[0x62]                                   //Cockpit panel view toggle
+define        Uh_1H_Save_Cockpit_Angles                               R_ALT+USB[0x62]                                   //Save Cockpit Angles
+define        Uh_1H_View_up                                           R_SHIFT+USB[0x60]                                 //View up
+define        Uh_1H_View_down                                         R_SHIFT+USB[0x5A]                                 //View down
+define        Uh_1H_View_left                                         R_SHIFT+USB[0x5C]                                 //View left
+define        Uh_1H_View_right                                        R_SHIFT+USB[0x5E]                                 //View right
+define        Uh_1H_View_up_right                                     R_SHIFT+USB[0x61]                                 //View up right
+define        Uh_1H_View_down_right                                   R_SHIFT+USB[0x5B]                                 //View down right
+define        Uh_1H_View_down_left                                    R_SHIFT+USB[0x59]                                 //View down left
+define        Uh_1H_View_up_left                                      R_SHIFT+USB[0x5F]                                 //View up left
+define        Uh_1H_Camera_view_up                                    R_CTL+USB[0x60]                                   //Camera view up
+define        Uh_1H_Camera_view_down                                  R_CTL+USB[0x5A]                                   //Camera view down
+define        Uh_1H_Camera_view_left                                  R_CTL+USB[0x5C]                                   //Camera view left
+define        Uh_1H_Camera_view_right                                 R_CTL+USB[0x5E]                                   //Camera view right
+define        Uh_1H_Camera_view_up_left                               R_CTL+USB[0x5F]                                   //Camera view up-left
+define        Uh_1H_Camera_view_down_left                             R_CTL+USB[0x59]                                   //Camera view down-left
+define        Uh_1H_Camera_view_up_right                              R_CTL+USB[0x61]                                   //Camera view up-right
+define        Uh_1H_Camera_view_down_right                            R_CTL+USB[0x5B]                                   //Camera view down-right
+define        Uh_1H_Camera_view_up_slow                               R_ALT+USB[0x60]                                   //Camera view up slow
+define        Uh_1H_Camera_view_down_slow                             R_ALT+USB[0x5A]                                   //Camera view down slow
+define        Uh_1H_Camera_view_left_slow                             R_ALT+USB[0x5C]                                   //Camera view left slow
+define        Uh_1H_Camera_view_right_slow                            R_ALT+USB[0x5E]                                   //Camera view right slow
+define        Uh_1H_Camera_view_up_left_slow                          R_ALT+USB[0x5F]                                   //Camera view up-left slow
+define        Uh_1H_Camera_view_down_left_slow                        R_ALT+USB[0x59]                                   //Camera view down-left slow
+define        Uh_1H_Camera_view_up_right_slow                         R_ALT+USB[0x61]                                   //Camera view up-right slow
+define        Uh_1H_Camera_view_down_right_slow                       R_ALT+USB[0x5B]                                   //Camera view down-right slow
+define        Uh_1H_Center_camera_view                                R_SHIFT+USB[0x5D]                                 //Center camera view
+define        Uh_1H_Return_camera                                     R_CTL+USB[0x5D]                                   //Return camera
+define        Uh_1H_Return_camera_base                                R_ALT+USB[0x5D]                                   //Return camera base
+define        Uh_1H_Snap_View_0                                       L_WIN+USB[0x62]                                   //Snap View 0
+define        Uh_1H_Snap_View_1                                       L_WIN+USB[0x59]                                   //Snap View 1
+define        Uh_1H_Snap_View_2                                       L_WIN+USB[0x5A]                                   //Snap View 2
+define        Uh_1H_Snap_View_3                                       L_WIN+USB[0x5B]                                   //Snap View 3
+define        Uh_1H_Snap_View_4                                       L_WIN+USB[0x5C]                                   //Snap View 4
+define        Uh_1H_Snap_View_5                                       L_WIN+USB[0x5D]                                   //Snap View 5
+define        Uh_1H_Snap_View_6                                       L_WIN+USB[0x5E]                                   //Snap View 6
+define        Uh_1H_Snap_View_7                                       L_WIN+USB[0x5F]                                   //Snap View 7
+define        Uh_1H_Snap_View_8                                       L_WIN+USB[0x60]                                   //Snap View 8
+define        Uh_1H_Snap_View_9                                       L_WIN+USB[0x61]                                   //Snap View 9
+define        Uh_1H_Head_shift_movement_on___off                      L_WIN+USB[0x3A]                                   //Head shift movement on / off
+define        Uh_1H_Zoom_out                                          R_SHIFT+USB[0x54]                                 //Zoom out
+define        Uh_1H_Zoom_in                                           R_SHIFT+USB[0x55]                                 //Zoom in
+define        Uh_1H_Cockpit_Camera_Move_Up                            R_CTL+R_SHIFT+USB[0x60]                           //Cockpit Camera Move Up
+define        Uh_1H_Cockpit_Camera_Move_Down                          R_CTL+R_SHIFT+USB[0x5A]                           //Cockpit Camera Move Down
+define        Uh_1H_Cockpit_Camera_Move_Left                          R_CTL+R_SHIFT+USB[0x5C]                           //Cockpit Camera Move Left
+define        Uh_1H_Cockpit_Camera_Move_Right                         R_CTL+R_SHIFT+USB[0x5E]                           //Cockpit Camera Move Right
+define        Uh_1H_Cockpit_Camera_Move_Forward                       R_CTL+R_SHIFT+USB[0x55]                           //Cockpit Camera Move Forward
+define        Uh_1H_Cockpit_Camera_Move_Back                          R_CTL+R_SHIFT+USB[0x54]                           //Cockpit Camera Move Back
+define        Uh_1H_Cockpit_Camera_Move_Center                        R_CTL+R_SHIFT+USB[0x5D]                           //Cockpit Camera Move Center
+define        Uh_1H_Camera_transpose_mode__press_and_hold_            L_SHIFT+USB[0x3A]                                 //Camera transpose mode (press and hold)
+
+
+
+// External Cargo**********************
+
+define        Uh_1H_External_Cargo_Camera_On_Off                      L_CTL+L_SHIFT+USB[0x06]                           //External Cargo Camera On/Off
+define        Uh_1H_External_Cargo_Hook_Unhook                        R_CTL+R_SHIFT+USB[0x0F]                           //External Cargo Hook/Unhook
+define        Uh_1H_External_Cargo_Autounhook                         R_CTL+R_SHIFT+USB[0x0E]                           //External Cargo Autounhook
+
+
+
+// View Extended**********************
+
+define        Uh_1H_Camera_jiggle_toggle                              L_SHIFT+USB[0x0D]                                 //Camera jiggle toggle
+define        Uh_1H_Keep_terrain_camera_altitude                      L_ALT+USB[0x0E]                                   //Keep terrain camera altitude
+define        Uh_1H_Toggle_tracking_fire_weapon                       R_CTL+USB[0x57]                                   //Toggle tracking fire weapon
+define        Uh_1H_View_friends_mode                                 R_CTL+R_SHIFT+USB[0x09]                           //View friends mode
+define        Uh_1H_View_enemies_mode                                 R_CTL+R_SHIFT+USB[0x07]                           //View enemies mode
+define        Uh_1H_View_all_mode                                     R_CTL+R_SHIFT+USB[0x04]                           //View all mode
+
+
+
+// View Padlock**********************
+
+define        Uh_1H_Lock_view__cycle_padlock_                         USB[0x63]                                         //Lock view (cycle padlock)
+define        Uh_1H_Unlock_view__stop_padlock_                        USB[0x53]                                         //Unlock view (stop padlock)
+define        Uh_1H_All_missiles_padlock                              R_SHIFT+USB[0x63]                                 //All missiles padlock
+define        Uh_1H_Threat_missile_padlock                            R_ALT+USB[0x63]                                   //Threat missile padlock
+define        Uh_1H_Lock_terrain_view                                 R_CTL+USB[0x63]                                   //Lock terrain view
+
+
+
+// Labels**********************
+
+define        Uh_1H_All_Labels                                        L_SHIFT+USB[0x43]                                 //All Labels
+define        Uh_1H_Aircraft_Labels                                   L_SHIFT+USB[0x3B]                                 //Aircraft Labels
+define        Uh_1H_Missile_Labels                                    L_SHIFT+USB[0x3F]                                 //Missile Labels
+define        Uh_1H_Vehicle_and_Ship_Labels                           L_SHIFT+USB[0x42]                                 //Vehicle & Ship Labels
+
+
+
+// Main Panel**********************
+
+define        Uh_1H_Fuel_Indicator_Test                               L_SHIFT+L_CTL+USB[0x13]                           //Fuel Indicator Test
+define        Uh_1H_Fire_Detector_Test                                R_CTL+USB[0x17]                                   //Fire Detector Test
+
+
+
+// Pedestal**********************
+
+define        Uh_1H_Main_Fuel_Switch                                  USB[0x09]                                         //Main Fuel Switch
+define        Uh_1H_De_Ice_On_Off                                     USB[0x0C]                                         //De-Ice On/Off
+define        Uh_1H_Governor_Auto_Emer                                USB[0x0A]                                         //Governor Auto/Emer
+define        Uh_1H_Low_RPM_Warning                                   R_CTL+USB[0x1A]                                   //Low RPM Warning
+define        Uh_1H_Caution_Panel_Test_Reset_Switch_Reset             USB[0x15]                                         //Caution Panel Test/Reset Switch Reset
+define        Uh_1H_Caution_Panel_Test_Reset_Switch_Test              L_ALT+USB[0x15]                                   //Caution Panel Test/Reset Switch Test
+define        Uh_1H_Caution_Panel_Dim_Switch_Bright                   L_ALT+USB[0x09]                                   //Caution Panel Dim Switch Bright
+define        Uh_1H_Caution_Panel_Dim_Switch_Dim                      L_CTL+USB[0x09]                                   //Caution Panel Dim Switch Dim
+
+
+
+// Ins Cyclic Stick**********************
+
+define        Uh_1H_Pilot_weapon_release_Machinegun_fire              USB[0x2C]                                         //Pilot weapon release/Machinegun fire
+define        Uh_1H_Copilot_weapon_release                            R_ALT+USB[0x2C]                                   //Copilot weapon release
+define        Uh_1H_Cyclic_nose_down                                  USB[0x52]                                         //Cyclic nose down
+define        Uh_1H_Cyclic_nose_up                                    USB[0x51]                                         //Cyclic nose up
+define        Uh_1H_Cyclic_bank_left                                  USB[0x50]                                         //Cyclic bank left
+define        Uh_1H_Cyclic_bank_right                                 USB[0x4F]                                         //Cyclic bank right
+define        Uh_1H_Pilots_radio_trigger_RADIO                        R_ALT+USB[0x31]                                   //Pilot's radio trigger RADIO
+define        Uh_1H_Pilots_radio_trigger_ICS                          R_SHIFT+USB[0x2C]                                 //Pilot's radio trigger ICS
+define        Uh_1H_Co_pilots_radio_trigger_RADIO                     L_CTL+USB[0x2C]                                   //Co-pilot's radio trigger RADIO
+define        Uh_1H_Co_pilots_radio_trigger_ICS                       L_SHIFT+USB[0x2C]                                 //Co-pilot's radio trigger ICS
+define        Uh_1H_Pilot_Trimmer                                     USB[0x17]                                         //Pilot Trimmer
+define        Uh_1H_Trimmer_reset                                     L_CTL+USB[0x17]                                   //Trimmer reset
+
+
+
+// Flexible Sight**********************
+
+define        Uh_1H_Flexible_Sight_On_Off                             USB[0x10]                                         //Flexible Sight On/Off
+define        Uh_1H_Flexible_Sight_Intensity_Decrease                 R_ALT+USB[0x12]                                   //Flexible Sight Intensity Decrease
+define        Uh_1H_Flexible_Sight_Intensity_Increase                 R_CTL+USB[0x12]                                   //Flexible Sight Intensity Increase
+define        Uh_1H_Flexible_Sight_Main_Lamp                          USB[0x12]                                         //Flexible Sight Main Lamp
+define        Uh_1H_Flexible_Sight_Lamp_Off                           R_CTL+R_SHIFT+USB[0x12]                           //Flexible Sight Lamp Off
+define        Uh_1H_Flexible_Sight_Backup_Lamp                        R_ALT+R_CTL+USB[0x12]                             //Flexible Sight Backup Lamp
+
+
+
+// Pilot Sight**********************
+
+define        Uh_1H_Pilot_Sight_Armed_Docked                          R_SHIFT+USB[0x10]                                 //Pilot Sight Armed/Docked
+define        Uh_1H_Pilot_Sight_On_Off                                R_CTL+USB[0x10]                                   //Pilot Sight On/Off
+define        Uh_1H_Pilot_Sight_Intensity_Decrease                    L_ALT+USB[0x1B]                                   //Pilot Sight Intensity Decrease
+define        Uh_1H_Pilot_Sight_Intensity_Increase                    L_CTL+USB[0x1B]                                   //Pilot Sight Intensity Increase
+define        Uh_1H_Pilot_Sight_Elevation_Decrease                    L_ALT+USB[0x16]                                   //Pilot Sight Elevation Decrease
+define        Uh_1H_Pilot_Sight_Elevation_Increase                    L_CTL+USB[0x16]                                   //Pilot Sight Elevation Increase
+
+
+
+// Armament System**********************
+
+define        Uh_1H_Armament_Off_Safe_Armed_Up                        R_SHIFT+USB[0x30]                                 //Armament Off/Safe/Armed Up
+define        Uh_1H_Armament_Off_Safe_Armed_Down                      R_SHIFT+USB[0x2F]                                 //Armament Off/Safe/Armed Down
+define        Uh_1H_Armament_Selector_Up                              R_ALT+USB[0x30]                                   //Armament Selector Up
+define        Uh_1H_Armament_Selector_Down                            R_ALT+USB[0x2F]                                   //Armament Selector Down
+define        Uh_1H_Rocket_Pair_Increase                              R_CTL+USB[0x30]                                   //Rocket Pair Increase
+define        Uh_1H_Rocket_Pair_Decrease                              R_CTL+USB[0x2F]                                   //Rocket Pair Decrease
+define        Uh_1H_Jettison                                          USB[0x0D]                                         //Jettison
+define        Uh_1H_Jettison_Cover                                    L_ALT+USB[0x0D]                                   //Jettison Cover
+define        Uh_1H_Rocket_reset                                      L_CTL+USB[0x15]                                   //Rocket reset
+define        Uh_1H_Gun_Selector_Switch_Up                            R_ALT+R_CTL+USB[0x30]                             //Gun Selector Switch Up
+define        Uh_1H_Gun_Selector_Switch_Down                          R_ALT+R_CTL+USB[0x2F]                             //Gun Selector Switch Down
+
+
+
+// Cheat**********************
+
+define        Uh_1H_AutoPilot                                         L_WIN+USB[0x04]                                   //AutoPilot
+define        Uh_1H_Weapon_Hints_On_Off                               L_CTL+L_SHIFT+USB[0x0B]                           //Weapon Hints On/Off
+define        Uh_1H_AutoPilot_ATTITUDE_HOLD                           L_SHIFT+L_ALT+USB[0x04]                           //AutoPilot ATTITUDE HOLD
+define        Uh_1H_AutoPilot_LEVEL_FLIGHT                            L_CTL+USB[0x04]                                   //AutoPilot LEVEL FLIGHT
+define        Uh_1H_AutoPilot_ORBIT                                   L_ALT+USB[0x04]                                   //AutoPilot ORBIT
+
+
+
+// Armament System**********************
+
+define        Uh_1H_Open_Close_Right_Gunner_Door                      L_ALT+USB[0x21]                                   //Open/Close Right Gunner Door
+define        Uh_1H_Open_Close_Left_Gunner_Door                       L_ALT+USB[0x20]                                   //Open/Close Left Gunner Door
+
+
+
+// Ins Collective Stick**********************
+
+define        Uh_1H_Collective_up                                     USB[0x57]                                         //Collective up
+define        Uh_1H_Collective_down                                   USB[0x56]                                         //Collective down
+define        Uh_1H_Throttle_Up                                       USB[0x4B]                                         //Throttle Up
+define        Uh_1H_Throttle_Down                                     USB[0x4E]                                         //Throttle Down
+define        Uh_1H_Throttle_Stop                                     R_WIN+USB[0x17]                                   //Throttle Stop
+define        Uh_1H_Search_light_Retract                              USB[0x24]                                         //Search light Retract
+define        Uh_1H_Search_light_Extend                               USB[0x25]                                         //Search light Extend
+define        Uh_1H_Search_light_Left                                 USB[0x26]                                         //Search light Left
+define        Uh_1H_Search_light_Right                                USB[0x27]                                         //Search light Right
+define        Uh_1H_Landing_light_On_Off                              R_CTL+USB[0x36]                                   //Landing light On/Off
+define        Uh_1H_Landing_light_Extend                              R_CTL+USB[0x38]                                   //Landing light Extend
+define        Uh_1H_Landing_light_Stop                                R_ALT+USB[0x38]                                   //Landing light Stop
+define        Uh_1H_Landing_light_Retract                             R_WIN+USB[0x38]                                   //Landing light Retract
+define        Uh_1H_Search_light_On                                   R_CTL+USB[0x33]                                   //Search light On
+define        Uh_1H_Search_light_Off                                  R_ALT+USB[0x33]                                   //Search light Off
+define        Uh_1H_Search_light_Stow                                 R_WIN+USB[0x33]                                   //Search light Stow
+define        Uh_1H_Start_up_engine                                   USB[0x4A]                                         //Start-up engine
+define        Uh_1H_Increase_Turbine_RPM                              R_CTL+USB[0x4B]                                   //Increase Turbine RPM
+define        Uh_1H_Decrease_Turbine_RPM                              R_CTL+USB[0x4E]                                   //Decrease Turbine RPM
+
+
+
+// Ins Rudder**********************
+
+define        Uh_1H_Rudder_left                                       USB[0x1D]                                         //Rudder left
+define        Uh_1H_Rudder_right                                      USB[0x1B]                                         //Rudder right
+
+
+
+// Ins Overhead panel**********************
+
+define        Uh_1H_Nav_Lights_Dim_Bright                             R_ALT+USB[0x0F]                                   //Nav Lights Dim/Bright
+define        Uh_1H_Nav_Lights_Off                                    R_CTL+USB[0x0F]                                   //Nav Lights Off
+define        Uh_1H_Nav_Lights_Steady                                 R_ALT+R_WIN+USB[0x0F]                             //Nav Lights Steady
+define        Uh_1H_Nav_Lights_Flash                                  R_CTL+R_WIN+USB[0x0F]                             //Nav Lights Flash
+define        Uh_1H_Anti_Collision_Light_On_Off                       R_SHIFT+USB[0x0F]                                 //Anti Collision Light On/Off
+define        Uh_1H_Dome_Light_Green                                  R_ALT+R_SHIFT+USB[0x0F]                           //Dome Light Green
+define        Uh_1H_Dome_Light_Off                                    R_ALT+R_SHIFT+USB[0x12]                           //Dome Light Off
+define        Uh_1H_Dome_Light_White                                  R_ALT+R_SHIFT+USB[0x13]                           //Dome Light White
+define        Uh_1H_Overhead_Console_Light_Decrease                   L_ALT+L_WIN+USB[0x12]                             //Overhead Console Light Decrease
+define        Uh_1H_Overhead_Console_Light_Increase                   L_CTL+L_WIN+USB[0x12]                             //Overhead Console Light Increase
+define        Uh_1H_Pedestal_Light_Decrease                           L_ALT+L_WIN+USB[0x13]                             //Pedestal Light Decrease
+define        Uh_1H_Pedestal_Light_Increase                           L_CTL+L_WIN+USB[0x13]                             //Pedestal Light Increase
+define        Uh_1H_Secondary_Instrument_Light_Decrease               L_ALT+L_WIN+USB[0x16]                             //Secondary Instrument Light Decrease
+define        Uh_1H_Secondary_Instrument_Light_Increase               L_CTL+L_WIN+USB[0x16]                             //Secondary Instrument Light Increase
+define        Uh_1H_Engine_Instrument_Light_Decrease                  L_ALT+L_WIN+USB[0x08]                             //Engine Instrument Light Decrease
+define        Uh_1H_Engine_Instrument_Light_Increase                  L_CTL+L_WIN+USB[0x08]                             //Engine Instrument Light Increase
+define        Uh_1H_Copilot_Instrument_Light_Decrease                 L_ALT+L_WIN+USB[0x06]                             //Copilot Instrument Light Decrease
+define        Uh_1H_Copilot_Instrument_Light_Increase                 L_CTL+L_WIN+USB[0x06]                             //Copilot Instrument Light Increase
+define        Uh_1H_Pilot_Instrument_Light_Decrease                   L_ALT+L_CTL+USB[0x13]                             //Pilot Instrument Light Decrease
+define        Uh_1H_Pilot_Instrument_Light_Increase                   L_CTL+L_SHIFT+USB[0x13]                           //Pilot Instrument Light Increase
+define        Uh_1H_Main_generator_cover                              L_SHIFT+USB[0x0F]                                 //Main generator cover
+define        Uh_1H_Main_generator_ON_OFF                             L_SHIFT+USB[0x14]                                 //Main generator ON/OFF
+define        Uh_1H_Main_generator_RESET                              L_SHIFT+USB[0x04]                                 //Main generator RESET
+define        Uh_1H_Battery_ON_OFF                                    L_SHIFT+USB[0x13]                                 //Battery ON/OFF
+define        Uh_1H_Starter_Generator_STARTER_STBY_GEN                L_SHIFT+USB[0x1B]                                 //Starter-Generator STARTER/STBY GEN
+define        Uh_1H_Non_Ess_Bus_NORMAL_ON_MANUAL_ON                   L_SHIFT+USB[0x06]                                 //Non-Ess Bus NORMAL ON/MANUAL ON
+define        Uh_1H_Inverter_switch                                   L_SHIFT+USB[0x1C]                                 //Inverter switch
+define        Uh_1H_Inverter_SPARE_ON                                 L_SHIFT+USB[0x12]                                 //Inverter SPARE ON
+define        Uh_1H_Inverter_OFF                                      L_SHIFT+USB[0x0C]                                 //Inverter OFF
+define        Uh_1H_Inverter_MAIN_ON                                  L_SHIFT+USB[0x18]                                 //Inverter MAIN ON
+define        Uh_1H_Voltmeter_AC_switch                               L_SHIFT+USB[0x1A]                                 //Voltmeter AC switch
+define        Uh_1H_Voltmeter_AC_AB_phase                             L_SHIFT+USB[0x08]                                 //Voltmeter AC, AB phase
+define        Uh_1H_Voltmeter_AC_AC_phase                             L_SHIFT+USB[0x15]                                 //Voltmeter AC, AC phase
+define        Uh_1H_Voltmeter_AC_BC_phase                             L_SHIFT+USB[0x17]                                 //Voltmeter AC, BC phase
+define        Uh_1H_Voltmeter_DC_switch                               L_SHIFT+USB[0x16]                                 //Voltmeter DC switch
+define        Uh_1H_Voltmeter_DC_BAT                                  L_SHIFT+USB[0x07]                                 //Voltmeter DC, BAT
+define        Uh_1H_Voltmeter_DC_MAIN_GEN                             L_SHIFT+USB[0x09]                                 //Voltmeter DC, MAIN GEN
+define        Uh_1H_Voltmeter_DC_STBY_GEN                             L_SHIFT+USB[0x0A]                                 //Voltmeter DC, STBY GEN
+define        Uh_1H_Voltmeter_DC_ESS_BUS                              L_SHIFT+USB[0x0B]                                 //Voltmeter DC, ESS BUS
+define        Uh_1H_Voltmeter_DC_NON_ESS_BUS                          L_SHIFT+USB[0x0E]                                 //Voltmeter DC, NON-ESS BUS
+define        Uh_1H_Pitot_Heater                                      R_ALT+USB[0x13]                                   //Pitot Heater
+
+
+
+// Systems**********************
+
+define        Uh_1H_Cockpit_door_open_close                           R_CTL+USB[0x06]                                   //Cockpit door open/close
+define        Uh_1H_Chip_detector_XMSN                                L_ALT+USB[0x17]                                   //Chip detector XMSN
+define        Uh_1H_Chip_detector_TAIL_ROTOR                          L_WIN+USB[0x05]                                   //Chip detector TAIL ROTOR
+define        Uh_1H_Force_Trim_System_On_Off                          L_ALT+USB[0x18]                                   //Force Trim System On/Off
+define        Uh_1H_Hydraulic_control_On_Off                          L_ALT+USB[0x0C]                                   //Hydraulic control On/Off
+
+
+
+// Radio Communications**********************
+
+define        Uh_1H_Communication_menu                                USB[0x31]                                         //Communication menu
+define        Uh_1H_Flight___Complete_mission_and_RTB                 L_WIN+USB[0x08]                                   //Flight - Complete mission and RTB
+define        Uh_1H_Toggle_formation                                  L_WIN+USB[0x17]                                   //Toggle formation
+define        Uh_1H_Join_up_formation                                 L_WIN+USB[0x1C]                                   //Join up formation
+define        Uh_1H_Attack_my_target                                  L_WIN+USB[0x14]                                   //Attack my target
+define        Uh_1H_Cover_me                                          L_WIN+USB[0x1A]                                   //Cover me
+define        Uh_1H_Flight___Attack_ground_targets                    L_WIN+USB[0x0A]                                   //Flight - Attack ground targets
+define        Uh_1H_Flight___Attack_air_defenses                      L_WIN+USB[0x07]                                   //Flight - Attack air defenses
+define        Uh_1H_Switch_dialog                                     L_SHIFT+USB[0x31]                                 //Switch dialog
+
+
+
+// VOR/ILS Control panel**********************
+
+define        Uh_1H_VOR_ILS_Mode_Select__totary_                      L_SHIFT+L_ALT+USB[0x35]                           //VOR/ILS Mode Select (totary)
+define        Uh_1H_VOR_ILS_Power_OFF                                 L_SHIFT+L_ALT+USB[0x1E]                           //VOR/ILS Power OFF
+define        Uh_1H_VOR_ILS_Power_PWR                                 L_SHIFT+L_ALT+USB[0x1F]                           //VOR/ILS Power PWR
+define        Uh_1H_VOR_ILS_Power_TEST                                L_SHIFT+L_ALT+USB[0x20]                           //VOR/ILS Power TEST
+define        Uh_1H_VOR_ILS_Freq_MHz_Decrease                         L_SHIFT+L_ALT+USB[0x12]                           //VOR/ILS Freq. MHz Decrease
+define        Uh_1H_VOR_ILS_Freq_MHz_Increase                         L_SHIFT+L_ALT+USB[0x13]                           //VOR/ILS Freq. MHz Increase
+define        Uh_1H_VOR_ILS_Freq_kHz_Decrease                         L_SHIFT+L_ALT+USB[0x2F]                           //VOR/ILS Freq. kHz Decrease
+define        Uh_1H_VOR_ILS_Freq_kHz_Increase                         L_SHIFT+L_ALT+USB[0x30]                           //VOR/ILS Freq. kHz Increase
+define        Uh_1H_VOR_ILS_Volume_Decrease                           L_SHIFT+L_ALT+USB[0x2D]                           //VOR/ILS Volume Decrease
+define        Uh_1H_VOR_ILS_Volume_Increase                           L_SHIFT+L_ALT+USB[0x2E]                           //VOR/ILS Volume Increase
+
+
+
+// VHF AM Radio Control panel**********************
+
+define        Uh_1H_VHF_AM_Radio_Power_ON_OFF                         L_CTL+L_SHIFT+USB[0x26]                           //VHF AM Radio Power ON/OFF
+define        Uh_1H_VHF_AM_Radio_Test                                 L_CTL+L_SHIFT+USB[0x0C]                           //VHF AM Radio Test
+define        Uh_1H_VHF_AM_Radio_Freq_MHz_Decrease                    L_CTL+L_SHIFT+USB[0x12]                           //VHF AM Radio Freq. MHz Decrease
+define        Uh_1H_VHF_AM_Radio_Freq_MHz_Increase                    L_CTL+L_SHIFT+USB[0x13]                           //VHF AM Radio Freq. MHz Increase
+define        Uh_1H_VHF_AM_Radio_Freq_kHz_Decrease                    L_CTL+L_SHIFT+USB[0x2F]                           //VHF AM Radio Freq. kHz Decrease
+define        Uh_1H_VHF_AM_Radio_Freq_kHz_Increase                    L_CTL+L_SHIFT+USB[0x30]                           //VHF AM Radio Freq. kHz Increase
+define        Uh_1H_VHF_AM_Radio_Volume_Decrease                      L_CTL+L_SHIFT+USB[0x2D]                           //VHF AM Radio Volume Decrease
+define        Uh_1H_VHF_AM_Radio_Volume_Increase                      L_CTL+L_SHIFT+USB[0x2E]                           //VHF AM Radio Volume Increase
+
+
+
+// VHF FM Radio Control panel**********************
+
+define        Uh_1H_VHF_FM_Radio_Squelch_Select__rotary_              R_CTL+R_ALT+USB[0x22]                             //VHF FM Radio Squelch Select (rotary)
+define        Uh_1H_VHF_FM_Radio_Squelch_DIS                          R_CTL+R_ALT+USB[0x23]                             //VHF FM Radio Squelch DIS
+define        Uh_1H_VHF_FM_Radio_Squelch_CARR                         R_CTL+R_ALT+USB[0x24]                             //VHF FM Radio Squelch CARR
+define        Uh_1H_VHF_FM_Radio_Squelch_TONE                         R_CTL+R_ALT+USB[0x25]                             //VHF FM Radio Squelch TONE
+define        Uh_1H_VHF_FM_Radio_Mode_Select__rotary_                 R_CTL+R_ALT+USB[0x35]                             //VHF FM Radio Mode Select (rotary)
+define        Uh_1H_VHF_FM_Radio_Mode_OFF                             R_CTL+R_ALT+USB[0x1E]                             //VHF FM Radio Mode OFF
+define        Uh_1H_VHF_FM_Radio_Mode_TR                              R_CTL+R_ALT+USB[0x1F]                             //VHF FM Radio Mode TR
+define        Uh_1H_VHF_FM_Radio_Mode_RETRAN                          R_CTL+R_ALT+USB[0x20]                             //VHF FM Radio Mode RETRAN
+define        Uh_1H_VHF_FM_Radio_Mode_HOME                            R_CTL+R_ALT+USB[0x21]                             //VHF FM Radio Mode HOME
+define        Uh_1H_VHF_FM_Radio_Volume_Decrease                      R_CTL+R_ALT+USB[0x2D]                             //VHF FM Radio Volume Decrease
+define        Uh_1H_VHF_FM_Radio_Volume_Increase                      R_CTL+R_ALT+USB[0x2E]                             //VHF FM Radio Volume Increase
+define        Uh_1H_VHF_FM_Radio_50kHz_Decrease                       R_CTL+R_ALT+USB[0x18]                             //VHF FM Radio 50kHz Decrease
+define        Uh_1H_VHF_FM_Radio_50kHz_Increase                       R_CTL+R_ALT+USB[0x0C]                             //VHF FM Radio 50kHz Increase
+define        Uh_1H_VHF_FM_Radio_100kHz_Decrease                      R_CTL+R_ALT+USB[0x17]                             //VHF FM Radio 100kHz Decrease
+define        Uh_1H_VHF_FM_Radio_100kHz_Increase                      R_CTL+R_ALT+USB[0x1C]                             //VHF FM Radio 100kHz Increase
+define        Uh_1H_VHF_FM_Radio_1MHz_Decrease                        R_CTL+R_ALT+USB[0x08]                             //VHF FM Radio 1MHz Decrease
+define        Uh_1H_VHF_FM_Radio_1MHz_Increase                        R_CTL+R_ALT+USB[0x15]                             //VHF FM Radio 1MHz Increase
+define        Uh_1H_VHF_FM_Radio_10MHz_Decrease                       R_CTL+R_ALT+USB[0x14]                             //VHF FM Radio 10MHz Decrease
+define        Uh_1H_VHF_FM_Radio_10MHz_Increase                       R_CTL+R_ALT+USB[0x1A]                             //VHF FM Radio 10MHz Increase
+
+
+
+// UHF Radio Control panel**********************
+
+define        Uh_1H_UHF_Radio_Volume_Decrease                         L_CTL+L_SHIFT+USB[0x33]                           //UHF Radio Volume Decrease
+define        Uh_1H_UHF_Radio_Volume_Increase                         L_CTL+L_SHIFT+USB[0x34]                           //UHF Radio Volume Increase
+define        Uh_1H_UHF_Radio_Squelch_On_Off                          L_CTL+L_SHIFT+USB[0x14]                           //UHF Radio Squelch On/Off
+define        Uh_1H_UHF_Radio_Mode_Select_rotary_                     L_CTL+L_SHIFT+USB[0x35]                           //UHF Radio Mode Select(rotary)
+define        Uh_1H_UHF_Radio_Mode_OFF                                L_CTL+L_SHIFT+USB[0x1E]                           //UHF Radio Mode OFF
+define        Uh_1H_UHF_Radio_Mode_T_R                                L_CTL+L_SHIFT+USB[0x1F]                           //UHF Radio Mode T/R
+define        Uh_1H_UHF_Radio_Mode_T_R_plus_G                         L_CTL+L_SHIFT+USB[0x20]                           //UHF Radio Mode T/R+G
+define        Uh_1H_UHF_Radio_Mode_ADF                                L_CTL+L_SHIFT+USB[0x21]                           //UHF Radio Mode ADF
+define        Uh_1H_UHF_Radio_Freq_Mode_Select_rotary_                L_CTL+L_SHIFT+USB[0x22]                           //UHF Radio Freq. Mode Select(rotary)
+define        Uh_1H_UHF_Radio_Freq_Mode_PRESET                        L_CTL+L_SHIFT+USB[0x23]                           //UHF Radio Freq. Mode PRESET
+define        Uh_1H_UHF_Radio_Freq_Mode_MAN                           L_CTL+L_SHIFT+USB[0x24]                           //UHF Radio Freq. Mode MAN
+define        Uh_1H_UHF_Radio_Freq_Mode_GD_XMIT                       L_CTL+L_SHIFT+USB[0x25]                           //UHF Radio Freq. Mode GD XMIT
+define        Uh_1H_UHF_Preset_Channel_Decrease                       L_CTL+L_SHIFT+USB[0x04]                           //UHF Preset Channel Decrease
+define        Uh_1H_UHF_Preset_Channel_Increase                       L_CTL+L_SHIFT+USB[0x16]                           //UHF Preset Channel Increase
+define        Uh_1H_UHF_Radio_10MHz_Decrease                          L_CTL+L_SHIFT+USB[0x1A]                           //UHF Radio 10MHz Decrease
+define        Uh_1H_UHF_Radio_10MHz_Increase                          L_CTL+L_SHIFT+USB[0x08]                           //UHF Radio 10MHz Increase
+define        Uh_1H_UHF_Radio_1MHz_Decrease                           L_CTL+L_SHIFT+USB[0x15]                           //UHF Radio 1MHz Decrease
+define        Uh_1H_UHF_Radio_1MHz_Increase                           L_CTL+L_SHIFT+USB[0x17]                           //UHF Radio 1MHz Increase
+define        Uh_1H_UHF_Radio_50kHz_Decrease                          L_CTL+L_SHIFT+USB[0x1C]                           //UHF Radio 50kHz Decrease
+define        Uh_1H_UHF_Radio_50kHz_Increase                          L_CTL+L_SHIFT+USB[0x18]                           //UHF Radio 50kHz Increase
+
+
+
+// ADF Set Control panel**********************
+
+define        Uh_1H_ADF_Mode_Select__rotary_                          L_CTL+L_ALT+USB[0x35]                             //ADF Mode Select (rotary)
+define        Uh_1H_ADF_Mode_OFF                                      L_CTL+L_ALT+USB[0x1E]                             //ADF Mode OFF
+define        Uh_1H_ADF_Mode_ADF                                      L_CTL+L_ALT+USB[0x1F]                             //ADF Mode ADF
+define        Uh_1H_ADF_Mode_ANT                                      L_CTL+L_ALT+USB[0x20]                             //ADF Mode ANT
+define        Uh_1H_ADF_Mode_LOOP                                     L_CTL+L_ALT+USB[0x21]                             //ADF Mode LOOP
+define        Uh_1H_ADF_Band_Select__rotary_                          L_CTL+L_ALT+USB[0x22]                             //ADF Band Select (rotary)
+define        Uh_1H_ADF_Band_190_400_kHz                              L_CTL+L_ALT+USB[0x23]                             //ADF Band 190-400 kHz
+define        Uh_1H_ADF_Band_400_850_kHz                              L_CTL+L_ALT+USB[0x24]                             //ADF Band 400-850 kHz
+define        Uh_1H_ADF_Band_850_1750_kHz                             L_CTL+L_ALT+USB[0x25]                             //ADF Band 850-1750 kHz
+define        Uh_1H_ADF_Frequency_Decrease                            L_CTL+L_ALT+USB[0x2F]                             //ADF Frequency Decrease
+define        Uh_1H_ADF_Frequency_Increase                            L_CTL+L_ALT+USB[0x30]                             //ADF Frequency Increase
+define        Uh_1H_ADF_Gain_Decrease                                 L_CTL+L_ALT+USB[0x2D]                             //ADF Gain Decrease
+define        Uh_1H_ADF_Gain_Increase                                 L_CTL+L_ALT+USB[0x2E]                             //ADF Gain Increase
+define        Uh_1H_ADF_Loop_Left_High                                L_CTL+L_ALT+USB[0x1D]                             //ADF Loop Left High
+define        Uh_1H_ADF_Loop_Left_Low                                 L_CTL+L_ALT+USB[0x1B]                             //ADF Loop Left Low
+define        Uh_1H_ADF_Loop_Right_Low                                L_CTL+L_ALT+USB[0x06]                             //ADF Loop Right Low
+define        Uh_1H_ADF_Loop_Right_High                               L_CTL+L_ALT+USB[0x19]                             //ADF Loop Right High
+define        Uh_1H_ADF_BFO_Switch                                    L_CTL+L_ALT+USB[0x14]                             //ADF BFO Switch
+
+
+
+// Intercom Control Panel**********************
+
+define        Uh_1H_Intercom_Volume_Decrease                          R_CTL+R_SHIFT+USB[0x2D]                           //Intercom Volume Decrease
+define        Uh_1H_Intercom_Volume_Increase                          R_CTL+R_SHIFT+USB[0x2E]                           //Intercom Volume Increase
+define        Uh_1H_Intercom_Mode_PVT                                 R_CTL+R_SHIFT+USB[0x1A]                           //Intercom Mode PVT
+define        Uh_1H_Intercom_Mode_INT                                 R_CTL+R_SHIFT+USB[0x08]                           //Intercom Mode INT
+define        Uh_1H_Intercom_Mode_1                                   R_CTL+R_SHIFT+USB[0x15]                           //Intercom Mode 1
+define        Uh_1H_Intercom_Mode_2                                   R_CTL+R_SHIFT+USB[0x17]                           //Intercom Mode 2
+define        Uh_1H_Intercom_Mode_3                                   R_CTL+R_SHIFT+USB[0x1C]                           //Intercom Mode 3
+define        Uh_1H_Intercom_Mode_4                                   R_CTL+R_SHIFT+USB[0x18]                           //Intercom Mode 4
+define        Uh_1H_Intercom_Mode_Selector__rotary_                   R_CTL+R_SHIFT+USB[0x14]                           //Intercom Mode Selector (rotary)
+define        Uh_1H_Intercom_Receiver__1                              R_CTL+R_SHIFT+USB[0x1E]                           //Intercom Receiver #1
+define        Uh_1H_Intercom_Receiver__2                              R_CTL+R_SHIFT+USB[0x1F]                           //Intercom Receiver #2
+define        Uh_1H_Intercom_Receiver__3                              R_CTL+R_SHIFT+USB[0x20]                           //Intercom Receiver #3
+define        Uh_1H_Intercom_Receiver__4                              R_CTL+R_SHIFT+USB[0x21]                           //Intercom Receiver #4
+define        Uh_1H_Intercom_Receiver_INT                             R_CTL+R_SHIFT+USB[0x22]                           //Intercom Receiver INT
+define        Uh_1H_Intercom_Receiver_NAV                             R_CTL+R_SHIFT+USB[0x23]                           //Intercom Receiver NAV
+
+
+
+// Systems**********************
+
+define        Uh_1H_GMC_Operating_Mode_Slave_Gyro                     L_CTL+L_ALT+USB[0x0A]                             //GMC Operating Mode Slave/Gyro
+define        Uh_1H_GMC_Manual_Heading_Decrease                       L_CTL+L_SHIFT+USB[0x37]                           //GMC Manual Heading Decrease
+define        Uh_1H_GMC_Manual_Heading_Increase                       L_CTL+L_SHIFT+USB[0x36]                           //GMC Manual Heading Increase
+define        Uh_1H_GMC_Pointer__1_ADF_VOR                            L_CTL+USB[0x0A]                                   //GMC Pointer #1 ADF/VOR
+define        Uh_1H_GMC_Synchronizing_o                               L_CTL+L_ALT+USB[0x37]                             //GMC Synchronizing o
+define        Uh_1H_GMC_Synchronizing__Increase                       L_CTL+L_ALT+USB[0x36]                             //GMC Synchronizing +
+define        Uh_1H_Course_Indicator_OBS_Decrease                     L_CTL+USB[0x37]                                   //Course Indicator OBS Decrease
+define        Uh_1H_Course_Indicator_OBS_Increase                     L_CTL+USB[0x36]                                   //Course Indicator OBS Increase
+define        Uh_1H_Marker_Beacon_Volume_Decrease                     L_SHIFT+USB[0x37]                                 //Marker Beacon Volume Decrease
+define        Uh_1H_Marker_Beacon_Volume_Increase                     L_SHIFT+USB[0x33]                                 //Marker Beacon Volume Increase
+define        Uh_1H_Marker_Beacon_Sensitivity_High_Low                L_SHIFT+USB[0x19]                                 //Marker Beacon Sensitivity High/Low
+
+
+
+// Front Dash**********************
+
+define        Uh_1H_Clock_Winding_Adjust                              R_SHIFT+USB[0x14]                                 //Clock Winding/Adjust
+define        Uh_1H_Clock_Winding_Adjust_Decrease                     R_CTL+USB[0x14]                                   //Clock Winding/Adjust Decrease
+define        Uh_1H_Clock_Winding_Adjust_Increase                     R_ALT+USB[0x14]                                   //Clock Winding/Adjust Increase
+define        Uh_1H_Altimeter_Copilot_Pressure_Decrease               L_CTL+USB[0x05]                                   //Altimeter Copilot, Pressure Decrease
+define        Uh_1H_Altimeter_Copilot_Pressure_Increase               L_SHIFT+USB[0x05]                                 //Altimeter Copilot, Pressure Increase
+define        Uh_1H_Altimeter_Pilot_Pressure_Decrease                 R_CTL+USB[0x05]                                   //Altimeter Pilot, Pressure Decrease
+define        Uh_1H_Altimeter_Pilot_Pressure_Increase                 R_SHIFT+USB[0x05]                                 //Altimeter Pilot, Pressure Increase
+define        Uh_1H_Attitude_Indicator_pilot_Pitch_Decrease           L_CTL+USB[0x11]                                   //Attitude Indicator pilot, Pitch Decrease
+define        Uh_1H_Attitude_Indicator_pilot_Pitch_Increase           L_SHIFT+USB[0x11]                                 //Attitude Indicator pilot, Pitch Increase
+define        Uh_1H_Attitude_Indicator_pilot_Roll_Decrease            L_CTL+USB[0x10]                                   //Attitude Indicator pilot, Roll Decrease
+define        Uh_1H_Attitude_Indicator_pilot_Roll_Increase            L_SHIFT+USB[0x10]                                 //Attitude Indicator pilot, Roll Increase
+define        Uh_1H_Copilot_Gyro_Pitch_Decrease                       R_CTL+USB[0x09]                                   //Copilot Gyro, Pitch Decrease
+define        Uh_1H_Copilot_Gyro_Pitch_Increase                       R_SHIFT+USB[0x09]                                 //Copilot Gyro, Pitch Increase
+define        Uh_1H_Copilot_Gyro_Cage                                 R_SHIFT+USB[0x0A]                                 //Copilot Gyro Cage
+define        Uh_1H_Radar_Altimeter_Test                              R_ALT+USB[0x15]                                   //Radar Altimeter, Test
+define        Uh_1H_Radar_Altimeter_Hight_Altitude_Decrease           R_ALT+R_SHIFT+USB[0x15]                           //Radar Altimeter, Hight Altitude Decrease
+define        Uh_1H_Radar_Altimeter_Hight_Altitude_Increase           R_CTL+R_WIN+USB[0x15]                             //Radar Altimeter, Hight Altitude Increase
+define        Uh_1H_Radar_Altimeter_Low_Altitude_Decrease             R_ALT+R_WIN+USB[0x15]                             //Radar Altimeter, Low Altitude Decrease
+define        Uh_1H_Radar_Altimeter_Low_Altitude_Increase             R_SHIFT+R_WIN+USB[0x15]                           //Radar Altimeter, Low Altitude Increase
+
+
+
+// Kneeboard**********************
+
+define        Uh_1H_Kneeboard_Next_Page                               USB[0x30]                                         //Kneeboard Next Page
+define        Uh_1H_Kneeboard_Previous_Page                           USB[0x2F]                                         //Kneeboard Previous Page
+define        Uh_1H_Kneeboard_ON_OFF                                  R_SHIFT+USB[0x0E]                                 //Kneeboard ON/OFF
+define        Uh_1H_Kneeboard_glance_view                             USB[0x0E]                                         //Kneeboard glance view
+define        Uh_1H_Kneeboard_current_position_mark_point             R_CTL+USB[0x0E]                                   //Kneeboard current position mark point
+
+
+
+// Sensors**********************
+
+define        Uh_1H_Night_Vision_Goggles                              R_SHIFT+USB[0x0B]                                 //Night Vision Goggles
+define        Uh_1H_Night_Vision_Goggles_Gain_Up                      R_SHIFT+R_CTL+USB[0x0B]                           //Night Vision Goggles Gain Up
+define        Uh_1H_Night_Vision_Goggles_Gain_Down                    R_SHIFT+R_ALT+USB[0x0B]                           //Night Vision Goggles Gain Down
+
+
+
+// Ins Overhead panel**********************
+
+define        Uh_1H_Wiper_Mode_Selector_Down                          USB[0x16]                                         //Wiper Mode Selector Down
+define        Uh_1H_Wiper_Mode_Selector_Up                            USB[0x1A]                                         //Wiper Mode Selector Up
+define        Uh_1H_Windshield_Mode_Decrease                          R_ALT+USB[0x36]                                   //Windshield Mode Decrease
+define        Uh_1H_Windshield_Mode_Increase                          R_ALT+USB[0x37]                                   //Windshield Mode Increase
+
+
+
+// Systems**********************
+
+define        Uh_1H_Leave_Helicopter__3_times_                        L_CTL+USB[0x08]                                   //Leave Helicopter (3 times)
+
+
+
+// View Cockpit**********************
+
+define        Uh_1H_Set_Pilot_Seat                                    USB[0x1E]                                         //Set Pilot Seat
+define        Uh_1H_Set_Operator_Seat                                 USB[0x1F]                                         //Set Operator Seat
+define        Uh_1H_Set_Right_Gunner_Seat                             USB[0x21]                                         //Set Right Gunner Seat
+define        Uh_1H_Set_Left_Gunner_Seat                              USB[0x20]                                         //Set Left Gunner Seat
+
+
+
+// Circuit breaker panel**********************
+
+define        Uh_1H_Radar_Altimeter_Power                             R_SHIFT+USB[0x15]                                 //Radar Altimeter Power
+
+
+
+// Gunners AI Panel**********************
+
+define        Uh_1H_AI_Panel_Show_Hide                                L_WIN+USB[0x0B]                                   //AI Panel Show/Hide
+define        Uh_1H_AI_Left_ROE_Iterate                               L_CTL+USB[0x20]                                   //AI Left ROE Iterate
+define        Uh_1H_AI_Left_Burst_Switch                              L_SHIFT+USB[0x20]                                 //AI Left Burst Switch
+define        Uh_1H_AI_Operator_ROE_Iterate                           L_CTL+USB[0x1F]                                   //AI Operator ROE Iterate
+define        Uh_1H_AI_Operator_Burst_Switch                          L_SHIFT+USB[0x1F]                                 //AI Operator Burst Switch
+define        Uh_1H_AI_Right_ROE_Iterate                              L_CTL+USB[0x21]                                   //AI Right ROE Iterate
+define        Uh_1H_AI_Right_Burst_Switch                             L_SHIFT+USB[0x21]                                 //AI Right Burst Switch
+
+
+
+// Pedestal**********************
+
+define        Uh_1H_Flare_Dispense                                    L_CTL+USB[0x06]                                   //Flare Dispense
+
+
+
+// External Cargo**********************
+
+define        Uh_1H_External_Cargo_Indicator                          R_CTL+R_SHIFT+USB[0x13]                           //External Cargo Indicator

@@ -1,0 +1,300 @@
+
+
+
+// Cheat**********************
+
+define        F_86_Auto_execute_full_start_procedure                  L_WIN+USB[0x4A]                                   //Auto execute full start procedure
+define        F_86_Auto_execute_full_stop_procedure                   L_WIN+USB[0x4D]                                   //Auto execute full stop procedure
+define        F_86_Active_Pause                                       L_SHIFT+L_WIN+USB[0x48]                           //Active Pause
+
+
+
+// Debug**********************
+
+define        F_86_Toggle_Console                                     L_ALT+USB[0x35]                                   //Toggle Console
+define        F_86_Restart_Mission                                    L_SHIFT+USB[0x15]                                 //Restart Mission
+
+
+
+// General**********************
+
+define        F_86_End_mission                                        USB[0x29]                                         //End mission
+define        F_86_Pause                                              USB[0x48]                                         //Pause
+define        F_86_Time_accelerate                                    L_CTL+USB[0x1D]                                   //Time accelerate
+define        F_86_Time_decelerate                                    L_ALT+USB[0x1D]                                   //Time decelerate
+define        F_86_Time_normal                                        L_SHIFT+USB[0x1D]                                 //Time normal
+define        F_86_Multiplayer_chat___mode_All                        USB[0x2B]                                         //Multiplayer chat - mode All
+define        F_86_Multiplayer_chat___mode_Allies                     L_CTL+USB[0x2B]                                   //Multiplayer chat - mode Allies
+define        F_86_Info_bar_view_toggle                               L_CTL+USB[0x1C]                                   //Info bar view toggle
+define        F_86_Get_new_plane___respawn                            R_CTL+R_SHIFT+USB[0x2B]                           //Get new plane - respawn
+define        F_86_Jump_into_selected_aircraft                        R_ALT+USB[0x0D]                                   //Jump into selected aircraft
+define        F_86_Screenshot                                         USB[0x46]                                         //Screenshot
+define        F_86_Frame_rate_counter___Service_info                  R_CTL+USB[0x48]                                   //Frame rate counter - Service info
+define        F_86_Info_bar_coordinate_units_toogle                   L_ALT+USB[0x1C]                                   //Info bar coordinate units toogle
+define        F_86_Mouse_cursor_cockpit_mode                          L_ALT+USB[0x06]                                   //Mouse cursor cockpit mode
+define        F_86_Sound_On_Off                                       L_CTL+USB[0x16]                                   //Sound On/Off
+define        F_86_View_briefing_on_off                               L_ALT+USB[0x05]                                   //View briefing on/off
+define        F_86_Show_controls_indicator                            R_CTL+USB[0x28]                                   //Show controls indicator
+
+
+
+// Flight Control**********************
+
+define        F_86_Aircraft_Down                                      USB[0x52]                                         //Aircraft Down
+define        F_86_Aircraft_Up                                        USB[0x51]                                         //Aircraft Up
+define        F_86_Aircraft_Bank_Left                                 USB[0x50]                                         //Aircraft Bank Left
+define        F_86_Aircraft_Bank_Right                                USB[0x4F]                                         //Aircraft Bank Right
+define        F_86_Aircraft_Rudder_Left                               USB[0x1D]                                         //Aircraft Rudder Left
+define        F_86_Aircraft_Rudder_Right                              USB[0x1B]                                         //Aircraft Rudder Right
+define        F_86_Trim_Up                                            R_CTL+USB[0x37]                                   //Trim Up
+define        F_86_Trim_Down                                          R_CTL+USB[0x33]                                   //Trim Down
+define        F_86_Trim_Left                                          R_CTL+USB[0x36]                                   //Trim Left
+define        F_86_Trim_Right                                         R_CTL+USB[0x38]                                   //Trim Right
+define        F_86_Trim_Left_Rudder                                   R_CTL+USB[0x1D]                                   //Trim Left Rudder
+define        F_86_Trim_Right_Rudder                                  R_CTL+USB[0x1B]                                   //Trim Right Rudder
+define        F_86_Thrust_Smoothly_Up                                 USB[0x57]                                         //Thrust Smoothly Up
+define        F_86_Thrust_Smoothly_Down                               USB[0x56]                                         //Thrust Smoothly Down
+define        F_86_Thrust_Step_Up                                     USB[0x4B]                                         //Thrust Step Up
+define        F_86_Thrust_Step_Down                                   USB[0x4E]                                         //Thrust Step Down
+
+
+
+// Systems**********************
+
+define        F_86_Airbrake                                           USB[0x05]                                         //Airbrake
+define        F_86_Airbrake_On                                        L_SHIFT+USB[0x05]                                 //Airbrake On
+define        F_86_Airbrake_Off                                       L_CTL+USB[0x05]                                   //Airbrake Off
+define        F_86_Smoke                                              USB[0x17]                                         //Smoke
+define        F_86_Flaps_Up_Down                                      USB[0x09]                                         //Flaps Up/Down
+define        F_86_Flaps_Down                                         L_SHIFT+USB[0x09]                                 //Flaps Down
+define        F_86_Flaps_Up                                           L_CTL+USB[0x09]                                   //Flaps Up
+define        F_86_Flaps_Stop                                         L_ALT+USB[0x09]                                   //Flaps Stop
+define        F_86_Landing_Gear_Up_Down                               USB[0x0A]                                         //Landing Gear Up/Down
+define        F_86_Landing_Gear_Up                                    L_CTL+USB[0x0A]                                   //Landing Gear Up
+define        F_86_Landing_Gear_Down                                  L_SHIFT+USB[0x0A]                                 //Landing Gear Down
+define        F_86_Wheel_Brake_On                                     USB[0x1A]                                         //Wheel Brake On
+define        F_86_Wheel_Brake_Left_On_Off                            L_CTL+USB[0x04]                                   //Wheel Brake Left On/Off
+define        F_86_Wheel_Brake_Right_On_Off                           L_ALT+USB[0x04]                                   //Wheel Brake Right On/Off
+define        F_86_Weapons_Jettison                                   L_CTL+USB[0x1A]                                   //Weapons Jettison
+define        F_86_Canopy_Open_Close                                  L_CTL+USB[0x06]                                   //Canopy Open/Close
+define        F_86_Manual_Canopy_Jettison                             L_SHIFT+USB[0x06]                                 //Manual Canopy Jettison
+define        F_86_Eject__3_times_                                    L_CTL+USB[0x08]                                   //Eject (3 times)
+define        F_86_Flight_Clock_Start_Stop_Reset                      R_SHIFT+USB[0x06]                                 //Flight Clock Start/Stop/Reset
+
+
+
+// Communications**********************
+
+define        F_86_Flight___Complete_mission_and_RTB                  L_WIN+USB[0x08]                                   //Flight - Complete mission and RTB
+define        F_86_Flight___Complete_mission_and_rejoin               L_WIN+USB[0x15]                                   //Flight - Complete mission and rejoin
+define        F_86_Toggle_Formation                                   L_WIN+USB[0x17]                                   //Toggle Formation
+define        F_86_Join_Up_Formation                                  L_WIN+USB[0x1C]                                   //Join Up Formation
+define        F_86_Attack_My_Target                                   L_WIN+USB[0x14]                                   //Attack My Target
+define        F_86_Cover_Me                                           L_WIN+USB[0x1A]                                   //Cover Me
+define        F_86_Request_AWACS_Home_Airbase                         L_WIN+USB[0x18]                                   //Request AWACS Home Airbase
+define        F_86_Flight___Attack_ground_targets                     L_WIN+USB[0x0A]                                   //Flight - Attack ground targets
+define        F_86_Flight___Attack_air_defenses                       L_WIN+USB[0x07]                                   //Flight - Attack air defenses
+define        F_86_Communication_menu                                 USB[0x31]                                         //Communication menu
+define        F_86_Switch_dialog                                      L_SHIFT+USB[0x31]                                 //Switch dialog
+define        F_86_Switch_to_main_menu                                L_CTL+USB[0x31]                                   //Switch to main menu
+define        F_86_Microphone_Button                                  R_ALT+USB[0x31]                                   //Microphone Button
+
+
+
+// View**********************
+
+define        F_86_View_Left_slow                                     USB[0x5C]                                         //View Left slow
+define        F_86_View_Right_slow                                    USB[0x5E]                                         //View Right slow
+define        F_86_View_Up_slow                                       USB[0x60]                                         //View Up slow
+define        F_86_View_Down_slow                                     USB[0x5A]                                         //View Down slow
+define        F_86_View_Up_Right_slow                                 USB[0x61]                                         //View Up Right slow
+define        F_86_View_Down_Right_slow                               USB[0x5B]                                         //View Down Right slow
+define        F_86_View_Down_Left_slow                                USB[0x59]                                         //View Down Left slow
+define        F_86_View_Up_Left_slow                                  USB[0x5F]                                         //View Up Left slow
+define        F_86_View_Center                                        USB[0x5D]                                         //View Center
+define        F_86_Zoom_in_slow                                       USB[0x55]                                         //Zoom in slow
+define        F_86_Zoom_out_slow                                      USB[0x54]                                         //Zoom out slow
+define        F_86_Zoom_normal                                        USB[0x58]                                         //Zoom normal
+define        F_86_Zoom_external_in                                   R_CTL+USB[0x55]                                   //Zoom external in
+define        F_86_Zoom_external_out                                  R_CTL+USB[0x54]                                   //Zoom external out
+define        F_86_Zoom_external_normal                               R_CTL+USB[0x58]                                   //Zoom external normal
+define        F_86_F11_Camera_moving_forward                          L_ALT+USB[0x55]                                   //F11 Camera moving forward
+define        F_86_F11_Camera_moving_backward                         L_ALT+USB[0x54]                                   //F11 Camera moving backward
+define        F_86_F1_Cockpit_view                                    USB[0x3A]                                         //F1 Cockpit view
+define        F_86_F1_Natural_head_movement_view                      L_CTL+USB[0x3A]                                   //F1 Natural head movement view
+define        F_86_F1_HUD_only_view_switch                            L_ALT+USB[0x3A]                                   //F1 HUD only view switch
+define        F_86_F2_Aircraft_view                                   USB[0x3B]                                         //F2 Aircraft view
+define        F_86_F2_View_own_aircraft                               L_CTL+USB[0x3B]                                   //F2 View own aircraft
+define        F_86_F2_Toggle_camera_position                          R_ALT+USB[0x3B]                                   //F2 Toggle camera position
+define        F_86_F2_Toggle_local_camera_control                     L_ALT+USB[0x3B]                                   //F2 Toggle local camera control
+define        F_86_F3_Fly_By_view                                     USB[0x3C]                                         //F3 Fly-By view
+define        F_86_F3_Fly_By_jump_view                                L_CTL+USB[0x3C]                                   //F3 Fly-By jump view
+define        F_86_F4_Look_back_view                                  USB[0x3D]                                         //F4 Look back view
+define        F_86_F4_Chase_view                                      L_CTL+USB[0x3D]                                   //F4 Chase view
+define        F_86_F5_nearest_AC_view                                 USB[0x3E]                                         //F5 nearest AC view
+define        F_86_F5_Ground_hostile_view                             L_CTL+USB[0x3E]                                   //F5 Ground hostile view
+define        F_86_F6_Released_weapon_view                            USB[0x3F]                                         //F6 Released weapon view
+define        F_86_F6_Weapon_to_target_view                           L_CTL+USB[0x3F]                                   //F6 Weapon to target view
+define        F_86_F7_Ground_unit_view                                USB[0x40]                                         //F7 Ground unit view
+define        F_86_F8_Target_view                                     USB[0x41]                                         //F8 Target view
+define        F_86_F8_Player_targets_All_targets_filter               R_CTL+USB[0x41]                                   //F8 Player targets/All targets filter
+define        F_86_F9_Ship_view                                       USB[0x42]                                         //F9 Ship view
+define        F_86_F9_Landing_signal_officer_view                     L_ALT+USB[0x42]                                   //F9 Landing signal officer view
+define        F_86_F10_Theater_map_view                               USB[0x43]                                         //F10 Theater map view
+define        F_86_F10_Jump_to_theater_map_view_over_current_point    L_CTL+USB[0x43]                                   //F10 Jump to theater map view over current point
+define        F_86_F11_Airport_free_camera                            USB[0x44]                                         //F11 Airport free camera
+define        F_86_F11_Jump_to_free_camera                            L_CTL+USB[0x44]                                   //F11 Jump to free camera
+define        F_86_F12_Static_object_view                             USB[0x45]                                         //F12 Static object view
+define        F_86_F12_Civil_traffic_view                             L_CTL+USB[0x45]                                   //F12 Civil traffic view
+define        F_86_F12_Trains_cars_toggle                             L_SHIFT+USB[0x45]                                 //F12 Trains/cars toggle
+define        F_86_F1_Head_shift_movement_on___off                    L_WIN+USB[0x3A]                                   //F1 Head shift movement on / off
+define        F_86_Keyboard_Rate_Fast                                 L_SHIFT+USB[0x30]                                 //Keyboard Rate Fast
+define        F_86_Keyboard_Rate_Slow                                 L_CTL+USB[0x30]                                   //Keyboard Rate Slow
+define        F_86_Keyboard_Rate_Normal                               L_ALT+USB[0x30]                                   //Keyboard Rate Normal
+define        F_86_Mouse_Rate_Fast                                    L_SHIFT+USB[0x2F]                                 //Mouse Rate Fast
+define        F_86_Mouse_Rate_Slow                                    L_CTL+USB[0x2F]                                   //Mouse Rate Slow
+define        F_86_Mouse_Rate_Normal                                  L_ALT+USB[0x2F]                                   //Mouse Rate Normal
+
+
+
+// View Cockpit**********************
+
+define        F_86_Cockpit_panel_view_in                              USB[0x62]                                         //Cockpit panel view in
+define        F_86_Cockpit_panel_view_toggle                          R_CTL+USB[0x62]                                   //Cockpit panel view toggle
+define        F_86_Save_Cockpit_Angles                                R_ALT+USB[0x62]                                   //Save Cockpit Angles
+define        F_86_View_up                                            R_SHIFT+USB[0x60]                                 //View up
+define        F_86_View_down                                          R_SHIFT+USB[0x5A]                                 //View down
+define        F_86_View_left                                          R_SHIFT+USB[0x5C]                                 //View left
+define        F_86_View_right                                         R_SHIFT+USB[0x5E]                                 //View right
+define        F_86_View_up_right                                      R_SHIFT+USB[0x61]                                 //View up right
+define        F_86_View_down_right                                    R_SHIFT+USB[0x5B]                                 //View down right
+define        F_86_View_down_left                                     R_SHIFT+USB[0x59]                                 //View down left
+define        F_86_View_up_left                                       R_SHIFT+USB[0x5F]                                 //View up left
+define        F_86_Cockpit_Camera_Move_Up                             R_CTL+R_SHIFT+USB[0x60]                           //Cockpit Camera Move Up
+define        F_86_Cockpit_Camera_Move_Down                           R_CTL+R_SHIFT+USB[0x5A]                           //Cockpit Camera Move Down
+define        F_86_Cockpit_Camera_Move_Left                           R_CTL+R_SHIFT+USB[0x5C]                           //Cockpit Camera Move Left
+define        F_86_Cockpit_Camera_Move_Right                          R_CTL+R_SHIFT+USB[0x5E]                           //Cockpit Camera Move Right
+define        F_86_Cockpit_Camera_Move_Forward                        R_CTL+R_SHIFT+USB[0x55]                           //Cockpit Camera Move Forward
+define        F_86_Cockpit_Camera_Move_Back                           R_CTL+R_SHIFT+USB[0x54]                           //Cockpit Camera Move Back
+define        F_86_Cockpit_Camera_Move_Center                         R_CTL+R_SHIFT+USB[0x5D]                           //Cockpit Camera Move Center
+define        F_86_Glance_up                                          R_CTL+USB[0x60]                                   //Glance up
+define        F_86_Glance_down                                        R_CTL+USB[0x5A]                                   //Glance down
+define        F_86_Glance_left                                        R_CTL+USB[0x5C]                                   //Glance left
+define        F_86_Glance_right                                       R_CTL+USB[0x5E]                                   //Glance right
+define        F_86_Glance_up_left                                     R_CTL+USB[0x5F]                                   //Glance up-left
+define        F_86_Glance_down_left                                   R_CTL+USB[0x59]                                   //Glance down-left
+define        F_86_Glance_up_right                                    R_CTL+USB[0x61]                                   //Glance up-right
+define        F_86_Glance_down_right                                  R_CTL+USB[0x5B]                                   //Glance down-right
+define        F_86_Camera_pan_mode_toggle                             L_ALT+L_SHIFT+USB[0x1D]                           //Camera pan mode toggle
+define        F_86_Camera_snap_view_up                                R_ALT+USB[0x60]                                   //Camera snap view up
+define        F_86_Camera_snap_view_down                              R_ALT+USB[0x5A]                                   //Camera snap view down
+define        F_86_Camera_snap_view_left                              R_ALT+USB[0x5C]                                   //Camera snap view left
+define        F_86_Camera_snap_view_right                             R_ALT+USB[0x5E]                                   //Camera snap view right
+define        F_86_Camera_snap_view_up_left                           R_ALT+USB[0x5F]                                   //Camera snap view up-left
+define        F_86_Camera_snap_view_down_left                         R_ALT+USB[0x59]                                   //Camera snap view down-left
+define        F_86_Camera_snap_view_up_right                          R_ALT+USB[0x61]                                   //Camera snap view up-right
+define        F_86_Camera_snap_view_down_right                        R_ALT+USB[0x5B]                                   //Camera snap view down-right
+define        F_86_Center_Camera_View                                 R_SHIFT+USB[0x5D]                                 //Center Camera View
+define        F_86_Return_Camera                                      R_CTL+USB[0x5D]                                   //Return Camera
+define        F_86_Return_Camera_Base                                 R_ALT+USB[0x5D]                                   //Return Camera Base
+define        F_86_Custom_Snap_View__0                                L_WIN+USB[0x62]                                   //Custom Snap View  0
+define        F_86_Custom_Snap_View__1                                L_WIN+USB[0x59]                                   //Custom Snap View  1
+define        F_86_Custom_Snap_View__2                                L_WIN+USB[0x5A]                                   //Custom Snap View  2
+define        F_86_Custom_Snap_View__3                                L_WIN+USB[0x5B]                                   //Custom Snap View  3
+define        F_86_Custom_Snap_View__4                                L_WIN+USB[0x5C]                                   //Custom Snap View  4
+define        F_86_Custom_Snap_View__5                                L_WIN+USB[0x5D]                                   //Custom Snap View  5
+define        F_86_Custom_Snap_View__6                                L_WIN+USB[0x5E]                                   //Custom Snap View  6
+define        F_86_Custom_Snap_View__7                                L_WIN+USB[0x5F]                                   //Custom Snap View  7
+define        F_86_Custom_Snap_View__8                                L_WIN+USB[0x60]                                   //Custom Snap View  8
+define        F_86_Custom_Snap_View__9                                L_WIN+USB[0x61]                                   //Custom Snap View  9
+define        F_86_Mirror_Left_On                                     R_ALT+USB[0x11]                                   //Mirror Left On
+define        F_86_Mirror_Right_On                                    R_ALT+USB[0x10]                                   //Mirror Right On
+define        F_86_Toggle_Mirrors                                     USB[0x10]                                         //Toggle Mirrors
+define        F_86_Zoom_in                                            R_SHIFT+USB[0x55]                                 //Zoom in
+define        F_86_Zoom_out                                           R_SHIFT+USB[0x54]                                 //Zoom out
+
+
+
+// View Extended**********************
+
+define        F_86_Camera_jiggle_toggle                               L_SHIFT+USB[0x0D]                                 //Camera jiggle toggle
+define        F_86_Keep_terrain_camera_altitude                       L_ALT+USB[0x0E]                                   //Keep terrain camera altitude
+define        F_86_View_friends_mode                                  R_CTL+R_SHIFT+USB[0x4A]                           //View friends mode
+define        F_86_View_enemies_mode                                  R_CTL+R_SHIFT+USB[0x4D]                           //View enemies mode
+define        F_86_View_all_mode                                      R_CTL+USB[0x4C]                                   //View all mode
+define        F_86_Toggle_tracking_fire_weapon                        R_CTL+USB[0x57]                                   //Toggle tracking fire weapon
+define        F_86_Objects_switching_direction_forward_               L_CTL+USB[0x4E]                                   //Objects switching direction forward 
+define        F_86_Objects_switching_direction_reverse_               L_CTL+USB[0x4B]                                   //Objects switching direction reverse 
+define        F_86_Object_exclude_                                    L_ALT+USB[0x4C]                                   //Object exclude 
+define        F_86_Objects_all_excluded___include                     L_ALT+USB[0x49]                                   //Objects all excluded - include
+
+
+
+// View Padlock**********************
+
+define        F_86_Lock_View__cycle_padlock_                          USB[0x63]                                         //Lock View (cycle padlock)
+define        F_86_Unlock_view__stop_padlock_                         USB[0x53]                                         //Unlock view (stop padlock)
+define        F_86_All_missiles_padlock                               R_SHIFT+USB[0x63]                                 //All missiles padlock
+define        F_86_Threat_missile_padlock                             R_ALT+USB[0x63]                                   //Threat missile padlock
+define        F_86_Lock_terrain_view                                  R_CTL+USB[0x63]                                   //Lock terrain view
+
+
+
+// Labels**********************
+
+define        F_86_All_Labels                                         L_SHIFT+USB[0x43]                                 //All Labels
+define        F_86_Aircraft_Labels                                    L_SHIFT+USB[0x3B]                                 //Aircraft Labels
+define        F_86_Missile_Labels                                     L_SHIFT+USB[0x3F]                                 //Missile Labels
+define        F_86_Vehicle_and_Ship_Labels                            L_SHIFT+USB[0x42]                                 //Vehicle & Ship Labels
+
+
+
+// Kneeboard**********************
+
+define        F_86_Kneeboard_Next_Page                                USB[0x30]                                         //Kneeboard Next Page
+define        F_86_Kneeboard_Previous_Page                            USB[0x2F]                                         //Kneeboard Previous Page
+define        F_86_Kneeboard_ON_OFF                                   R_SHIFT+USB[0x0E]                                 //Kneeboard ON/OFF
+define        F_86_Kneeboard_glance_view                              USB[0x0E]                                         //Kneeboard glance view
+define        F_86_Kneeboard_current_position_mark_point              R_CTL+USB[0x0E]                                   //Kneeboard current position mark point
+
+
+
+// Left Forward Console**********************
+
+define        F_86_Landing_and_Taxi_Lights_Switch___Up                R_SHIFT+USB[0x0F]                                 //Landing & Taxi Lights Switch - Up
+define        F_86_Landing_and_Taxi_Lights_Switch___Down              R_CTL+USB[0x0F]                                   //Landing & Taxi Lights Switch - Down
+
+
+
+// Stick Grip**********************
+
+define        F_86_Nosewheel_Steering_Button                          USB[0x16]                                         //Nosewheel Steering Button
+define        F_86_Gun_Fire                                           USB[0x2C]                                         //Gun Fire
+define        F_86_Weapon_Release                                     R_ALT+USB[0x2C]                                   //Weapon Release
+
+
+
+// A-4 Sight**********************
+
+define        F_86_A_4_Sight_Wing_Span_Adjustment_Knob___Wing_Span_IncreaseUSB[0x38]                                    //A-4 Sight Wing Span Adjustment Knob - Wing Span Increase
+define        F_86_A_4_Sight_Wing_Span_Adjustment_Knob___Wing_Span_DecreaseUSB[0x36]                                    //A-4 Sight Wing Span Adjustment Knob - Wing Span Decrease
+define        F_86_A_4_Sight_Manual_Ranging_Control__Throttle_Twist_Grip____CCW_IncreaseUSB[0x33]                       //A-4 Sight Manual Ranging Control (Throttle Twist Grip) - CCW/Increase
+define        F_86_A_4_Sight_Manual_Ranging_Control__Throttle_Twist_Grip____CW_DecreaseUSB[0x37]                        //A-4 Sight Manual Ranging Control (Throttle Twist Grip) - CW/Decrease
+define        F_86_A_4_Sight_Electrical_Caging_Button__On_Throttle_   USB[0x35]                                         //A-4 Sight Electrical Caging Button (On Throttle)
+define        F_86_A_4_Sight_Mechanical_Caging_Lever                  L_CTL+USB[0x35]                                   //A-4 Sight Mechanical Caging Lever
+define        F_86_A_4_Sight_Radar_Target_Selector_Button             USB[0x28]                                         //A-4 Sight Radar Target Selector Button
+
+
+
+// Center Pedestal**********************
+
+define        F_86_Variable_Sight_Selector_Unit___Sight_Function_Selector_Lever___CCWL_ALT+USB[0x07]                    //Variable Sight Selector Unit - Sight Function Selector Lever - CCW
+define        F_86_Variable_Sight_Selector_Unit___Sight_Function_Selector_Lever___CWL_CTL+USB[0x07]                     //Variable Sight Selector Unit - Sight Function Selector Lever - CW
+
+
+
+// Systems**********************
+
+define        F_86_Jettison_Fuel_Tanks                                L_ALT+USB[0x15]                                   //Jettison Fuel Tanks
+define        F_86_Throttle___Start_Engine                            USB[0x4A]                                         //Throttle - Start Engine
+define        F_86_Throttle___Stop_Engine                             USB[0x4D]                                         //Throttle - Stop Engine

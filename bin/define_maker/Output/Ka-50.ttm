@@ -1,0 +1,694 @@
+
+
+
+// Cheat**********************
+
+define        Ka_50_Auto_execute_full_start_procedure                 L_WIN+USB[0x4A]                                   //Auto execute full start procedure
+define        Ka_50_Auto_execute_full_stop_procedure                  L_WIN+USB[0x4D]                                   //Auto execute full stop procedure
+define        Ka_50_Active_Pause                                      L_SHIFT+L_WIN+USB[0x48]                           //Active Pause
+
+
+
+// Debug**********************
+
+define        Ka_50_Toggle_Console                                    L_ALT+USB[0x35]                                   //Toggle Console
+
+
+
+// General**********************
+
+define        Ka_50_End_mission                                       USB[0x29]                                         //End mission
+define        Ka_50_Pause                                             USB[0x48]                                         //Pause
+define        Ka_50_Time_accelerate                                   L_CTL+USB[0x1D]                                   //Time accelerate
+define        Ka_50_Time_decelerate                                   L_ALT+USB[0x1D]                                   //Time decelerate
+define        Ka_50_Time_normal                                       L_SHIFT+USB[0x1D]                                 //Time normal
+define        Ka_50_Multiplayer_chat___mode_All                       USB[0x2B]                                         //Multiplayer chat - mode All
+define        Ka_50_Multiplayer_chat___mode_Allies                    L_CTL+USB[0x2B]                                   //Multiplayer chat - mode Allies
+define        Ka_50_Info_bar_toggle                                   L_CTL+USB[0x1C]                                   //Info bar toggle
+define        Ka_50_Get_New_Plane___respawn                           R_CTL+R_SHIFT+USB[0x2B]                           //Get New Plane - respawn
+define        Ka_50_Clickable_mouse_cockpit_mode_On_Off               L_ALT+USB[0x06]                                   //Clickable mouse cockpit mode On/Off
+define        Ka_50_Screenshot                                        USB[0x46]                                         //Screenshot
+define        Ka_50_Frame_rate_counter___Service_info                 R_CTL+USB[0x48]                                   //Frame rate counter - Service info
+define        Ka_50_Info_bar_coordinate_units_toggle                  L_ALT+USB[0x1C]                                   //Info bar coordinate units toggle
+define        Ka_50_Show_Pilot_Body                                   R_SHIFT+USB[0x13]                                 //Show Pilot Body
+define        Ka_50_Show_controls_indicator                           R_CTL+USB[0x28]                                   //Show controls indicator
+define        Ka_50_View_briefing_on_off                              L_ALT+USB[0x05]                                   //View briefing on/off
+define        Ka_50_Jump_into_selected_aircraft                       R_ALT+USB[0x0D]                                   //Jump into selected aircraft
+
+
+
+// View**********************
+
+define        Ka_50_View_Left_slow                                    USB[0x5C]                                         //View Left slow
+define        Ka_50_View_Right_slow                                   USB[0x5E]                                         //View Right slow
+define        Ka_50_View_Up_slow                                      USB[0x60]                                         //View Up slow
+define        Ka_50_View_Down_slow                                    USB[0x5A]                                         //View Down slow
+define        Ka_50_View_Up_Right_slow                                USB[0x61]                                         //View Up Right slow
+define        Ka_50_View_Down_Right_slow                              USB[0x5B]                                         //View Down Right slow
+define        Ka_50_View_Down_Left_slow                               USB[0x59]                                         //View Down Left slow
+define        Ka_50_View_Up_Left_slow                                 USB[0x5F]                                         //View Up Left slow
+define        Ka_50_Center_View                                       USB[0x5D]                                         //Center View
+define        Ka_50_Zoom_in_slow                                      USB[0x55]                                         //Zoom in slow
+define        Ka_50_Zoom_out_slow                                     USB[0x54]                                         //Zoom out slow
+define        Ka_50_Zoom_normal                                       USB[0x58]                                         //Zoom normal
+define        Ka_50_Zoom_external_in                                  R_CTL+USB[0x55]                                   //Zoom external in
+define        Ka_50_Zoom_external_out                                 R_CTL+USB[0x54]                                   //Zoom external out
+define        Ka_50_Zoom_external_normal                              R_CTL+USB[0x58]                                   //Zoom external normal
+define        Ka_50_F11_camera_moving_forward                         L_ALT+USB[0x55]                                   //F11 camera moving forward
+define        Ka_50_F11_camera_moving_backward                        L_ALT+USB[0x54]                                   //F11 camera moving backward
+define        Ka_50_Objects_switching_direction_forward_              L_CTL+USB[0x4E]                                   //Objects switching direction forward 
+define        Ka_50_Objects_switching_direction_reverse_              L_CTL+USB[0x4B]                                   //Objects switching direction reverse 
+define        Ka_50_Object_exclude_                                   L_ALT+USB[0x4C]                                   //Object exclude 
+define        Ka_50_Objects_all_excluded___include                    L_ALT+USB[0x49]                                   //Objects all excluded - include
+define        Ka_50_F1_Cockpit_view                                   USB[0x3A]                                         //F1 Cockpit view
+define        Ka_50_F1_Natural_head_movement_view                     L_CTL+USB[0x3A]                                   //F1 Natural head movement view
+define        Ka_50_F1_HUD_only_view_switch                           L_ALT+USB[0x3A]                                   //F1 HUD only view switch
+define        Ka_50_F2_Aircraft_view                                  USB[0x3B]                                         //F2 Aircraft view
+define        Ka_50_F2_View_own_aircraft                              L_CTL+USB[0x3B]                                   //F2 View own aircraft
+define        Ka_50_F2_Toggle_camera_position                         R_ALT+USB[0x3B]                                   //F2 Toggle camera position
+define        Ka_50_F2_Toggle_local_camera_control                    L_ALT+USB[0x3B]                                   //F2 Toggle local camera control
+define        Ka_50_F3_Fly_By_view                                    USB[0x3C]                                         //F3 Fly-By view
+define        Ka_50_F3_Fly_By_jump_view                               L_CTL+USB[0x3C]                                   //F3 Fly-By jump view
+define        Ka_50_F4_Look_back_view                                 USB[0x3D]                                         //F4 Look back view
+define        Ka_50_F4_Chase_view                                     L_CTL+USB[0x3D]                                   //F4 Chase view
+define        Ka_50_F4_Arcade_Chase_view                              L_SHIFT+USB[0x3D]                                 //F4 Arcade Chase view
+define        Ka_50_F5_nearest_AC_view                                USB[0x3E]                                         //F5 nearest AC view
+define        Ka_50_F5_Ground_hostile_view                            L_CTL+USB[0x3E]                                   //F5 Ground hostile view
+define        Ka_50_F6_Released_weapon_view                           USB[0x3F]                                         //F6 Released weapon view
+define        Ka_50_F6_Weapon_to_target_view                          L_CTL+USB[0x3F]                                   //F6 Weapon to target view
+define        Ka_50_F7_Ground_unit_view                               USB[0x40]                                         //F7 Ground unit view
+define        Ka_50_F8_Target_view                                    USB[0x41]                                         //F8 Target view
+define        Ka_50_F8_Player_targets_All_targets_filter              R_ALT+USB[0x41]                                   //F8 Player targets/All targets filter
+define        Ka_50_F9_Ship_view                                      USB[0x42]                                         //F9 Ship view
+define        Ka_50_F9_Landing_signal_officer_view                    L_ALT+USB[0x42]                                   //F9 Landing signal officer view
+define        Ka_50_F10_Theater_map_view                              USB[0x43]                                         //F10 Theater map view
+define        Ka_50_F10_Jump_to_theater_map_view_over_current_point   L_CTL+USB[0x43]                                   //F10 Jump to theater map view over current point
+define        Ka_50_F11_Airport_free_camera                           USB[0x44]                                         //F11 Airport free camera
+define        Ka_50_F11_Jump_to_free_camera                           L_CTL+USB[0x44]                                   //F11 Jump to free camera
+define        Ka_50_F12_Static_object_view                            USB[0x45]                                         //F12 Static object view
+define        Ka_50_F12_Civil_traffic_view                            L_CTL+USB[0x45]                                   //F12 Civil traffic view
+define        Ka_50_F12_Trains_cars_toggle                            L_SHIFT+USB[0x45]                                 //F12 Trains/cars toggle
+define        Ka_50_Camera_view_keyboard_rate_fast                    L_SHIFT+USB[0x30]                                 //Camera view keyboard rate fast
+define        Ka_50_Camera_view_keyboard_rate_slow                    L_CTL+USB[0x30]                                   //Camera view keyboard rate slow
+define        Ka_50_Camera_view_keyboard_rate_normal                  L_ALT+USB[0x30]                                   //Camera view keyboard rate normal
+define        Ka_50_Camera_view_mouse_rate_fast                       L_SHIFT+USB[0x2F]                                 //Camera view mouse rate fast
+define        Ka_50_Camera_view_mouse_rate_slow                       L_CTL+USB[0x2F]                                   //Camera view mouse rate slow
+define        Ka_50_Camera_view_mouse_rate_normal                     L_ALT+USB[0x2F]                                   //Camera view mouse rate normal
+
+
+
+// View Cockpit**********************
+
+define        Ka_50_Cockpit_panel_view_in                             USB[0x62]                                         //Cockpit panel view in
+define        Ka_50_Cockpit_panel_view_toggle                         R_CTL+USB[0x62]                                   //Cockpit panel view toggle
+define        Ka_50_Save_Cockpit_Angles                               R_ALT+USB[0x62]                                   //Save Cockpit Angles
+define        Ka_50_View_up                                           R_SHIFT+USB[0x60]                                 //View up
+define        Ka_50_View_down                                         R_SHIFT+USB[0x5A]                                 //View down
+define        Ka_50_View_left                                         R_SHIFT+USB[0x5C]                                 //View left
+define        Ka_50_View_right                                        R_SHIFT+USB[0x5E]                                 //View right
+define        Ka_50_View_up_right                                     R_SHIFT+USB[0x61]                                 //View up right
+define        Ka_50_View_down_right                                   R_SHIFT+USB[0x5B]                                 //View down right
+define        Ka_50_View_down_left                                    R_SHIFT+USB[0x59]                                 //View down left
+define        Ka_50_View_up_left                                      R_SHIFT+USB[0x5F]                                 //View up left
+define        Ka_50_Camera_view_up                                    R_CTL+USB[0x60]                                   //Camera view up
+define        Ka_50_Camera_view_down                                  R_CTL+USB[0x5A]                                   //Camera view down
+define        Ka_50_Camera_view_left                                  R_CTL+USB[0x5C]                                   //Camera view left
+define        Ka_50_Camera_view_right                                 R_CTL+USB[0x5E]                                   //Camera view right
+define        Ka_50_Camera_view_up_left                               R_CTL+USB[0x5F]                                   //Camera view up-left
+define        Ka_50_Camera_view_down_left                             R_CTL+USB[0x59]                                   //Camera view down-left
+define        Ka_50_Camera_view_up_right                              R_CTL+USB[0x61]                                   //Camera view up-right
+define        Ka_50_Camera_view_down_right                            R_CTL+USB[0x5B]                                   //Camera view down-right
+define        Ka_50_Camera_view_up_slow                               R_ALT+USB[0x60]                                   //Camera view up slow
+define        Ka_50_Camera_view_down_slow                             R_ALT+USB[0x5A]                                   //Camera view down slow
+define        Ka_50_Camera_view_left_slow                             R_ALT+USB[0x5C]                                   //Camera view left slow
+define        Ka_50_Camera_view_right_slow                            R_ALT+USB[0x5E]                                   //Camera view right slow
+define        Ka_50_Camera_view_up_left_slow                          R_ALT+USB[0x5F]                                   //Camera view up-left slow
+define        Ka_50_Camera_view_down_left_slow                        R_ALT+USB[0x59]                                   //Camera view down-left slow
+define        Ka_50_Camera_view_down_right_slow                       R_ALT+USB[0x61]                                   //Camera view down-right slow
+define        Ka_50_Camera_view_up_right_slow                         R_ALT+USB[0x5B]                                   //Camera view up-right slow
+define        Ka_50_Center_camera_view                                R_SHIFT+USB[0x5D]                                 //Center camera view
+define        Ka_50_Return_camera                                     R_CTL+USB[0x5D]                                   //Return camera
+define        Ka_50_Return_camera_base                                R_ALT+USB[0x5D]                                   //Return camera base
+define        Ka_50_Snap_View_0                                       L_WIN+USB[0x62]                                   //Snap View 0
+define        Ka_50_Snap_View_1                                       L_WIN+USB[0x59]                                   //Snap View 1
+define        Ka_50_Snap_View_2                                       L_WIN+USB[0x5A]                                   //Snap View 2
+define        Ka_50_Snap_View_3                                       L_WIN+USB[0x5B]                                   //Snap View 3
+define        Ka_50_Snap_View_4                                       L_WIN+USB[0x5C]                                   //Snap View 4
+define        Ka_50_Snap_View_5                                       L_WIN+USB[0x5D]                                   //Snap View 5
+define        Ka_50_Snap_View_6                                       L_WIN+USB[0x5E]                                   //Snap View 6
+define        Ka_50_Snap_View_7                                       L_WIN+USB[0x5F]                                   //Snap View 7
+define        Ka_50_Snap_View_8                                       L_WIN+USB[0x60]                                   //Snap View 8
+define        Ka_50_Snap_View_9                                       L_WIN+USB[0x61]                                   //Snap View 9
+define        Ka_50_Head_shift_movement_on___off                      L_WIN+USB[0x3A]                                   //Head shift movement on / off
+define        Ka_50_Zoom_out                                          R_SHIFT+USB[0x54]                                 //Zoom out
+define        Ka_50_Zoom_in                                           R_SHIFT+USB[0x55]                                 //Zoom in
+define        Ka_50_Cockpit_Camera_Move_Up                            R_CTL+R_SHIFT+USB[0x60]                           //Cockpit Camera Move Up
+define        Ka_50_Cockpit_Camera_Move_Down                          R_CTL+R_SHIFT+USB[0x5A]                           //Cockpit Camera Move Down
+define        Ka_50_Cockpit_Camera_Move_Left                          R_CTL+R_SHIFT+USB[0x5C]                           //Cockpit Camera Move Left
+define        Ka_50_Cockpit_Camera_Move_Right                         R_CTL+R_SHIFT+USB[0x5E]                           //Cockpit Camera Move Right
+define        Ka_50_Cockpit_Camera_Move_Forward                       R_CTL+R_SHIFT+USB[0x55]                           //Cockpit Camera Move Forward
+define        Ka_50_Cockpit_Camera_Move_Back                          R_CTL+R_SHIFT+USB[0x54]                           //Cockpit Camera Move Back
+define        Ka_50_Cockpit_Camera_Move_Center                        R_CTL+R_SHIFT+USB[0x5D]                           //Cockpit Camera Move Center
+define        Ka_50_Camera_transpose_mode__press_and_hold_            L_SHIFT+USB[0x3A]                                 //Camera transpose mode (press and hold)
+
+
+
+// View Extended**********************
+
+define        Ka_50_Camera_jiggle_toggle                              L_SHIFT+USB[0x0D]                                 //Camera jiggle toggle
+define        Ka_50_Keep_terrain_camera_altitude                      L_ALT+USB[0x0E]                                   //Keep terrain camera altitude
+define        Ka_50_Camera_ordnance_tracking                          R_CTL+USB[0x57]                                   //Camera ordnance tracking
+define        Ka_50_View_friends_mode                                 R_CTL+R_SHIFT+USB[0x09]                           //View friends mode
+define        Ka_50_View_enemies_mode                                 R_CTL+R_SHIFT+USB[0x07]                           //View enemies mode
+define        Ka_50_View_all_mode                                     R_CTL+R_SHIFT+USB[0x04]                           //View all mode
+
+
+
+// View Padlock**********************
+
+define        Ka_50_Lock_view__cycle_padlock_                         USB[0x63]                                         //Lock view (cycle padlock)
+define        Ka_50_Unlock_view__stop_padlock_                        USB[0x53]                                         //Unlock view (stop padlock)
+define        Ka_50_All_missiles_padlock                              R_SHIFT+USB[0x63]                                 //All missiles padlock
+define        Ka_50_Threat_missile_padlock                            R_ALT+USB[0x63]                                   //Threat missile padlock
+define        Ka_50_Lock_terrain_view                                 R_CTL+USB[0x63]                                   //Lock terrain view
+
+
+
+// Labels**********************
+
+define        Ka_50_All_Labels                                        L_SHIFT+USB[0x43]                                 //All Labels
+define        Ka_50_Aircraft_Labels                                   L_SHIFT+USB[0x3B]                                 //Aircraft Labels
+define        Ka_50_Missile_Labels                                    L_SHIFT+USB[0x3F]                                 //Missile Labels
+define        Ka_50_Vehicle_and_Ship_Labels                           L_SHIFT+USB[0x42]                                 //Vehicle & Ship Labels
+
+
+
+// Ins Forward panel and gauges**********************
+
+define        Ka_50_Gear_lever                                        USB[0x0A]                                         //Gear lever
+define        Ka_50_Emeregency_gear                                   L_ALT+USB[0x0A]                                   //Emeregency gear
+define        Ka_50_Emeregency_gear_cover                             L_CTL+USB[0x0A]                                   //Emeregency gear cover
+define        Ka_50_Mech_clock_Left_lever_Down                        R_CTL+R_SHIFT+USB[0x06]                           //Mech clock. Left lever Down
+define        Ka_50_Mech_clock_Left_lever_Up                          R_SHIFT+USB[0x10]                                 //Mech clock. Left lever Up
+define        Ka_50_Mech_clock_Left_lever_turning_right               L_ALT+USB[0x37]                                   //Mech clock. Left lever turning right
+define        Ka_50_Mech_clock_Left_lever_turning_left                L_ALT+USB[0x36]                                   //Mech clock. Left lever turning left
+define        Ka_50_Mech_clock_Right_lever_Down                       R_SHIFT+R_ALT+USB[0x06]                           //Mech clock. Right lever Down
+define        Ka_50_Mech_clock_Right_lever_Rotate_left                R_CTL+R_SHIFT+USB[0x36]                           //Mech clock. Right lever Rotate left
+define        Ka_50_Mech_clock_Right_lever_Rotate_right               R_CTL+R_SHIFT+USB[0x37]                           //Mech clock. Right lever Rotate right
+define        Ka_50_Master_caution_push_light                         USB[0x10]                                         //Master caution push-light
+define        Ka_50_Lamps_test                                        L_SHIFT+USB[0x0F]                                 //Lamps test
+define        Ka_50_Rotor_RPM_warning_push_light                      USB[0x05]                                         //Rotor RPM warning push-light
+define        Ka_50_LWS_CMD_operation_mode                            L_CTL+USB[0x0F]                                   //LWS/CMD operation mode
+define        Ka_50_HSI_Commanded_course_rotary_right                 L_CTL+L_ALT+USB[0x37]                             //HSI Commanded course rotary right
+define        Ka_50_HSI_Commanded_course_rotary_left                  L_CTL+L_ALT+USB[0x36]                             //HSI Commanded course rotary left
+define        Ka_50_HSI_Commanded_heading_rotary_right                L_CTL+L_SHIFT+USB[0x37]                           //HSI Commanded heading rotary right
+define        Ka_50_HSI_Commanded_heading_rotary_left                 L_CTL+L_SHIFT+USB[0x36]                           //HSI Commanded heading rotary left
+define        Ka_50_HSI_Test                                          L_CTL+L_ALT+USB[0x0B]                             //HSI Test
+define        Ka_50_HSI_Desired_track_angle___Desired_heading_Auto___ManualL_CTL+USB[0x0B]                              //HSI Desired track angle - Desired heading, Auto - Manual
+define        Ka_50_ADI_Zero_pitch_trim_right                         L_SHIFT+L_ALT+USB[0x37]                           //ADI Zero pitch trim right
+define        Ka_50_ADI_Zero_pitch_trim_left                          L_SHIFT+L_ALT+USB[0x36]                           //ADI Zero pitch trim left
+define        Ka_50_ADI_Test_button                                   L_SHIFT+L_ALT+USB[0x04]                           //ADI Test button
+define        Ka_50_ADI_Test_button_cover                             L_CTL+L_SHIFT+USB[0x04]                           //ADI Test button cover
+define        Ka_50_SAI_Standby_Attitude_Indicator_Cage_control_test_handle_upR_SHIFT+USB[0x04]                         //SAI Standby Attitude Indicator Cage/control test handle up
+define        Ka_50_SAI_Standby_Attitude_Indicator_Cage_control_test_handle_rightR_SHIFT+R_CTL+USB[0x04]                //SAI Standby Attitude Indicator Cage/control test handle right
+define        Ka_50_SAI_Standby_Attitude_Indicator_Cage_control_test_handle_leftR_SHIFT+R_ALT+USB[0x04]                 //SAI Standby Attitude Indicator Cage/control test handle left
+define        Ka_50_Radar_altimeter_dangerous_RALT_set_rotary_right   L_SHIFT+USB[0x37]                                 //Radar altimeter dangerous RALT set rotary right
+define        Ka_50_Radar_altimeter_dangerous_RALT_set_rotary_left    L_SHIFT+USB[0x36]                                 //Radar altimeter dangerous RALT set rotary left
+define        Ka_50_Radar_altimeter_test_button                       L_SHIFT+L_ALT+USB[0x15]                           //Radar altimeter test button
+define        Ka_50_Altimeter_QFE_knob_pressure_increase              R_SHIFT+USB[0x2E]                                 //Altimeter QFE knob pressure increase
+define        Ka_50_Altimeter_QFE_knob_pressure_Decrease              R_SHIFT+USB[0x2D]                                 //Altimeter QFE knob pressure Decrease
+define        Ka_50_G_meter_reset                                     L_SHIFT+USB[0x2D]                                 //G-meter reset
+define        Ka_50_Laser_range_finder_designator_mode_switch_cover   L_SHIFT+L_ALT+USB[0x12]                           //Laser range finder-designator mode switch cover
+define        Ka_50_Laser_range_finder_designator_mode_switch         L_SHIFT+USB[0x12]                                 //Laser range finder-designator mode switch
+define        Ka_50_Laser_designater_reset_button                     L_CTL+L_ALT+USB[0x12]                             //Laser designater reset button
+define        Ka_50_Exhaust_gas_temperature_running_engines_indicator_test_buttonL_CTL+USB[0x13]                        //Exhaust gas temperature running engines indicator test button
+define        Ka_50_Exhaust_gas_temperature_stopped_engines_indicator_test_buttonL_ALT+USB[0x13]                        //Exhaust gas temperature stopped engines indicator test button
+define        Ka_50_Fuel_quantity_indicator_self_test_button          L_SHIFT+L_CTL+USB[0x13]                           //Fuel quantity indicator self test button
+
+
+
+// Ins HUD controls**********************
+
+define        Ka_50_Raise_Lower_Colour_Filter_On_HUD                  R_SHIFT+USB[0x0B]                                 //Raise/Lower Colour Filter On HUD
+define        Ka_50_HUD_Modes_Reticle_Night_Day                       R_SHIFT+USB[0x25]                                 //HUD Modes Reticle/Night/Day
+define        Ka_50_HUD_Brightness_up                                 R_CTL+R_SHIFT+USB[0x0B]                           //HUD Brightness up
+define        Ka_50_HUD_Brightness_down                               R_SHIFT+R_ALT+USB[0x0B]                           //HUD Brightness down
+define        Ka_50_HUD_Test                                          R_CTL+R_SHIFT+USB[0x0B]                           //HUD Test
+
+
+
+// Ins Countermeasures dispensers UV-26**********************
+
+define        Ka_50_UV_26_Start_dispensing                            USB[0x49]                                         //UV-26 Start dispensing
+define        Ka_50_UV_26_Stop_dispensing                             USB[0x4C]                                         //UV-26 Stop dispensing
+define        Ka_50_UV_26_Number_of_flare_sequences                   R_SHIFT+USB[0x49]                                 //UV-26 Number of flare sequences
+define        Ka_50_UV_26_Delay_between_sequences                     R_ALT+USB[0x49]                                   //UV-26 Delay between sequences
+define        Ka_50_UV_26_Number_of_flares_in_sequence                R_CTL+USB[0x49]                                   //UV-26 Number of flares in sequence
+define        Ka_50_UV_26_Reset_current_program                       R_CTL+USB[0x4C]                                   //UV-26 Reset current program
+define        Ka_50_UV_26_Change_dispensing_board_Left_Both_Right     R_ALT+USB[0x30]                                   //UV-26 Change dispensing board Left-Both-Right
+define        Ka_50_UV_26_Amount_flares_counter___Programming         R_CTL+USB[0x30]                                   //UV-26 Amount flares counter / Programming
+
+
+
+// Ins Cyclic Stick**********************
+
+define        Ka_50_Uncage_SHKVAL_designate_target                    USB[0x12]                                         //Uncage SHKVAL, designate target
+define        Ka_50_KU_31_Shkval_slew_up                              USB[0x33]                                         //KU-31 Shkval slew up
+define        Ka_50_KU_31_Shkval_slew_down                            USB[0x37]                                         //KU-31 Shkval slew down
+define        Ka_50_KU_31_Shkval_slew_left                            USB[0x36]                                         //KU-31 Shkval slew left
+define        Ka_50_KU_31_Shkval_slew_right                           USB[0x38]                                         //KU-31 Shkval slew right
+define        Ka_50_KU_31_Shkval_center                               R_CTL+USB[0x0C]                                   //KU-31 Shkval center
+define        Ka_50_Gun_fire                                          USB[0x2C]                                         //Gun fire
+define        Ka_50_Release_weapons                                   R_ALT+USB[0x2C]                                   //Release weapons
+define        Ka_50_Gun_Select                                        USB[0x06]                                         //Gun Select
+define        Ka_50_Cyclic_nose_down                                  USB[0x52]                                         //Cyclic nose down
+define        Ka_50_Cyclic_nose_up                                    USB[0x51]                                         //Cyclic nose up
+define        Ka_50_Cyclic_bank_left                                  USB[0x50]                                         //Cyclic bank left
+define        Ka_50_Cyclic_bank_right                                 USB[0x4F]                                         //Cyclic bank right
+define        Ka_50_Trimmer                                           USB[0x17]                                         //Trimmer
+define        Ka_50_Trimmer_reset                                     L_CTL+USB[0x17]                                   //Trimmer reset
+define        Ka_50_Hover_On_Off                                      L_ALT+USB[0x17]                                   //Hover On/Off
+define        Ka_50_Autopilot_Emergency_Off                           L_ALT+USB[0x04]                                   //Autopilot Emergency Off
+define        Ka_50_Wheel_brake__press_and_hold_                      USB[0x1A]                                         //Wheel brake (press and hold)
+define        Ka_50_Wheel_brake_parking                               L_SHIFT+USB[0x1A]                                 //Wheel brake parking
+define        Ka_50_Cockpit_gauges_illumination__stick_               L_SHIFT+USB[0x0E]                                 //Cockpit gauges illumination (stick)
+define        Ka_50_SPU_9_PTT                                         R_ALT+USB[0x31]                                   //SPU-9 PTT
+
+
+
+// Ins Collective Stick**********************
+
+define        Ka_50_Lock_target                                       USB[0x28]                                         //Lock target
+define        Ka_50_Shkval_Narrow_View_23x                            USB[0x2E]                                         //Shkval Narrow View 23x
+define        Ka_50_Shkval_Wide_View_7x                               USB[0x2D]                                         //Shkval Wide View 7x
+define        Ka_50_TV_Target_frame_Increase_size                     USB[0x30]                                         //TV Target frame Increase size
+define        Ka_50_TV_Target_frame_Decrease_size                     USB[0x2F]                                         //TV Target frame Decrease size
+define        Ka_50_Engage_Disengage_Route_Mode                       USB[0x15]                                         //Engage/Disengage Route Mode
+define        Ka_50_Engage_Descent_Mode                               USB[0x07]                                         //Engage Descent Mode
+define        Ka_50_Spot_light_left                                   R_CTL+USB[0x36]                                   //Spot light left
+define        Ka_50_Spot_light_right                                  R_CTL+USB[0x38]                                   //Spot light right
+define        Ka_50_Spot_light_up                                     R_CTL+USB[0x33]                                   //Spot light up
+define        Ka_50_Spot_light_down                                   R_CTL+USB[0x37]                                   //Spot light down
+define        Ka_50_Collective_up                                     USB[0x57]                                         //Collective up
+define        Ka_50_Collective_down                                   USB[0x56]                                         //Collective down
+define        Ka_50_Weapon_selection_inward_stations                  USB[0x0C]                                         //Weapon selection inward stations
+define        Ka_50_Weapon_selection_outward_stations                 USB[0x1C]                                         //Weapon selection outward stations
+define        Ka_50_Weapon_selection_all_stations                     USB[0x18]                                         //Weapon selection all stations
+define        Ka_50_Weapon_selection_A_A_mode                         L_CTL+USB[0x18]                                   //Weapon selection A-A mode
+define        Ka_50_Readjust_Free_Turbine_RPM_to_Nominal              R_ALT+USB[0x57]                                   //Readjust Free Turbine RPM to Nominal
+define        Ka_50_Readjust_Free_Turbine_RPM_to_Low                  R_ALT+USB[0x56]                                   //Readjust Free Turbine RPM to Low
+define        Ka_50_Collective_brake___Assign_altitude_lever          USB[0x09]                                         //Collective brake - Assign altitude lever
+
+
+
+// Ins Rudder**********************
+
+define        Ka_50_Rudder_left                                       USB[0x1D]                                         //Rudder left
+define        Ka_50_Rudder_right                                      USB[0x1B]                                         //Rudder right
+
+
+
+// Ins Engines start-up control panel and levers**********************
+
+define        Ka_50_Start_up_engine                                   USB[0x4A]                                         //Start-up engine
+define        Ka_50_Interrupt_start_up_sequence                       R_ALT+USB[0x4A]                                   //Interrupt start-up sequence
+define        Ka_50_Stop_APU_button                                   USB[0x4D]                                         //Stop APU button
+define        Ka_50_Engine_selector                                   USB[0x08]                                         //Engine selector
+define        Ka_50_Engine_Startup_Crank_False_Start_selector         L_ALT+USB[0x08]                                   //Engine Startup/Crank/False Start selector
+define        Ka_50_Throttle_up__Idle_Medium_Auto_Full_               USB[0x4B]                                         //Throttle up (Idle-Medium-Auto-Full)
+define        Ka_50_Throttle_down__Idle_Medium_Auto_Full_             USB[0x4E]                                         //Throttle down (Idle-Medium-Auto-Full)
+define        Ka_50_Throttle_Left_Up__Idle_Medium_Auto_Full_          R_ALT+USB[0x4B]                                   //Throttle Left Up (Idle-Medium-Auto-Full)
+define        Ka_50_Throttle_Left_Down__Idle_Medium_Auto_Full_        R_ALT+USB[0x4E]                                   //Throttle Left Down (Idle-Medium-Auto-Full)
+define        Ka_50_Throttle_Right_Up__Idle_Medium_Auto_Full_         R_SHIFT+USB[0x4B]                                 //Throttle Right Up (Idle-Medium-Auto-Full)
+define        Ka_50_Throttle_Right_Down__Idle_Medium_Auto_Full_       R_SHIFT+USB[0x4E]                                 //Throttle Right Down (Idle-Medium-Auto-Full)
+define        Ka_50_Cut_off_valve_left_engine                         R_CTL+USB[0x4B]                                   //Cut-off valve left engine
+define        Ka_50_Cut_off_valve_right_engine                        R_CTL+USB[0x4E]                                   //Cut-off valve right engine
+define        Ka_50_Rotor_brake                                       L_SHIFT+USB[0x15]                                 //Rotor brake
+
+
+
+// Ins Targeting Mode Controls Panel PVR**********************
+
+define        Ka_50_Button_Targeting_mode_reset                       USB[0x2A]                                         //Button Targeting mode reset
+define        Ka_50_Helmet_mounted_system_On_Off                      USB[0x0B]                                         //Helmet-mounted system On/Off
+define        Ka_50_Laser_standby_On_Off_switch                       R_SHIFT+USB[0x12]                                 //Laser standby On/Off switch
+define        Ka_50_Automatic_tracking_gun_sight                      USB[0x13]                                         //Automatic tracking/gun sight
+define        Ka_50_K_041_Targeting_system_power_switch               L_SHIFT+USB[0x07]                                 //K-041 Targeting system power switch
+define        Ka_50_Button_Automatic_turn_on_target_mode              USB[0x14]                                         //Button Automatic turn on target mode
+define        Ka_50_Button_Ground_moving_target                       USB[0x11]                                         //Button Ground moving target
+define        Ka_50_Button_Airborne_target                            USB[0x19]                                         //Button Airborne target
+define        Ka_50_Button_Head_on_airborne_target_aspect             L_ALT+USB[0x16]                                   //Button Head-on airborne target aspect
+define        Ka_50_Weapon_system_mode_selector__to_right_            L_ALT+USB[0x09]                                   //Weapon system mode selector (to right)
+define        Ka_50_Weapon_system_mode_selector__to_left_             L_CTL+USB[0x09]                                   //Weapon system mode selector (to left)
+
+
+
+// Ins Weapons Status and Control Panel PUI-800**********************
+
+define        Ka_50_Master_arm_on_off                                 L_ALT+USB[0x1A]                                   //Master arm on/off
+define        Ka_50_External_stores_jettison                          L_ALT+USB[0x15]                                   //External stores jettison
+define        Ka_50_Expedite_emergency_ATGM_launch                    R_CTL+USB[0x1A]                                   //Expedite emergency ATGM launch
+define        Ka_50_Weapon_system_control_switch_Manual_Auto_         USB[0x04]                                         //Weapon system control switch Manual/Auto 
+define        Ka_50_Weapon_mode_switch                                USB[0x16]                                         //Weapon mode switch
+define        Ka_50_Cannon_round_selector_switch                      L_CTL+USB[0x06]                                   //Cannon round selector switch
+define        Ka_50_Cannon_rate_of_fire_setting                       L_SHIFT+USB[0x06]                                 //Cannon rate of fire setting
+define        Ka_50_Jettison_arm_mode___explosive_unexplosive         L_SHIFT+L_ALT+USB[0x1A]                           //Jettison arm mode - explosive/unexplosive
+
+
+
+// Ins Datalink panel PRTs**********************
+
+define        Ka_50_PRTs_Target_1___Vehicle                           L_SHIFT+USB[0x1E]                                 //PRTs Target 1 / Vehicle
+define        Ka_50_PRTs_Target_2___SAM                               L_SHIFT+USB[0x1F]                                 //PRTs Target 2 / SAM
+define        Ka_50_PRTs_Target_3___Other                             L_SHIFT+USB[0x20]                                 //PRTs Target 3 / Other
+define        Ka_50_PRTs_Reference_point                              L_SHIFT+USB[0x21]                                 //PRTs Reference point
+define        Ka_50_PRTs_To_Wingman_1                                 L_CTL+USB[0x1E]                                   //PRTs To Wingman 1
+define        Ka_50_PRTs_To_Wingman_2                                 L_CTL+USB[0x1F]                                   //PRTs To Wingman 2
+define        Ka_50_PRTs_To_Wingman_3                                 L_CTL+USB[0x20]                                   //PRTs To Wingman 3
+define        Ka_50_PRTs_To_Wingman_4                                 L_CTL+USB[0x21]                                   //PRTs To Wingman 4
+define        Ka_50_PRTs_To_All                                       L_CTL+USB[0x22]                                   //PRTs To All
+define        Ka_50_PRTs_Erase_Entering_Data                          L_SHIFT+USB[0x17]                                 //PRTs Erase Entering Data
+define        Ka_50_PRTs_Ingress_to_Target                            L_SHIFT+USB[0x1C]                                 //PRTs Ingress to Target
+define        Ka_50_PRTs_Send___Memory                                L_SHIFT+USB[0x18]                                 //PRTs Send / Memory
+define        Ka_50_PRTs_void_button                                  L_SHIFT+USB[0x0C]                                 //PRTs void button
+
+
+
+// Ins NAV panel controls PVI**********************
+
+define        Ka_50_PVI_Change_Master_Mode__to_right_                 R_ALT+USB[0x05]                                   //PVI Change Master Mode (to right)
+define        Ka_50_PVI_Change_Master_Mode__to_left_                  R_ALT+USB[0x19]                                   //PVI Change Master Mode (to left)
+define        Ka_50_PVI_Set_Fixtaking_Method                          R_CTL+USB[0x19]                                   //PVI Set Fixtaking Method
+define        Ka_50_PVI_Datalink_Power                                R_CTL+USB[0x05]                                   //PVI Datalink Power
+define        Ka_50_PVI_Pushbutton_1                                  R_ALT+USB[0x1E]                                   //PVI Pushbutton 1
+define        Ka_50_PVI_Pushbutton_2                                  R_ALT+USB[0x1F]                                   //PVI Pushbutton 2
+define        Ka_50_PVI_Pushbutton_3                                  R_ALT+USB[0x20]                                   //PVI Pushbutton 3
+define        Ka_50_PVI_Pushbutton_4                                  R_ALT+USB[0x21]                                   //PVI Pushbutton 4
+define        Ka_50_PVI_Pushbutton_5                                  R_ALT+USB[0x22]                                   //PVI Pushbutton 5
+define        Ka_50_PVI_Pushbutton_6                                  R_ALT+USB[0x23]                                   //PVI Pushbutton 6
+define        Ka_50_PVI_Pushbutton_7                                  R_ALT+USB[0x24]                                   //PVI Pushbutton 7
+define        Ka_50_PVI_Pushbutton_8                                  R_ALT+USB[0x25]                                   //PVI Pushbutton 8
+define        Ka_50_PVI_Pushbutton_9                                  R_ALT+USB[0x26]                                   //PVI Pushbutton 9
+define        Ka_50_PVI_Pushbutton_0                                  R_ALT+USB[0x27]                                   //PVI Pushbutton 0
+define        Ka_50_PVI_Waypoint_Mode                                 R_ALT+USB[0x14]                                   //PVI Waypoint Mode
+define        Ka_50_PVI_In_flight_INU_Realignment                     R_ALT+USB[0x1A]                                   //PVI In-flight INU Realignment
+define        Ka_50_PVI_Navpos_Correction_Mode                        R_ALT+USB[0x08]                                   //PVI Navpos Correction Mode
+define        Ka_50_PVI_Precise_INU_Alignment                         R_ALT+USB[0x15]                                   //PVI Precise INU Alignment
+define        Ka_50_PVI_Airfields_Mode                                R_ALT+USB[0x17]                                   //PVI Airfields Mode
+define        Ka_50_PVI_Normal_INU_Alignment                          R_ALT+USB[0x1C]                                   //PVI Normal INU Alignment
+define        Ka_50_PVI_Targets_Mode                                  R_ALT+USB[0x18]                                   //PVI Targets Mode
+define        Ka_50_PVI_Enter                                         R_ALT+USB[0x0C]                                   //PVI Enter
+define        Ka_50_PVI_Cancel                                        R_ALT+USB[0x12]                                   //PVI Cancel
+define        Ka_50_PVI_Initial_NAV_Position                          R_ALT+USB[0x13]                                   //PVI Initial NAV Position
+define        Ka_50_PVI_Self_Coordinates                              R_ALT+USB[0x04]                                   //PVI Self Coordinates
+define        Ka_50_PVI_Course___Time___Range                         R_ALT+USB[0x16]                                   //PVI Course / Time / Range
+define        Ka_50_PVI_Wind_Heading___Speed                          R_ALT+USB[0x07]                                   //PVI Wind Heading / Speed
+define        Ka_50_PVI_True_Heading___Time___Range_to_Final_STP      R_ALT+USB[0x09]                                   //PVI True Heading / Time / Range to Final STP
+define        Ka_50_PVI_Bearing___Range_to_Target                     R_ALT+USB[0x0A]                                   //PVI Bearing / Range to Target
+define        Ka_50_PVI_Lighting_up                                   R_SHIFT+R_CTL+USB[0x13]                           //PVI Lighting up
+define        Ka_50_PVI_Lighting_down                                 R_SHIFT+R_ALT+USB[0x13]                           //PVI Lighting down
+
+
+
+// Ins Datalink panel PVTs **********************
+
+define        Ka_50_Self_ID                                           L_CTL+USB[0x0C]                                   //Self ID
+define        Ka_50_Datalink_mode                                     L_CTL+USB[0x10]                                   //Datalink mode
+
+
+
+// Ins ABRIS AMMS**********************
+
+define        Ka_50_ABRIS_Power                                       R_SHIFT+USB[0x27]                                 //ABRIS Power
+define        Ka_50_ABRIS_Button_1                                    USB[0x1E]                                         //ABRIS Button 1
+define        Ka_50_ABRIS_Button_2                                    USB[0x1F]                                         //ABRIS Button 2
+define        Ka_50_ABRIS_Button_3                                    USB[0x20]                                         //ABRIS Button 3
+define        Ka_50_ABRIS_Button_4                                    USB[0x21]                                         //ABRIS Button 4
+define        Ka_50_ABRIS_Button_5                                    USB[0x22]                                         //ABRIS Button 5
+define        Ka_50_ABRIS_Axis_Push                                   USB[0x23]                                         //ABRIS Axis Push
+define        Ka_50_ABRIS_Axis_Decrease                               USB[0x24]                                         //ABRIS Axis Decrease
+define        Ka_50_ABRIS_Axis_Increase                               USB[0x25]                                         //ABRIS Axis Increase
+define        Ka_50_ABRIS_Brightness_Decrease                         USB[0x26]                                         //ABRIS Brightness Decrease
+define        Ka_50_ABRIS_Brightness_Increase                         USB[0x27]                                         //ABRIS Brightness Increase
+
+
+
+// Ins Wall panel**********************
+
+define        Ka_50_Electrical_power_ground_power_DC                  L_CTL+L_SHIFT+USB[0x14]                           //Electrical power ground power DC
+define        Ka_50_Electrical_power_ground_power_DC_cover            L_CTL+L_SHIFT+USB[0x14]                           //Electrical power ground power DC cover
+define        Ka_50_Electrical_power_battery_2                        L_CTL+L_SHIFT+USB[0x1A]                           //Electrical power battery 2
+define        Ka_50_Electrical_power_battery_2_cover                  L_CTL+L_SHIFT+USB[0x1A]                           //Electrical power battery 2 cover
+define        Ka_50_Electrical_power_battery_1                        L_CTL+L_SHIFT+USB[0x08]                           //Electrical power battery 1
+define        Ka_50_Electrical_power_battery_1_cover                  L_CTL+L_SHIFT+USB[0x08]                           //Electrical power battery 1 cover
+define        Ka_50_Electrical_power_ground_power_AC                  L_CTL+L_SHIFT+USB[0x15]                           //Electrical power ground power AC
+define        Ka_50_Electrical_power_generator_left                   L_CTL+L_SHIFT+USB[0x1C]                           //Electrical power generator left
+define        Ka_50_Electrical_power_generator_right                  L_CTL+L_SHIFT+USB[0x18]                           //Electrical power generator right
+define        Ka_50_Electrical_power_inverter_AUTO_OFF_MAN            L_CTL+L_SHIFT+USB[0x0C]                           //Electrical power inverter AUTO/OFF/MAN
+define        Ka_50_Radio_equipment_AVSK__SPU_9__intercom             L_CTL+L_ALT+USB[0x1D]                             //Radio equipment AVSK (SPU-9) intercom
+define        Ka_50_Radio_equipment_VHF_2__R_800_                     L_CTL+L_ALT+USB[0x13]                             //Radio equipment VHF-2 (R-800)
+define        Ka_50_Radio_equipment_VHF_1__R_828_                     R_CTL+R_ALT+USB[0x13]                             //Radio equipment VHF-1 (R-828)
+define        Ka_50_Radio_equipment_datalink_TLK                      L_CTL+L_SHIFT+USB[0x12]                           //Radio equipment datalink TLK
+define        Ka_50_Radio_equipment_datalink_UHF_TLK                  L_CTL+L_SHIFT+USB[0x13]                           //Radio equipment datalink UHF TLK
+define        Ka_50_Fuel_pumps_tank_forward                           L_CTL+L_SHIFT+USB[0x04]                           //Fuel pumps tank forward
+define        Ka_50_Fuel_pumps_tank_rear                              L_CTL+L_SHIFT+USB[0x07]                           //Fuel pumps tank rear
+define        Ka_50_Fuel_pumps_external_tanks_inner                   L_CTL+L_SHIFT+USB[0x09]                           //Fuel pumps external tanks inner
+define        Ka_50_Fuel_pumps_external_tanks_outer                   L_CTL+L_SHIFT+USB[0x0A]                           //Fuel pumps external tanks outer
+define        Ka_50_Fuel_meter_power                                  L_CTL+L_SHIFT+USB[0x0B]                           //Fuel meter power
+define        Ka_50_Shutoff_valve_left_engine_fuel_cover              R_CTL+R_SHIFT+USB[0x0D]                           //Shutoff valve left engine fuel cover
+define        Ka_50_Shutoff_valve_left_engine_fuel                    R_CTL+R_SHIFT+USB[0x0D]                           //Shutoff valve left engine fuel
+define        Ka_50_Shutoff_valve_right_engine_fuel_cover             R_CTL+R_SHIFT+USB[0x0E]                           //Shutoff valve right engine fuel cover
+define        Ka_50_Shutoff_valve_right_engine_fuel_                  R_CTL+R_SHIFT+USB[0x0E]                           //Shutoff valve right engine fuel 
+define        Ka_50_Shutoff_valve_APU_fuel_cover                      R_CTL+R_SHIFT+USB[0x0F]                           //Shutoff valve APU fuel cover
+define        Ka_50_Shutoff_valve_APU_fuel                            R_CTL+R_SHIFT+USB[0x0F]                           //Shutoff valve APU fuel
+define        Ka_50_Fuel_bypass_valve_cover                           R_CTL+R_SHIFT+USB[0x33]                           //Fuel bypass valve cover
+define        Ka_50_Fuel_bypass_valve                                 R_CTL+R_SHIFT+USB[0x33]                           //Fuel bypass valve
+define        Ka_50_Ejecting_system_power_cover                       R_CTL+R_SHIFT+USB[0x08]                           //Ejecting system power cover
+define        Ka_50_Ejecting_system_power_1                           R_SHIFT+R_ALT+USB[0x08]                           //Ejecting system power 1
+define        Ka_50_Ejecting_system_power_2                           R_SHIFT+R_ALT+USB[0x15]                           //Ejecting system power 2
+define        Ka_50_Ejecting_system_power_3                           R_SHIFT+R_ALT+USB[0x17]                           //Ejecting system power 3
+define        Ka_50_Weapons_control_system_cover                      L_CTL+L_SHIFT+USB[0x07]                           //Weapons control system cover
+define        Ka_50_Weapons_control_system                            L_SHIFT+L_ALT+USB[0x07]                           //Weapons control system
+define        Ka_50_Main_hydraulics_cover                             L_CTL+L_SHIFT+USB[0x0B]                           //Main hydraulics cover
+define        Ka_50_Main_hydraulics                                   L_SHIFT+L_ALT+USB[0x0B]                           //Main hydraulics
+define        Ka_50_IFF_power_cover                                   L_CTL+L_SHIFT+USB[0x0C]                           //IFF power cover
+define        Ka_50_IFF_power                                         L_SHIFT+L_ALT+USB[0x0C]                           //IFF power
+define        Ka_50_Targeting_Navigation_system_power                 L_SHIFT+USB[0x11]                                 //Targeting-Navigation system power
+
+
+
+// Ins Targeting Mode Controls Panel PVR**********************
+
+define        Ka_50_Training_mode_switch                              L_SHIFT+R_CTL+USB[0x0F]                           //Training mode switch
+
+
+
+// Ins Wall panel**********************
+
+define        Ka_50_Shkval_auto_scan_rate_dial_up                     L_CTL+L_SHIFT+USB[0x10]                           //Shkval auto scan rate dial up
+define        Ka_50_Shkval_auto_scan_rate_dial_down                   L_CTL+L_ALT+USB[0x10]                             //Shkval auto scan rate dial down
+define        Ka_50_Shkval_windshield_wiper                           L_SHIFT+R_CTL+USB[0x10]                           //Shkval windshield wiper
+define        Ka_50_Fire_extinguisher_left_engine_                    L_SHIFT+USB[0x09]                                 //Fire extinguisher left engine 
+define        Ka_50_Fire_extinguisher_right_engine                    R_SHIFT+USB[0x09]                                 //Fire extinguisher right engine
+define        Ka_50_Fire_extinguisher_APU                             L_SHIFT+L_ALT+USB[0x09]                           //Fire extinguisher APU
+define        Ka_50_Fire_extinguisher_oil_cooling_fan                 L_SHIFT+L_CTL+USB[0x09]                           //Fire extinguisher oil cooling fan
+define        Ka_50_Fire_extinguishers_WORK___OFF___TEST_cover        L_SHIFT+L_CTL+USB[0x1D]                           //Fire extinguishers WORK - OFF - TEST cover
+define        Ka_50_Fire_extinguishers_WORK___OFF___TEST              L_SHIFT+L_CTL+USB[0x1D]                           //Fire extinguishers WORK - OFF - TEST
+define        Ka_50_Fire_signaling                                    R_SHIFT+R_ALT+USB[0x1D]                           //Fire signaling
+define        Ka_50_Fire_extinguisher_First__Auto____Second__Manual__selector_coverR_SHIFT+R_CTL+USB[0x1D]              //Fire extinguisher First (Auto) / Second (Manual) selector cover
+define        Ka_50_Fire_extinguisher_First__Auto____Second__Manual__selectorR_SHIFT+R_CTL+USB[0x1D]                    //Fire extinguisher First (Auto) / Second (Manual) selector
+define        Ka_50_Fire_warning_First_sensors_group_BIT_selector     L_SHIFT+USB[0x59]                                 //Fire warning 1st sensors group BIT selector
+define        Ka_50_Fire_warning_Second_sensors_group_BIT_selector    L_SHIFT+USB[0x5A]                                 //Fire warning 2nd sensors group BIT selector
+define        Ka_50_Fire_warning_Third_sensors_group_BIT_selector     L_SHIFT+USB[0x5B]                                 //Fire warning 3rd sensors group BIT selector
+define        Ka_50_EEG_Electronic_Engine_Governor_left_engine_cover  R_CTL+R_ALT+USB[0x4A]                             //EEG Electronic Engine Governor left engine cover
+define        Ka_50_EEG_Electronic_Engine_Governor_left_engine        R_CTL+USB[0x4A]                                   //EEG Electronic Engine Governor left engine
+define        Ka_50_EEG_Electronic_Engine_Governor_right_engine_cover R_CTL+R_ALT+USB[0x4D]                             //EEG Electronic Engine Governor right engine cover
+define        Ka_50_EEG_Electronic_Engine_Governor_right_engine       R_CTL+USB[0x4D]                                   //EEG Electronic Engine Governor right engine
+define        Ka_50_EEG_power_turbine_channel_1_test___channel_2_test_three_switch_contactor_coverL_SHIFT+L_CTL+USB[0x4D]//EEG power turbine channel 1 test / channel 2 test three-switch contactor cover
+define        Ka_50_EEG_power_turbine_channel_1_test___channel_2_test_three_switch_contactorL_CTL+L_ALT+USB[0x4D]       //EEG power turbine channel 1 test / channel 2 test three-switch contactor
+define        Ka_50_EEG_gas_generator_test___Operate_switch_cover     R_SHIFT+R_CTL+USB[0x4D]                           //EEG gas generator test - Operate switch cover
+define        Ka_50_EEG_gas_generator_test___Operate_switch           R_SHIFT+R_ALT+USB[0x4D]                           //EEG gas generator test - Operate switch
+define        Ka_50_Gyro_Mag_Manual_heading                           L_SHIFT+L_ALT+USB[0x0A]                           //Gyro/Mag/Manual heading
+define        Ka_50_SAI_Standby_Attitude_Indicator_power_switch       R_SHIFT+USB[0x11]                                 //SAI Standby Attitude Indicator power switch
+define        Ka_50_SAI_Standby_Attitude_Indicator_self_test_button   R_SHIFT+L_SHIFT+USB[0x11]                         //SAI Standby Attitude Indicator self test button
+define        Ka_50_Lighting_cockpit_panel_switch                     R_CTL+USB[0x0E]                                   //Lighting cockpit panel switch
+define        Ka_50_Lighting_night_vision_cockpit_switch              L_CTL+USB[0x0E]                                   //Lighting night vision cockpit switch
+define        Ka_50_Lighting_cockpit_interior_lamp_switch             USB[0x0E]                                         //Lighting cockpit interior lamp switch
+define        Ka_50_Lighting_HSI_and_ADI_switch                       R_SHIFT+R_ALT+USB[0x0E]                           //Lighting HSI and ADI switch
+define        Ka_50_Lighting_auxiliary_panel_switch                   R_CTL+R_ALT+USB[0x0E]                             //Lighting auxiliary panel switch
+define        Ka_50_Lights_rotor_tip                                  R_CTL+R_ALT+USB[0x0D]                             //Lights rotor tip
+define        Ka_50_Light_anti_collision                              R_SHIFT+USB[0x0D]                                 //Light anti-collision
+define        Ka_50_Lights_formation_10\%_30\%_100\%_Off              R_CTL+USB[0x0D]                                   //Lights formation 10\%/30\%/100\%/Off
+define        Ka_50_Signal_flares_power                               R_CTL+USB[0x27]                                   //Signal flares power
+define        Ka_50_Signal_flares___red_flare                         L_ALT+USB[0x1E]                                   //Signal flares - red flare
+define        Ka_50_Signal_flares___green_flare                       L_ALT+USB[0x1F]                                   //Signal flares - green flare
+define        Ka_50_Signal_flares___white_flare                       L_ALT+USB[0x20]                                   //Signal flares - white flare
+define        Ka_50_Signal_flares___yellow_flare                      L_ALT+USB[0x21]                                   //Signal flares - yellow flare
+define        Ka_50_Magnetic_variation_knob_right                     R_SHIFT+R_ALT+USB[0x10]                           //Magnetic variation knob right
+define        Ka_50_Magnetic_variation_knob_left                      R_SHIFT+R_CTL+USB[0x10]                           //Magnetic variation knob left
+
+
+
+// Ins Overhead panel**********************
+
+define        Ka_50_Lights_navigation_10\%_30\%_100\%_Off             R_ALT+USB[0x0F]                                   //Lights navigation 10\%/30\%/100\%/Off
+define        Ka_50_Lights_navigation_Code_Mode                       L_ALT+USB[0x0F]                                   //Lights navigation Code Mode
+define        Ka_50_Windshield_wiper_switch                           L_CTL+L_ALT+USB[0x1A]                             //Windshield wiper switch
+define        Ka_50_L_140_Laser_warning_system_reset_button           USB[0x0F]                                         //L-140 Laser warning system reset button
+define        Ka_50_Pitot_static_port_and_AoA_sensors_heat_switch     L_SHIFT+L_ALT+USB[0x16]                           //Pitot static port and AoA sensors heat switch
+define        Ka_50_Pitot_ram_air_and_clock_heat_switch               L_SHIFT+L_CTL+USB[0x16]                           //Pitot ram air and clock heat switch
+define        Ka_50_Pitot_system_heat_test                            R_SHIFT+R_CTL+USB[0x16]                           //Pitot system heat test
+define        Ka_50_Rotor_de_icing_system_switch                      L_SHIFT+L_CTL+USB[0x16]                           //Rotor de-icing system switch
+define        Ka_50_Engines_de_icing___dust_protection_systems_switch L_ALT+USB[0x0C]                                   //Engines de-icing / dust-protection systems switch
+
+
+
+// Ins Targeting Display Control Panel PUR**********************
+
+define        Ka_50_HUD_Scales_Reject_On_Off                          R_CTL+USB[0x16]                                   //HUD Scales Reject On/Off
+define        Ka_50_IT_23_brightness_Down                             R_CTL+R_ALT+USB[0x2F]                             //IT-23 brightness Down
+define        Ka_50_IT_23_brightness_Up                               R_CTL+R_ALT+USB[0x30]                             //IT-23 brightness Up
+define        Ka_50_IT_23_contrast_Down                               R_SHIFT+R_CTL+USB[0x2F]                           //IT-23 contrast Down
+define        Ka_50_IT_23_contrast_Up                                 R_SHIFT+R_CTL+USB[0x30]                           //IT-23 contrast Up
+define        Ka_50_Helmet_device_brightness_Down                     R_SHIFT+R_CTL+USB[0x2F]                           //Helmet device brightness Down
+define        Ka_50_Helmet_device_brightness_Up                       R_SHIFT+R_CTL+USB[0x30]                           //Helmet device brightness Up
+define        Ka_50_Laser_code_selector_left                          R_SHIFT+R_CTL+USB[0x0C]                           //Laser code selector left
+define        Ka_50_Laser_code_selector_right                         R_SHIFT+R_CTL+USB[0x12]                           //Laser code selector right
+define        Ka_50_IT_23_Black_White_indication_switch               R_SHIFT+R_CTL+USB[0x05]                           //IT-23 Black-White indication switch
+
+
+
+// Ins Landing Lights & Voice Warning Panel**********************
+
+define        Ka_50_Light_landing_search_On_Retraction_Off            R_SHIFT+USB[0x0F]                                 //Light landing search On/Retraction/Off
+define        Ka_50_Lights_landing_search_change_Main_Reserved        R_CTL+USB[0x0F]                                   //Lights landing search change Main/Reserved
+define        Ka_50_ADF_Beacon_select                                 L_ALT+USB[0x2E]                                   //ADF Beacon select
+define        Ka_50_Voice_message_emergency_mode                      L_CTL+USB[0x19]                                   //Voice message emergency mode
+define        Ka_50_Voice_message_cease                               L_SHIFT+L_ALT+USB[0x19]                           //Voice message cease
+define        Ka_50_Voice_message_repeat                              L_ALT+USB[0x19]                                   //Voice message repeat
+
+
+
+// Ins ADF**********************
+
+define        Ka_50_ADF_Channel_next                                  L_CTL+USB[0x2E]                                   //ADF Channel next
+define        Ka_50_ADF_Channel_prevous                               L_CTL+USB[0x2D]                                   //ADF Channel prevous
+define        Ka_50_ADF_Mode_change                                   L_CTL+L_ALT+USB[0x2F]                             //ADF Mode change
+define        Ka_50_ADF_Receiver_mode_change                          L_CTL+L_ALT+USB[0x30]                             //ADF Receiver mode change
+define        Ka_50_ADF_Volume_up                                     L_CTL+L_ALT+USB[0x2E]                             //ADF Volume up
+define        Ka_50_ADF_Volume_down                                   L_CTL+L_ALT+USB[0x2D]                             //ADF Volume down
+define        Ka_50_ADF_Self_test                                     L_CTL+L_ALT+USB[0x17]                             //ADF Self test
+
+
+
+// Ins Autopilot**********************
+
+define        Ka_50_Autopilot_Bank_hold                               L_SHIFT+USB[0x05]                                 //Autopilot Bank hold
+define        Ka_50_Autopilot_Pitch_hold                              L_SHIFT+USB[0x13]                                 //Autopilot Pitch hold
+define        Ka_50_Autopilot_Heading_hold                            L_SHIFT+USB[0x0B]                                 //Autopilot Heading hold
+define        Ka_50_Autopilot_Altitude_hold                           L_SHIFT+USB[0x04]                                 //Autopilot Altitude hold
+define        Ka_50_Autopilot_Director_control                        L_CTL+USB[0x04]                                   //Autopilot Director control
+define        Ka_50_Autopilot_BARO_RALT_altitude_hold_mode            L_CTL+USB[0x1B]                                   //Autopilot BARO/RALT altitude hold mode
+define        Ka_50_Autopilot_Desired_heading___Desired_track         L_ALT+USB[0x1B]                                   //Autopilot Desired heading - Desired track
+
+
+
+// Ins Radio R-800 VHF-2**********************
+
+define        Ka_50_R_800_Rotary_1_Up                                 L_CTL+L_SHIFT+USB[0x1E]                           //R-800 Rotary 1 Up
+define        Ka_50_R_800_Rotary_1_Down                               L_CTL+L_ALT+USB[0x1E]                             //R-800 Rotary 1 Down
+define        Ka_50_R_800_Rotary_2_Up                                 L_CTL+L_SHIFT+USB[0x1F]                           //R-800 Rotary 2 Up
+define        Ka_50_R_800_Rotary_2_Down                               L_CTL+L_ALT+USB[0x1F]                             //R-800 Rotary 2 Down
+define        Ka_50_R_800_Rotary_3_Up                                 L_CTL+L_SHIFT+USB[0x20]                           //R-800 Rotary 3 Up
+define        Ka_50_R_800_Rotary_3_Down                               L_CTL+L_ALT+USB[0x20]                             //R-800 Rotary 3 Down
+define        Ka_50_R_800_Rotary_4_Up                                 L_CTL+L_SHIFT+USB[0x21]                           //R-800 Rotary 4 Up
+define        Ka_50_R_800_Rotary_4_Down                               L_CTL+L_ALT+USB[0x21]                             //R-800 Rotary 4 Down
+define        Ka_50_R_800_Squelch                                     L_CTL+L_ALT+USB[0x15]                             //R-800 Squelch
+define        Ka_50_R_800_AM_FM_Mode_switch                           L_SHIFT+L_CTL+USB[0x10]                           //R-800 AM-FM Mode switch
+define        Ka_50_R_800_Data_transfer_rate_switch                   L_CTL+L_ALT+USB[0x22]                             //R-800 Data transfer rate switch
+define        Ka_50_R_800_ADF_switch                                  L_CTL+L_ALT+USB[0x04]                             //R-800 ADF switch
+define        Ka_50_R_800_Emergency_receiver                          L_CTL+L_ALT+USB[0x08]                             //R-800 Emergency receiver
+define        Ka_50_R_800_Test_button                                 L_CTL+L_SHIFT+USB[0x17]                           //R-800 Test button
+
+
+
+// Ins Radio R-828 VHF-1**********************
+
+define        Ka_50_R_828_Channel_selector_next                       R_CTL+R_ALT+USB[0x10]                             //R-828 Channel selector next
+define        Ka_50_R_828_Channel_selector_previous                   R_CTL+R_ALT+USB[0x11]                             //R-828 Channel selector previous
+define        Ka_50_R_828_Squelch                                     R_CTL+R_ALT+USB[0x15]                             //R-828 Squelch
+define        Ka_50_R_828_Tuner_button                                R_CTL+R_SHIFT+USB[0x17]                           //R-828 Tuner button
+define        Ka_50_R_828_Volume_up                                   L_CTL+L_SHIFT+USB[0x30]                           //R-828 Volume up
+define        Ka_50_R_828_Volume_down                                 L_CTL+L_SHIFT+USB[0x2F]                           //R-828 Volume down
+
+
+
+// Ins Auxiliary Control Panel**********************
+
+define        Ka_50_Power_plant_hydraulics_EKRAN_self_test_systems_switch_coverL_SHIFT+L_CTL+USB[0x11]                  //Power plant, hydraulics, EKRAN self-test systems switch cover
+define        Ka_50_Power_plant_hydraulics_EKRAN_self_test_systems_switchL_SHIFT+L_CTL+USB[0x11]                        //Power plant, hydraulics, EKRAN self-test systems switch
+define        Ka_50_LWS_L_140_self_test_button                        L_CTL+L_ALT+USB[0x11]                             //LWS L-140 self-test button
+define        Ka_50_LWS_L_140_power_switch                            L_CTL+USB[0x11]                                   //LWS L-140 power switch
+define        Ka_50_Illumination_control_panel_switch                 R_ALT+R_SHIFT+USB[0x0F]                           //Illumination control panel switch
+define        Ka_50_CMD_UV_26_power_switch_cover                      L_SHIFT+L_ALT+USB[0x06]                           //CMD UV-26 power switch cover
+define        Ka_50_CMD_UV_26_power_switch                            L_SHIFT+L_CTL+USB[0x06]                           //CMD UV-26 power switch
+define        Ka_50_CMD_UV_26_BIT_switch_cover                        L_SHIFT+L_CTL+USB[0x06]                           //CMD UV-26 BIT switch cover
+define        Ka_50_CMD_UV_26_BIT_switch                              L_CTL+L_ALT+USB[0x06]                             //CMD UV-26 BIT switch
+define        Ka_50_INU_power_switch                                  R_CTL+R_ALT+USB[0x0C]                             //INU power switch
+define        Ka_50_INU_heater_switch                                 R_SHIFT+R_ALT+USB[0x0C]                           //INU heater switch
+define        Ka_50_Rocket_and_gun_pods_ballistics_data_settings_selector_RightL_CTL+L_ALT+USB[0x05]                    //Rocket and gun pods ballistics data settings selector Right
+define        Ka_50_Rocket_and_gun_pods_ballistics_data_settings_selector_LeftL_CTL+USB[0x05]                           //Rocket and gun pods ballistics data settings selector Left
+define        Ka_50_ALMAZ_Voice_alert_system_test_button              R_CTL+R_ALT+USB[0x19]                             //ALMAZ Voice alert system test button
+define        Ka_50_Eject_system_circuit_test_button                  R_SHIFT+R_CTL+USB[0x08]                           //Eject system circuit test button
+define        Ka_50_Eject_system_circuit_check_selector_right         L_SHIFT+L_ALT+USB[0x05]                           //Eject system circuit check selector right
+define        Ka_50_Eject_system_circuit_check_selector_left          L_SHIFT+L_CTL+USB[0x05]                           //Eject system circuit check selector left
+define        Ka_50_EGT_right_threshold_governor_button               R_SHIFT+R_CTL+USB[0x0A]                           //EGT right threshold governor button
+define        Ka_50_EGT_left_threshold_governor_button                R_SHIFT+R_ALT+USB[0x0A]                           //EGT left threshold governor button
+define        Ka_50_Engine_vibration_monitor_system_button            R_SHIFT+R_CTL+USB[0x19]                           //Engine vibration monitor system button
+define        Ka_50_Lighting_night_vision_cockpit_brightness_knob_DownL_SHIFT+L_CTL+USB[0x0E]                           //Lighting night vision cockpit brightness knob Down
+define        Ka_50_Lighting_night_vision_cockpit_brightness_knob_Up  L_CTL+L_ALT+USB[0x0E]                             //Lighting night vision cockpit brightness knob Up
+define        Ka_50_Lighting_cockpit_panel_brightness_knob_Down       L_SHIFT+L_CTL+USB[0x0F]                           //Lighting cockpit panel brightness knob Down
+define        Ka_50_Lighting_cockpit_panel_brightness_knob_Up         L_CTL+L_ALT+USB[0x0F]                             //Lighting cockpit panel brightness knob Up
+define        Ka_50_Lighting_HSI_and_ADI_brightness_knob_Down         L_SHIFT+L_CTL+USB[0x0D]                           //Lighting HSI and ADI brightness knob Down
+define        Ka_50_Lighting_HSI_and_ADI_brightness_knob__Up          L_CTL+L_ALT+USB[0x0D]                             //Lighting HSI and ADI brightness knob  Up
+define        Ka_50_Lighting_auxiliary_panel_brightness_knob_Down     L_SHIFT+L_CTL+USB[0x18]                           //Lighting auxiliary panel brightness knob Down
+define        Ka_50_Lighting_auxiliary_panel_brightness_knob__Up      L_SHIFT+L_CTL+USB[0x18]                           //Lighting auxiliary panel brightness knob  Up
+
+
+
+// Systems**********************
+
+define        Ka_50_Cockpit_door_open_close                           R_CTL+USB[0x06]                                   //Cockpit door open/close
+define        Ka_50_Eject__3_times_                                   L_CTL+USB[0x08]                                   //Eject (3 times)
+define        Ka_50_SPU_9_Radio_communicator_selector                 L_CTL+L_ALT+USB[0x38]                             //SPU-9 Radio communicator selector
+
+
+
+// Radio Communications**********************
+
+define        Ka_50_Communication_menu                                USB[0x31]                                         //Communication menu
+define        Ka_50_Flight___Complete_mission_and_RTB                 L_WIN+USB[0x08]                                   //Flight - Complete mission and RTB
+define        Ka_50_Flight___Complete_mission_and_rejoin              L_WIN+USB[0x15]                                   //Flight - Complete mission and rejoin
+define        Ka_50_Toggle_formation                                  L_WIN+USB[0x17]                                   //Toggle formation
+define        Ka_50_Join_up_formation                                 L_WIN+USB[0x1C]                                   //Join up formation
+define        Ka_50_Attack_my_target                                  L_WIN+USB[0x14]                                   //Attack my target
+define        Ka_50_Cover_me                                          L_WIN+USB[0x1A]                                   //Cover me
+define        Ka_50_Flight___Attack_ground_targets                    L_WIN+USB[0x0A]                                   //Flight - Attack ground targets
+define        Ka_50_Flight___Attack_air_defenses                      L_WIN+USB[0x07]                                   //Flight - Attack air defenses
+
+
+
+// Communications**********************
+
+define        Ka_50_Switch_dialog                                     L_SHIFT+USB[0x31]                                 //Switch dialog
+define        Ka_50_Switch_to_main_menu                               L_CTL+USB[0x31]                                   //Switch to main menu
+
+
+
+// Kneeboard**********************
+
+define        Ka_50_Kneeboard_Next_Page                               R_SHIFT+USB[0x30]                                 //Kneeboard Next Page
+define        Ka_50_Kneeboard_Previous_Page                           R_SHIFT+USB[0x2F]                                 //Kneeboard Previous Page
+define        Ka_50_Kneeboard_ON_OFF                                  R_SHIFT+USB[0x0E]                                 //Kneeboard ON/OFF
+define        Ka_50_Kneeboard_glance_view                             R_ALT+USB[0x0E]                                   //Kneeboard glance view
+define        Ka_50_Kneeboard_current_position_mark_point             R_CTL+USB[0x0E]                                   //Kneeboard current position mark point

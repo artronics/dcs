@@ -1,0 +1,547 @@
+
+
+
+// Kneeboard**********************
+
+define        MiG_21BIS_Kneeboard_On_Off                              R_CTL+USB[0x52]                                   //Kneeboard On/Off
+define        MiG_21BIS_Kneeboard_Page__Increase                      R_CTL+USB[0x4F]                                   //Kneeboard Page +
+define        MiG_21BIS_Kneeboard_Page__Reduce                        R_CTL+USB[0x50]                                   //Kneeboard Page -
+define        MiG_21BIS_Kneeboard_mark_current_position               R_CTL+USB[0x51]                                   //Kneeboard mark current position
+define        MiG_21BIS_Kneeboard_glance                              R_SHIFT+USB[0x52]                                 //Kneeboard glance
+
+
+
+// Avionics**********************
+
+define        MiG_21BIS_Pitot_tube___Main                             R_ALT+USB[0x17]                                   //Pitot tube - Main
+define        MiG_21BIS_Pitot_tube___Emergency                        R_ALT+R_CTL+USB[0x17]                             //Pitot tube - Emergency
+define        MiG_21BIS_Pitot_Tube_Heating_On                         L_SHIFT+USB[0x0B]                                 //Pitot Tube Heating On
+define        MiG_21BIS_Pitot_Tube_Heating_Off                        L_SHIFT+L_CTL+USB[0x0B]                           //Pitot Tube Heating Off
+define        MiG_21BIS_Emergency_Pitot_Tube_Heating_On               L_ALT+USB[0x0B]                                   //Emergency Pitot Tube Heating On
+define        MiG_21BIS_Emergency_Pitot_Tube_Heating_Off              L_ALT+L_CTL+USB[0x0B]                             //Emergency Pitot Tube Heating Off
+define        MiG_21BIS_Accelerometer_Reset                           R_CTL+USB[0x04]                                   //Accelerometer Reset
+define        MiG_21BIS_KPP_Main                                      R_CTL+USB[0x0E]                                   //KPP Main
+define        MiG_21BIS_KPP_Emergency                                 R_ALT+R_SHIFT+USB[0x0E]                           //KPP Emergency
+define        MiG_21BIS_KPP_Cage                                      USB[0x0E]                                         //KPP Cage
+define        MiG_21BIS_NPP_On                                        L_SHIFT+USB[0x11]                                 //NPP On
+define        MiG_21BIS_NPP_Off                                       L_SHIFT+L_CTL+USB[0x11]                           //NPP Off
+define        MiG_21BIS_NPP_Cage                                      L_CTL+USB[0x11]                                   //NPP Cage
+define        MiG_21BIS_NPP___RSBN_mode                               L_ALT+USB[0x11]                                   //NPP - RSBN mode
+define        MiG_21BIS_NPP___ARK_mode                                L_ALT+L_CTL+USB[0x11]                             //NPP - ARK mode
+define        MiG_21BIS_NPP_Course_set__Increase                      L_ALT+USB[0x1B]                                   //NPP Course set +
+define        MiG_21BIS_NPP_Course_set__Reduce                        L_ALT+L_WIN+USB[0x1B]                             //NPP Course set -
+define        MiG_21BIS_Radio_Altimeter_Marker_On                     R_ALT+USB[0x05]                                   //Radio Altimeter/Marker On
+define        MiG_21BIS_Radio_Altimeter_Marker_Off                    R_ALT+R_CTL+USB[0x05]                             //Radio Altimeter/Marker Off
+define        MiG_21BIS_Danger_Altitude_50m                           R_CTL+USB[0x1E]                                   //Danger Altitude 50m
+define        MiG_21BIS_Danger_Altitude_100m                          R_CTL+USB[0x1F]                                   //Danger Altitude 100m
+define        MiG_21BIS_Danger_Altitude_150m                          R_CTL+USB[0x20]                                   //Danger Altitude 150m
+define        MiG_21BIS_Danger_Altitude_200m                          R_CTL+USB[0x21]                                   //Danger Altitude 200m
+define        MiG_21BIS_Danger_Altitude_250m                          R_CTL+USB[0x22]                                   //Danger Altitude 250m
+define        MiG_21BIS_Danger_Altitude_300m                          R_CTL+USB[0x23]                                   //Danger Altitude 300m
+define        MiG_21BIS_Danger_Altitude_400m                          R_CTL+USB[0x24]                                   //Danger Altitude 400m
+define        MiG_21BIS_Danger_Altitude_Off                           R_CTL+USB[0x27]                                   //Danger Altitude Off
+define        MiG_21BIS_RSBN_On                                       R_SHIFT+USB[0x15]                                 //RSBN On
+define        MiG_21BIS_RSBN_Off                                      R_SHIFT+R_CTL+USB[0x15]                           //RSBN Off
+define        MiG_21BIS_RSBN_Mode_Descend                             L_ALT+L_CTL+USB[0x15]                             //RSBN Mode: Descend
+define        MiG_21BIS_RSBN_Mode_Navigation                          L_CTL+USB[0x15]                                   //RSBN Mode: Navigation
+define        MiG_21BIS_RSBN_Mode_Landing                             L_ALT+USB[0x15]                                   //RSBN Mode: Landing
+define        MiG_21BIS_RSBN_self_test                                L_WIN+L_SHIFT+USB[0x15]                           //RSBN self test
+define        MiG_21BIS_ARK_On                                        R_CTL+USB[0x05]                                   //ARK On
+define        MiG_21BIS_ARK_Off                                       USB[0x05]                                         //ARK Off
+define        MiG_21BIS_ARK_channel_1                                 R_SHIFT+USB[0x1E]                                 //ARK channel 1
+define        MiG_21BIS_ARK_channel_2                                 R_SHIFT+USB[0x1F]                                 //ARK channel 2
+define        MiG_21BIS_ARK_channel_3                                 R_SHIFT+USB[0x20]                                 //ARK channel 3
+define        MiG_21BIS_ARK_channel_4                                 R_SHIFT+USB[0x21]                                 //ARK channel 4
+define        MiG_21BIS_ARK_channel_5                                 R_SHIFT+USB[0x22]                                 //ARK channel 5
+define        MiG_21BIS_ARK_channel_6                                 R_SHIFT+USB[0x23]                                 //ARK channel 6
+define        MiG_21BIS_ARK_channel_7                                 R_SHIFT+USB[0x24]                                 //ARK channel 7
+define        MiG_21BIS_ARK_channel_8                                 R_SHIFT+USB[0x25]                                 //ARK channel 8
+define        MiG_21BIS_ARK_channel_9                                 R_SHIFT+USB[0x26]                                 //ARK channel 9
+define        MiG_21BIS_ARK_Sector_I_1_Ukraine                        R_ALT+USB[0x1E]                                   //ARK Sector I-1 Ukraine
+define        MiG_21BIS_ARK_Sector_I_2_free                           R_ALT+USB[0x1F]                                   //ARK Sector I-2 free
+define        MiG_21BIS_ARK_Sector_II_1_Russia                        R_ALT+USB[0x20]                                   //ARK Sector II-1 Russia
+define        MiG_21BIS_ARK_Sector_II_2_Russia                        R_ALT+USB[0x21]                                   //ARK Sector II-2 Russia
+define        MiG_21BIS_ARK_Sector_III_1_Georgia                      R_ALT+USB[0x22]                                   //ARK Sector III-1 Georgia
+define        MiG_21BIS_ARK_Sector_III_2_free                         R_ALT+USB[0x23]                                   //ARK Sector III-2 free
+define        MiG_21BIS_ARK_Sector_IV_1_free                          R_ALT+USB[0x24]                                   //ARK Sector IV-1 free
+define        MiG_21BIS_ARK_Sector_IV_2_free                          R_ALT+USB[0x25]                                   //ARK Sector IV-2 free
+define        MiG_21BIS_SARPP_12_Flight_Data_Recorder___On            L_CTL+USB[0x16]                                   //SARPP-12 Flight Data Recorder - On
+define        MiG_21BIS_SARPP_12_Flight_Data_Recorder___Off           L_CTL+L_ALT+USB[0x16]                             //SARPP-12 Flight Data Recorder - Off
+
+
+
+// Engine**********************
+
+define        MiG_21BIS_Autostart_Procedure                           L_WIN+USB[0x4A]                                   //Autostart Procedure
+define        MiG_21BIS_Autostop_Procedure                            L_WIN+USB[0x4D]                                   //Autostop Procedure
+define        MiG_21BIS_Third_Fuel_Tanks_Group_Fuel_Pump_On           R_SHIFT+USB[0x13]                                 //3rd Fuel Tanks Group, Fuel Pump On
+define        MiG_21BIS_Third_Fuel_Tanks_Group_Fuel_Pump_Off          R_SHIFT+R_CTL+USB[0x13]                           //3rd Fuel Tanks Group, Fuel Pump Off
+define        MiG_21BIS_First_Fuel_Tanks_Group_Fuel_Pump_On           R_ALT+USB[0x13]                                   //1st Fuel Tanks Group, Fuel Pump On
+define        MiG_21BIS_First_Fuel_Tanks_Group_Fuel_Pump_Off          R_ALT+R_CTL+USB[0x13]                             //1st Fuel Tanks Group, Fuel Pump Off
+define        MiG_21BIS_Drain_Tank_Fuel_Pump_On                       R_CTL+USB[0x13]                                   //Drain Tank, Fuel Pump On
+define        MiG_21BIS_Drain_Tank_Fuel_Pump_Off                      R_ALT+R_SHIFT+USB[0x13]                           //Drain Tank, Fuel Pump Off
+define        MiG_21BIS_APU_On                                        R_ALT+USB[0x38]                                   //APU On
+define        MiG_21BIS_APU_Off                                       R_ALT+R_CTL+USB[0x38]                             //APU Off
+define        MiG_21BIS_Engine_Normal_Start                           R_CTL+USB[0x38]                                   //Engine Normal Start
+define        MiG_21BIS_Engine_Cold_Start                             R_ALT+R_SHIFT+USB[0x38]                           //Engine Cold Start
+define        MiG_21BIS_Engine_Emergency_Air_Start_On                 USB[0x08]                                         //Engine Emergency Air Start On
+define        MiG_21BIS_Engine_Emergency_Air_Start_Off                L_CTL+L_SHIFT+USB[0x08]                           //Engine Emergency Air Start Off
+define        MiG_21BIS_Throttle_Start_Stop_Position_Toggle           L_WIN+L_SHIFT+USB[0x08]                           //Throttle Start/Stop Position Toggle
+define        MiG_21BIS_Start_Engine                                  L_WIN+L_CTL+USB[0x08]                             //Start Engine
+define        MiG_21BIS_Anti_surge_doors___Manual                     R_SHIFT+USB[0x30]                                 //Anti surge doors - Manual
+define        MiG_21BIS_Anti_surge_doors___Auto                       R_SHIFT+R_CTL+USB[0x30]                           //Anti surge doors - Auto
+define        MiG_21BIS_Afterburner_Maximum_On                        R_ALT+USB[0x30]                                   //Afterburner/Maximum On
+define        MiG_21BIS_Afterburner_Maximum_Off                       R_ALT+R_SHIFT+USB[0x30]                           //Afterburner/Maximum Off
+define        MiG_21BIS_Emergency_Afterburner_On                      L_ALT+USB[0x08]                                   //Emergency Afterburner On
+define        MiG_21BIS_Emergency_Afterburner_Off                     L_ALT+L_CTL+USB[0x08]                             //Emergency Afterburner Off
+define        MiG_21BIS_Cone_On                                       R_SHIFT+USB[0x2F]                                 //Cone On
+define        MiG_21BIS_Cone_Off                                      R_SHIFT+R_CTL+USB[0x2F]                           //Cone Off
+define        MiG_21BIS_Cone_Manual                                   R_SHIFT+USB[0x31]                                 //Cone Manual
+define        MiG_21BIS_Cone_Auto                                     R_SHIFT+R_CTL+USB[0x31]                           //Cone Auto
+define        MiG_21BIS_Nozzle_Emergency_Control___On                 R_ALT+USB[0x31]                                   //Nozzle, Emergency Control - On
+define        MiG_21BIS_Nozzle_Emergency_Control___Off                R_ALT+R_CTL+USB[0x31]                             //Nozzle, Emergency Control - Off
+define        MiG_21BIS_Fire_Extinguisher_System_On                   R_ALT+USB[0x09]                                   //Fire Extinguisher System On
+define        MiG_21BIS_Fire_Extinguisher_System_Off                  R_ALT+R_CTL+USB[0x09]                             //Fire Extinguisher System Off
+define        MiG_21BIS_Fire_Extinguisher_Cover_Open                  R_SHIFT+USB[0x09]                                 //Fire Extinguisher Cover Open
+define        MiG_21BIS_Fire_Extinguisher_Cover_Close                 R_SHIFT+R_CTL+USB[0x09]                           //Fire Extinguisher Cover Close
+define        MiG_21BIS_Fire_Extinguisher_Engage                      L_WIN+L_ALT+USB[0x09]                             //Fire Extinguisher Engage
+define        MiG_21BIS_Drop_Center_Fuel_Pod                          R_CTL+USB[0x4B]                                   //Drop Center Fuel Pod
+define        MiG_21BIS_Drop_Wing_Fuel_Pods                           R_CTL+USB[0x4E]                                   //Drop Wing Fuel Pods
+define        MiG_21BIS_Drop_Wing_Fuel_Pods_Cover_Open                R_SHIFT+USB[0x4E]                                 //Drop Wing Fuel Pods Cover Open
+define        MiG_21BIS_Drop_Wing_Fuel_Pods_Cover_Close               R_SHIFT+R_CTL+USB[0x4E]                           //Drop Wing Fuel Pods Cover Close
+
+
+
+// Flight Controls**********************
+
+define        MiG_21BIS_Force_Feedback_On_Off                         R_ALT+R_SHIFT+USB[0x0D]                           //Force Feedback On/Off
+define        MiG_21BIS_Flight_Nose_Down                              USB[0x52]                                         //Flight Nose Down
+define        MiG_21BIS_Flight_Nose_Up                                USB[0x51]                                         //Flight Nose Up
+define        MiG_21BIS_Flight_Left_Wing_Down                         USB[0x50]                                         //Flight Left Wing Down
+define        MiG_21BIS_Flight_Right_Wing_Down                        USB[0x4F]                                         //Flight Right Wing Down
+define        MiG_21BIS_Flight_Rudder_Left                            USB[0x1D]                                         //Flight Rudder Left
+define        MiG_21BIS_Flight_Rudder_Right                           USB[0x1B]                                         //Flight Rudder Right
+define        MiG_21BIS_Throttle_Up                                   USB[0x57]                                         //Throttle Up
+define        MiG_21BIS_Throttle_Down                                 USB[0x56]                                         //Throttle Down
+define        MiG_21BIS_Trim_On                                       R_SHIFT+USB[0x17]                                 //Trim On
+define        MiG_21BIS_Trim_Off                                      R_SHIFT+R_CTL+USB[0x17]                           //Trim Off
+define        MiG_21BIS_Trim_Pitch_Down                               L_SHIFT+USB[0x17]                                 //Trim Pitch Down
+define        MiG_21BIS_Trim_Pitch_Up                                 L_CTL+USB[0x17]                                   //Trim Pitch Up
+define        MiG_21BIS_Emergency_Hydraulic_Pump_On                   R_SHIFT+USB[0x0B]                                 //Emergency Hydraulic Pump On
+define        MiG_21BIS_Emergency_Hydraulic_Pump_Off                  R_SHIFT+R_CTL+USB[0x0B]                           //Emergency Hydraulic Pump Off
+define        MiG_21BIS_Aileron_Boosters_On                           R_ALT+USB[0x0B]                                   //Aileron Boosters On
+define        MiG_21BIS_Aileron_Boosters_Off                          R_ALT+R_CTL+USB[0x0B]                             //Aileron Boosters Off
+define        MiG_21BIS_SPS__BLC__System_On                           R_SHIFT+USB[0x18]                                 //SPS (BLC) System On
+define        MiG_21BIS_SPS__BLC__System_Off                          R_SHIFT+R_CTL+USB[0x18]                           //SPS (BLC) System Off
+define        MiG_21BIS_ARU___Manual                                  R_ALT+USB[0x18]                                   //ARU - Manual
+define        MiG_21BIS_ARU___Auto                                    R_ALT+R_CTL+USB[0x18]                             //ARU - Auto
+define        MiG_21BIS_ARU_manual___High_Speed                       R_CTL+USB[0x18]                                   //ARU manual - High Speed
+define        MiG_21BIS_ARU_manual___Low_Speed                        L_CTL+USB[0x18]                                   //ARU manual - Low Speed
+define        MiG_21BIS_Airbrakes_On                                  USB[0x06]                                         //Airbrakes On
+define        MiG_21BIS_Airbrakes_Off                                 USB[0x07]                                         //Airbrakes Off
+define        MiG_21BIS_Flaps_Down                                    USB[0x09]                                         //Flaps Down
+define        MiG_21BIS_Flaps_Up                                      L_SHIFT+USB[0x09]                                 //Flaps Up
+
+
+
+// SAU**********************
+
+define        MiG_21BIS_SAU_On                                        R_SHIFT+USB[0x16]                                 //SAU On
+define        MiG_21BIS_SAU_Off                                       R_SHIFT+R_CTL+USB[0x16]                           //SAU Off
+define        MiG_21BIS_SAU_Pitch_On                                  R_ALT+USB[0x16]                                   //SAU Pitch On
+define        MiG_21BIS_SAU_Pitch_Off                                 R_ALT+R_CTL+USB[0x16]                             //SAU Pitch Off
+define        MiG_21BIS_SAU___Low_Altitude_Recovery_On                R_CTL+USB[0x16]                                   //SAU - Low Altitude Recovery On
+define        MiG_21BIS_SAU___Low_Altitude_Recovery_Off               R_ALT+R_SHIFT+USB[0x16]                           //SAU - Low Altitude Recovery Off
+define        MiG_21BIS_SAU___Recovery                                USB[0x04]                                         //SAU - Recovery
+define        MiG_21BIS_SAU___Stabilize                               L_ALT+USB[0x04]                                   //SAU - Stabilize
+define        MiG_21BIS_SAU_cancel_current_mode                       L_ALT+L_CTL+USB[0x04]                             //SAU cancel current mode
+define        MiG_21BIS_SAU_Landing___Command                         R_SHIFT+USB[0x04]                                 //SAU Landing - Command
+define        MiG_21BIS_SAU_Landing___Auto                            R_ALT+USB[0x04]                                   //SAU Landing - Auto
+define        MiG_21BIS_SAU_Cancel_Landing_Mode                       R_SHIFT+R_ALT+USB[0x04]                           //SAU Cancel Landing Mode
+define        MiG_21BIS_SAU___Hold_Attitude                           USB[0x0D]                                         //SAU - Hold Attitude
+
+
+
+// Gears, brakes and chute**********************
+
+define        MiG_21BIS_Gears_Up                                      USB[0x0A]                                         //Gears Up
+define        MiG_21BIS_Gears_Down                                    L_SHIFT+USB[0x0A]                                 //Gears Down
+define        MiG_21BIS_Gears_Handle_Neutral                          L_CTL+USB[0x0A]                                   //Gears Handle Neutral
+define        MiG_21BIS_Gears_Handle_Lock_released                    R_SHIFT+USB[0x0A]                                 //Gears Handle Lock released
+define        MiG_21BIS_Gears_Handle_Lock_engaged                     R_CTL+USB[0x0A]                                   //Gears Handle Lock engaged
+define        MiG_21BIS_Nose_Gear_Emergency_Release_On                L_CTL+L_SHIFT+USB[0x0A]                           //Nose Gear Emergency Release On
+define        MiG_21BIS_Main_Gears_Emergency_Release_On               L_CTL+L_ALT+USB[0x0A]                             //Main Gears Emergency Release On
+define        MiG_21BIS_Wheel_Brakes                                  USB[0x1A]                                         //Wheel Brakes
+define        MiG_21BIS_ABS_On                                        R_SHIFT+USB[0x1A]                                 //ABS On
+define        MiG_21BIS_ABS_Off                                       R_SHIFT+R_CTL+USB[0x1A]                           //ABS Off
+define        MiG_21BIS_Nosegear_Brake_On                             L_ALT+USB[0x1A]                                   //Nosegear Brake On
+define        MiG_21BIS_Nosegear_Brake_Off                            L_ALT+L_CTL+USB[0x1A]                             //Nosegear Brake Off
+define        MiG_21BIS_Emergency_Braking_On                          L_CTL+USB[0x1A]                                   //Emergency Braking On
+define        MiG_21BIS_Emergency_Brake_Off                           L_CTL+L_SHIFT+USB[0x1A]                           //Emergency Brake Off
+define        MiG_21BIS_Drag_Chute___Activate                         USB[0x13]                                         //Drag Chute - Activate
+define        MiG_21BIS_Drag_Chute___Disconnect                       R_SHIFT+R_CTL+USB[0x07]                           //Drag Chute - Disconnect
+define        MiG_21BIS_Button_Cap_Open__for_Disconnect_Drag_Chute_   R_ALT+USB[0x07]                                   //Button Cap Open (for Disconnect Drag Chute)
+define        MiG_21BIS_Button_Cap_Close__for_Disconnect_Drag_Chute_  R_ALT+R_CTL+USB[0x07]                             //Button Cap Close (for Disconnect Drag Chute)
+
+
+
+// SPRD or ASO Chaff/Flares**********************
+
+define        MiG_21BIS_SPRD__or_ASO__Power_On                        L_CTL+USB[0x0D]                                   //SPRD (or ASO), Power On
+define        MiG_21BIS_SPRD__or_ASO__Power_Off                       L_CTL+L_SHIFT+USB[0x0D]                           //SPRD (or ASO), Power Off
+define        MiG_21BIS_SPRD__or_ASO__drop_Power_On                   L_ALT+USB[0x0D]                                   //SPRD (or ASO) drop, Power On
+define        MiG_21BIS_SPRD__or_ASO__drop_Power_Off                  L_ALT+L_CTL+USB[0x0D]                             //SPRD (or ASO) drop, Power Off
+define        MiG_21BIS_SPRD__or_ASO__Start_Cover_Open                R_WIN+USB[0x0D]                                   //SPRD (or ASO), Start Cover, Open
+define        MiG_21BIS_SPRD__or_ASO__Start_Cover_Close               R_WIN+R_SHIFT+USB[0x0D]                           //SPRD (or ASO), Start Cover, Close
+define        MiG_21BIS_SPRD__or_ASO__Drop_Cover_Open                 R_SHIFT+USB[0x0D]                                 //SPRD (or ASO), Drop Cover, Open
+define        MiG_21BIS_SPRD__or_ASO__Drop_Cover_Close                R_SHIFT+R_CTL+USB[0x0D]                           //SPRD (or ASO), Drop Cover, Close
+define        MiG_21BIS_SPRD_Start                                    L_SHIFT+USB[0x2C]                                 //SPRD Start
+define        MiG_21BIS_SPRD_Drop___or_ASO_drop_chaff_flares          L_CTL+USB[0x2C]                                   //SPRD Drop / or ASO drop chaff flares
+
+
+
+// General**********************
+
+define        MiG_21BIS_Eject__3_times_                               L_CTL+USB[0x08]                                   //Eject (3 times)
+define        MiG_21BIS_Smoke                                         USB[0x17]                                         //Smoke
+define        MiG_21BIS_Show_controls_indicator                       R_CTL+USB[0x28]                                   //Show controls indicator
+define        MiG_21BIS_End_mission                                   USB[0x29]                                         //End mission
+define        MiG_21BIS_Pause                                         USB[0x48]                                         //Pause
+define        MiG_21BIS_Time_accelerate                               L_CTL+USB[0x1D]                                   //Time accelerate
+define        MiG_21BIS_Time_decelerate                               L_WIN+L_CTL+USB[0x1D]                             //Time decelerate
+define        MiG_21BIS_Time_normal                                   L_SHIFT+USB[0x1D]                                 //Time normal
+define        MiG_21BIS_Scorewindow                                   USB[0x31]                                         //Scorewindow
+define        MiG_21BIS_Show_debriefing_window                        USB[0x36]                                         //Show debriefing window
+define        MiG_21BIS_Rearming_and_Refueling_Window                 USB[0x37]                                         //Rearming and Refueling Window
+define        MiG_21BIS_Multiplayer_chat___mode_All                   USB[0x2B]                                         //Multiplayer chat - mode All
+define        MiG_21BIS_Multiplayer_chat___mode_Allies                L_CTL+USB[0x2B]                                   //Multiplayer chat - mode Allies
+define        MiG_21BIS_Info_bar_view_toggle                          L_CTL+USB[0x1C]                                   //Info bar view toggle
+define        MiG_21BIS_Get_new_plane___respawn                       R_CTL+R_SHIFT+USB[0x2B]                           //Get new plane - respawn
+define        MiG_21BIS_Jump_into_other_aircraft                      R_ALT+USB[0x0D]                                   //Jump into other aircraft
+define        MiG_21BIS_Screenshot                                    USB[0x46]                                         //Screenshot
+define        MiG_21BIS_Frame_rate_counter___Service_info             R_CTL+USB[0x48]                                   //Frame rate counter - Service info
+define        MiG_21BIS_Info_bar_coordinate_units_toogle              L_ALT+USB[0x1C]                                   //Info bar coordinate units toogle
+define        MiG_21BIS_Mouse_cursor_cockpit_mode                     L_ALT+L_SHIFT+USB[0x06]                           //Mouse cursor cockpit mode
+define        MiG_21BIS_Sound_On_Off                                  L_WIN+L_ALT+USB[0x16]                             //Sound On/Off
+define        MiG_21BIS_Record_of_mouse_cursor_in_track_On_Off        R_SHIFT+R_CTL+USB[0x47]                           //Record of mouse cursor in track On/Off
+define        MiG_21BIS_Subtitle_recording_begin                      R_SHIFT+USB[0x47]                                 //Subtitle recording begin
+define        MiG_21BIS_Subtitle_recording_end                        R_CTL+USB[0x47]                                   //Subtitle recording end
+define        MiG_21BIS_Active_Pause                                  L_SHIFT+L_WIN+USB[0x48]                           //Active Pause
+define        MiG_21BIS_All_Labels                                    L_SHIFT+USB[0x43]                                 //All Labels
+define        MiG_21BIS_Aircraft_Labels                               L_SHIFT+USB[0x3B]                                 //Aircraft Labels
+define        MiG_21BIS_Missile_Labels                                L_SHIFT+USB[0x3F]                                 //Missile Labels
+define        MiG_21BIS_Vehicle_&_Ship_Labels                         L_SHIFT+USB[0x42]                                 //Vehicle & Ship Labels
+
+
+
+// Life support**********************
+
+define        MiG_21BIS_Emergency_O2_On                               L_WIN+USB[0x13]                                   //Emergency O2 On
+define        MiG_21BIS_Emergency_O2_Off                              L_WIN+L_CTL+USB[0x13]                             //Emergency O2 Off
+define        MiG_21BIS_Air___Mix                                     L_CTL+USB[0x13]                                   //Air - Mix
+define        MiG_21BIS_Air___100%_O2                                 L_ALT+L_CTL+USB[0x13]                             //Air - 100% O2
+define        MiG_21BIS_Canopy_Anti_Icing                             L_CTL+USB[0x06]                                   //Canopy Anti Icing
+define        MiG_21BIS_Canopy_Close                                  R_CTL+USB[0x06]                                   //Canopy Close
+define        MiG_21BIS_Canopy_Open                                   R_CTL+R_ALT+USB[0x06]                             //Canopy Open
+define        MiG_21BIS_Canopy_Locked                                 L_SHIFT+USB[0x06]                                 //Canopy Locked
+define        MiG_21BIS_Canopy_Unlocked                               L_SHIFT+L_CTL+USB[0x06]                           //Canopy Unlocked
+define        MiG_21BIS_Canopy_Pressurized                            L_ALT+USB[0x06]                                   //Canopy Pressurized
+define        MiG_21BIS_Canopy_Unpressurized                          L_ALT+L_CTL+USB[0x06]                             //Canopy Unpressurized
+define        MiG_21BIS_Canopy_Emergency_jettison                     L_WIN+L_ALT+USB[0x06]                             //Canopy Emergency jettison
+define        MiG_21BIS_Helmet_visor___On                             L_ALT+USB[0x4A]                                   //Helmet visor - On
+define        MiG_21BIS_Helmet_visor___Off                            L_ALT+USB[0x4D]                                   //Helmet visor - Off
+
+
+
+// Lights**********************
+
+define        MiG_21BIS_Cockpit_Texts_Backlight__Increase             L_ALT+USB[0x57]                                   //Cockpit Texts Backlight +
+define        MiG_21BIS_Cockpit_Texts_Backlight__Reduce               L_ALT+USB[0x56]                                   //Cockpit Texts Backlight -
+define        MiG_21BIS_Cockpit_Instruments_Backlight__Increase       L_SHIFT+USB[0x57]                                 //Cockpit Instruments Backlight +
+define        MiG_21BIS_Cockpit_Instruments_Backlight__Reduce         L_SHIFT+USB[0x56]                                 //Cockpit Instruments Backlight -
+define        MiG_21BIS_Cockpit_Red_Lights__Reduce                    L_CTL+USB[0x57]                                   //Cockpit Red Lights -
+define        MiG_21BIS_Cockpit_Red_Lights__Increase                  L_CTL+USB[0x56]                                   //Cockpit Red Lights +
+define        MiG_21BIS_Cockpit_White_Lights__Reduce                  L_WIN+USB[0x57]                                   //Cockpit White Lights -
+define        MiG_21BIS_Cockpit_White_Lights__Increase                L_WIN+USB[0x56]                                   //Cockpit White Lights +
+define        MiG_21BIS_Pilot_torch_light_on_off                      R_CTL+USB[0x0F]                                   //Pilot torch light on-off
+define        MiG_21BIS_Landing_Lights_Taxi                           L_CTL+USB[0x0F]                                   //Landing Lights Taxi
+define        MiG_21BIS_Landing_Lights_Land                           L_ALT+USB[0x0F]                                   //Landing Lights Land
+define        MiG_21BIS_Landing_Lights_Off                            L_ALT+L_CTL+USB[0x0F]                             //Landing Lights Off
+define        MiG_21BIS_Nav_Lights_Max                                L_SHIFT+USB[0x0F]                                 //Nav Lights Max
+define        MiG_21BIS_Nav_Lights_Med                                L_SHIFT+L_ALT+USB[0x0F]                           //Nav Lights Med
+define        MiG_21BIS_Nav_Lights_Min                                L_SHIFT+L_WIN+USB[0x0F]                           //Nav Lights Min
+define        MiG_21BIS_Nav_Lights_Off                                L_SHIFT+L_CTL+USB[0x0F]                           //Nav Lights Off
+define        MiG_21BIS_Check_Warning_Lights                          L_ALT+L_WIN+USB[0x0F]                             //Check Warning Lights
+define        MiG_21BIS_SORC                                          USB[0x2A]                                         //SORC
+
+
+
+// Power**********************
+
+define        MiG_21BIS_PO_750_Inverter__1_On                         R_SHIFT+USB[0x0C]                                 //PO-750 Inverter #1 On
+define        MiG_21BIS_PO_750_Inverter__1_Off                        R_SHIFT+R_CTL+USB[0x0C]                           //PO-750 Inverter #1 Off
+define        MiG_21BIS_PO_750_Inverter__2_On                         R_ALT+USB[0x0C]                                   //PO-750 Inverter #2 On
+define        MiG_21BIS_PO_750_Inverter__2_Off                        R_ALT+R_CTL+USB[0x0C]                             //PO-750 Inverter #2 Off
+define        MiG_21BIS_Emergency_Inverter_On                         R_CTL+USB[0x0C]                                   //Emergency Inverter On
+define        MiG_21BIS_Emergency_Inverter_Off                        R_SHIFT+R_ALT+USB[0x0C]                           //Emergency Inverter Off
+define        MiG_21BIS_Battery_Heat_On                               R_SHIFT+USB[0x12]                                 //Battery Heat On
+define        MiG_21BIS_Battery_Heat_Off                              R_SHIFT+R_CTL+USB[0x12]                           //Battery Heat Off
+define        MiG_21BIS_Battery_On                                    R_ALT+USB[0x12]                                   //Battery On
+define        MiG_21BIS_Battery_Off                                   R_ALT+R_CTL+USB[0x12]                             //Battery Off
+define        MiG_21BIS_DC_Generator_On                               R_SHIFT+USB[0x0E]                                 //DC Generator On
+define        MiG_21BIS_DC_Generator_Off                              R_SHIFT+R_CTL+USB[0x0E]                           //DC Generator Off
+define        MiG_21BIS_AC_Generator_On                               R_ALT+USB[0x0E]                                   //AC Generator On
+define        MiG_21BIS_AC_Generator_Off                              R_ALT+R_CTL+USB[0x0E]                             //AC Generator Off
+define        MiG_21BIS_GiroNPPSAURLS_SignalKPP_Power_On              R_SHIFT+USB[0x0F]                                 //Giro,NPP,SAU,RLS Signal,KPP Power On
+define        MiG_21BIS_GiroNPPSAURLS_SignalKPP_Power_Off             R_SHIFT+R_CTL+USB[0x0F]                           //Giro,NPP,SAU,RLS Signal,KPP Power Off
+define        MiG_21BIS_DA_200_SignalGiroNPPRLSSAU_Power_On           R_ALT+USB[0x0F]                                   //DA-200 Signal,Giro,NPP,RLS,SAU Power On
+define        MiG_21BIS_DA_200_SignalGiroNPPRLSSAU_Power_Off          R_ALT+R_CTL+USB[0x0F]                             //DA-200 Signal,Giro,NPP,RLS,SAU Power Off
+
+
+
+// Radar and SPO**********************
+
+define        MiG_21BIS_Radar_Standby                                 L_ALT+USB[0x21]                                   //Radar Standby
+define        MiG_21BIS_Radar_On                                      L_SHIFT+L_ALT+USB[0x21]                           //Radar On
+define        MiG_21BIS_Radar_Off                                     L_SHIFT+L_CTL+USB[0x21]                           //Radar Off
+define        MiG_21BIS_Low_Altitude_Filter                           L_ALT+USB[0x22]                                   //Low Altitude Filter
+define        MiG_21BIS_Low_Altitude_Antenna_Tilt                     L_SHIFT+L_ALT+USB[0x22]                           //Low Altitude Antenna Tilt
+define        MiG_21BIS_Low_Altitude_Filter_Off                       L_SHIFT+L_CTL+USB[0x22]                           //Low Altitude Filter Off
+define        MiG_21BIS_Locked_Beam_On                                L_ALT+USB[0x23]                                   //Locked Beam On
+define        MiG_21BIS_Locked_Beam_Off                               L_SHIFT+L_CTL+USB[0x23]                           //Locked Beam Off
+define        MiG_21BIS_TDC_Range___Pipper_Span__Increase             USB[0x12]                                         //TDC Range / Pipper Span +
+define        MiG_21BIS_TDC_Range___Pipper_Span__Reduce               USB[0x0F]                                         //TDC Range / Pipper Span -
+define        MiG_21BIS_Target_Lock_On                                USB[0x28]                                         //Target Lock On
+define        MiG_21BIS_Radar_ECM_protection_panel___Continues        L_SHIFT+USB[0x14]                                 //Radar ECM protection panel - Continues
+define        MiG_21BIS_Radar_ECM_protection_panel___Temporary        L_SHIFT+USB[0x1A]                                 //Radar ECM protection panel - Temporary
+define        MiG_21BIS_Radar_ECM_protection_panel___Passive          L_SHIFT+USB[0x08]                                 //Radar ECM protection panel - Passive
+define        MiG_21BIS_Radar_ECM_protection_panel___Weather          USB[0x15]                                         //Radar ECM protection panel - Weather
+define        MiG_21BIS_Radar_ECM_protection_panel___IFF              L_SHIFT+USB[0x04]                                 //Radar ECM protection panel - IFF
+define        MiG_21BIS_Radar_ECM_protection_panel___Low_Speed_Target L_SHIFT+USB[0x16]                                 //Radar ECM protection panel - Low Speed Target
+define        MiG_21BIS_Radar_ECM_protection_panel___Selftest         L_SHIFT+USB[0x07]                                 //Radar ECM protection panel - Selftest
+define        MiG_21BIS_Radar_ECM_protection_panel___Reset            L_SHIFT+L_CTL+USB[0x09]                           //Radar ECM protection panel - Reset
+define        MiG_21BIS_SPO_10_RWR_On                                 R_SHIFT+USB[0x1D]                                 //SPO-10 RWR On
+define        MiG_21BIS_SPO_10_RWR_Off                                R_SHIFT+R_CTL+USB[0x1D]                           //SPO-10 RWR Off
+define        MiG_21BIS_SPO_10_Night_lights                           L_ALT+USB[0x1D]                                   //SPO-10 Night lights
+define        MiG_21BIS_SPO_10_Day_lights                             R_SHIFT+R_ALT+USB[0x1D]                           //SPO-10 Day lights
+define        MiG_21BIS_SPO_10_Test                                   R_CTL+USB[0x1D]                                   //SPO-10 Test
+
+
+
+// Radio Communications**********************
+
+define        MiG_21BIS_Intercomm_menu                                R_CTL+USB[0x31]                                   //Intercomm menu
+define        MiG_21BIS_Request_AWACS_Nearest_Bandit                  L_WIN+USB[0x14]                                   //Request AWACS Nearest Bandit
+define        MiG_21BIS_Flight___Complete_mission_and_rejoin          L_WIN+USB[0x1A]                                   //Flight - Complete mission and rejoin
+define        MiG_21BIS_Flight___Complete_mission_and_RTB             L_WIN+USB[0x08]                                   //Flight - Complete mission and RTB
+define        MiG_21BIS_Flight___Attack_air_defenses                  L_WIN+USB[0x16]                                   //Flight - Attack air defenses
+define        MiG_21BIS_Flight___Attack_ground_targets                L_WIN+USB[0x07]                                   //Flight - Attack ground targets
+define        MiG_21BIS_Cover_Me                                      L_WIN+USB[0x1B]                                   //Cover Me
+define        MiG_21BIS_Attack_My_Target                              L_WIN+USB[0x06]                                   //Attack My Target
+define        MiG_21BIS_Toggle_Formation                              L_WIN+USB[0x15]                                   //Toggle Formation
+define        MiG_21BIS_Join_Up_Formation                             L_WIN+USB[0x17]                                   //Join Up Formation
+define        MiG_21BIS_Request_AWACS_Home_Airbase                    L_WIN+USB[0x04]                                   //Request AWACS Home Airbase
+
+
+
+// Views**********************
+
+define        MiG_21BIS_Keyboard_Rate_Fast                            L_SHIFT+USB[0x30]                                 //Keyboard Rate Fast
+define        MiG_21BIS_Keyboard_Rate_Slow                            L_CTL+USB[0x30]                                   //Keyboard Rate Slow
+define        MiG_21BIS_Keyboard_Rate_Normal                          L_ALT+USB[0x30]                                   //Keyboard Rate Normal
+define        MiG_21BIS_Mouse_Rate_Fast                               L_SHIFT+USB[0x2F]                                 //Mouse Rate Fast
+define        MiG_21BIS_Mouse_Rate_Slow                               L_CTL+USB[0x2F]                                   //Mouse Rate Slow
+define        MiG_21BIS_Mouse_Rate_Normal                             L_ALT+USB[0x2F]                                   //Mouse Rate Normal
+define        MiG_21BIS_Save_Cockpit_Angles                           R_ALT+USB[0x62]                                   //Save Cockpit Angles
+define        MiG_21BIS_View_up                                       R_SHIFT+USB[0x60]                                 //View up
+define        MiG_21BIS_View_down                                     R_SHIFT+USB[0x5A]                                 //View down
+define        MiG_21BIS_View_left                                     R_SHIFT+USB[0x5C]                                 //View left
+define        MiG_21BIS_View_right                                    R_SHIFT+USB[0x5E]                                 //View right
+define        MiG_21BIS_View_up_right                                 R_SHIFT+USB[0x61]                                 //View up right
+define        MiG_21BIS_View_down_right                               R_SHIFT+USB[0x5B]                                 //View down right
+define        MiG_21BIS_View_down_left                                R_SHIFT+USB[0x59]                                 //View down left
+define        MiG_21BIS_View_up_left                                  R_SHIFT+USB[0x5F]                                 //View up left
+define        MiG_21BIS_View_Left_slow                                USB[0x5C]                                         //View Left slow
+define        MiG_21BIS_View_Right_slow                               USB[0x5E]                                         //View Right slow
+define        MiG_21BIS_View_Up_slow                                  USB[0x60]                                         //View Up slow
+define        MiG_21BIS_View_Down_slow                                USB[0x5A]                                         //View Down slow
+define        MiG_21BIS_View_Up_Right_slow                            USB[0x61]                                         //View Up Right slow
+define        MiG_21BIS_View_Down_Right_slow                          USB[0x5B]                                         //View Down Right slow
+define        MiG_21BIS_View_Down_Left_slow                           USB[0x59]                                         //View Down Left slow
+define        MiG_21BIS_View_Up_Left_slow                             USB[0x5F]                                         //View Up Left slow
+define        MiG_21BIS_View_Center                                   USB[0x5D]                                         //View Center
+define        MiG_21BIS_F1_Cockpit_view                               USB[0x3A]                                         //F1 Cockpit view
+define        MiG_21BIS_F1_Natural_head_movement_view                 L_CTL+USB[0x3A]                                   //F1 Natural head movement view
+define        MiG_21BIS_F1_HUD_only_view_switch                       L_ALT+USB[0x3A]                                   //F1 HUD only view switch
+define        MiG_21BIS_F2_Aircraft_view                              USB[0x3B]                                         //F2 Aircraft view
+define        MiG_21BIS_F2_View_own_aircraft                          L_CTL+USB[0x3B]                                   //F2 View own aircraft
+define        MiG_21BIS_F2_Toggle_camera_position                     R_ALT+USB[0x3B]                                   //F2 Toggle camera position
+define        MiG_21BIS_F2_Toggle_local_camera_control                L_ALT+USB[0x3B]                                   //F2 Toggle local camera control
+define        MiG_21BIS_F3_Fly_By_view                                USB[0x3C]                                         //F3 Fly-By view
+define        MiG_21BIS_F3_Fly_By_jump_view                           L_CTL+USB[0x3C]                                   //F3 Fly-By jump view
+define        MiG_21BIS_F4_Look_back_view                             USB[0x3D]                                         //F4 Look back view
+define        MiG_21BIS_F4_Chase_view                                 L_CTL+USB[0x3D]                                   //F4 Chase view
+define        MiG_21BIS_F5_nearest_AC_view                            USB[0x3E]                                         //F5 nearest AC view
+define        MiG_21BIS_F5_Ground_hostile_view                        L_CTL+USB[0x3E]                                   //F5 Ground hostile view
+define        MiG_21BIS_F6_Released_weapon_view                       USB[0x3F]                                         //F6 Released weapon view
+define        MiG_21BIS_F6_Weapon_to_target_view                      L_CTL+USB[0x3F]                                   //F6 Weapon to target view
+define        MiG_21BIS_F7_Ground_unit_view                           USB[0x40]                                         //F7 Ground unit view
+define        MiG_21BIS_F8_Target_view                                USB[0x41]                                         //F8 Target view
+define        MiG_21BIS_F8_Player_targets_All_targets_filter          R_CTL+USB[0x41]                                   //F8 Player targets/All targets filter
+define        MiG_21BIS_F9_Ship_view                                  USB[0x42]                                         //F9 Ship view
+define        MiG_21BIS_F9_Landing_signal_officer_view                L_ALT+USB[0x42]                                   //F9 Landing signal officer view
+define        MiG_21BIS_F10_Theater_map_view                          USB[0x43]                                         //F10 Theater map view
+define        MiG_21BIS_F10_Jump_to_theater_map_view_over_current_pointL_CTL+USB[0x43]                                  //F10 Jump to theater map view over current point
+define        MiG_21BIS_F11_Airport_free_camera                       USB[0x44]                                         //F11 Airport free camera
+define        MiG_21BIS_F11_Jump_to_free_camera                       L_CTL+USB[0x44]                                   //F11 Jump to free camera
+define        MiG_21BIS_F12_Static_object_view                        USB[0x45]                                         //F12 Static object view
+define        MiG_21BIS_F12_Civil_traffic_view                        L_CTL+USB[0x45]                                   //F12 Civil traffic view
+define        MiG_21BIS_F12_Trains_cars_toggle                        L_SHIFT+USB[0x45]                                 //F12 Trains/cars toggle
+define        MiG_21BIS_F1_Head_shift_movement_on___off               L_CTL+L_SHIFT+USB[0x3A]                           //F1 Head shift movement on / off
+define        MiG_21BIS_Zoom_in_slow                                  USB[0x55]                                         //Zoom in slow
+define        MiG_21BIS_Zoom_out_slow                                 USB[0x54]                                         //Zoom out slow
+define        MiG_21BIS_Zoom_normal                                   USB[0x58]                                         //Zoom normal
+define        MiG_21BIS_Zoom_external_in                              R_CTL+USB[0x55]                                   //Zoom external in
+define        MiG_21BIS_Zoom_external_out                             R_CTL+USB[0x54]                                   //Zoom external out
+define        MiG_21BIS_Zoom_external_normal                          R_CTL+USB[0x58]                                   //Zoom external normal
+define        MiG_21BIS_F11_Camera_moving_forward                     L_ALT+USB[0x55]                                   //F11 Camera moving forward
+define        MiG_21BIS_F11_Camera_moving_backward                    L_ALT+USB[0x54]                                   //F11 Camera moving backward
+define        MiG_21BIS_Cockpit_panel_view_in                         USB[0x62]                                         //Cockpit panel view in
+define        MiG_21BIS_Cockpit_panel_view_toggle                     R_CTL+USB[0x62]                                   //Cockpit panel view toggle
+define        MiG_21BIS_Cockpit_Camera_Move_Up                        R_CTL+R_SHIFT+USB[0x60]                           //Cockpit Camera Move Up
+define        MiG_21BIS_Cockpit_Camera_Move_Down                      R_CTL+R_SHIFT+USB[0x5A]                           //Cockpit Camera Move Down
+define        MiG_21BIS_Cockpit_Camera_Move_Left                      R_CTL+R_SHIFT+USB[0x5C]                           //Cockpit Camera Move Left
+define        MiG_21BIS_Cockpit_Camera_Move_Right                     R_CTL+R_SHIFT+USB[0x5E]                           //Cockpit Camera Move Right
+define        MiG_21BIS_Cockpit_Camera_Move_Forward                   R_CTL+R_SHIFT+USB[0x55]                           //Cockpit Camera Move Forward
+define        MiG_21BIS_Cockpit_Camera_Move_Back                      R_CTL+R_SHIFT+USB[0x54]                           //Cockpit Camera Move Back
+define        MiG_21BIS_Cockpit_Camera_Move_Center                    R_CTL+R_SHIFT+USB[0x5D]                           //Cockpit Camera Move Center
+define        MiG_21BIS_Glance_up                                     R_CTL+USB[0x60]                                   //Glance up
+define        MiG_21BIS_Glance_down                                   R_CTL+USB[0x5A]                                   //Glance down
+define        MiG_21BIS_Glance_left                                   R_CTL+USB[0x5C]                                   //Glance left
+define        MiG_21BIS_Glance_right                                  R_CTL+USB[0x5E]                                   //Glance right
+define        MiG_21BIS_Glance_up_left                                R_CTL+USB[0x5F]                                   //Glance up-left
+define        MiG_21BIS_Glance_down_left                              R_CTL+USB[0x59]                                   //Glance down-left
+define        MiG_21BIS_Glance_up_right                               R_CTL+USB[0x61]                                   //Glance up-right
+define        MiG_21BIS_Glance_down_right                             R_CTL+USB[0x5B]                                   //Glance down-right
+define        MiG_21BIS_Camera_pan_mode_toggle                        L_ALT+L_SHIFT+USB[0x1D]                           //Camera pan mode toggle
+define        MiG_21BIS_Camera_snap_view_up                           R_ALT+USB[0x60]                                   //Camera snap view up
+define        MiG_21BIS_Camera_snap_view_down                         R_ALT+USB[0x5A]                                   //Camera snap view down
+define        MiG_21BIS_Camera_snap_view_left                         R_ALT+USB[0x5C]                                   //Camera snap view left
+define        MiG_21BIS_Camera_snap_view_right                        R_ALT+USB[0x5E]                                   //Camera snap view right
+define        MiG_21BIS_Camera_snap_view_up_left                      R_ALT+USB[0x5F]                                   //Camera snap view up-left
+define        MiG_21BIS_Camera_snap_view_down_left                    R_ALT+USB[0x59]                                   //Camera snap view down-left
+define        MiG_21BIS_Camera_snap_view_up_right                     R_ALT+USB[0x61]                                   //Camera snap view up-right
+define        MiG_21BIS_Camera_snap_view_down_right                   R_ALT+USB[0x5B]                                   //Camera snap view down-right
+define        MiG_21BIS_Center_Camera_View                            R_SHIFT+USB[0x5D]                                 //Center Camera View
+define        MiG_21BIS_Return_Camera                                 R_CTL+USB[0x5D]                                   //Return Camera
+define        MiG_21BIS_Return_Camera_Base                            R_ALT+USB[0x5D]                                   //Return Camera Base
+define        MiG_21BIS_Custom_Snap_View_0                            L_WIN+USB[0x62]                                   //Custom Snap View 0
+define        MiG_21BIS_Custom_Snap_View_1                            L_WIN+USB[0x59]                                   //Custom Snap View 1
+define        MiG_21BIS_Custom_Snap_View_2                            L_WIN+USB[0x5A]                                   //Custom Snap View 2
+define        MiG_21BIS_Custom_Snap_View_3                            L_WIN+USB[0x5B]                                   //Custom Snap View 3
+define        MiG_21BIS_Custom_Snap_View_4                            L_WIN+USB[0x5C]                                   //Custom Snap View 4
+define        MiG_21BIS_Custom_Snap_View_5                            L_WIN+USB[0x5D]                                   //Custom Snap View 5
+define        MiG_21BIS_Custom_Snap_View_6                            L_WIN+USB[0x5E]                                   //Custom Snap View 6
+define        MiG_21BIS_Custom_Snap_View_7                            L_WIN+USB[0x5F]                                   //Custom Snap View 7
+define        MiG_21BIS_Custom_Snap_View_8                            L_WIN+USB[0x60]                                   //Custom Snap View 8
+define        MiG_21BIS_Custom_Snap_View_9                            L_WIN+USB[0x61]                                   //Custom Snap View 9
+define        MiG_21BIS_Mirror_View                                   R_WIN+USB[0x60]                                   //Mirror View
+define        MiG_21BIS_Zoom_in                                       R_SHIFT+USB[0x55]                                 //Zoom in
+define        MiG_21BIS_Zoom_out                                      R_SHIFT+USB[0x54]                                 //Zoom out
+define        MiG_21BIS_Camera_jiggle_toggle                          L_SHIFT+USB[0x0D]                                 //Camera jiggle toggle
+define        MiG_21BIS_Keep_terrain_camera_altitude                  L_ALT+USB[0x0E]                                   //Keep terrain camera altitude
+define        MiG_21BIS_View_friends_mode                             R_CTL+R_SHIFT+USB[0x4A]                           //View friends mode
+define        MiG_21BIS_View_enemies_mode                             R_CTL+R_SHIFT+USB[0x4D]                           //View enemies mode
+define        MiG_21BIS_View_all_mode                                 R_CTL+USB[0x4C]                                   //View all mode
+define        MiG_21BIS_Toggle_tracking_fire_weapon                   R_CTL+USB[0x57]                                   //Toggle tracking fire weapon
+define        MiG_21BIS_Objects_switching_direction_forward_          L_CTL+USB[0x4E]                                   //Objects switching direction forward 
+define        MiG_21BIS_Objects_switching_direction_reverse_          L_CTL+USB[0x4B]                                   //Objects switching direction reverse 
+define        MiG_21BIS_Object_exclude_                               L_ALT+USB[0x4C]                                   //Object exclude 
+define        MiG_21BIS_Objects_all_excluded___include                L_ALT+USB[0x49]                                   //Objects all excluded - include
+define        MiG_21BIS_Lock_View__cycle_padlock_                     USB[0x63]                                         //Lock View (cycle padlock)
+define        MiG_21BIS_Unlock_view__stop_padlock_                    USB[0x53]                                         //Unlock view (stop padlock)
+define        MiG_21BIS_All_missiles_padlock                          R_SHIFT+USB[0x63]                                 //All missiles padlock
+define        MiG_21BIS_Threat_missile_padlock                        R_ALT+USB[0x63]                                   //Threat missile padlock
+define        MiG_21BIS_Lock_terrain_view                             R_CTL+USB[0x63]                                   //Lock terrain view
+
+
+
+// Weapons / ASP**********************
+
+define        MiG_21BIS_ASP_Mode___Gun                                L_SHIFT+USB[0x1E]                                 //ASP Mode - Gun
+define        MiG_21BIS_ASP_Mode___Missiles_Rockets                   L_CTL+USB[0x1E]                                   //ASP Mode - Missiles-Rockets
+define        MiG_21BIS_ASP_Mode___Shooting                           L_SHIFT+USB[0x1F]                                 //ASP Mode - Shooting
+define        MiG_21BIS_ASP_Mode___Bombardment                        L_CTL+USB[0x1F]                                   //ASP Mode - Bombardment
+define        MiG_21BIS_ASP_Main_Mode___Auto                          L_SHIFT+USB[0x20]                                 //ASP Main Mode - Auto
+define        MiG_21BIS_ASP_Main_Mode___Manual                        L_CTL+USB[0x20]                                   //ASP Main Mode - Manual
+define        MiG_21BIS_ASP_Mode___Giro                               L_SHIFT+USB[0x21]                                 //ASP Mode - Giro
+define        MiG_21BIS_ASP_Mode___Missile                            L_CTL+USB[0x21]                                   //ASP Mode - Missile
+define        MiG_21BIS_ASP_17_Gunsight_On                            R_SHIFT+USB[0x19]                                 //ASP-17 Gunsight On
+define        MiG_21BIS_ASP_17_Gunsight_Off                           R_SHIFT+R_CTL+USB[0x19]                           //ASP-17 Gunsight Off
+define        MiG_21BIS_Pipper_On                                     R_SHIFT+USB[0x06]                                 //Pipper On
+define        MiG_21BIS_Pipper_Off                                    R_SHIFT+R_CTL+USB[0x06]                           //Pipper Off
+define        MiG_21BIS_Fix_net_On                                    R_SHIFT+USB[0x1B]                                 //Fix net On
+define        MiG_21BIS_Fix_net_Off                                   R_SHIFT+R_CTL+USB[0x1B]                           //Fix net Off
+
+
+
+// Weapons / Select**********************
+
+define        MiG_21BIS_Select_Weapon_AA_1                            USB[0x1E]                                         //Select Weapon AA 1
+define        MiG_21BIS_Select_Weapon_AA_2                            USB[0x1F]                                         //Select Weapon AA 2
+define        MiG_21BIS_Select_Weapon_AA_3                            USB[0x20]                                         //Select Weapon AA 3
+define        MiG_21BIS_Select_Weapon_AA_4                            USB[0x21]                                         //Select Weapon AA 4
+define        MiG_21BIS_Select_Weapon_B_1_2___UB_16                   USB[0x22]                                         //Select Weapon B 1-2 / UB-16
+define        MiG_21BIS_Select_Weapon_B_3_4___UB_8                    USB[0x23]                                         //Select Weapon B 3-4 / UB-8
+define        MiG_21BIS_Select_Weapon_B_1_4___UB_4                    USB[0x24]                                         //Select Weapon B 1-4 / UB-4
+define        MiG_21BIS_Select_Weapon_S_24_1_2                        USB[0x25]                                         //Select Weapon S-24 1-2
+define        MiG_21BIS_Select_Weapon_S_24_3_4                        USB[0x26]                                         //Select Weapon S-24 3-4
+define        MiG_21BIS_Select_Weapon_AA_3_4                          USB[0x27]                                         //Select Weapon AA 3-4
+define        MiG_21BIS_Select_Weapon_AA_1_2                          USB[0x2D]                                         //Select Weapon AA 1-2
+
+
+
+// Weapons / Master control**********************
+
+define        MiG_21BIS_Master_Mode___Air                             L_WIN+USB[0x1E]                                   //Master Mode - Air
+define        MiG_21BIS_Master_Mode___Ground                          L_WIN+USB[0x1F]                                   //Master Mode - Ground
+define        MiG_21BIS_Weapon_AA_Mode___SAR_Missile                  L_WIN+USB[0x20]                                   //Weapon AA Mode - SAR Missile
+define        MiG_21BIS_Weapon_AA_Mode___IR_Missile                   L_WIN+USB[0x21]                                   //Weapon AA Mode - IR Missile
+define        MiG_21BIS_Weapon_Mode___Neutral                         L_WIN+L_ALT+USB[0x21]                             //Weapon Mode - Neutral
+define        MiG_21BIS_Jettison_Outer_Pylons___Safety_Cover_Open     R_SHIFT+USB[0x49]                                 //Jettison Outer Pylons - Safety Cover Open
+define        MiG_21BIS_Jettison_Outer_Pylons___Safety_Cover_Close    R_SHIFT+R_CTL+USB[0x49]                           //Jettison Outer Pylons - Safety Cover Close
+define        MiG_21BIS_Jettison_Outer_Pylons                         R_ALT+USB[0x49]                                   //Jettison Outer Pylons
+define        MiG_21BIS_Jettison_Inner_Pylons___Safety_Cover_Open     R_SHIFT+USB[0x4C]                                 //Jettison Inner Pylons - Safety Cover Open
+define        MiG_21BIS_Jettison_Payload_Inner_Pylons___Safety_Cover_CloseR_SHIFT+R_CTL+USB[0x4C]                       //Jettison Payload Inner Pylons - Safety Cover Close
+define        MiG_21BIS_Jettison_Inner_Pylons                         R_ALT+USB[0x4C]                                   //Jettison Inner Pylons
+
+
+
+// Weapons**********************
+
+define        MiG_21BIS_Gun_reload___1                                L_ALT+USB[0x1E]                                   //Gun reload - 1
+define        MiG_21BIS_Gun_reload___2                                L_ALT+USB[0x1F]                                   //Gun reload - 2
+define        MiG_21BIS_Gun_reload___3                                L_ALT+USB[0x20]                                   //Gun reload - 3
+define        MiG_21BIS_Fire_Gun                                      USB[0x2C]                                         //Fire Gun
+define        MiG_21BIS_Weapon_Release                                L_ALT+USB[0x2C]                                   //Weapon Release
+define        MiG_21BIS_Weapon_Release_Cover_Open                     R_SHIFT+USB[0x2E]                                 //Weapon Release Cover Open
+define        MiG_21BIS_Weapon_Release_Cover_Close                    R_SHIFT+R_CTL+USB[0x2E]                           //Weapon Release Cover Close
+define        MiG_21BIS_Tactical_Drop_Safety_Cover_Open               R_ALT+USB[0x2E]                                   //Tactical Drop Safety Cover Open
+define        MiG_21BIS_Tactical_Drop_Safety_Cover_Close              R_ALT+R_CTL+USB[0x2E]                             //Tactical Drop Safety Cover Close
+define        MiG_21BIS_Tactical_Drop_On                              R_CTL+USB[0x2E]                                   //Tactical Drop On
+define        MiG_21BIS_Tactical_Drop_Off                             R_ALT+R_SHIFT+USB[0x2E]                           //Tactical Drop Off
+define        MiG_21BIS_Missiles_Heat_On                              R_SHIFT+USB[0x05]                                 //Missiles Heat On
+define        MiG_21BIS_Missiles_Heat_Off                             R_SHIFT+R_CTL+USB[0x05]                           //Missiles Heat Off
+define        MiG_21BIS_Missiles___Rockets_Launch_On                  R_SHIFT+USB[0x11]                                 //Missiles - Rockets Launch On
+define        MiG_21BIS_Missiles___Rockets_Launch_Off                 R_SHIFT+R_CTL+USB[0x11]                           //Missiles - Rockets Launch Off
+define        MiG_21BIS_Pylon_1_2_Power_On                            R_SHIFT+USB[0x10]                                 //Pylon 1-2 Power On
+define        MiG_21BIS_Pylon_1_2_Power_Off                           R_SHIFT+R_CTL+USB[0x10]                           //Pylon 1-2 Power Off
+define        MiG_21BIS_Pylon_3_4_Power_On                            R_SHIFT+USB[0x36]                                 //Pylon 3-4 Power On
+define        MiG_21BIS_Pylon_3_4_Power_Off                           R_SHIFT+R_CTL+USB[0x36]                           //Pylon 3-4 Power Off
+define        MiG_21BIS_GS_23_Gun_On                                  R_SHIFT+USB[0x37]                                 //GS-23 Gun On
+define        MiG_21BIS_GS_23_Gun_Off                                 R_SHIFT+R_CTL+USB[0x37]                           //GS-23 Gun Off
+define        MiG_21BIS_Guncam_On                                     R_SHIFT+USB[0x38]                                 //Guncam On
+define        MiG_21BIS_Guncam_Off                                    R_SHIFT+R_CTL+USB[0x38]                           //Guncam Off
+define        MiG_21BIS_Emergency_Missile_Rocket_Launcher_Cover_Open  R_ALT+USB[0x11]                                   //Emergency Missile/Rocket Launcher Cover Open
+define        MiG_21BIS_Emergency_Missile_Rocket_Launcher_Cover_Close R_ALT+R_SHIFT+USB[0x11]                           //Emergency Missile/Rocket Launcher Cover Close
+define        MiG_21BIS_Emergency_Missile_Rocket_Launch               R_CTL+USB[0x11]                                   //Emergency Missile/Rocket Launch

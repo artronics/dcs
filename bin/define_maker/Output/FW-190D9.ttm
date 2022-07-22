@@ -1,0 +1,454 @@
+
+
+
+// Debug**********************
+
+define        FW_190D9_Toggle_Console                                 L_ALT+USB[0x35]                                   //Toggle Console
+
+
+
+// Cheat**********************
+
+define        FW_190D9_Start_Procedure                                R_WIN+USB[0x4A]                                   //Start Procedure
+define        FW_190D9_Stop_Procedure                                 R_WIN+USB[0x4D]                                   //Stop Procedure
+
+
+
+// General**********************
+
+define        FW_190D9_Pause_Active                                   L_SHIFT+L_WIN+USB[0x48]                           //Pause Active
+define        FW_190D9_Exit_mission                                   USB[0x29]                                         //Exit mission
+define        FW_190D9_Briefing_window                                L_ALT+USB[0x05]                                   //Briefing window
+define        FW_190D9_Jump_into_selected_aircraft                    R_ALT+USB[0x0D]                                   //Jump into selected aircraft
+define        FW_190D9_Pause                                          USB[0x48]                                         //Pause
+define        FW_190D9_Time_accelerate                                L_CTL+USB[0x1D]                                   //Time accelerate
+define        FW_190D9_Time_decelerate                                L_ALT+USB[0x1D]                                   //Time decelerate
+define        FW_190D9_Time_normal                                    L_SHIFT+USB[0x1D]                                 //Time normal
+define        FW_190D9_Info_bar_view_toggle                           L_CTL+USB[0x1C]                                   //Info bar view toggle
+define        FW_190D9_Get_new_plane___respawn                        R_CTL+R_SHIFT+USB[0x2B]                           //Get new plane - respawn
+define        FW_190D9_Screenshot                                     USB[0x46]                                         //Screenshot
+define        FW_190D9_Playback_track_cancel                          L_SHIFT+USB[0x2B]                                 //Playback track cancel
+define        FW_190D9_One_frame_mode                                 R_SHIFT+USB[0x48]                                 //One frame mode
+define        FW_190D9_Frame_rate_counter___Service_info              R_CTL+USB[0x48]                                   //Frame rate counter - Service info
+define        FW_190D9_Coordinates_units_change                       L_ALT+USB[0x1C]                                   //Coordinates units change
+define        FW_190D9_Clickable_mouse_cockpit_mode_On_Off            L_ALT+USB[0x06]                                   //Clickable mouse cockpit mode On/Off
+define        FW_190D9_Controls_indicator                             R_CTL+USB[0x28]                                   //Controls indicator
+define        FW_190D9_Show_pilot                                     R_SHIFT+USB[0x13]                                 //Show pilot
+define        FW_190D9_Multiplayer_chat___mode_All                    USB[0x2B]                                         //Multiplayer chat - mode All
+define        FW_190D9_Multiplayer_chat___mode_Allies                 L_CTL+USB[0x2B]                                   //Multiplayer chat - mode Allies
+
+
+
+// Communications**********************
+
+define        FW_190D9_COMM_Dispatch_wingmans___complete_mission_and_RTB__easy_communication_only_L_WIN+USB[0x08]       //COMM Dispatch wingmans - complete mission and RTB (easy communication only)
+define        FW_190D9_COMM_Dispatch_wingmans___complete_mission_and_rejoin__easy_communication_only_L_WIN+USB[0x15]    //COMM Dispatch wingmans - complete mission and rejoin (easy communication only)
+define        FW_190D9_COMM_Toggle_formation__easy_communication_only_L_WIN+USB[0x17]                                   //COMM Toggle formation (easy communication only)
+define        FW_190D9_COMM_Join_up_formation__easy_communication_only_L_WIN+USB[0x1C]                                  //COMM Join up formation (easy communication only)
+define        FW_190D9_COMM_Attack_my_target__easy_communication_only_L_WIN+USB[0x14]                                   //COMM Attack my target (easy communication only)
+define        FW_190D9_COMM_Cover_me__easy_communication_only_        L_WIN+USB[0x1A]                                   //COMM Cover me (easy communication only)
+define        FW_190D9_COMM_Ask_AWACS_home_airbase__easy_communication_only_L_WIN+USB[0x18]                             //COMM Ask AWACS home airbase (easy communication only)
+define        FW_190D9_COMM_Attack_Ground_Targets__easy_communication_only_L_WIN+USB[0x0A]                              //COMM Attack Ground Targets (easy communication only)
+define        FW_190D9_COMM_Attack_Air_Defenses__easy_communication_only_L_WIN+USB[0x07]                                //COMM Attack Air Defenses (easy communication only)
+define        FW_190D9_COMM_Communication_menu                        USB[0x31]                                         //COMM Communication menu
+define        FW_190D9_COMM_Switch_dialog                             R_SHIFT+USB[0x31]                                 //COMM Switch dialog
+define        FW_190D9_COMM_Switch_to_main_menu                       R_CTL+USB[0x31]                                   //COMM Switch to main menu
+define        FW_190D9_COMM_Push_to_talk                              R_ALT+USB[0x31]                                   //COMM Push to talk
+
+
+
+// View**********************
+
+define        FW_190D9_View_Left_slow                                 USB[0x5C]                                         //View Left slow
+define        FW_190D9_View_Right_slow                                USB[0x5E]                                         //View Right slow
+define        FW_190D9_View_Up_slow                                   USB[0x60]                                         //View Up slow
+define        FW_190D9_View_Down_slow                                 USB[0x5A]                                         //View Down slow
+define        FW_190D9_View_Up_Right_slow                             USB[0x61]                                         //View Up Right slow
+define        FW_190D9_View_Down_Right_slow                           USB[0x5B]                                         //View Down Right slow
+define        FW_190D9_View_Down_Left_slow                            USB[0x59]                                         //View Down Left slow
+define        FW_190D9_View_Up_Left_slow                              USB[0x5F]                                         //View Up Left slow
+define        FW_190D9_View_Center                                    USB[0x5D]                                         //View Center
+define        FW_190D9_Zoom_in_slow                                   USB[0x55]                                         //Zoom in slow
+define        FW_190D9_Zoom_out_slow                                  USB[0x54]                                         //Zoom out slow
+define        FW_190D9_Zoom_normal                                    USB[0x58]                                         //Zoom normal
+define        FW_190D9_Zoom_external_in                               R_CTL+USB[0x55]                                   //Zoom external in
+define        FW_190D9_Zoom_external_out                              R_CTL+USB[0x54]                                   //Zoom external out
+define        FW_190D9_Zoom_external_normal                           R_CTL+USB[0x58]                                   //Zoom external normal
+define        FW_190D9_F11_camera_moving_forward                      L_ALT+USB[0x55]                                   //F11 camera moving forward
+define        FW_190D9_F11_camera_moving_backward                     L_ALT+USB[0x54]                                   //F11 camera moving backward
+define        FW_190D9_F1_Cockpit_view                                USB[0x3A]                                         //F1 Cockpit view
+define        FW_190D9_F1_Natural_head_movement_view                  L_CTL+USB[0x3A]                                   //F1 Natural head movement view
+define        FW_190D9_F1_HUD_only_view_switch                        L_ALT+USB[0x3A]                                   //F1 HUD only view switch
+define        FW_190D9_F2_Aircraft_view                               USB[0x3B]                                         //F2 Aircraft view
+define        FW_190D9_F2_View_own_aircraft                           L_CTL+USB[0x3B]                                   //F2 View own aircraft
+define        FW_190D9_F2_Toggle_camera_position                      R_ALT+USB[0x3B]                                   //F2 Toggle camera position
+define        FW_190D9_F2_Toggle_local_camera_control                 L_ALT+USB[0x3B]                                   //F2 Toggle local camera control
+define        FW_190D9_F3_Fly_By_view                                 USB[0x3C]                                         //F3 Fly-By view
+define        FW_190D9_F3_Fly_By_jump_view                            L_CTL+USB[0x3C]                                   //F3 Fly-By jump view
+define        FW_190D9_F4_Arcade_View                                 USB[0x3D]                                         //F4 Arcade View
+define        FW_190D9_F4_Look_back_view                              L_SHIFT+USB[0x3D]                                 //F4 Look back view
+define        FW_190D9_F4_Chase_view                                  L_CTL+USB[0x3D]                                   //F4 Chase view
+define        FW_190D9_F5_nearest_AC_view                             USB[0x3E]                                         //F5 nearest AC view
+define        FW_190D9_F5_Ground_hostile_view                         L_CTL+USB[0x3E]                                   //F5 Ground hostile view
+define        FW_190D9_F6_Released_weapon_view                        USB[0x3F]                                         //F6 Released weapon view
+define        FW_190D9_F6_Weapon_to_target_view                       L_CTL+USB[0x3F]                                   //F6 Weapon to target view
+define        FW_190D9_F7_Ground_unit_view                            USB[0x40]                                         //F7 Ground unit view
+define        FW_190D9_F7_Ground_JFO_JTAC_view                        L_CTL+USB[0x40]                                   //F7 Ground JFO/JTAC view
+define        FW_190D9_F9_Ship_view                                   USB[0x42]                                         //F9 Ship view
+define        FW_190D9_F9_Landing_signal_officer_view                 L_ALT+USB[0x42]                                   //F9 Landing signal officer view
+define        FW_190D9_F10_Theater_map_view                           USB[0x43]                                         //F10 Theater map view
+define        FW_190D9_F10_Jump_to_theater_map_view_over_current_pointL_CTL+USB[0x43]                                   //F10 Jump to theater map view over current point
+define        FW_190D9_F11_Airport_free_camera                        USB[0x44]                                         //F11 Airport free camera
+define        FW_190D9_F11_Jump_to_free_camera                        L_CTL+USB[0x44]                                   //F11 Jump to free camera
+define        FW_190D9_F12_Static_object_view                         USB[0x45]                                         //F12 Static object view
+define        FW_190D9_F12_Civil_traffic_view                         L_CTL+USB[0x45]                                   //F12 Civil traffic view
+define        FW_190D9_F12_Trains_cars_toggle                         L_SHIFT+USB[0x45]                                 //F12 Trains/cars toggle
+define        FW_190D9_F1_Head_shift_movement_on___off                L_WIN+USB[0x3A]                                   //F1 Head shift movement on / off
+define        FW_190D9_Camera_view_keyboard_rate_fast                 L_SHIFT+USB[0x30]                                 //Camera view keyboard rate fast
+define        FW_190D9_Camera_view_keyboard_rate_slow                 L_CTL+USB[0x30]                                   //Camera view keyboard rate slow
+define        FW_190D9_Camera_view_keyboard_rate_normal               L_ALT+USB[0x30]                                   //Camera view keyboard rate normal
+define        FW_190D9_Camera_view_mouse_rate_fast                    L_SHIFT+USB[0x2F]                                 //Camera view mouse rate fast
+define        FW_190D9_Camera_view_mouse_rate_slow                    L_CTL+USB[0x2F]                                   //Camera view mouse rate slow
+define        FW_190D9_Camera_view_mouse_rate_normal                  L_ALT+USB[0x2F]                                   //Camera view mouse rate normal
+
+
+
+// View Cockpit**********************
+
+define        FW_190D9_Cockpit_panel_view_in                          USB[0x62]                                         //Cockpit panel view in
+define        FW_190D9_Cockpit_panel_view_toggle                      R_CTL+USB[0x62]                                   //Cockpit panel view toggle
+define        FW_190D9_Save_Cockpit_Angles                            R_ALT+USB[0x62]                                   //Save Cockpit Angles
+define        FW_190D9_View_up                                        R_SHIFT+USB[0x60]                                 //View up
+define        FW_190D9_View_down                                      R_SHIFT+USB[0x5A]                                 //View down
+define        FW_190D9_View_left                                      R_SHIFT+USB[0x5C]                                 //View left
+define        FW_190D9_View_right                                     R_SHIFT+USB[0x5E]                                 //View right
+define        FW_190D9_View_up_right                                  R_SHIFT+USB[0x61]                                 //View up right
+define        FW_190D9_View_down_right                                R_SHIFT+USB[0x5B]                                 //View down right
+define        FW_190D9_View_down_left                                 R_SHIFT+USB[0x59]                                 //View down left
+define        FW_190D9_View_up_left                                   R_SHIFT+USB[0x5F]                                 //View up left
+define        FW_190D9_Camera_view_up                                 R_CTL+USB[0x60]                                   //Camera view up
+define        FW_190D9_Camera_view_down                               R_CTL+USB[0x5A]                                   //Camera view down
+define        FW_190D9_Camera_view_left                               R_CTL+USB[0x5C]                                   //Camera view left
+define        FW_190D9_Camera_view_right                              R_CTL+USB[0x5E]                                   //Camera view right
+define        FW_190D9_Camera_view_up_left                            R_CTL+USB[0x5F]                                   //Camera view up-left
+define        FW_190D9_Camera_view_down_left                          R_CTL+USB[0x59]                                   //Camera view down-left
+define        FW_190D9_Camera_view_up_right                           R_CTL+USB[0x61]                                   //Camera view up-right
+define        FW_190D9_Camera_view_down_right                         R_CTL+USB[0x5B]                                   //Camera view down-right
+define        FW_190D9_Camera_view_up_slow                            R_ALT+USB[0x60]                                   //Camera view up slow
+define        FW_190D9_Camera_view_down_slow                          R_ALT+USB[0x5A]                                   //Camera view down slow
+define        FW_190D9_Camera_view_left_slow                          R_ALT+USB[0x5C]                                   //Camera view left slow
+define        FW_190D9_Camera_view_right_slow                         R_ALT+USB[0x5E]                                   //Camera view right slow
+define        FW_190D9_Camera_view_up_left_slow                       R_ALT+USB[0x5F]                                   //Camera view up-left slow
+define        FW_190D9_Camera_view_down_left_slow                     R_ALT+USB[0x59]                                   //Camera view down-left slow
+define        FW_190D9_Camera_view_down_right_slow                    R_ALT+USB[0x61]                                   //Camera view down-right slow
+define        FW_190D9_Camera_view_up_right_slow                      R_ALT+USB[0x5B]                                   //Camera view up-right slow
+define        FW_190D9_Center_camera_view                             R_SHIFT+USB[0x5D]                                 //Center camera view
+define        FW_190D9_Return_camera                                  R_CTL+USB[0x5D]                                   //Return camera
+define        FW_190D9_Return_camera_base                             R_ALT+USB[0x5D]                                   //Return camera base
+define        FW_190D9_Snap_View_0                                    L_WIN+USB[0x62]                                   //Snap View 0
+define        FW_190D9_Snap_View_1                                    L_WIN+USB[0x59]                                   //Snap View 1
+define        FW_190D9_Snap_View_2                                    L_WIN+USB[0x5A]                                   //Snap View 2
+define        FW_190D9_Snap_View_3                                    L_WIN+USB[0x5B]                                   //Snap View 3
+define        FW_190D9_Snap_View_4                                    L_WIN+USB[0x5C]                                   //Snap View 4
+define        FW_190D9_Snap_View_5                                    L_WIN+USB[0x5D]                                   //Snap View 5
+define        FW_190D9_Snap_View_6                                    L_WIN+USB[0x5E]                                   //Snap View 6
+define        FW_190D9_Snap_View_7                                    L_WIN+USB[0x5F]                                   //Snap View 7
+define        FW_190D9_Snap_View_8                                    L_WIN+USB[0x60]                                   //Snap View 8
+define        FW_190D9_Snap_View_9                                    L_WIN+USB[0x61]                                   //Snap View 9
+define        FW_190D9_Mirror_glance                                  R_WIN+USB[0x11]                                   //Mirror glance
+define        FW_190D9_Zoom_in                                        R_SHIFT+USB[0x55]                                 //Zoom in
+define        FW_190D9_Zoom_out                                       R_SHIFT+USB[0x54]                                 //Zoom out
+define        FW_190D9_Cockpit_Camera_Move_Up                         R_CTL+R_SHIFT+USB[0x60]                           //Cockpit Camera Move Up
+define        FW_190D9_Cockpit_Camera_Move_Down                       R_CTL+R_SHIFT+USB[0x5A]                           //Cockpit Camera Move Down
+define        FW_190D9_Cockpit_Camera_Move_Left                       R_CTL+R_SHIFT+USB[0x5C]                           //Cockpit Camera Move Left
+define        FW_190D9_Cockpit_Camera_Move_Right                      R_CTL+R_SHIFT+USB[0x5E]                           //Cockpit Camera Move Right
+define        FW_190D9_Cockpit_Camera_Move_Forward                    R_CTL+R_SHIFT+USB[0x55]                           //Cockpit Camera Move Forward
+define        FW_190D9_Cockpit_Camera_Move_Back                       R_CTL+R_SHIFT+USB[0x54]                           //Cockpit Camera Move Back
+define        FW_190D9_Cockpit_Camera_Move_Center                     R_CTL+R_SHIFT+USB[0x5D]                           //Cockpit Camera Move Center
+define        FW_190D9_Camera_transpose_mode__press_and_hold_         L_SHIFT+USB[0x3A]                                 //Camera transpose mode (press and hold)
+
+
+
+// View Extended**********************
+
+define        FW_190D9_Camera_jiggle_toggle                           L_SHIFT+USB[0x0D]                                 //Camera jiggle toggle
+define        FW_190D9_Camera_terrain_altitude_hold                   L_ALT+USB[0x0E]                                   //Camera terrain altitude hold
+define        FW_190D9_View_friends_mode                              R_CTL+R_SHIFT+USB[0x4A]                           //View friends mode
+define        FW_190D9_View_enemies_mode                              R_CTL+R_SHIFT+USB[0x4D]                           //View enemies mode
+define        FW_190D9_View_all_mode                                  R_CTL+USB[0x4C]                                   //View all mode
+define        FW_190D9_Camera_ordnance_tracking                       R_CTL+USB[0x57]                                   //Camera ordnance tracking
+define        FW_190D9_Objects_switching_direction_forward_           L_CTL+USB[0x4E]                                   //Objects switching direction forward 
+define        FW_190D9_Objects_switching_direction_reverse_           L_CTL+USB[0x4B]                                   //Objects switching direction reverse 
+define        FW_190D9_Object_exclude_                                L_ALT+USB[0x4C]                                   //Object exclude 
+define        FW_190D9_Objects_all_excluded___include                 L_ALT+USB[0x49]                                   //Objects all excluded - include
+
+
+
+// View Padlock**********************
+
+define        FW_190D9_Padlock_missiles_all                           R_SHIFT+USB[0x63]                                 //Padlock missiles all
+define        FW_190D9_Padlock_missile_threat                         R_ALT+USB[0x63]                                   //Padlock missile threat
+define        FW_190D9_Padlock_cycle                                  USB[0x63]                                         //Padlock cycle
+define        FW_190D9_Padlock_Off__stop_padlock_                     USB[0x53]                                         //Padlock Off (stop padlock)
+define        FW_190D9_Padlock_terrain_point                          R_CTL+USB[0x63]                                   //Padlock terrain point
+
+
+
+// Labels**********************
+
+define        FW_190D9_Labels_All                                     L_SHIFT+USB[0x43]                                 //Labels All
+define        FW_190D9_Labels_Aircraft                                L_SHIFT+USB[0x3B]                                 //Labels Aircraft
+define        FW_190D9_Labels_Missile                                 L_SHIFT+USB[0x3F]                                 //Labels Missile
+define        FW_190D9_Labels_Vehicle_and_Ship                        L_SHIFT+USB[0x42]                                 //Labels Vehicle & Ship
+
+
+
+// Stick**********************
+
+define        FW_190D9_Weapon_release                                 R_ALT+USB[0x2C]                                   //Weapon release
+define        FW_190D9_MG131_151_fire                                 USB[0x2C]                                         //MG131/151 fire
+define        FW_190D9_MG131_fire                                     R_CTL+USB[0x2C]                                   //MG131 fire
+
+
+
+// Flight Control**********************
+
+define        FW_190D9_Flight_Nose_Down                               USB[0x52]                                         //Flight Nose Down
+define        FW_190D9_Flight_Nose_Up                                 USB[0x51]                                         //Flight Nose Up
+define        FW_190D9_Flight_Left_Wing_Down                          USB[0x50]                                         //Flight Left Wing Down
+define        FW_190D9_Flight_Right_Wing_Down                         USB[0x4F]                                         //Flight Right Wing Down
+define        FW_190D9_Flight_Rudder_Left                             USB[0x1D]                                         //Flight Rudder Left
+define        FW_190D9_Flight_Rudder_Right                            USB[0x1B]                                         //Flight Rudder Right
+define        FW_190D9_Throttle_Increase                              USB[0x57]                                         //Throttle Increase
+define        FW_190D9_Throttle_Decrease                              USB[0x56]                                         //Throttle Decrease
+
+
+
+// Systems**********************
+
+define        FW_190D9_Wheel_brake_Both                               USB[0x1A]                                         //Wheel brake Both
+define        FW_190D9_Wheel_brake_Left                               L_CTL+USB[0x1A]                                   //Wheel brake Left
+define        FW_190D9_Wheel_brake_Right                              L_ALT+USB[0x1A]                                   //Wheel brake Right
+define        FW_190D9_Bailout                                        L_CTL+USB[0x08]                                   //Bailout
+define        FW_190D9_Canopy_Closing                                 L_CTL+USB[0x06]                                   //Canopy Closing
+define        FW_190D9_Canopy_Opening                                 L_SHIFT+USB[0x06]                                 //Canopy Opening
+define        FW_190D9_Canopy_Emergency_Release                       L_SHIFT+L_CTL+USB[0x06]                           //Canopy Emergency Release
+
+
+
+// Front Dash**********************
+
+define        FW_190D9_Horizon_Cage                                   L_ALT+USB[0x19]                                   //Horizon Cage
+define        FW_190D9_Horizon_Uncage                                 L_CTL+USB[0x19]                                   //Horizon Uncage
+define        FW_190D9_Compass_Bezel_CW                               R_ALT+USB[0x06]                                   //Compass Bezel CW
+define        FW_190D9_Compass_Bezel_CCW                              R_CTL+USB[0x06]                                   //Compass Bezel CCW
+define        FW_190D9_Altimeter_Pressure_Decrease                    L_CTL+USB[0x13]                                   //Altimeter Pressure Decrease
+define        FW_190D9_Altimeter_Pressure_Increase                    L_SHIFT+USB[0x13]                                 //Altimeter Pressure Increase
+
+
+
+// Kneeboard**********************
+
+define        FW_190D9_Kneeboard_Next_Page                            USB[0x30]                                         //Kneeboard Next Page
+define        FW_190D9_Kneeboard_Previous_Page                        USB[0x2F]                                         //Kneeboard Previous Page
+define        FW_190D9_Kneeboard_ON_OFF                               R_SHIFT+USB[0x0E]                                 //Kneeboard ON/OFF
+define        FW_190D9_Kneeboard_glance_view                          USB[0x0E]                                         //Kneeboard glance view
+define        FW_190D9_Kneeboard_current_position_mark_point          R_CTL+USB[0x0E]                                   //Kneeboard current position mark point
+
+
+
+// EZ42 gunsight**********************
+
+define        FW_190D9_Gunsight_power                                 USB[0x10]                                         //Gunsight power
+define        FW_190D9_Gunsight_ON                                    L_CTL+L_WIN+USB[0x10]                             //Gunsight ON
+define        FW_190D9_Gunsight_OFF                                   L_SHIFT+L_WIN+USB[0x10]                           //Gunsight OFF
+define        FW_190D9_Gunsight_night_lens                            USB[0x11]                                         //Gunsight night lens
+define        FW_190D9_Gunsight_Night_Filter_ON                       L_CTL+L_WIN+USB[0x11]                             //Gunsight Night Filter ON
+define        FW_190D9_Gunsight_Night_Filter_OFF                      L_SHIFT+L_WIN+USB[0x11]                           //Gunsight Night Filter OFF
+define        FW_190D9_Gunsight_brightness_Increase                   R_CTL+USB[0x12]                                   //Gunsight brightness Increase
+define        FW_190D9_Gunsight_brightness_Decrease                   R_ALT+USB[0x12]                                   //Gunsight brightness Decrease
+define        FW_190D9_Gunsight_target_span_Increase                  USB[0x36]                                         //Gunsight target span Increase
+define        FW_190D9_Gunsight_target_span_Decrease                  USB[0x38]                                         //Gunsight target span Decrease
+define        FW_190D9_Gunsight_range_to_target_Increase              USB[0x33]                                         //Gunsight range to target Increase
+define        FW_190D9_Gunsight_range_to_target_Decrease              USB[0x37]                                         //Gunsight range to target Decrease
+
+
+
+// Weapon System**********************
+
+define        FW_190D9_Bomb_Emergency_Release                         L_CTL+USB[0x15]                                   //Bomb Emergency Release
+define        FW_190D9_Master_Arm                                     USB[0x06]                                         //Master Arm
+define        FW_190D9_Master_Arm_ON                                  L_CTL+L_WIN+USB[0x06]                             //Master Arm ON
+define        FW_190D9_Master_Arm_OFF                                 L_SHIFT+L_WIN+USB[0x06]                           //Master Arm OFF
+define        FW_190D9_Bomb_fusing_selector_Left                      L_SHIFT+USB[0x05]                                 //Bomb fusing selector Left
+define        FW_190D9_Bomb_fusing_selector_Right                     L_CTL+USB[0x05]                                   //Bomb fusing selector Right
+define        FW_190D9_Bomb_fusing_selector_dive_OV                   L_CTL+USB[0x1E]                                   //Bomb fusing selector dive OV
+define        FW_190D9_Bomb_fusing_selector_dive_MV                   L_CTL+USB[0x1F]                                   //Bomb fusing selector dive MV
+define        FW_190D9_Bomb_fusing_selector_OFF                       L_CTL+USB[0x20]                                   //Bomb fusing selector OFF
+define        FW_190D9_Bomb_fusing_selector_level_MV                  L_CTL+USB[0x21]                                   //Bomb fusing selector level MV
+define        FW_190D9_Bomb_fusing_selector_level_OV                  L_CTL+USB[0x22]                                   //Bomb fusing selector level OV
+define        FW_190D9_Ammo_counter_1_Decrease                        L_CTL+L_WIN+USB[0x1E]                             //Ammo counter 1 Decrease
+define        FW_190D9_Ammo_counter_1_Increase                        L_ALT+L_WIN+USB[0x1E]                             //Ammo counter 1 Increase
+define        FW_190D9_Ammo_counter_2_Decrease                        L_CTL+L_WIN+USB[0x1F]                             //Ammo counter 2 Decrease
+define        FW_190D9_Ammo_counter_2_Increase                        L_ALT+L_WIN+USB[0x1F]                             //Ammo counter 2 Increase
+define        FW_190D9_Ammo_counter_3_Decrease                        L_CTL+L_WIN+USB[0x20]                             //Ammo counter 3 Decrease
+define        FW_190D9_Ammo_counter_3_Increase                        L_ALT+L_WIN+USB[0x20]                             //Ammo counter 3 Increase
+define        FW_190D9_Ammo_counter_4_Decrease                        L_CTL+L_WIN+USB[0x21]                             //Ammo counter 4 Decrease
+define        FW_190D9_Ammo_counter_4_Increase                        L_ALT+L_WIN+USB[0x21]                             //Ammo counter 4 Increase
+define        FW_190D9_Main_Rocket_Switch_ON                          L_SHIFT+USB[0x12]                                 //Main Rocket Switch ON
+define        FW_190D9_Main_Rocket_Switch_OFF                         L_CTL+USB[0x12]                                   //Main Rocket Switch OFF
+define        FW_190D9_Rocket_Emergency_Release_Cover_OPEN            L_SHIFT+USB[0x0E]                                 //Rocket Emergency Release Cover OPEN
+define        FW_190D9_Rocket_Emergency_Release_ON                    L_SHIFT+USB[0x0C]                                 //Rocket Emergency Release ON
+define        FW_190D9_Rocket_Emergency_Release_OFF                   L_CTL+USB[0x0C]                                   //Rocket Emergency Release OFF
+
+
+
+// Systems**********************
+
+define        FW_190D9_Landing_Gear_Up_Down                           USB[0x0A]                                         //Landing Gear Up/Down
+define        FW_190D9_Landing_Gear_Retraction_Cover                  R_ALT+R_CTL+USB[0x0A]                             //Landing Gear Retraction Cover
+define        FW_190D9_Landing_Gear_Retraction_Cover_Down             R_ALT+R_WIN+USB[0x0B]                             //Landing Gear Retraction Cover Down
+define        FW_190D9_Landing_Gear_Retraction_Cover_Up               R_SHIFT+R_WIN+USB[0x0B]                           //Landing Gear Retraction Cover Up
+define        FW_190D9_Landing_Gear_Retraction                        R_ALT+R_SHIFT+USB[0x0A]                           //Landing Gear Retraction
+define        FW_190D9_Landing_Gear_Extending                         R_CTL+R_SHIFT+USB[0x0A]                           //Landing Gear Extending
+define        FW_190D9_Landing_Gear_Emergency_Release                 R_ALT+R_WIN+USB[0x0A]                             //Landing Gear Emergency Release
+define        FW_190D9_Landing_Gear_Emergency_Handle_Push             R_CTL+R_WIN+USB[0x0A]                             //Landing Gear Emergency Handle Push
+define        FW_190D9_Landing_Gear_Emergency_Handle_Pull             R_SHIFT+R_WIN+USB[0x0A]                           //Landing Gear Emergency Handle Pull
+
+
+
+// Flight Control**********************
+
+define        FW_190D9_Flaps_Up                                       L_SHIFT+USB[0x09]                                 //Flaps Up
+define        FW_190D9_Flaps_Take_Off                                 L_CTL+USB[0x09]                                   //Flaps Take Off
+define        FW_190D9_Flaps_Landing                                  USB[0x09]                                         //Flaps Landing
+
+
+
+// Engine Control**********************
+
+define        FW_190D9_Starter_Power                                  USB[0x4A]                                         //Starter Power
+define        FW_190D9_Starter_Clutch                                 R_CTL+USB[0x4A]                                   //Starter Clutch
+define        FW_190D9_Starter_Switch_Cover                           R_SHIFT+USB[0x4A]                                 //Starter Switch Cover
+define        FW_190D9_MBG_Emergency_Handle                           R_SHIFT+USB[0x10]                                 //MBG Emergency Handle
+define        FW_190D9_MBG_Emergency_Handle_Push                      R_SHIFT+R_WIN+USB[0x10]                           //MBG Emergency Handle Push
+define        FW_190D9_MBG_Emergency_Handle_Pull                      R_ALT+R_WIN+USB[0x10]                             //MBG Emergency Handle Pull
+define        FW_190D9_MW_50_Switch                                   USB[0x08]                                         //MW-50 Switch
+define        FW_190D9_MW_50_Switch_ON                                R_SHIFT+USB[0x08]                                 //MW-50 Switch ON
+define        FW_190D9_MW_50_Switch_OFF                               R_CTL+USB[0x08]                                   //MW-50 Switch OFF
+define        FW_190D9_Magneto_Switch_Forward                         USB[0x4D]                                         //Magneto Switch Forward
+define        FW_190D9_Magneto_Switch_Backward                        R_SHIFT+USB[0x4D]                                 //Magneto Switch Backward
+define        FW_190D9_Magneto_Switch_OFF                             R_SHIFT+USB[0x27]                                 //Magneto Switch OFF
+define        FW_190D9_Magneto_Switch_1                               R_SHIFT+USB[0x1E]                                 //Magneto Switch 1
+define        FW_190D9_Magneto_Switch_2                               R_SHIFT+USB[0x1F]                                 //Magneto Switch 2
+define        FW_190D9_Magneto_Switch_1_plus_2                        R_SHIFT+USB[0x20]                                 //Magneto Switch 1+2
+define        FW_190D9_Throttle_to_START                              R_ALT+USB[0x4A]                                   //Throttle to START
+define        FW_190D9_Throttle_to_IDLE                               R_ALT+USB[0x4D]                                   //Throttle to IDLE
+define        FW_190D9_Throttle_Control_Lock                          L_CTL+USB[0x1B]                                   //Throttle Control Lock
+
+
+
+// Oxygen System**********************
+
+define        FW_190D9_Oxygen_Emergency_Knob                          R_SHIFT+USB[0x05]                                 //Oxygen Emergency Knob
+define        FW_190D9_Emergency_Oxygen_ON                            R_SHIFT+R_WIN+USB[0x05]                           //Emergency Oxygen ON
+define        FW_190D9_Emergency_Oxygen_OFF                           R_ALT+R_WIN+USB[0x05]                             //Emergency Oxygen OFF
+define        FW_190D9_Oxygen_Valve_Close                             R_CTL+USB[0x05]                                   //Oxygen Valve Close
+define        FW_190D9_Oxygen_Valve_Open                              R_ALT+USB[0x05]                                   //Oxygen Valve Open
+
+
+
+// Flight Control**********************
+
+define        FW_190D9_Trim_Elevator_Down                             R_CTL+USB[0x33]                                   //Trim Elevator Down
+define        FW_190D9_Trim_Elevator_Up                               R_CTL+USB[0x37]                                   //Trim Elevator Up
+
+
+
+// Engine Control**********************
+
+define        FW_190D9_Radiator_Flaps_Close                           L_CTL+USB[0x04]                                   //Radiator Flaps Close
+define        FW_190D9_Radiator_Flaps_Open                            L_ALT+USB[0x04]                                   //Radiator Flaps Open
+
+
+
+// Fuel Control**********************
+
+define        FW_190D9_Fuel_Selector_Valve_Up                         USB[0x17]                                         //Fuel Selector Valve Up
+define        FW_190D9_Fuel_Selector_Valve_Down                       R_SHIFT+USB[0x17]                                 //Fuel Selector Valve Down
+define        FW_190D9_Fuel_Selector_Valve_OFF                        R_ALT+USB[0x1E]                                   //Fuel Selector Valve OFF
+define        FW_190D9_Fuel_Selector_Valve_AFT_Tank_Closed            R_ALT+USB[0x1F]                                   //Fuel Selector Valve AFT Tank Closed
+define        FW_190D9_Fuel_Selector_Valve_FWD_Tank_Closed            R_ALT+USB[0x20]                                   //Fuel Selector Valve FWD Tank Closed
+define        FW_190D9_Fuel_Selector_Valve_Open                       R_ALT+USB[0x21]                                   //Fuel Selector Valve Open
+define        FW_190D9_Fuel_Gauge_Selector_to_the_Right               R_ALT+USB[0x17]                                   //Fuel Gauge Selector to the Right
+define        FW_190D9_Fuel_Gauge_Selector_to_the_Left                R_CTL+USB[0x17]                                   //Fuel Gauge Selector to the Left
+define        FW_190D9_Fuel_Gauge_Selector_FWD                        R_ALT+USB[0x22]                                   //Fuel Gauge Selector FWD
+define        FW_190D9_Fuel_Gauge_Selector_OFF                        R_ALT+USB[0x23]                                   //Fuel Gauge Selector OFF
+define        FW_190D9_Fuel_Gauge_Selector_AFT                        R_ALT+USB[0x24]                                   //Fuel Gauge Selector AFT
+define        FW_190D9_MW_B4_Selector                                 R_WIN+USB[0x17]                                   //MW-B4 Selector
+define        FW_190D9_Cold_Start_Wind_Screen_Washer_to_the_Right     L_SHIFT+USB[0x17]                                 //Cold Start/Wind Screen Washer to the Right
+define        FW_190D9_Cold_Start_Wind_Screen_Washer_to_the_Left      L_ALT+USB[0x17]                                   //Cold Start/Wind Screen Washer to the Left
+define        FW_190D9_Primer_Pump                                    L_ALT+USB[0x13]                                   //Primer Pump
+
+
+
+// VHF Radio**********************
+
+define        FW_190D9_Radio_Channel_Selector_CW                      L_SHIFT+USB[0x11]                                 //Radio Channel Selector CW
+define        FW_190D9_Radio_Channel_Selector_CCW                     L_CTL+USB[0x11]                                   //Radio Channel Selector CCW
+define        FW_190D9_Radio_Channel_Selector_I                       L_SHIFT+USB[0x1E]                                 //Radio Channel Selector I
+define        FW_190D9_Radio_Channel_Selector_II                      L_SHIFT+USB[0x1F]                                 //Radio Channel Selector II
+define        FW_190D9_Radio_Channel_Selector_III                     L_SHIFT+USB[0x20]                                 //Radio Channel Selector III
+define        FW_190D9_Radio_Channel_Selector_IV                      L_SHIFT+USB[0x21]                                 //Radio Channel Selector IV
+define        FW_190D9_Radio_Mode_RADIO_ADF                           L_WIN+USB[0x06]                                   //Radio Mode RADIO/ADF
+define        FW_190D9_Radio_Mode_ADF                                 L_CTL+L_WIN+USB[0x06]                             //Radio Mode ADF
+define        FW_190D9_Radio_Mode_RADIO                               L_SHIFT+L_WIN+USB[0x06]                           //Radio Mode RADIO
+define        FW_190D9_Radio_Volume_Increase                          L_SHIFT+USB[0x07]                                 //Radio Volume Increase
+define        FW_190D9_Radio_Volume_Decrease                          L_ALT+USB[0x07]                                   //Radio Volume Decrease
+define        FW_190D9_Radio_Tuning_Increase                          L_SHIFT+USB[0x0A]                                 //Radio Tuning Increase
+define        FW_190D9_Radio_Tuning_Decrease                          L_ALT+USB[0x0A]                                   //Radio Tuning Decrease
+
+
+
+// Electric System**********************
+
+define        FW_190D9_Electric_Emergency_Disconnect                  R_WIN+USB[0x07]                                   //Electric Emergency Disconnect
+define        FW_190D9_CB_Cover                                       R_WIN+USB[0x06]                                   //CB Cover
+define        FW_190D9_CB_Flaps_Trimmer_Artificial_Horizon_Power      L_WIN+USB[0x1E]                                   //CB Flaps, Trimmer, Artificial Horizon Power
+define        FW_190D9_CB_Flaps_Trimmer_Artificial_Horizon_Off        L_WIN+L_CTL+USB[0x1E]                             //CB Flaps, Trimmer, Artificial Horizon Off
+define        FW_190D9_CB_Landing_Gear_Power_On                       L_WIN+USB[0x1F]                                   //CB Landing Gear Power On
+define        FW_190D9_CB_Landing_Gear_Power_Off                      L_WIN+L_CTL+USB[0x1F]                             //CB Landing Gear Power Off
+define        FW_190D9_CB_Pitot_and_Heating_Cover_On                  L_WIN+USB[0x20]                                   //CB Pitot and Heating Cover On
+define        FW_190D9_CB_Pitot_and_Heating_Cover_Off                 L_WIN+L_CTL+USB[0x20]                             //CB Pitot and Heating Cover Off
+define        FW_190D9_CB_FuG25a_On                                   L_WIN+USB[0x21]                                   //CB FuG25a On
+define        FW_190D9_CB_FuG25a_Off                                  L_WIN+L_CTL+USB[0x21]                             //CB FuG25a Off
+define        FW_190D9_CB_FuG16ZY_On                                  L_WIN+USB[0x22]                                   //CB FuG16ZY On
+define        FW_190D9_CB_FuG16ZY_Off                                 L_WIN+L_CTL+USB[0x22]                             //CB FuG16ZY Off
+define        FW_190D9_CB_Instrument_Lights_Gun_sight_Indicators_Compass_Starter_OnL_WIN+USB[0x23]                      //CB Instrument Lights, Gun-sight, Indicators, Compass, Starter On
+define        FW_190D9_CB_Instrument_Lights_Gun_sight_Indicators_Compass_Starter_OffL_WIN+L_CTL+USB[0x23]               //CB Instrument Lights, Gun-sight, Indicators, Compass, Starter Off
+define        FW_190D9_CB_Generator_On                                L_WIN+USB[0x24]                                   //CB Generator On
+define        FW_190D9_CB_Generator_Off                               L_WIN+L_CTL+USB[0x24]                             //CB Generator Off
+define        FW_190D9_CB_Battery_On                                  L_WIN+USB[0x25]                                   //CB Battery On
+define        FW_190D9_CB_Battery_Off                                 L_WIN+L_CTL+USB[0x25]                             //CB Battery Off
+define        FW_190D9_CB_Navigation_Lights_On                        R_WIN+USB[0x1E]                                   //CB Navigation Lights On
+define        FW_190D9_CB_Navigation_Lights_Off                       R_WIN+R_CTL+USB[0x1E]                             //CB Navigation Lights Off
+define        FW_190D9_CB_Forward_Tank_Pump_On                        R_WIN+USB[0x1F]                                   //CB Forward Tank Pump On
+define        FW_190D9_CB_Forward_Tank_Pump_Off                       R_WIN+R_CTL+USB[0x1F]                             //CB Forward Tank Pump Off
+define        FW_190D9_CB_Rear_Tank_Pump_On                           R_WIN+USB[0x20]                                   //CB Rear Tank Pump On
+define        FW_190D9_CB_Rear_Tank_Pump_Off                          R_WIN+R_CTL+USB[0x20]                             //CB Rear Tank Pump Off
+define        FW_190D9_CB_Auxiliary_Tank_Pump_On                      R_WIN+USB[0x21]                                   //CB Auxiliary Tank Pump On
+define        FW_190D9_CB_Auxiliary_Tank_Pump_Off                     R_WIN+R_CTL+USB[0x21]                             //CB Auxiliary Tank Pump Off
+define        FW_190D9_CB_MW_50_On                                    R_WIN+USB[0x22]                                   //CB MW-50 On
+define        FW_190D9_CB_MW_50_Off                                   R_WIN+R_CTL+USB[0x22]                             //CB MW-50 Off
+define        FW_190D9_Instrument_Brightness_Increase                 L_SHIFT+USB[0x0F]                                 //Instrument Brightness Increase
+define        FW_190D9_Instrument_Brightness_Decrease                 L_CTL+USB[0x0F]                                   //Instrument Brightness Decrease
+
+
+
+// Clock**********************
+
+define        FW_190D9_Stopwatch                                      R_SHIFT+USB[0x1A]                                 //Stopwatch
+define        FW_190D9_Clock_Stop                                     R_ALT+USB[0x1A]                                   //Clock Stop
+define        FW_190D9_Clock_Start                                    R_CTL+USB[0x1A]                                   //Clock Start
+define        FW_190D9_Clock_Bezel_CW                                 R_ALT+R_CTL+USB[0x1A]                             //Clock Bezel CW
+define        FW_190D9_Clock_Bezel_CCW                                R_ALT+R_SHIFT+USB[0x1A]                           //Clock Bezel CCW

@@ -1,0 +1,51 @@
+include "target.tmh"
+include "bindings/FA18-C_default.ttm"
+
+int map_mouse;
+int unmap_mouse;
+define CURVE 3
+int y;
+
+
+//program startup
+int main()
+{
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+	y  = SetSCurve(&Throttle, SCX, 0, 10, 0, CURVE, -4);
+	map_mouse = CHAIN(
+		EXEC("KeyAxis(&Throttle, SCX, '', AXMAP1('','','') );"),
+		EXEC("KeyAxis(&Throttle, SCY, '', AXMAP1('','','') );"),
+		EXEC("MapAxis(&Throttle, SCX, MOUSE_X_AXIS, AXIS_NORMAL, MAP_RELATIVE);"),
+		EXEC("y;"),
+		EXEC("MapAxis(&Throttle, SCY, MOUSE_Y_AXIS, AXIS_NORMAL, MAP_RELATIVE);"),
+		EXEC("SetSCurve(&Throttle, SCY, 0, 10, 0, 3, -4);")
+	);
+	
+	unmap_mouse = CHAIN(
+		EXEC("KeyAxis(&Throttle, SCX, 'om', AXMAP2( LIST( 0, 40, 60 ), USB[54], 0, USB[56] ));"),
+		EXEC("KeyAxis(&Throttle, SCY, 'om', AXMAP2( LIST( 0, 40, 60 ), USB[51], 0, USB[55] ));"),
+		EXEC("MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);"),
+		EXEC("SetSCurve(&Throttle, SCX, 0, 0, 0, 0, 0);"),
+		EXEC("MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);"),
+		EXEC("SetSCurve(&Throttle, SCY, 0, 0, 0, 0, 0);")
+	);
+		
+
+	// MapAxis(&Throttle, SCX, MOUSE_X_AXIS, AXIS_NORMAL, MAP_RELATIVE);
+	// SetSCurve(&Device, axis name, left_deadzone, center_deadzone, right_deadzone, curve, scale);
+	// SetSCurve(&Throttle, SCX, 0, 10, 0, 3, -4);
+	// MapAxis(&Throttle, SCY, MOUSE_Y_AXIS, AXIS_NORMAL, MAP_RELATIVE);
+	// SetSCurve(&Throttle, SCY, 0, 10, 0, 3, -4);
+	//MapKey(&Joystick, H4U, PULSE+L_SHIFT+'w');
+	MapKey(&Joystick, H4U, map_mouse);
+	MapKey(&Joystick, H4D, unmap_mouse);
+	MapKey(&Joystick, H4R, Master_Mode_Button___A_G);
+}
+
+//event handler
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}

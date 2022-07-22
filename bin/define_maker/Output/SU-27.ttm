@@ -1,0 +1,77 @@
+
+
+
+// Systems**********************
+
+define        SU_27_Altimeter_Pressure_Increase                       R_SHIFT+USB[0x2E]                                 //Altimeter Pressure Increase
+define        SU_27_Altimeter_Pressure_Decrease                       R_SHIFT+USB[0x2D]                                 //Altimeter Pressure Decrease
+
+
+
+// Autopilot**********************
+
+define        SU_27_Autopilot                                         USB[0x04]                                         //Autopilot
+define        SU_27_Autopilot___Barometric_Altitude_Hold_\            USB[0x0B]                                         //Autopilot - Barometric Altitude Hold \
+define        SU_27_Autopilot___Attitude_Hold                         L_ALT+USB[0x1E]                                   //Autopilot - Attitude Hold
+define        SU_27_Autopilot___Altitude_And_Roll_Hold                L_ALT+USB[0x1F]                                   //Autopilot - Altitude And Roll Hold
+define        SU_27_Autopilot___Transition_To_Level_Flight_Control    L_ALT+USB[0x20]                                   //Autopilot - Transition To Level Flight Control
+define        SU_27_Autopilot___Barometric_Altitude_Hold              L_ALT+USB[0x21]                                   //Autopilot - Barometric Altitude Hold
+define        SU_27_Autopilot___Radar_Altitude_Hold                   L_ALT+USB[0x22]                                   //Autopilot - Radar Altitude Hold
+define        SU_27_Autopilot___\                                     L_ALT+USB[0x23]                                   //Autopilot - \
+define        SU_27_Autopilot_Reset                                   L_ALT+USB[0x26]                                   //Autopilot Reset
+
+
+
+// Modes**********************
+
+define        SU_27__2__Beyond_Visual_Range_Mode                      USB[0x1F]                                         //(2) Beyond Visual Range Mode
+define        SU_27__3__Close_Air_Combat_Vertical_Scan_Mode           USB[0x20]                                         //(3) Close Air Combat Vertical Scan Mode
+define        SU_27__4__Close_Air_Combat_Bore_Mode                    USB[0x21]                                         //(4) Close Air Combat Bore Mode
+define        SU_27__5__Close_Air_Combat_HMD_Helmet_Mode              USB[0x22]                                         //(5) Close Air Combat HMD Helmet Mode
+define        SU_27__6__Longitudinal_Missile_Aiming_Mode              USB[0x23]                                         //(6) Longitudinal Missile Aiming Mode
+define        SU_27__7__Air_To_Ground_Mode                            USB[0x24]                                         //(7) Air-To-Ground Mode
+define        SU_27__8__Gunsight_Reticle_Switch                       USB[0x25]                                         //(8) Gunsight Reticle Switch
+
+
+
+// Flight Control**********************
+
+define        SU_27_Trim_Reset                                        L_CTL+USB[0x17]                                   //Trim Reset
+define        SU_27_ASC_Direct_Control__Cobra_                        USB[0x16]                                         //ASC Direct Control (Cobra)
+
+
+
+// Sensors**********************
+
+define        SU_27_Target_Lock                                       USB[0x28]                                         //Target Lock
+define        SU_27_Return_To_Search                                  USB[0x2A]                                         //Return To Search
+define        SU_27_Radar_On_Off                                      USB[0x0C]                                         //Radar On/Off
+define        SU_27_Radar_RWS_TWS_Mode_Select                         R_ALT+USB[0x0C]                                   //Radar RWS/TWS Mode Select
+define        SU_27_Target_Designator_To_Center                       R_CTL+USB[0x0C]                                   //Target Designator To Center
+define        SU_27_Radar_Pulse_Repeat_Frequency_Select               R_SHIFT+USB[0x0C]                                 //Radar Pulse Repeat Frequency Select
+define        SU_27_Electro_Optical_System_On_Off                     USB[0x12]                                         //Electro-Optical System On/Off
+define        SU_27_Target_Designator_Up                              USB[0x33]                                         //Target Designator Up
+define        SU_27_Target_Designator_Down                            USB[0x37]                                         //Target Designator Down
+define        SU_27_Target_Designator_Left                            USB[0x36]                                         //Target Designator Left
+define        SU_27_Target_Designator_Right                           USB[0x38]                                         //Target Designator Right
+define        SU_27_Scan_Zone_Up                                      R_SHIFT+USB[0x33]                                 //Scan Zone Up
+define        SU_27_Scan_Zone_Down                                    R_SHIFT+USB[0x37]                                 //Scan Zone Down
+define        SU_27_Scan_Zone_Left                                    R_SHIFT+USB[0x36]                                 //Scan Zone Left
+define        SU_27_Scan_Zone_Right                                   R_SHIFT+USB[0x38]                                 //Scan Zone Right
+define        SU_27_Display_Zoom_In                                   USB[0x2E]                                         //Display Zoom In
+define        SU_27_Display_Zoom_Out                                  USB[0x2D]                                         //Display Zoom Out
+define        SU_27_Radar_Scan_Zone_Decrease                          R_CTL+USB[0x2D]                                   //Radar Scan Zone Decrease
+define        SU_27_Radar_Scan_Zone_Increase                          R_CTL+USB[0x2E]                                   //Radar Scan Zone Increase
+define        SU_27_Target_Specified_Size_Increase                    R_ALT+USB[0x2E]                                   //Target Specified Size Increase
+define        SU_27_Target_Specified_Size_Decrease                    R_ALT+USB[0x2D]                                   //Target Specified Size Decrease
+define        SU_27_RWR_SPO_Mode_Select                               R_SHIFT+USB[0x15]                                 //RWR/SPO Mode Select
+define        SU_27_RWR_SPO_Sound_Signals_Volume_Down                 R_ALT+USB[0x36]                                   //RWR/SPO Sound Signals Volume Down
+define        SU_27_RWR_SPO_Sound_Signals_Volume_Up                   R_ALT+USB[0x37]                                   //RWR/SPO Sound Signals Volume Up
+
+
+
+// Weapons**********************
+
+define        SU_27_Salvo_Mode                                        L_CTL+USB[0x19]                                   //Salvo Mode
+define        SU_27_Cut_Of_Burst_select                               L_SHIFT+USB[0x06]                                 //Cut Of Burst select
+define        SU_27_HUD_Filter_On_Off                                 R_SHIFT+USB[0x0B]                                 //HUD Filter On Off

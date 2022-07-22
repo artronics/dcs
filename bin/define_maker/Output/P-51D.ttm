@@ -1,0 +1,471 @@
+
+
+
+// Debug**********************
+
+define        P_51D_Toggle_Console                                    L_ALT+USB[0x35]                                   //Toggle Console
+
+
+
+// Cheat**********************
+
+define        P_51D_Start_Procedure                                   R_WIN+USB[0x4A]                                   //Start Procedure
+define        P_51D_Stop_Procedure                                    R_WIN+USB[0x4D]                                   //Stop Procedure
+
+
+
+// General**********************
+
+define        P_51D_Pause_Active                                      L_SHIFT+L_WIN+USB[0x48]                           //Pause Active
+define        P_51D_Exit_mission                                      USB[0x29]                                         //Exit mission
+define        P_51D_Briefing_window                                   L_ALT+USB[0x05]                                   //Briefing window
+define        P_51D_Jump_into_selected_aircraft                       R_ALT+USB[0x0D]                                   //Jump into selected aircraft
+define        P_51D_Pause                                             USB[0x48]                                         //Pause
+define        P_51D_Time_accelerate                                   L_CTL+USB[0x1D]                                   //Time accelerate
+define        P_51D_Time_decelerate                                   L_ALT+USB[0x1D]                                   //Time decelerate
+define        P_51D_Time_normal                                       L_SHIFT+USB[0x1D]                                 //Time normal
+define        P_51D_Info_bar_view_toggle                              L_CTL+USB[0x1C]                                   //Info bar view toggle
+define        P_51D_Get_new_plane___respawn                           R_CTL+R_SHIFT+USB[0x2B]                           //Get new plane - respawn
+define        P_51D_Screenshot                                        USB[0x46]                                         //Screenshot
+define        P_51D_Playback_track_cancel                             L_SHIFT+USB[0x2B]                                 //Playback track cancel
+define        P_51D_One_frame_mode                                    R_SHIFT+USB[0x48]                                 //One frame mode
+define        P_51D_Frame_rate_counter___Service_info                 R_CTL+USB[0x48]                                   //Frame rate counter - Service info
+define        P_51D_Info_bar_coordinate_units_toggle                  L_ALT+USB[0x1C]                                   //Info bar coordinate units toggle
+define        P_51D_Clickable_mouse_cockpit_mode_On_Off               L_ALT+USB[0x06]                                   //Clickable mouse cockpit mode On/Off
+define        P_51D_Show_controls_indicator                           R_CTL+USB[0x28]                                   //Show controls indicator
+define        P_51D_Show_pilot_body                                   R_SHIFT+USB[0x13]                                 //Show pilot body
+define        P_51D_Multiplayer_chat___mode_All                       USB[0x2B]                                         //Multiplayer chat - mode All
+define        P_51D_Multiplayer_chat___mode_Allies                    L_CTL+USB[0x2B]                                   //Multiplayer chat - mode Allies
+
+
+
+// Communications**********************
+
+define        P_51D_COMM_Dispatch_wingmans___complete_mission_and_RTB__easy_communication_only_L_WIN+USB[0x08]          //COMM Dispatch wingmans - complete mission and RTB (easy communication only)
+define        P_51D_COMM_Dispatch_wingmans___complete_mission_and_rejoin__easy_communication_only_L_WIN+USB[0x15]       //COMM Dispatch wingmans - complete mission and rejoin (easy communication only)
+define        P_51D_COMM_Toggle_formation__easy_communication_only_   L_WIN+USB[0x17]                                   //COMM Toggle formation (easy communication only)
+define        P_51D_COMM_Join_up_formation__easy_communication_only_  L_WIN+USB[0x1C]                                   //COMM Join up formation (easy communication only)
+define        P_51D_COMM_Attack_my_target__easy_communication_only_   L_WIN+USB[0x14]                                   //COMM Attack my target (easy communication only)
+define        P_51D_COMM_Cover_me__easy_communication_only_           L_WIN+USB[0x1A]                                   //COMM Cover me (easy communication only)
+define        P_51D_COMM_Ask_AWACS_home_airbase__easy_communication_only_L_WIN+USB[0x18]                                //COMM Ask AWACS home airbase (easy communication only)
+define        P_51D_COMM_Attack_Ground_Targets__easy_communication_only_L_WIN+USB[0x0A]                                 //COMM Attack Ground Targets (easy communication only)
+define        P_51D_COMM_Attack_Air_Defenses__easy_communication_only_L_WIN+USB[0x07]                                   //COMM Attack Air Defenses (easy communication only)
+define        P_51D_COMM_Communication_menu                           USB[0x31]                                         //COMM Communication menu
+define        P_51D_COMM_Switch_dialog                                R_SHIFT+USB[0x31]                                 //COMM Switch dialog
+define        P_51D_COMM_Switch_to_main_menu                          R_CTL+USB[0x31]                                   //COMM Switch to main menu
+define        P_51D_COMM_Push_to_talk                                 R_ALT+USB[0x31]                                   //COMM Push to talk
+
+
+
+// View**********************
+
+define        P_51D_View_Left_slow                                    USB[0x5C]                                         //View Left slow
+define        P_51D_View_Right_slow                                   USB[0x5E]                                         //View Right slow
+define        P_51D_View_Up_slow                                      USB[0x60]                                         //View Up slow
+define        P_51D_View_Down_slow                                    USB[0x5A]                                         //View Down slow
+define        P_51D_View_Up_Right_slow                                USB[0x61]                                         //View Up Right slow
+define        P_51D_View_Down_Right_slow                              USB[0x5B]                                         //View Down Right slow
+define        P_51D_View_Down_Left_slow                               USB[0x59]                                         //View Down Left slow
+define        P_51D_View_Up_Left_slow                                 USB[0x5F]                                         //View Up Left slow
+define        P_51D_View_Center                                       USB[0x5D]                                         //View Center
+define        P_51D_Zoom_in_slow                                      USB[0x55]                                         //Zoom in slow
+define        P_51D_Zoom_out_slow                                     USB[0x54]                                         //Zoom out slow
+define        P_51D_Zoom_normal                                       USB[0x58]                                         //Zoom normal
+define        P_51D_Zoom_external_in                                  R_CTL+USB[0x55]                                   //Zoom external in
+define        P_51D_Zoom_external_out                                 R_CTL+USB[0x54]                                   //Zoom external out
+define        P_51D_Zoom_external_normal                              R_CTL+USB[0x58]                                   //Zoom external normal
+define        P_51D_F11_camera_moving_forward                         L_ALT+USB[0x55]                                   //F11 camera moving forward
+define        P_51D_F11_camera_moving_backward                        L_ALT+USB[0x54]                                   //F11 camera moving backward
+define        P_51D_F1_Cockpit_view                                   USB[0x3A]                                         //F1 Cockpit view
+define        P_51D_F1_Natural_head_movement_view                     L_CTL+USB[0x3A]                                   //F1 Natural head movement view
+define        P_51D_F1_HUD_only_view_switch                           L_ALT+USB[0x3A]                                   //F1 HUD only view switch
+define        P_51D_F2_Aircraft_view                                  USB[0x3B]                                         //F2 Aircraft view
+define        P_51D_F2_View_own_aircraft                              L_CTL+USB[0x3B]                                   //F2 View own aircraft
+define        P_51D_F2_Toggle_camera_position                         R_ALT+USB[0x3B]                                   //F2 Toggle camera position
+define        P_51D_F2_Toggle_local_camera_control                    L_ALT+USB[0x3B]                                   //F2 Toggle local camera control
+define        P_51D_F3_Fly_By_view                                    USB[0x3C]                                         //F3 Fly-By view
+define        P_51D_F3_Fly_By_jump_view                               L_CTL+USB[0x3C]                                   //F3 Fly-By jump view
+define        P_51D_F4_Arcade_View                                    USB[0x3D]                                         //F4 Arcade View
+define        P_51D_F4_Look_back_view                                 L_SHIFT+USB[0x3D]                                 //F4 Look back view
+define        P_51D_F4_Chase_view                                     L_CTL+USB[0x3D]                                   //F4 Chase view
+define        P_51D_F5_nearest_AC_view                                USB[0x3E]                                         //F5 nearest AC view
+define        P_51D_F5_Ground_hostile_view                            L_CTL+USB[0x3E]                                   //F5 Ground hostile view
+define        P_51D_F6_Released_weapon_view                           USB[0x3F]                                         //F6 Released weapon view
+define        P_51D_F6_Weapon_to_target_view                          L_CTL+USB[0x3F]                                   //F6 Weapon to target view
+define        P_51D_F7_Ground_unit_view                               USB[0x40]                                         //F7 Ground unit view
+define        P_51D_F7_Ground_JFO_JTAC_view                           L_CTL+USB[0x40]                                   //F7 Ground JFO/JTAC view
+define        P_51D_F9_Ship_view                                      USB[0x42]                                         //F9 Ship view
+define        P_51D_F9_Landing_signal_officer_view                    L_ALT+USB[0x42]                                   //F9 Landing signal officer view
+define        P_51D_F10_Theater_map_view                              USB[0x43]                                         //F10 Theater map view
+define        P_51D_F10_Jump_to_theater_map_view_over_current_point   L_CTL+USB[0x43]                                   //F10 Jump to theater map view over current point
+define        P_51D_F11_Airport_free_camera                           USB[0x44]                                         //F11 Airport free camera
+define        P_51D_F11_Jump_to_free_camera                           L_CTL+USB[0x44]                                   //F11 Jump to free camera
+define        P_51D_F12_Static_object_view                            USB[0x45]                                         //F12 Static object view
+define        P_51D_F12_Civil_traffic_view                            L_CTL+USB[0x45]                                   //F12 Civil traffic view
+define        P_51D_F12_Trains_cars_toggle                            L_SHIFT+USB[0x45]                                 //F12 Trains/cars toggle
+define        P_51D_F1_Head_shift_movement_on___off                   L_WIN+USB[0x3A]                                   //F1 Head shift movement on / off
+define        P_51D_Camera_view_keyboard_rate_fast                    L_SHIFT+USB[0x30]                                 //Camera view keyboard rate fast
+define        P_51D_Camera_view_keyboard_rate_slow                    L_CTL+USB[0x30]                                   //Camera view keyboard rate slow
+define        P_51D_Camera_view_keyboard_rate_normal                  L_ALT+USB[0x30]                                   //Camera view keyboard rate normal
+define        P_51D_Camera_view_mouse_rate_fast                       L_SHIFT+USB[0x2F]                                 //Camera view mouse rate fast
+define        P_51D_Camera_view_mouse_rate_slow                       L_CTL+USB[0x2F]                                   //Camera view mouse rate slow
+define        P_51D_Camera_view_mouse_rate_normal                     L_ALT+USB[0x2F]                                   //Camera view mouse rate normal
+
+
+
+// View Cockpit**********************
+
+define        P_51D_Cockpit_panel_view_in                             USB[0x62]                                         //Cockpit panel view in
+define        P_51D_Cockpit_panel_view_toggle                         R_CTL+USB[0x62]                                   //Cockpit panel view toggle
+define        P_51D_Save_Cockpit_Angles                               R_ALT+USB[0x62]                                   //Save Cockpit Angles
+define        P_51D_View_up                                           R_SHIFT+USB[0x60]                                 //View up
+define        P_51D_View_down                                         R_SHIFT+USB[0x5A]                                 //View down
+define        P_51D_View_left                                         R_SHIFT+USB[0x5C]                                 //View left
+define        P_51D_View_right                                        R_SHIFT+USB[0x5E]                                 //View right
+define        P_51D_View_up_right                                     R_SHIFT+USB[0x61]                                 //View up right
+define        P_51D_View_down_right                                   R_SHIFT+USB[0x5B]                                 //View down right
+define        P_51D_View_down_left                                    R_SHIFT+USB[0x59]                                 //View down left
+define        P_51D_View_up_left                                      R_SHIFT+USB[0x5F]                                 //View up left
+define        P_51D_Camera_view_up                                    R_CTL+USB[0x60]                                   //Camera view up
+define        P_51D_Camera_view_down                                  R_CTL+USB[0x5A]                                   //Camera view down
+define        P_51D_Camera_view_left                                  R_CTL+USB[0x5C]                                   //Camera view left
+define        P_51D_Camera_view_right                                 R_CTL+USB[0x5E]                                   //Camera view right
+define        P_51D_Camera_view_up_left                               R_CTL+USB[0x5F]                                   //Camera view up-left
+define        P_51D_Camera_view_down_left                             R_CTL+USB[0x59]                                   //Camera view down-left
+define        P_51D_Camera_view_up_right                              R_CTL+USB[0x61]                                   //Camera view up-right
+define        P_51D_Camera_view_down_right                            R_CTL+USB[0x5B]                                   //Camera view down-right
+define        P_51D_Camera_view_up_slow                               R_ALT+USB[0x60]                                   //Camera view up slow
+define        P_51D_Camera_view_down_slow                             R_ALT+USB[0x5A]                                   //Camera view down slow
+define        P_51D_Camera_view_left_slow                             R_ALT+USB[0x5C]                                   //Camera view left slow
+define        P_51D_Camera_view_right_slow                            R_ALT+USB[0x5E]                                   //Camera view right slow
+define        P_51D_Camera_view_up_left_slow                          R_ALT+USB[0x5F]                                   //Camera view up-left slow
+define        P_51D_Camera_view_down_left_slow                        R_ALT+USB[0x59]                                   //Camera view down-left slow
+define        P_51D_Camera_view_down_right_slow                       R_ALT+USB[0x61]                                   //Camera view down-right slow
+define        P_51D_Camera_view_up_right_slow                         R_ALT+USB[0x5B]                                   //Camera view up-right slow
+define        P_51D_Center_camera_view                                R_SHIFT+USB[0x5D]                                 //Center camera view
+define        P_51D_Return_camera                                     R_CTL+USB[0x5D]                                   //Return camera
+define        P_51D_Return_camera_base                                R_ALT+USB[0x5D]                                   //Return camera base
+define        P_51D_Snap_View_0                                       L_WIN+USB[0x62]                                   //Snap View 0
+define        P_51D_Snap_View_1                                       L_WIN+USB[0x59]                                   //Snap View 1
+define        P_51D_Snap_View_2                                       L_WIN+USB[0x5A]                                   //Snap View 2
+define        P_51D_Snap_View_3                                       L_WIN+USB[0x5B]                                   //Snap View 3
+define        P_51D_Snap_View_4                                       L_WIN+USB[0x5C]                                   //Snap View 4
+define        P_51D_Snap_View_5                                       L_WIN+USB[0x5D]                                   //Snap View 5
+define        P_51D_Snap_View_6                                       L_WIN+USB[0x5E]                                   //Snap View 6
+define        P_51D_Snap_View_7                                       L_WIN+USB[0x5F]                                   //Snap View 7
+define        P_51D_Snap_View_8                                       L_WIN+USB[0x60]                                   //Snap View 8
+define        P_51D_Snap_View_9                                       L_WIN+USB[0x61]                                   //Snap View 9
+define        P_51D_Mirror_glance                                     R_WIN+USB[0x11]                                   //Mirror glance
+define        P_51D_Zoom_in                                           R_SHIFT+USB[0x55]                                 //Zoom in
+define        P_51D_Zoom_out                                          R_SHIFT+USB[0x54]                                 //Zoom out
+define        P_51D_Cockpit_Camera_Move_Up                            R_CTL+R_SHIFT+USB[0x60]                           //Cockpit Camera Move Up
+define        P_51D_Cockpit_Camera_Move_Down                          R_CTL+R_SHIFT+USB[0x5A]                           //Cockpit Camera Move Down
+define        P_51D_Cockpit_Camera_Move_Left                          R_CTL+R_SHIFT+USB[0x5C]                           //Cockpit Camera Move Left
+define        P_51D_Cockpit_Camera_Move_Right                         R_CTL+R_SHIFT+USB[0x5E]                           //Cockpit Camera Move Right
+define        P_51D_Cockpit_Camera_Move_Forward                       R_CTL+R_SHIFT+USB[0x55]                           //Cockpit Camera Move Forward
+define        P_51D_Cockpit_Camera_Move_Back                          R_CTL+R_SHIFT+USB[0x54]                           //Cockpit Camera Move Back
+define        P_51D_Cockpit_Camera_Move_Center                        R_CTL+R_SHIFT+USB[0x5D]                           //Cockpit Camera Move Center
+define        P_51D_Camera_transpose_mode__press_and_hold_            L_SHIFT+USB[0x3A]                                 //Camera transpose mode (press and hold)
+
+
+
+// View Extended**********************
+
+define        P_51D_Camera_jiggle_toggle                              L_SHIFT+USB[0x0D]                                 //Camera jiggle toggle
+define        P_51D_Camera_terrain_altitude_hold                      L_ALT+USB[0x0E]                                   //Camera terrain altitude hold
+define        P_51D_View_friends_mode                                 R_CTL+R_SHIFT+USB[0x4A]                           //View friends mode
+define        P_51D_View_enemies_mode                                 R_CTL+R_SHIFT+USB[0x4D]                           //View enemies mode
+define        P_51D_View_all_mode                                     R_CTL+USB[0x4C]                                   //View all mode
+define        P_51D_Camera_ordnance_tracking                          R_CTL+USB[0x57]                                   //Camera ordnance tracking
+define        P_51D_Objects_switching_direction_forward_              L_CTL+USB[0x4E]                                   //Objects switching direction forward 
+define        P_51D_Objects_switching_direction_reverse_              L_CTL+USB[0x4B]                                   //Objects switching direction reverse 
+define        P_51D_Object_exclude_                                   L_ALT+USB[0x4C]                                   //Object exclude 
+define        P_51D_Objects_all_excluded___include                    L_ALT+USB[0x49]                                   //Objects all excluded - include
+
+
+
+// View Padlock**********************
+
+define        P_51D_Padlock_missiles_all                              R_SHIFT+USB[0x63]                                 //Padlock missiles all
+define        P_51D_Padlock_missile_threat                            R_ALT+USB[0x63]                                   //Padlock missile threat
+define        P_51D_Padlock_cycle                                     USB[0x63]                                         //Padlock cycle
+define        P_51D_Padlock_Off__stop_padlock_                        USB[0x53]                                         //Padlock Off (stop padlock)
+define        P_51D_Padlock_terrain_point                             R_CTL+USB[0x63]                                   //Padlock terrain point
+
+
+
+// Labels**********************
+
+define        P_51D_Labels_All                                        L_SHIFT+USB[0x43]                                 //Labels All
+define        P_51D_Labels_Aircraft                                   L_SHIFT+USB[0x3B]                                 //Labels Aircraft
+define        P_51D_Labels_Missile                                    L_SHIFT+USB[0x3F]                                 //Labels Missile
+define        P_51D_Labels_Vehicle_and_Ship                           L_SHIFT+USB[0x42]                                 //Labels Vehicle & Ship
+
+
+
+// Stick**********************
+
+define        P_51D_Weapon_release                                    R_ALT+USB[0x2C]                                   //Weapon release
+define        P_51D_Gun_fire                                          USB[0x2C]                                         //Gun fire
+
+
+
+// Flight Control**********************
+
+define        P_51D_Aircraft_Pitch_Down                               USB[0x52]                                         //Aircraft Pitch Down
+define        P_51D_Aircraft_Pitch_Up                                 USB[0x51]                                         //Aircraft Pitch Up
+define        P_51D_Aircraft_Bank_Left                                USB[0x50]                                         //Aircraft Bank Left
+define        P_51D_Aircraft_Bank_Right                               USB[0x4F]                                         //Aircraft Bank Right
+define        P_51D_Aircraft_Rudder_Left                              USB[0x1D]                                         //Aircraft Rudder Left
+define        P_51D_Aircraft_Rudder_Right                             USB[0x1B]                                         //Aircraft Rudder Right
+define        P_51D_Throttle_Up                                       USB[0x57]                                         //Throttle Up
+define        P_51D_Throttle_Down                                     USB[0x56]                                         //Throttle Down
+define        P_51D_Engine_RPM_Increase                               USB[0x4B]                                         //Engine RPM Increase
+define        P_51D_Engine_RPM_Decrease                               USB[0x4E]                                         //Engine RPM Decrease
+define        P_51D_War_Emergency_Power                               USB[0x08]                                         //War Emergency Power
+define        P_51D_Mixture_IDLE_CUT_OFF                              L_SHIFT+USB[0x10]                                 //Mixture IDLE CUT OFF
+define        P_51D_Mixture_RUN                                       L_CTL+USB[0x10]                                   //Mixture RUN
+define        P_51D_Mixture_EMERGENCY_FULL_RICH                       L_ALT+USB[0x10]                                   //Mixture EMERGENCY FULL RICH
+define        P_51D_Mixture_control__rotary_                          USB[0x10]                                         //Mixture control (rotary)
+define        P_51D_Stick_lock_in_the_Forward_Position                L_SHIFT+USB[0x1B]                                 //Stick lock in the Forward Position
+define        P_51D_Stick_lock_in_the_Neutral_Position                L_ALT+USB[0x1B]                                   //Stick lock in the Neutral Position
+define        P_51D_Throttle_Control_Lock                             L_CTL+USB[0x1B]                                   //Throttle Control Lock
+define        P_51D_Throttle_Control_Unlock                           L_CTL+L_ALT+USB[0x1B]                             //Throttle Control Unlock
+define        P_51D_Propeller_and_Mixture_Lock                        L_SHIFT+L_ALT+USB[0x1B]                           //Propeller & Mixture Lock
+define        P_51D_Propeller_and_Mixture_Unlock                      L_SHIFT+L_CTL+USB[0x1B]                           //Propeller & Mixture Unlock
+define        P_51D_Flaps_Up                                          L_SHIFT+USB[0x09]                                 //Flaps Up
+define        P_51D_Flaps_Down                                        USB[0x09]                                         //Flaps Down
+define        P_51D_Trim_Aileron_Left                                 R_CTL+USB[0x36]                                   //Trim Aileron Left
+define        P_51D_Trim_Aileron_Right                                R_CTL+USB[0x38]                                   //Trim Aileron Right
+define        P_51D_Trim_Elevator_Down                                R_CTL+USB[0x33]                                   //Trim Elevator Down
+define        P_51D_Trim_Elevator_Up                                  R_CTL+USB[0x37]                                   //Trim Elevator Up
+define        P_51D_Trim_Rudder_Left                                  R_CTL+USB[0x1D]                                   //Trim Rudder Left
+define        P_51D_Trim_Rudder_Right                                 R_CTL+USB[0x1B]                                   //Trim Rudder Right
+define        P_51D_Trimmers_Reset                                    L_CTL+USB[0x17]                                   //Trimmers Reset
+
+
+
+// Systems**********************
+
+define        P_51D_Wheel_brake_Both                                  USB[0x1A]                                         //Wheel brake Both
+define        P_51D_Wheel_brake_Left                                  L_CTL+USB[0x1A]                                   //Wheel brake Left
+define        P_51D_Wheel_brake_Right                                 L_ALT+USB[0x1A]                                   //Wheel brake Right
+define        P_51D_Wheel_brake_Parking                               L_CTL+L_ALT+USB[0x1A]                             //Wheel brake Parking
+define        P_51D_Bailout                                           L_CTL+USB[0x08]                                   //Bailout
+define        P_51D_Bomb_salvo_release_Left                           L_CTL+USB[0x2C]                                   //Bomb salvo release Left
+define        P_51D_Bomb_salvo_release_Right                          R_CTL+USB[0x2C]                                   //Bomb salvo release Right
+define        P_51D_Canopy_Closing                                    L_CTL+USB[0x06]                                   //Canopy Closing
+define        P_51D_Canopy_Opening                                    L_SHIFT+USB[0x06]                                 //Canopy Opening
+define        P_51D_Canopy_Emergency_Release                          L_SHIFT+L_CTL+USB[0x06]                           //Canopy Emergency Release
+define        P_51D_Landing_Gear_Up_Down                              USB[0x0A]                                         //Landing Gear Up/Down
+define        P_51D_Oxygen_regulator_Deluter_lever_Auto_Mix_On_Off    R_SHIFT+USB[0x05]                                 //Oxygen regulator Deluter lever Auto-Mix On-Off
+define        P_51D_Oxygen_regulator_Emergency_By_Pass_Valve          R_CTL+USB[0x05]                                   //Oxygen regulator Emergency By-Pass Valve
+
+
+
+// K-14 gunsight**********************
+
+define        P_51D_Gunsight_target_span_Increase                     USB[0x36]                                         //Gunsight target span Increase
+define        P_51D_Gunsight_target_span_Decrease                     USB[0x38]                                         //Gunsight target span Decrease
+define        P_51D_Gunsight_range_to_target_Increase                 USB[0x33]                                         //Gunsight range to target Increase
+define        P_51D_Gunsight_range_to_target_Decrease                 USB[0x37]                                         //Gunsight range to target Decrease
+define        P_51D_Gunsight_mode_FIXED                               USB[0x21]                                         //Gunsight mode FIXED
+define        P_51D_Gunsight_mode_FIXED_GYRO                          USB[0x20]                                         //Gunsight mode FIXED GYRO
+define        P_51D_Gunsight_mode_GYRO                                USB[0x1F]                                         //Gunsight mode GYRO
+define        P_51D_Gunsight_fixed_ring_blanc_lever                   USB[0x22]                                         //Gunsight fixed ring blanc lever
+define        P_51D_Gunsight_mode__rotary_                            USB[0x1E]                                         //Gunsight mode (rotary)
+define        P_51D_Gunsight_gyromotor_power                          R_SHIFT+USB[0x12]                                 //Gunsight gyromotor power
+define        P_51D_Gunsight_brightness_Increase                      R_CTL+USB[0x12]                                   //Gunsight brightness Increase
+define        P_51D_Gunsight_brightness_Decrease                      R_ALT+USB[0x12]                                   //Gunsight brightness Decrease
+
+
+
+// Right Switch Panel**********************
+
+define        P_51D_Battery                                           USB[0x05]                                         //Battery
+define        P_51D_Generator                                         USB[0x19]                                         //Generator
+define        P_51D_Gun_heat                                          L_SHIFT+L_ALT+USB[0x06]                           //Gun heat
+define        P_51D_Pitot_heat                                        R_CTL+USB[0x13]                                   //Pitot heat
+define        P_51D_Position_lights_wing_DIM                          R_CTL+USB[0x18]                                   //Position lights wing DIM
+define        P_51D_Position_lights_wing_OFF                          R_SHIFT+USB[0x18]                                 //Position lights wing OFF
+define        P_51D_Position_lights_wing_BRIGHT                       R_ALT+USB[0x18]                                   //Position lights wing BRIGHT
+define        P_51D_Position_lights_wing__rotary_                     USB[0x18]                                         //Position lights wing (rotary)
+define        P_51D_Position_light_tail_DIM                           R_CTL+USB[0x0C]                                   //Position light tail DIM
+define        P_51D_Position_light_tail_OFF                           R_SHIFT+USB[0x0C]                                 //Position light tail OFF
+define        P_51D_Position_light_tail_BRIGHT                        R_ALT+USB[0x0C]                                   //Position light tail BRIGHT
+define        P_51D_Position_light_tail__rotary_                      USB[0x0C]                                         //Position light tail (rotary)
+define        P_51D_Recognition_light_red_Steady                      R_CTL+R_SHIFT+USB[0x1C]                           //Recognition light red Steady
+define        P_51D_Recognition_light_green_Steady                    L_CTL+L_SHIFT+USB[0x18]                           //Recognition light green Steady
+define        P_51D_Recognition_light_amber_Steady                    L_CTL+L_SHIFT+USB[0x0C]                           //Recognition light amber Steady
+define        P_51D_Recognition_light_red_Off                         R_SHIFT+USB[0x1C]                                 //Recognition light red Off
+define        P_51D_Recognition_light_green_Off                       L_SHIFT+USB[0x18]                                 //Recognition light green Off
+define        P_51D_Recognition_light_amber_Off                       L_SHIFT+USB[0x0C]                                 //Recognition light amber Off
+define        P_51D_Recognition_light_red_Key                         R_ALT+USB[0x1C]                                   //Recognition light red Key
+define        P_51D_Recognition_light_green_Key                       L_ALT+USB[0x18]                                   //Recognition light green Key
+define        P_51D_Recognition_light_amber_Key                       L_ALT+USB[0x0C]                                   //Recognition light amber Key
+define        P_51D_Recognition_light_red__rotary_                    R_CTL+USB[0x1C]                                   //Recognition light red (rotary)
+define        P_51D_Recognition_light_green__rotary_                  L_CTL+USB[0x18]                                   //Recognition light green (rotary)
+define        P_51D_Recognition_light_amber__rotary_                  L_CTL+USB[0x0C]                                   //Recognition light amber (rotary)
+define        P_51D_Recognition_lights_key                            USB[0x1C]                                         //Recognition lights key
+
+
+
+// Front Dash**********************
+
+define        P_51D_Compass_course_Decrease                           R_ALT+USB[0x06]                                   //Compass course Decrease
+define        P_51D_Compass_course_Increase                           R_CTL+USB[0x06]                                   //Compass course Increase
+define        P_51D_Directional_gyro_heading_Decrease                 R_ALT+USB[0x0A]                                   //Directional gyro heading Decrease
+define        P_51D_Directional_gyro_heading_Increase                 R_CTL+USB[0x0A]                                   //Directional gyro heading Increase
+define        P_51D_Directional_gyro_Cage_Uncage                      R_SHIFT+USB[0x0A]                                 //Directional gyro Cage/Uncage
+define        P_51D_Horizon_pitch_Decrease                            R_CTL+USB[0x19]                                   //Horizon pitch Decrease
+define        P_51D_Horizon_pitch_Increase                            R_ALT+USB[0x19]                                   //Horizon pitch Increase
+define        P_51D_Horizon_Cage                                      L_SHIFT+USB[0x19]                                 //Horizon Cage
+define        P_51D_Horizon_cage_knob_OFF                             L_ALT+USB[0x19]                                   //Horizon cage knob OFF
+define        P_51D_Horizon_cage_knob_ON                              L_CTL+USB[0x19]                                   //Horizon cage knob ON
+define        P_51D_Clock_Winding_Adjust                              R_SHIFT+USB[0x14]                                 //Clock Winding/Adjust
+define        P_51D_Clock_Winding_Adjust_Decrease                     R_CTL+USB[0x14]                                   //Clock Winding/Adjust Decrease
+define        P_51D_Clock_Winding_Adjust_Increase                     R_ALT+USB[0x14]                                   //Clock Winding/Adjust Increase
+define        P_51D_Altimeter_pressure_set_Decrease                   L_CTL+USB[0x05]                                   //Altimeter pressure set Decrease
+define        P_51D_Altimeter_pressure_set_Increase                   L_SHIFT+USB[0x05]                                 //Altimeter pressure set Increase
+define        P_51D_G_meter_Reset                                     L_SHIFT+USB[0x0A]                                 //G-meter Reset
+
+
+
+// VHF Radio**********************
+
+define        P_51D_Radio_Power                                       L_CTL+USB[0x35]                                   //Radio Power
+define        P_51D_Radio_chanel_A                                    L_CTL+USB[0x1E]                                   //Radio chanel A
+define        P_51D_Radio_chanel_B                                    L_CTL+USB[0x1F]                                   //Radio chanel B
+define        P_51D_Radio_chanel_C                                    L_CTL+USB[0x20]                                   //Radio chanel C
+define        P_51D_Radio_chanel_D                                    L_CTL+USB[0x21]                                   //Radio chanel D
+define        P_51D_Radio_Mode_T                                      L_ALT+USB[0x22]                                   //Radio Mode T
+define        P_51D_Radio_mode_R                                      L_CTL+USB[0x22]                                   //Radio mode R
+define        P_51D_Radio_mode_REM                                    L_SHIFT+USB[0x22]                                 //Radio mode REM
+define        P_51D_Radio_mode_switch_locking_lever                   L_CTL+L_ALT+USB[0x22]                             //Radio mode switch locking lever
+define        P_51D_VHF_radio_volume_Decrease                         R_CTL+USB[0x23]                                   //VHF radio volume Decrease
+define        P_51D_VHF_radio_volume_Increase                         R_ALT+USB[0x23]                                   //VHF radio volume Increase
+
+
+
+// Front Switch Box**********************
+
+define        P_51D_Gun_safety_switch_GUN_CAMERA_SIGHT                L_CTL+USB[0x14]                                   //Gun safety switch GUN CAMERA SIGHT
+define        P_51D_Gun_safety_switch_OFF                             L_SHIFT+USB[0x14]                                 //Gun safety switch OFF
+define        P_51D_Gun_safety_switch_CAMERA_SIGHT                    L_ALT+USB[0x14]                                   //Gun safety switch CAMERA SIGHT
+define        P_51D_Gun_safety_switch__rotary_                        USB[0x14]                                         //Gun safety switch (rotary)
+define        P_51D_Ignition_switch_OFF                               R_SHIFT+USB[0x4D]                                 //Ignition switch OFF
+define        P_51D_Ignition_switch_BOTH                              R_CTL+USB[0x4D]                                   //Ignition switch BOTH
+define        P_51D_Ignition_switch__rotary_                          USB[0x4D]                                         //Ignition switch (rotary)
+define        P_51D_Cockpit_Lights_Decrease                           R_CTL+USB[0x0F]                                   //Cockpit Lights Decrease
+define        P_51D_Cockpit_Lights_Increase                           R_ALT+USB[0x0F]                                   //Cockpit Lights Increase
+define        P_51D_Silence_Horn                                      R_ALT+USB[0x0B]                                   //Silence Horn
+define        P_51D_Bomb_arming_switch_left_ARM                       L_CTL+USB[0x23]                                   //Bomb arming switch left ARM
+define        P_51D_Bomb_arming_switch_left_OFF                       L_SHIFT+USB[0x23]                                 //Bomb arming switch left OFF
+define        P_51D_Bomb_arming_switch_left_CHEM_RELEASE              L_ALT+USB[0x23]                                   //Bomb arming switch left CHEM. RELEASE
+define        P_51D_Bomb_arming_switch_left__rotary_                  USB[0x23]                                         //Bomb arming switch left (rotary)
+define        P_51D_Bomb_arming_switch_right_ARM                      L_CTL+USB[0x24]                                   //Bomb arming switch right ARM
+define        P_51D_Bomb_arming_switch_right_OFF                      L_SHIFT+USB[0x24]                                 //Bomb arming switch right OFF
+define        P_51D_Bomb_arming_switch_right_CHEM_RELEASE             L_ALT+USB[0x24]                                   //Bomb arming switch right CHEM. RELEASE
+define        P_51D_Bomb_arming_switch_right__rotary_                 USB[0x24]                                         //Bomb arming switch right (rotary)
+define        P_51D_Bomb_rocket_selector_switch_SAFE                  L_CTL+L_SHIFT+USB[0x07]                           //Bomb-rocket selector switch SAFE
+define        P_51D_Bomb_rocket_selector_switch_TRAIN                 L_ALT+USB[0x07]                                   //Bomb-rocket selector switch TRAIN
+define        P_51D_Bomb_rocket_selector_switch_BOTH                  L_CTL+USB[0x07]                                   //Bomb-rocket selector switch BOTH
+define        P_51D_Bomb_rocket_selector_switch_ROCKETS               L_SHIFT+USB[0x07]                                 //Bomb-rocket selector switch ROCKETS
+define        P_51D_Bomb_rocket_selector_switch__rotary_              USB[0x07]                                         //Bomb-rocket selector switch (rotary)
+
+
+
+// Rocket Control Panel**********************
+
+define        P_51D_Rockets_release_control_switch_OFF                R_SHIFT+USB[0x25]                                 //Rockets release control switch OFF
+define        P_51D_Rockets_release_control_switch_SINGLE             R_CTL+USB[0x25]                                   //Rockets release control switch SINGLE
+define        P_51D_Rockets_release_control_switch_AUTO               R_ALT+USB[0x25]                                   //Rockets release control switch AUTO
+define        P_51D_Rockets_release_control_switch__rotary_           USB[0x25]                                         //Rockets release control switch (rotary)
+define        P_51D_Rocket_counter_reset                              L_ALT+USB[0x25]                                   //Rocket counter reset
+
+
+
+// Engine Control Panel**********************
+
+define        P_51D_Supercharger_switch_Cover                         R_CTL+R_SHIFT+USB[0x16]                           //Supercharger switch Cover
+define        P_51D_Supercharger_switch_AUTO                          R_ALT+USB[0x16]                                   //Supercharger switch AUTO
+define        P_51D_Supercharger_switch_LOW                           R_CTL+USB[0x16]                                   //Supercharger switch LOW
+define        P_51D_Supercharger_switch_HIGH                          R_SHIFT+USB[0x16]                                 //Supercharger switch HIGH
+define        P_51D_High_Blower_lamp_test                             L_SHIFT+USB[0x0F]                                 //High Blower lamp test
+define        P_51D_Fuel_Booster                                      USB[0x4C]                                         //Fuel Booster
+define        P_51D_Fuel_Booster_ON                                   L_SHIFT+USB[0x4C]                                 //Fuel Booster ON
+define        P_51D_Fuel_Booster_OFF                                  L_CTL+USB[0x4C]                                   //Fuel Booster OFF
+define        P_51D_Starter                                           USB[0x4A]                                         //Starter
+define        P_51D_Starter_Switch_Cover                              R_SHIFT+USB[0x4A]                                 //Starter Switch Cover
+define        P_51D_Primer                                            USB[0x49]                                         //Primer
+
+
+
+// Fuel Control**********************
+
+define        P_51D_Fuel_selector_Right_Combat_Tank                   R_SHIFT+USB[0x17]                                 //Fuel selector Right Combat Tank
+define        P_51D_Fuel_selector_Left_Main_Tank                      L_ALT+USB[0x17]                                   //Fuel selector Left Main Tank
+define        P_51D_Fuel_selector_Fuselage_Tank                       R_CTL+USB[0x17]                                   //Fuel selector Fuselage Tank
+define        P_51D_Fuel_selector_Right_Main_Tank                     R_ALT+USB[0x17]                                   //Fuel selector Right Main Tank
+define        P_51D_Fuel_selector_Left_Combat_Tank                    L_SHIFT+USB[0x17]                                 //Fuel selector Left Combat Tank
+define        P_51D_Fuel_shut_off_valve                               L_CTL+L_SHIFT+USB[0x17]                           //Fuel shut-off valve
+define        P_51D_Fuel_selector_valve__rotary_                      USB[0x17]                                         //Fuel selector valve (rotary)
+
+
+
+// Rear Warning Radar**********************
+
+define        P_51D_Rear_warning_radar_Power                          USB[0x15]                                         //Rear warning radar Power
+define        P_51D_Rear_warning_radar_Test                           L_SHIFT+USB[0x15]                                 //Rear warning radar Test
+define        P_51D_Rear_warning_radar_signal_light_Decrease          L_CTL+USB[0x15]                                   //Rear warning radar signal light Decrease
+define        P_51D_Rear_warning_radar_signal_light_Increase          L_ALT+USB[0x15]                                   //Rear warning radar signal light Increase
+
+
+
+// Environment System**********************
+
+define        P_51D_Cockpit_Fluorescent_Light_Left_Decrease           L_CTL+USB[0x11]                                   //Cockpit Fluorescent Light Left Decrease
+define        P_51D_Cockpit_Fluorescent_Light_Left_Increase           L_SHIFT+USB[0x11]                                 //Cockpit Fluorescent Light Left Increase
+define        P_51D_Cockpit_Fluorescent_Light_Right_Decrease          R_CTL+USB[0x11]                                   //Cockpit Fluorescent Light Right Decrease
+define        P_51D_Cockpit_Fluorescent_Light_Right_Increase          R_SHIFT+USB[0x11]                                 //Cockpit Fluorescent Light Right Increase
+define        P_51D_Landing_Light                                     USB[0x0F]                                         //Landing Light
+
+
+
+// Radiator Air Controls**********************
+
+define        P_51D_Radiator_coolant_Close                            L_CTL+USB[0x04]                                   //Radiator coolant Close
+define        P_51D_Radiator_coolant_Auto                             USB[0x04]                                         //Radiator coolant Auto
+define        P_51D_Radiator_coolant_Open                             L_ALT+USB[0x04]                                   //Radiator coolant Open
+define        P_51D_Radiator_coolant_Cover                            L_SHIFT+L_CTL+USB[0x04]                           //Radiator coolant Cover
+define        P_51D_Radiator_oil_Close                                L_CTL+USB[0x16]                                   //Radiator oil Close
+define        P_51D_Radiator_oil_Auto                                 USB[0x16]                                         //Radiator oil Auto
+define        P_51D_Radiator_oil_Open                                 L_ALT+USB[0x16]                                   //Radiator oil Open
+define        P_51D_Radiator_oil_Cover                                L_SHIFT+L_CTL+USB[0x16]                           //Radiator oil Cover
+
+
+
+// Carburetor Air Controls**********************
+
+define        P_51D_Cold_Air_Control_to_UNRAMMED_FILTERED             L_SHIFT+L_CTL+USB[0x0B]                           //Cold Air Control to UNRAMMED FILTERED
+define        P_51D_Cold_Air_Control_to_RAM                           L_SHIFT+USB[0x0B]                                 //Cold Air Control to RAM
+define        P_51D_Warm_Air_Control_to_HOT                           L_CTL+USB[0x0B]                                   //Warm Air Control to HOT
+define        P_51D_Warm_Air_Control_to_NORMAL                        L_ALT+USB[0x0B]                                   //Warm Air Control to NORMAL
+
+
+
+// Kneeboard**********************
+
+define        P_51D_Kneeboard_Next_Page                               USB[0x30]                                         //Kneeboard Next Page
+define        P_51D_Kneeboard_Previous_Page                           USB[0x2F]                                         //Kneeboard Previous Page
+define        P_51D_Kneeboard_ON_OFF                                  R_SHIFT+USB[0x0E]                                 //Kneeboard ON/OFF
+define        P_51D_Kneeboard_glance_view                             USB[0x0E]                                         //Kneeboard glance view
+define        P_51D_Kneeboard_current_position_mark_point             R_CTL+USB[0x0E]                                   //Kneeboard current position mark point
+
+
+
+// Sensors**********************
+
+define        P_51D_Night_Vision_Goggles                              R_SHIFT+USB[0x0B]                                 //Night Vision Goggles
+define        P_51D_Night_Vision_Goggles_Gain_Up                      R_SHIFT+R_CTL+USB[0x0B]                           //Night Vision Goggles Gain Up
+define        P_51D_Night_Vision_Goggles_Gain_Down                    R_SHIFT+R_ALT+USB[0x0B]                           //Night Vision Goggles Gain Down

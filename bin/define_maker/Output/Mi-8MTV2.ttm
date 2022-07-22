@@ -1,0 +1,616 @@
+
+
+
+// Cheat**********************
+
+define        Mi_8MTV2_Auto_execute_full_start_procedure              L_WIN+USB[0x4A]                                   //Auto execute full start procedure
+define        Mi_8MTV2_Auto_execute_full_stop_procedure               L_WIN+USB[0x4D]                                   //Auto execute full stop procedure
+
+
+
+// Debug**********************
+
+define        Mi_8MTV2_Toggle_Console                                 L_ALT+USB[0x35]                                   //Toggle Console
+
+
+
+// General**********************
+
+define        Mi_8MTV2_End_mission                                    USB[0x29]                                         //End mission
+define        Mi_8MTV2_Pause                                          USB[0x48]                                         //Pause
+define        Mi_8MTV2_Time_accelerate                                L_CTL+USB[0x1D]                                   //Time accelerate
+define        Mi_8MTV2_Time_decelerate                                L_ALT+USB[0x1D]                                   //Time decelerate
+define        Mi_8MTV2_Time_normal                                    L_SHIFT+USB[0x1D]                                 //Time normal
+define        Mi_8MTV2_Multiplayer_chat___mode_All                    USB[0x2B]                                         //Multiplayer chat - mode All
+define        Mi_8MTV2_Multiplayer_chat___mode_Allies                 L_CTL+USB[0x2B]                                   //Multiplayer chat - mode Allies
+define        Mi_8MTV2_Info_bar_toggle                                L_CTL+USB[0x1C]                                   //Info bar toggle
+define        Mi_8MTV2_Get_New_Plane___respawn                        R_CTL+R_SHIFT+USB[0x2B]                           //Get New Plane - respawn
+define        Mi_8MTV2_Clickable_mouse_cockpit_mode_On_Off            L_ALT+USB[0x06]                                   //Clickable mouse cockpit mode On/Off
+define        Mi_8MTV2_Jump_into_other_aircraft                       R_ALT+USB[0x0D]                                   //Jump into other aircraft
+define        Mi_8MTV2_Screenshot                                     USB[0x46]                                         //Screenshot
+define        Mi_8MTV2_Frame_rate_counter___Service_info              R_CTL+USB[0x48]                                   //Frame rate counter - Service info
+define        Mi_8MTV2_Info_bar_coordinate_units_toggle               L_ALT+USB[0x1C]                                   //Info bar coordinate units toggle
+define        Mi_8MTV2_Show_Pilot_Body                                R_SHIFT+USB[0x13]                                 //Show Pilot Body
+define        Mi_8MTV2_Show_controls_indicator                        R_CTL+USB[0x28]                                   //Show controls indicator
+
+
+
+// Cheat**********************
+
+define        Mi_8MTV2_Active_Pause                                   L_SHIFT+L_WIN+USB[0x48]                           //Active Pause
+
+
+
+// General**********************
+
+define        Mi_8MTV2_Briefing_window                                L_ALT+USB[0x05]                                   //Briefing window
+define        Mi_8MTV2_Toggle_mirrors                                 USB[0x10]                                         //Toggle mirrors
+
+
+
+// View**********************
+
+define        Mi_8MTV2_View_Left_slow                                 USB[0x5C]                                         //View Left slow
+define        Mi_8MTV2_View_Right_slow                                USB[0x5E]                                         //View Right slow
+define        Mi_8MTV2_View_Up_slow                                   USB[0x60]                                         //View Up slow
+define        Mi_8MTV2_View_Down_slow                                 USB[0x5A]                                         //View Down slow
+define        Mi_8MTV2_View_Up_Right_slow                             USB[0x61]                                         //View Up Right slow
+define        Mi_8MTV2_View_Down_Right_slow                           USB[0x5B]                                         //View Down Right slow
+define        Mi_8MTV2_View_Down_Left_slow                            USB[0x59]                                         //View Down Left slow
+define        Mi_8MTV2_View_Up_Left_slow                              USB[0x5F]                                         //View Up Left slow
+define        Mi_8MTV2_Center_View                                    USB[0x5D]                                         //Center View
+define        Mi_8MTV2_Zoom_in_slow                                   USB[0x55]                                         //Zoom in slow
+define        Mi_8MTV2_Zoom_out_slow                                  USB[0x54]                                         //Zoom out slow
+define        Mi_8MTV2_Zoom_normal                                    USB[0x58]                                         //Zoom normal
+define        Mi_8MTV2_Zoom_external_in                               R_CTL+USB[0x55]                                   //Zoom external in
+define        Mi_8MTV2_Zoom_external_out                              R_CTL+USB[0x54]                                   //Zoom external out
+define        Mi_8MTV2_Zoom_external_normal                           R_CTL+USB[0x58]                                   //Zoom external normal
+define        Mi_8MTV2_F11_camera_moving_forward                      L_ALT+USB[0x55]                                   //F11 camera moving forward
+define        Mi_8MTV2_F11_camera_moving_backward                     L_ALT+USB[0x54]                                   //F11 camera moving backward
+define        Mi_8MTV2_Objects_switching_direction_forward_           L_CTL+USB[0x4E]                                   //Objects switching direction forward 
+define        Mi_8MTV2_Objects_switching_direction_reverse_           L_CTL+USB[0x4B]                                   //Objects switching direction reverse 
+define        Mi_8MTV2_Object_exclude_                                L_ALT+USB[0x4C]                                   //Object exclude 
+define        Mi_8MTV2_Objects_all_excluded___include                 L_ALT+USB[0x49]                                   //Objects all excluded - include
+define        Mi_8MTV2_F1_Cockpit_view                                USB[0x3A]                                         //F1 Cockpit view
+define        Mi_8MTV2_F1_Natural_head_movement_view                  L_CTL+USB[0x3A]                                   //F1 Natural head movement view
+define        Mi_8MTV2_F1_HUD_only_view_switch                        L_ALT+USB[0x3A]                                   //F1 HUD only view switch
+define        Mi_8MTV2_F2_Aircraft_view                               USB[0x3B]                                         //F2 Aircraft view
+define        Mi_8MTV2_F2_View_own_aircraft                           L_CTL+USB[0x3B]                                   //F2 View own aircraft
+define        Mi_8MTV2_F2_Toggle_camera_position                      R_ALT+USB[0x3B]                                   //F2 Toggle camera position
+define        Mi_8MTV2_F2_Toggle_local_camera_control                 L_ALT+USB[0x3B]                                   //F2 Toggle local camera control
+define        Mi_8MTV2_F3_Fly_By_view                                 USB[0x3C]                                         //F3 Fly-By view
+define        Mi_8MTV2_F3_Fly_By_jump_view                            L_CTL+USB[0x3C]                                   //F3 Fly-By jump view
+define        Mi_8MTV2_F4_Look_back_view                              USB[0x3D]                                         //F4 Look back view
+define        Mi_8MTV2_F4_Chase_view                                  L_CTL+USB[0x3D]                                   //F4 Chase view
+define        Mi_8MTV2_F4_Arcade_Chase_view                           L_SHIFT+USB[0x3D]                                 //F4 Arcade Chase view
+define        Mi_8MTV2_F5_nearest_AC_view                             USB[0x3E]                                         //F5 nearest AC view
+define        Mi_8MTV2_F5_Ground_hostile_view                         L_CTL+USB[0x3E]                                   //F5 Ground hostile view
+define        Mi_8MTV2_F6_Released_weapon_view                        USB[0x3F]                                         //F6 Released weapon view
+define        Mi_8MTV2_F6_Weapon_to_target_view                       L_CTL+USB[0x3F]                                   //F6 Weapon to target view
+define        Mi_8MTV2_F7_Ground_unit_view                            USB[0x40]                                         //F7 Ground unit view
+define        Mi_8MTV2_F8_Target_view                                 USB[0x41]                                         //F8 Target view
+define        Mi_8MTV2_F8_Player_targets_All_targets_filter           R_ALT+USB[0x41]                                   //F8 Player targets/All targets filter
+define        Mi_8MTV2_F9_Ship_view                                   USB[0x42]                                         //F9 Ship view
+define        Mi_8MTV2_F9_Landing_signal_officer_view                 L_ALT+USB[0x42]                                   //F9 Landing signal officer view
+define        Mi_8MTV2_F10_Theater_map_view                           USB[0x43]                                         //F10 Theater map view
+define        Mi_8MTV2_F10_Jump_to_theater_map_view_over_current_pointL_CTL+USB[0x43]                                   //F10 Jump to theater map view over current point
+define        Mi_8MTV2_F11_Airport_free_camera                        USB[0x44]                                         //F11 Airport free camera
+define        Mi_8MTV2_F11_Jump_to_free_camera                        L_CTL+USB[0x44]                                   //F11 Jump to free camera
+define        Mi_8MTV2_F12_Static_object_view                         USB[0x45]                                         //F12 Static object view
+define        Mi_8MTV2_F12_Civil_traffic_view                         L_CTL+USB[0x45]                                   //F12 Civil traffic view
+define        Mi_8MTV2_F12_Trains_cars_toggle                         L_SHIFT+USB[0x45]                                 //F12 Trains/cars toggle
+
+
+
+// View Cockpit**********************
+
+define        Mi_8MTV2_Cockpit_panel_view_in                          USB[0x62]                                         //Cockpit panel view in
+define        Mi_8MTV2_Cockpit_panel_view_toggle                      R_CTL+USB[0x62]                                   //Cockpit panel view toggle
+define        Mi_8MTV2_Save_Cockpit_Angles                            R_ALT+USB[0x62]                                   //Save Cockpit Angles
+define        Mi_8MTV2_View_up                                        R_SHIFT+USB[0x60]                                 //View up
+define        Mi_8MTV2_View_down                                      R_SHIFT+USB[0x5A]                                 //View down
+define        Mi_8MTV2_View_left                                      R_SHIFT+USB[0x5C]                                 //View left
+define        Mi_8MTV2_View_right                                     R_SHIFT+USB[0x5E]                                 //View right
+define        Mi_8MTV2_View_up_right                                  R_SHIFT+USB[0x61]                                 //View up right
+define        Mi_8MTV2_View_down_right                                R_SHIFT+USB[0x5B]                                 //View down right
+define        Mi_8MTV2_View_down_left                                 R_SHIFT+USB[0x59]                                 //View down left
+define        Mi_8MTV2_View_up_left                                   R_SHIFT+USB[0x5F]                                 //View up left
+define        Mi_8MTV2_Set_Pilot_Seat                                 USB[0x1E]                                         //Set Pilot Seat
+define        Mi_8MTV2_Set_Copilot_Seat                               USB[0x1F]                                         //Set Copilot Seat
+define        Mi_8MTV2_Set_Technician_Seat                            USB[0x20]                                         //Set Technician Seat
+define        Mi_8MTV2_Fast_cockpit_keyboard                          L_SHIFT+USB[0x30]                                 //Fast cockpit keyboard
+define        Mi_8MTV2_Slow_cockpit_keyboard                          L_CTL+USB[0x30]                                   //Slow cockpit keyboard
+define        Mi_8MTV2_Normal_cockpit_keyboard_speed                  L_ALT+USB[0x30]                                   //Normal cockpit keyboard speed
+define        Mi_8MTV2_Fast_cockpit_mouse                             L_SHIFT+USB[0x2F]                                 //Fast cockpit mouse
+define        Mi_8MTV2_Slow_cockpit_mouse                             L_CTL+USB[0x2F]                                   //Slow cockpit mouse
+define        Mi_8MTV2_Normal_cockpit_mouse_speed                     L_ALT+USB[0x2F]                                   //Normal cockpit mouse speed
+define        Mi_8MTV2_Camera_view_up                                 R_CTL+USB[0x60]                                   //Camera view up
+define        Mi_8MTV2_Camera_view_down                               R_CTL+USB[0x5A]                                   //Camera view down
+define        Mi_8MTV2_Camera_view_left                               R_CTL+USB[0x5C]                                   //Camera view left
+define        Mi_8MTV2_Camera_view_right                              R_CTL+USB[0x5E]                                   //Camera view right
+define        Mi_8MTV2_Camera_view_up_left                            R_CTL+USB[0x5F]                                   //Camera view up-left
+define        Mi_8MTV2_Camera_view_down_left                          R_CTL+USB[0x59]                                   //Camera view down-left
+define        Mi_8MTV2_Camera_view_up_right                           R_CTL+USB[0x61]                                   //Camera view up-right
+define        Mi_8MTV2_Camera_view_down_right                         R_CTL+USB[0x5B]                                   //Camera view down-right
+define        Mi_8MTV2_Camera_view_up_slow                            R_ALT+USB[0x60]                                   //Camera view up slow
+define        Mi_8MTV2_Camera_view_down_slow                          R_ALT+USB[0x5A]                                   //Camera view down slow
+define        Mi_8MTV2_Camera_view_left_slow                          R_ALT+USB[0x5C]                                   //Camera view left slow
+define        Mi_8MTV2_Camera_view_right_slow                         R_ALT+USB[0x5E]                                   //Camera view right slow
+define        Mi_8MTV2_Camera_view_up_left_slow                       R_ALT+USB[0x5F]                                   //Camera view up-left slow
+define        Mi_8MTV2_Camera_view_down_left_slow                     R_ALT+USB[0x59]                                   //Camera view down-left slow
+define        Mi_8MTV2_Camera_view_up_right_slow                      R_ALT+USB[0x61]                                   //Camera view up-right slow
+define        Mi_8MTV2_Camera_view_down_right_slow                    R_ALT+USB[0x5B]                                   //Camera view down-right slow
+define        Mi_8MTV2_Center_camera_view                             R_SHIFT+USB[0x5D]                                 //Center camera view
+define        Mi_8MTV2_Return_camera                                  R_CTL+USB[0x5D]                                   //Return camera
+define        Mi_8MTV2_Return_camera_base                             R_ALT+USB[0x5D]                                   //Return camera base
+define        Mi_8MTV2_Snap_View_0                                    L_WIN+USB[0x62]                                   //Snap View 0
+define        Mi_8MTV2_Snap_View_1                                    L_WIN+USB[0x59]                                   //Snap View 1
+define        Mi_8MTV2_Snap_View_2                                    L_WIN+USB[0x5A]                                   //Snap View 2
+define        Mi_8MTV2_Snap_View_3                                    L_WIN+USB[0x5B]                                   //Snap View 3
+define        Mi_8MTV2_Snap_View_4                                    L_WIN+USB[0x5C]                                   //Snap View 4
+define        Mi_8MTV2_Snap_View_5                                    L_WIN+USB[0x5D]                                   //Snap View 5
+define        Mi_8MTV2_Snap_View_6                                    L_WIN+USB[0x5E]                                   //Snap View 6
+define        Mi_8MTV2_Snap_View_7                                    L_WIN+USB[0x5F]                                   //Snap View 7
+define        Mi_8MTV2_Snap_View_8                                    L_WIN+USB[0x60]                                   //Snap View 8
+define        Mi_8MTV2_Snap_View_9                                    L_WIN+USB[0x61]                                   //Snap View 9
+define        Mi_8MTV2_Head_shift_movement_on___off                   L_WIN+USB[0x3A]                                   //Head shift movement on / off
+define        Mi_8MTV2_Zoom_out                                       R_SHIFT+USB[0x54]                                 //Zoom out
+define        Mi_8MTV2_Zoom_in                                        R_SHIFT+USB[0x55]                                 //Zoom in
+define        Mi_8MTV2_Cockpit_Camera_Move_Up                         R_CTL+R_SHIFT+USB[0x60]                           //Cockpit Camera Move Up
+define        Mi_8MTV2_Cockpit_Camera_Move_Down                       R_CTL+R_SHIFT+USB[0x5A]                           //Cockpit Camera Move Down
+define        Mi_8MTV2_Cockpit_Camera_Move_Left                       R_CTL+R_SHIFT+USB[0x5C]                           //Cockpit Camera Move Left
+define        Mi_8MTV2_Cockpit_Camera_Move_Right                      R_CTL+R_SHIFT+USB[0x5E]                           //Cockpit Camera Move Right
+define        Mi_8MTV2_Cockpit_Camera_Move_Forward                    R_CTL+R_SHIFT+USB[0x55]                           //Cockpit Camera Move Forward
+define        Mi_8MTV2_Cockpit_Camera_Move_Back                       R_CTL+R_SHIFT+USB[0x54]                           //Cockpit Camera Move Back
+define        Mi_8MTV2_Cockpit_Camera_Move_Center                     R_CTL+R_SHIFT+USB[0x5D]                           //Cockpit Camera Move Center
+
+
+
+// External Cargo**********************
+
+define        Mi_8MTV2_External_Cargo_Camera_On_Off                   L_CTL+L_SHIFT+USB[0x06]                           //External Cargo Camera On/Off
+define        Mi_8MTV2_External_Cargo_Hook_Unhook                     R_CTL+R_SHIFT+USB[0x0F]                           //External Cargo Hook/Unhook
+define        Mi_8MTV2_External_Cargo_Autounhook                      R_CTL+R_SHIFT+USB[0x0E]                           //External Cargo Autounhook
+
+
+
+// View Extended**********************
+
+define        Mi_8MTV2_Camera_jiggle_toggle                           L_SHIFT+USB[0x0D]                                 //Camera jiggle toggle
+define        Mi_8MTV2_Keep_terrain_camera_altitude                   L_ALT+USB[0x0E]                                   //Keep terrain camera altitude
+define        Mi_8MTV2_Toggle_tracking_fire_weapon                    R_CTL+USB[0x57]                                   //Toggle tracking fire weapon
+define        Mi_8MTV2_View_friends_mode                              R_CTL+R_SHIFT+USB[0x09]                           //View friends mode
+define        Mi_8MTV2_View_enemies_mode                              R_CTL+R_SHIFT+USB[0x07]                           //View enemies mode
+define        Mi_8MTV2_View_all_mode                                  R_CTL+R_SHIFT+USB[0x04]                           //View all mode
+
+
+
+// View Padlock**********************
+
+define        Mi_8MTV2_Lock_view__cycle_padlock_                      USB[0x63]                                         //Lock view (cycle padlock)
+define        Mi_8MTV2_Unlock_view__stop_padlock_                     USB[0x53]                                         //Unlock view (stop padlock)
+define        Mi_8MTV2_All_missiles_padlock                           R_SHIFT+USB[0x63]                                 //All missiles padlock
+define        Mi_8MTV2_Threat_missile_padlock                         R_ALT+USB[0x63]                                   //Threat missile padlock
+define        Mi_8MTV2_Lock_terrain_view                              R_CTL+USB[0x63]                                   //Lock terrain view
+
+
+
+// Ins Engines start-up control panel and levers**********************
+
+define        Mi_8MTV2_Start_up_engine                                USB[0x4A]                                         //Start-up engine
+define        Mi_8MTV2_Interrupt_start_up_sequence                    R_ALT+USB[0x4A]                                   //Interrupt start-up sequence
+define        Mi_8MTV2_Start_APU_button                               R_SHIFT+USB[0x4A]                                 //Start APU button
+define        Mi_8MTV2_Stop_APU_button                                USB[0x4D]                                         //Stop APU button
+define        Mi_8MTV2_Engine_selector                                USB[0x08]                                         //Engine selector
+define        Mi_8MTV2_Engine_Startup_Crank_False_Start_selector      L_ALT+USB[0x08]                                   //Engine Startup/Crank/False Start selector
+define        Mi_8MTV2_Throttle_Up                                    R_CTL+USB[0x4A]                                   //Throttle Up
+define        Mi_8MTV2_Throttle_Down                                  R_CTL+USB[0x4D]                                   //Throttle Down
+define        Mi_8MTV2_Left_Throttle_up__Idle_Medium_Auto_Full_       R_ALT+USB[0x4B]                                   //Left Throttle up (Idle-Medium-Auto-Full)
+define        Mi_8MTV2_Left_Throttle_down__Idle_Medium_Auto_Full_     R_ALT+USB[0x4E]                                   //Left Throttle down (Idle-Medium-Auto-Full)
+define        Mi_8MTV2_Right_Throttle_up__Idle_Medium_Auto_Full_      R_SHIFT+USB[0x4B]                                 //Right Throttle up (Idle-Medium-Auto-Full)
+define        Mi_8MTV2_Right_Throttle_down__Idle_Medium_Auto_Full_    R_SHIFT+USB[0x4E]                                 //Right Throttle down (Idle-Medium-Auto-Full)
+define        Mi_8MTV2_Cut_off_valve_left_engine                      R_CTL+USB[0x4B]                                   //Cut-off valve left engine
+define        Mi_8MTV2_Cut_off_valve_right_engine                     R_CTL+USB[0x4E]                                   //Cut-off valve right engine
+
+
+
+// Ins Collective Stick**********************
+
+define        Mi_8MTV2_Correction_increase                            USB[0x4B]                                         //Correction increase
+define        Mi_8MTV2_Correction_decrease                            USB[0x4E]                                         //Correction decrease
+
+
+
+// Labels**********************
+
+define        Mi_8MTV2_All_Labels                                     L_SHIFT+USB[0x43]                                 //All Labels
+define        Mi_8MTV2_Aircraft_Labels                                L_SHIFT+USB[0x3B]                                 //Aircraft Labels
+define        Mi_8MTV2_Missile_Labels                                 L_SHIFT+USB[0x3F]                                 //Missile Labels
+define        Mi_8MTV2_Vehicle_and_Ship_Labels                        L_SHIFT+USB[0x42]                                 //Vehicle & Ship Labels
+
+
+
+// Kneeboard**********************
+
+define        Mi_8MTV2_Kneeboard_Next_Page                            USB[0x30]                                         //Kneeboard Next Page
+define        Mi_8MTV2_Kneeboard_Previous_Page                        USB[0x2F]                                         //Kneeboard Previous Page
+define        Mi_8MTV2_Kneeboard_ON_OFF                               R_SHIFT+USB[0x0E]                                 //Kneeboard ON/OFF
+define        Mi_8MTV2_Kneeboard_glance_view                          USB[0x0E]                                         //Kneeboard glance view
+define        Mi_8MTV2_Kneeboard_current_position_mark_point          R_CTL+USB[0x0E]                                   //Kneeboard current position mark point
+
+
+
+// Sensors**********************
+
+define        Mi_8MTV2_Night_Vision_Goggles                           R_SHIFT+USB[0x0B]                                 //Night Vision Goggles
+define        Mi_8MTV2_Night_Vision_Goggles_Gain_Up                   R_SHIFT+R_CTL+USB[0x0B]                           //Night Vision Goggles Gain Up
+define        Mi_8MTV2_Night_Vision_Goggles_Gain_Down                 R_SHIFT+R_ALT+USB[0x0B]                           //Night Vision Goggles Gain Down
+
+
+
+// Overhead CB panel**********************
+
+define        Mi_8MTV2_Group_1_CB_switcher                            R_CTL+R_SHIFT+USB[0x1E]                           //Group 1 CB switcher
+define        Mi_8MTV2_Group_2_CB_switcher                            R_CTL+R_SHIFT+USB[0x1F]                           //Group 2 CB switcher
+define        Mi_8MTV2_Group_3_CB_switcher                            R_CTL+R_SHIFT+USB[0x20]                           //Group 3 CB switcher
+define        Mi_8MTV2_Group_4_CB_switcher                            R_CTL+R_SHIFT+USB[0x21]                           //Group 4 CB switcher
+define        Mi_8MTV2_Group_5_CB_switcher                            R_CTL+R_SHIFT+USB[0x22]                           //Group 5 CB switcher
+define        Mi_8MTV2_Group_6_CB_switcher                            R_CTL+R_SHIFT+USB[0x23]                           //Group 6 CB switcher
+define        Mi_8MTV2_Group_7_CB_switcher                            R_CTL+R_SHIFT+USB[0x24]                           //Group 7 CB switcher
+define        Mi_8MTV2_Group_8_CB_switcher                            R_CTL+R_SHIFT+USB[0x25]                           //Group 8 CB switcher
+define        Mi_8MTV2_Group_9_CB_switcher                            R_CTL+R_SHIFT+USB[0x26]                           //Group 9 CB switcher
+
+
+
+// Ins Countermeasures dispensers UV-26**********************
+
+define        Mi_8MTV2_UV_26_Power                                    USB[0x07]                                         //UV-26 Power
+define        Mi_8MTV2_UV_26_Start_dispensing                         USB[0x49]                                         //UV-26 Start dispensing
+define        Mi_8MTV2_UV_26_Stop_dispensing                          USB[0x4C]                                         //UV-26 Stop dispensing
+define        Mi_8MTV2_UV_26_Number_of_flare_sequences                R_SHIFT+USB[0x49]                                 //UV-26 Number of flare sequences
+define        Mi_8MTV2_UV_26_Delay_between_sequences                  R_ALT+USB[0x49]                                   //UV-26 Delay between sequences
+define        Mi_8MTV2_UV_26_Number_of_flares_in_sequence             R_CTL+USB[0x49]                                   //UV-26 Number of flares in sequence
+define        Mi_8MTV2_UV_26_Reset_current_program                    R_CTL+USB[0x4C]                                   //UV-26 Reset current program
+define        Mi_8MTV2_UV_26_Change_dispensing_board_Both_Right       R_ALT+R_WIN+USB[0x30]                             //UV-26 Change dispensing board Both-Right
+define        Mi_8MTV2_UV_26_Change_dispensing_board_Left_Both        R_ALT+R_WIN+USB[0x2F]                             //UV-26 Change dispensing board Left-Both
+define        Mi_8MTV2_UV_26_Amount_flares_counter___Programming      R_ALT+R_SHIFT+USB[0x30]                           //UV-26 Amount flares counter / Programming
+
+
+
+// Ins Cyclic Stick**********************
+
+define        Mi_8MTV2_Cyclic_nose_down                               USB[0x52]                                         //Cyclic nose down
+define        Mi_8MTV2_Cyclic_nose_up                                 USB[0x51]                                         //Cyclic nose up
+define        Mi_8MTV2_Cyclic_bank_left                               USB[0x50]                                         //Cyclic bank left
+define        Mi_8MTV2_Cyclic_bank_right                              USB[0x4F]                                         //Cyclic bank right
+define        Mi_8MTV2_Release_weapons                                USB[0x2C]                                         //Release weapons
+define        Mi_8MTV2_Radio_trigger_RADIO                            R_ALT+USB[0x31]                                   //Radio trigger RADIO
+define        Mi_8MTV2_Radio_trigger_ICS                              R_SHIFT+USB[0x2C]                                 //Radio trigger ICS
+define        Mi_8MTV2_Trimmer                                        USB[0x17]                                         //Trimmer
+define        Mi_8MTV2_Trimmer_reset                                  L_CTL+USB[0x17]                                   //Trimmer reset
+define        Mi_8MTV2_Wheel_brake__press_and_hold_                   USB[0x1A]                                         //Wheel brake (press and hold)
+define        Mi_8MTV2_Wheel_brake_parking                            L_SHIFT+USB[0x1A]                                 //Wheel brake parking
+define        Mi_8MTV2_Autopilot_Cut_Off                              L_WIN+L_SHIFT+USB[0x04]                           //Autopilot Cut Off
+
+
+
+// Ins Collective Stick**********************
+
+define        Mi_8MTV2_Collective_up                                  USB[0x57]                                         //Collective up
+define        Mi_8MTV2_Collective_down                                USB[0x56]                                         //Collective down
+define        Mi_8MTV2_Readjust_Free_Turbine_RPM_to_Nominal           R_ALT+USB[0x57]                                   //Readjust Free Turbine RPM to Nominal
+define        Mi_8MTV2_Readjust_Free_Turbine_RPM_to_Low               R_ALT+USB[0x56]                                   //Readjust Free Turbine RPM to Low
+define        Mi_8MTV2_Collective_brake___Assign_altitude_lever       USB[0x09]                                         //Collective brake - Assign altitude lever
+
+
+
+// Systems**********************
+
+define        Mi_8MTV2_Left_Head_Light___Power                        L_SHIFT+USB[0x0F]                                 //Left Head Light - Power
+
+
+
+// Ins Collective Stick**********************
+
+define        Mi_8MTV2_Left_Head_Light___down                         L_SHIFT+USB[0x24]                                 //Left Head Light - down
+define        Mi_8MTV2_Left_Head_Light___up                           L_SHIFT+USB[0x25]                                 //Left Head Light - up
+define        Mi_8MTV2_Left_Head_Light___left                         L_SHIFT+USB[0x26]                                 //Left Head Light - left
+define        Mi_8MTV2_Left_Head_Light___right                        L_SHIFT+USB[0x27]                                 //Left Head Light - right
+
+
+
+// Systems**********************
+
+define        Mi_8MTV2_Right_Head_Light___Power                       R_SHIFT+USB[0x0F]                                 //Right Head Light - Power
+
+
+
+// Ins Collective Stick**********************
+
+define        Mi_8MTV2_Right_Head_Light___down                        R_SHIFT+USB[0x24]                                 //Right Head Light - down
+define        Mi_8MTV2_Right_Head_Light___up                          R_SHIFT+USB[0x25]                                 //Right Head Light - up
+define        Mi_8MTV2_Right_Head_Light___left                        R_SHIFT+USB[0x26]                                 //Right Head Light - left
+define        Mi_8MTV2_Right_Head_Light___right                       R_SHIFT+USB[0x27]                                 //Right Head Light - right
+
+
+
+// Systems**********************
+
+define        Mi_8MTV2_Steering_Light___Power                         R_CTL+USB[0x0F]                                   //Steering Light - Power
+
+
+
+// Ins Rudder**********************
+
+define        Mi_8MTV2_Rudder_left                                    USB[0x1D]                                         //Rudder left
+define        Mi_8MTV2_Rudder_right                                   USB[0x1B]                                         //Rudder right
+
+
+
+// Systems**********************
+
+define        Mi_8MTV2_Cockpit_door_open_close                        R_CTL+USB[0x06]                                   //Cockpit door open/close
+define        Mi_8MTV2_Leave_Helicopter__3_times_                     L_CTL+USB[0x08]                                   //Leave Helicopter (3 times)
+
+
+
+// Radio Communications**********************
+
+define        Mi_8MTV2_Communication_menu                             USB[0x31]                                         //Communication menu
+define        Mi_8MTV2_Flight___Complete_mission_and_RTB              L_WIN+USB[0x08]                                   //Flight - Complete mission and RTB
+define        Mi_8MTV2_Toggle_formation                               L_WIN+USB[0x17]                                   //Toggle formation
+define        Mi_8MTV2_Join_up_formation                              L_WIN+USB[0x1C]                                   //Join up formation
+define        Mi_8MTV2_Attack_my_target                               L_WIN+USB[0x14]                                   //Attack my target
+define        Mi_8MTV2_Cover_me                                       L_WIN+USB[0x1A]                                   //Cover me
+define        Mi_8MTV2_Flight___Attack_ground_targets                 L_WIN+USB[0x0A]                                   //Flight - Attack ground targets
+define        Mi_8MTV2_Flight___Attack_air_defenses                   L_WIN+USB[0x07]                                   //Flight - Attack air defenses
+define        Mi_8MTV2_Switch_dialog                                  L_SHIFT+USB[0x31]                                 //Switch dialog
+
+
+
+// Left Dash**********************
+
+define        Mi_8MTV2_Attitude_Indicator_Left_Pitch_Decrease         L_CTL+USB[0x11]                                   //Attitude Indicator Left, Pitch Decrease
+define        Mi_8MTV2_Attitude_Indicator_Left_Pitch_Increase         L_SHIFT+USB[0x11]                                 //Attitude Indicator Left, Pitch Increase
+define        Mi_8MTV2_Attitude_Indicator_Left_Cage                   L_CTL+L_SHIFT+USB[0x11]                           //Attitude Indicator Left, Cage
+define        Mi_8MTV2_Altimeter_Left_Pressure_Decrease               L_CTL+USB[0x05]                                   //Altimeter Left, Pressure Decrease
+define        Mi_8MTV2_Altimeter_Left_Pressure_Increase               L_SHIFT+USB[0x05]                                 //Altimeter Left, Pressure Increase
+define        Mi_8MTV2_HSI_Left_Course_Decrease                       L_CTL+USB[0x0B]                                   //HSI Left, Course Decrease
+define        Mi_8MTV2_HSI_Left_Course_Increase                       L_SHIFT+USB[0x0B]                                 //HSI Left, Course Increase
+define        Mi_8MTV2_HSI_Left_ARC_9_ARC_UD_Select                   L_ALT+USB[0x0B]                                   //HSI Left, ARC-9/ARC-UD Select
+define        Mi_8MTV2_Radar_Altimeter_dangerous_ALT_set_rotary_right L_SHIFT+USB[0x37]                                 //Radar Altimeter, dangerous ALT set rotary right
+define        Mi_8MTV2_Radar_Altimeter_dangerous_ALT_set_rotary_left  L_SHIFT+USB[0x36]                                 //Radar Altimeter, dangerous ALT set rotary left
+define        Mi_8MTV2_Radar_Altimeter_Test_button                    L_ALT+L_SHIFT+USB[0x15]                           //Radar Altimeter, Test button
+define        Mi_8MTV2_Static_Pressure_System_Selector_Left           L_ALT+L_SHIFT+USB[0x04]                           //Static Pressure System Selector, Left
+define        Mi_8MTV2_Static_Pressure_System_Selector_Right          L_ALT+L_SHIFT+USB[0x16]                           //Static Pressure System Selector, Right
+
+
+
+// Right Dash**********************
+
+define        Mi_8MTV2_Attitude_Indicator_Right_Pitch_Decrease        R_CTL+USB[0x11]                                   //Attitude Indicator Right, Pitch Decrease
+define        Mi_8MTV2_Attitude_Indicator_Right_Pitch_Increase        R_SHIFT+USB[0x11]                                 //Attitude Indicator Right, Pitch Increase
+define        Mi_8MTV2_Attitude_Indicator_Right_Cage                  R_CTL+R_SHIFT+USB[0x11]                           //Attitude Indicator Right, Cage
+define        Mi_8MTV2_Altimeter_Right_Pressure_Decrease              R_CTL+USB[0x05]                                   //Altimeter Right, Pressure Decrease
+define        Mi_8MTV2_Altimeter_Right_Pressure_Increase              R_SHIFT+USB[0x05]                                 //Altimeter Right, Pressure Increase
+define        Mi_8MTV2_HSI_Right_Course_Decrease                      R_CTL+USB[0x0B]                                   //HSI Right, Course Decrease
+define        Mi_8MTV2_HSI_Right_Course_Increase                      R_CTL+R_WIN+USB[0x0B]                             //HSI Right, Course Increase
+define        Mi_8MTV2_Mech_Clock_Left_lever_Down                     R_CTL+R_SHIFT+USB[0x06]                           //Mech Clock, Left lever Down
+define        Mi_8MTV2_Mech_Clock_Left_lever_Up                       R_SHIFT+USB[0x10]                                 //Mech Clock, Left lever Up
+define        Mi_8MTV2_Mech_Clock_Left_lever_turning_right            R_ALT+USB[0x37]                                   //Mech Clock, Left lever turning right
+define        Mi_8MTV2_Mech_Clock_Left_lever_turning_left             R_ALT+USB[0x36]                                   //Mech Clock, Left lever turning left
+define        Mi_8MTV2_Mech_Clock_Right_lever_Down                    R_SHIFT+R_ALT+USB[0x06]                           //Mech Clock, Right lever Down
+define        Mi_8MTV2_Mech_Clock_Right_lever_Rotate_left             R_CTL+R_SHIFT+USB[0x36]                           //Mech Clock, Right lever Rotate left
+define        Mi_8MTV2_Mech_Clock_Right_lever_Rotate_right            R_CTL+R_SHIFT+USB[0x37]                           //Mech Clock, Right lever Rotate right
+define        Mi_8MTV2_Fuel_Meter_Rotary_Left                         R_CTL+R_SHIFT+USB[0x19]                           //Fuel Meter, Rotary Left
+define        Mi_8MTV2_Fuel_Meter_Rotary_Right                        R_CTL+R_SHIFT+USB[0x05]                           //Fuel Meter, Rotary Right
+
+
+
+// Left Electropanel'sDash**********************
+
+define        Mi_8MTV2_SPUU_52_Power                                  L_ALT+L_SHIFT+USB[0x17]                           //SPUU-52, Power
+define        Mi_8MTV2_Attitude_Indicator_Left_Power                  L_ALT+L_SHIFT+USB[0x0A]                           //Attitude Indicator Left, Power
+define        Mi_8MTV2_VK_53_Power                                    L_ALT+L_SHIFT+USB[0x09]                           //VK-53, Power
+
+
+
+// Right Electropanel'sDash**********************
+
+define        Mi_8MTV2_Attitude_Indicator_Right_Power                 R_ALT+R_CTL+USB[0x13]                             //Attitude Indicator Right, Power
+define        Mi_8MTV2_Astrocompass_Power                             R_ALT+R_CTL+USB[0x13]                             //Astrocompass, Power
+define        Mi_8MTV2_Doppler_Navigator_Power                        R_ALT+R_SHIFT+USB[0x17]                           //Doppler Navigator, Power
+define        Mi_8MTV2_GMC_Power                                      R_ALT+R_SHIFT+USB[0x18]                           //GMC, Power
+define        Mi_8MTV2_GMC_Astrocompass_Mode                          R_CTL+R_SHIFT+USB[0x13]                           //GMC, Astrocompass Mode
+define        Mi_8MTV2_GMC_Gyrocompass_Mode                           R_CTL+R_SHIFT+USB[0x12]                           //GMC, Gyrocompass Mode
+define        Mi_8MTV2_GMC_Magnetic_Compass_Mode                      R_CTL+R_SHIFT+USB[0x0C]                           //GMC, Magnetic Compass Mode
+define        Mi_8MTV2_GMC_Nord_Souse_Hemisphere                      R_CTL+R_SHIFT+USB[0x18]                           //GMC, Nord/Souse Hemisphere
+define        Mi_8MTV2_GMC_Set_Course_Right                           R_CTL+R_SHIFT+USB[0x0F]                           //GMC, Set Course Right
+define        Mi_8MTV2_GMC_Set_Course_Left                            R_CTL+R_SHIFT+USB[0x0E]                           //GMC, Set Course Left
+define        Mi_8MTV2_GMC_Set_Latitude_Increase                      R_CTL+R_SHIFT+USB[0x0D]                           //GMC, Set Latitude Increase
+define        Mi_8MTV2_GMC_Set_Latitude_Decrease                      R_CTL+R_SHIFT+USB[0x0B]                           //GMC, Set Latitude Decrease
+define        Mi_8MTV2_GMC_Control_300                                R_CTL+R_SHIFT+USB[0x1C]                           //GMC, Control 300
+define        Mi_8MTV2_GMC_Control_0                                  R_CTL+R_SHIFT+USB[0x0A]                           //GMC, Control 0
+define        Mi_8MTV2_Laryngophone                                   R_ALT+R_SHIFT+USB[0x0F]                           //Laryngophone
+define        Mi_8MTV2_ARC_UD_Power_Off                               R_ALT+R_CTL+USB[0x06]                             //ARC UD, Power Off
+define        Mi_8MTV2_ARC_UD_Narrow_Band                             R_ALT+R_CTL+USB[0x19]                             //ARC UD, Narrow Band
+define        Mi_8MTV2_ARC_UD_Wide_Band                               R_ALT+R_CTL+USB[0x05]                             //ARC UD, Wide Band
+define        Mi_8MTV2_ARC_UD_Pulse_Signal                            R_ALT+R_CTL+USB[0x11]                             //ARC UD, Pulse Signal
+define        Mi_8MTV2_ARC_UD_Radio_Compass                           R_ALT+R_CTL+USB[0x10]                             //ARC UD, Radio Compass
+define        Mi_8MTV2_ARC_UD_Channel_1                               R_ALT+R_CTL+USB[0x1E]                             //ARC UD, Channel 1
+define        Mi_8MTV2_ARC_UD_Channel_2                               R_ALT+R_CTL+USB[0x1F]                             //ARC UD, Channel 2
+define        Mi_8MTV2_ARC_UD_Channel_3                               R_ALT+R_CTL+USB[0x20]                             //ARC UD, Channel 3
+define        Mi_8MTV2_ARC_UD_Channel_4                               R_ALT+R_CTL+USB[0x21]                             //ARC UD, Channel 4
+define        Mi_8MTV2_ARC_UD_Channel_5                               R_ALT+R_CTL+USB[0x22]                             //ARC UD, Channel 5
+define        Mi_8MTV2_ARC_UD_Channel_6                               R_ALT+R_CTL+USB[0x23]                             //ARC UD, Channel 6
+define        Mi_8MTV2_ARC_UD_MW_DW                                   R_ALT+R_CTL+USB[0x1D]                             //ARC UD, MW/DW
+define        Mi_8MTV2_ARC_UD_Sensitivity                             R_ALT+R_CTL+USB[0x1B]                             //ARC UD, Sensitivity
+define        Mi_8MTV2_ARC_UD_Volume_Increase                         R_ALT+R_CTL+USB[0x16]                             //ARC UD, Volume Increase
+define        Mi_8MTV2_ARC_UD_Volume_Decrease                         R_ALT+R_CTL+USB[0x04]                             //ARC UD, Volume Decrease
+define        Mi_8MTV2_ARC_UD_Control                                 R_ALT+R_CTL+USB[0x07]                             //ARC UD, Control
+define        Mi_8MTV2_ARC_UD_Ant_Left                                R_ALT+R_CTL+USB[0x09]                             //ARC UD, Ant. Left
+define        Mi_8MTV2_ARC_UD_Ant_Right                               R_ALT+R_CTL+USB[0x0A]                             //ARC UD, Ant. Right
+
+
+
+// Central panel**********************
+
+define        Mi_8MTV2_Autopilot_Heading_Channel_On                   L_CTL+USB[0x04]                                   //Autopilot Heading Channel On
+define        Mi_8MTV2_Autopilot_Roll_Pitch_Channel_On                L_WIN+USB[0x04]                                   //Autopilot Roll/Pitch Channel On
+define        Mi_8MTV2_Autopilot_Altitude_Channel_On                  L_ALT+USB[0x04]                                   //Autopilot Altitude Channel On
+define        Mi_8MTV2_Autopilot_Heading_Channel_Off                  L_WIN+L_CTL+USB[0x04]                             //Autopilot Heading Channel Off
+define        Mi_8MTV2_Autopilot_Altitude_Channel_Off                 L_WIN+L_ALT+USB[0x04]                             //Autopilot Altitude Channel Off
+define        Mi_8MTV2_Autopilot_Altitude_Control_Up                  L_ALT+USB[0x09]                                   //Autopilot Altitude Control Up
+define        Mi_8MTV2_Autopilot_Altitude_Control_Down                L_ALT+USB[0x19]                                   //Autopilot Altitude Control Down
+define        Mi_8MTV2_Autopilot_Heading_Adjustment_Left              L_WIN+L_SHIFT+USB[0x16]                           //Autopilot Heading Adjustment Left
+define        Mi_8MTV2_Autopilot_Heading_Adjustment_Right             L_WIN+L_SHIFT+USB[0x07]                           //Autopilot Heading Adjustment Right
+define        Mi_8MTV2_Autopilot_Roll_Adjustment_Left                 R_CTL+L_WIN+USB[0x16]                             //Autopilot Roll Adjustment Left
+define        Mi_8MTV2_Autopilot_Roll_Adjustment_Right                R_CTL+L_WIN+USB[0x07]                             //Autopilot Roll Adjustment Right
+define        Mi_8MTV2_Autopilot_Pitch_Adjustment_Left                L_CTL+L_SHIFT+USB[0x16]                           //Autopilot Pitch Adjustment Left
+define        Mi_8MTV2_Autopilot_Pitch_Adjustment_Right               L_CTL+L_SHIFT+USB[0x07]                           //Autopilot Pitch Adjustment Right
+define        Mi_8MTV2_SPUU_52_Control_Engage                         L_ALT+L_CTL+USB[0x0A]                             //SPUU-52, Control Engage
+define        Mi_8MTV2_SPUU_52_Control_P                              L_ALT+L_CTL+USB[0x0B]                             //SPUU-52, Control P
+define        Mi_8MTV2_SPUU_52_Control_t                              L_ALT+L_CTL+USB[0x0D]                             //SPUU-52, Control t
+define        Mi_8MTV2_SPUU_52_Control_Adjustment_Left                L_ALT+L_CTL+USB[0x11]                             //SPUU-52, Control Adjustment Left
+define        Mi_8MTV2_SPUU_52_Control_Adjustment_Right               L_ALT+L_SHIFT+USB[0x11]                           //SPUU-52, Control Adjustment Right
+
+
+
+// SPU-7, Intercom panel**********************
+
+define        Mi_8MTV2_SPU_7_Main_Volume_Decrease                     L_ALT+L_SHIFT+USB[0x14]                           //SPU-7, Main Volume Decrease
+define        Mi_8MTV2_SPU_7_Main_Volume_Increase                     L_ALT+L_CTL+USB[0x14]                             //SPU-7, Main Volume Increase
+define        Mi_8MTV2_SPU_7_Listening_Volume_Decrease                L_ALT+L_SHIFT+USB[0x1A]                           //SPU-7, Listening Volume Decrease
+define        Mi_8MTV2_SPU_7_Listening_Volume_Increase                L_ALT+L_CTL+USB[0x1A]                             //SPU-7, Listening Volume Increase
+define        Mi_8MTV2_SPU_7_Radio_Source_Select_Rotary_Left          L_ALT+L_SHIFT+USB[0x08]                           //SPU-7, Radio Source Select Rotary Left
+define        Mi_8MTV2_SPU_7_Radio_Source_Select_Rotary_Right         L_ALT+L_CTL+USB[0x08]                             //SPU-7, Radio Source Select Rotary Right
+define        Mi_8MTV2_SPU_7_Radio_ICS                                L_ALT+L_CTL+USB[0x1D]                             //SPU-7, Radio/ICS
+
+
+
+// PKV**********************
+
+define        Mi_8MTV2_Sight_Intensity_Decrease                       R_ALT+USB[0x12]                                   //Sight Intensity Decrease
+define        Mi_8MTV2_Sight_Intensity_Increase                       R_CTL+USB[0x12]                                   //Sight Intensity Increase
+
+
+
+// Systems**********************
+
+define        Mi_8MTV2_Open_Close_Left_Door                           L_CTL+L_SHIFT+USB[0x06]                           //Open/Close Left Door
+define        Mi_8MTV2_Open_Close_Cargo_Doors                         L_ALT+L_CTL+USB[0x06]                             //Open/Close Cargo Doors
+define        Mi_8MTV2_Open_Close_Left_Blister                        L_CTL+USB[0x06]                                   //Open/Close Left Blister
+define        Mi_8MTV2_Open_Close_Right_Blister                       L_SHIFT+USB[0x06]                                 //Open/Close Right Blister
+
+
+
+// Armament System**********************
+
+define        Mi_8MTV2_Weapon_Safe_Switcher                           L_ALT+USB[0x16]                                   //Weapon Safe Switcher
+define        Mi_8MTV2_Rocket_Serie_8_16_4_Up                         R_SHIFT+USB[0x30]                                 //Rocket Serie 8-16-4 Up
+define        Mi_8MTV2_Rocket_Serie_8_16_4_Down                       R_SHIFT+USB[0x2F]                                 //Rocket Serie 8-16-4 Down
+define        Mi_8MTV2_Rocket_Pilons_1_2_5_6_Auto_3_4_Up              R_ALT+USB[0x30]                                   //Rocket Pilons 1-2-5-6/Auto/3-4 Up
+define        Mi_8MTV2_Rocket_Pilons_1_2_5_6_Auto_3_4_Down            R_ALT+USB[0x2F]                                   //Rocket Pilons 1-2-5-6/Auto/3-4 Down
+define        Mi_8MTV2_Mode_UPK_PKT_RS_Up                             R_CTL+USB[0x30]                                   //Mode UPK/PKT/RS Up
+define        Mi_8MTV2_Mode_UPK_PKT_RS_Down                           R_CTL+USB[0x2F]                                   //Mode UPK/PKT/RS Down
+define        Mi_8MTV2_Cut_Off_On_Off                                 L_ALT+USB[0x15]                                   //Cut Off On/Off
+define        Mi_8MTV2_GUV_Mode_Incr                                  R_ALT+R_CTL+USB[0x30]                             //GUV Mode Incr
+define        Mi_8MTV2_GUV_Mode_Decr                                  R_ALT+R_CTL+USB[0x2F]                             //GUV Mode Decr
+define        Mi_8MTV2_800_or_624_622_800_Cover                       R_SHIFT+USB[0x12]                                 //800 or 624-622-800 Cover
+define        Mi_8MTV2_800_or_624_622_800                             USB[0x12]                                         //800 or 624-622-800
+define        Mi_8MTV2_Emergency_Release_Cover                        L_ALT+USB[0x0D]                                   //Emergency Release Cover
+define        Mi_8MTV2_Emergency_Release                              USB[0x0D]                                         //Emergency Release
+define        Mi_8MTV2_Emergency_Explode_Cover                        R_ALT+USB[0x0B]                                   //Emergency Explode Cover
+define        Mi_8MTV2_Emergency_Explode                              USB[0x0B]                                         //Emergency Explode
+define        Mi_8MTV2_PUS_Arming                                     L_CTL+USB[0x15]                                   //PUS Arming
+define        Mi_8MTV2_Main_Switcher                                  USB[0x13]                                         //Main Switcher
+define        Mi_8MTV2_Check_Lamp                                     USB[0x0F]                                         //Check Lamp
+define        Mi_8MTV2_Second_Pilot_Emergency_Release_Cover           R_ALT+USB[0x18]                                   //Second Pilot Emergency Release Cover
+define        Mi_8MTV2_Second_Pilot_Emergency_Release                 USB[0x18]                                         //Second Pilot Emergency Release
+define        Mi_8MTV2_Second_Pilot_Emergency_Explode_Cover           R_ALT+USB[0x0C]                                   //Second Pilot Emergency Explode Cover
+define        Mi_8MTV2_Second_Pilot_Emergency_Explode                 USB[0x0C]                                         //Second Pilot Emergency Explode
+define        Mi_8MTV2_Main_Bomb_Switcher                             R_CTL+USB[0x13]                                   //Main Bomb Switcher
+define        Mi_8MTV2_Second_Pilot_Check_Lamp                        R_ALT+USB[0x0F]                                   //Second Pilot Check Lamp
+define        Mi_8MTV2_ESBR_Heating                                   USB[0x36]                                         //ESBR Heating
+define        Mi_8MTV2_Pilons_setup_Up                                USB[0x37]                                         //Pilons setup Up
+define        Mi_8MTV2_Pilons_setup_Down                              USB[0x33]                                         //Pilons setup Down
+define        Mi_8MTV2_Release_Bomb                                   USB[0x05]                                         //Release Bomb
+
+
+
+// Cheat**********************
+
+define        Mi_8MTV2_Weapon_Hints_On_Off                            L_CTL+L_SHIFT+USB[0x0B]                           //Weapon Hints On/Off
+
+
+
+// Armament System**********************
+
+define        Mi_8MTV2_ESBR_On_Off                                    R_ALT+USB[0x05]                                   //ESBR On/Off
+define        Mi_8MTV2_ESBR_Rotate                                    R_ALT+R_SHIFT+USB[0x05]                           //ESBR Rotate
+
+
+
+// Radio Jadro-1A**********************
+
+define        Mi_8MTV2_Jadro_1A_Mode_Decrease                         L_CTL+L_SHIFT+USB[0x36]                           //Jadro-1A Mode Decrease
+define        Mi_8MTV2_Jadro_1A_Mode_Increse                          L_CTL+L_SHIFT+USB[0x37]                           //Jadro-1A Mode Increse
+define        Mi_8MTV2_Jadro_1A_1MHz_Decrease                         L_CTL+L_SHIFT+USB[0x04]                           //Jadro-1A 1MHz Decrease
+define        Mi_8MTV2_Jadro_1A_1MHz_Increase                         L_CTL+L_SHIFT+USB[0x1D]                           //Jadro-1A 1MHz Increase
+define        Mi_8MTV2_Jadro_1A_100kHz_Decrease                       L_CTL+L_SHIFT+USB[0x1A]                           //Jadro-1A 100kHz Decrease
+define        Mi_8MTV2_Jadro_1A_100kHz_Increase                       L_CTL+L_SHIFT+USB[0x1B]                           //Jadro-1A 100kHz Increase
+define        Mi_8MTV2_Jadro_1A_10kHz_Decrease                        L_CTL+L_SHIFT+USB[0x08]                           //Jadro-1A 10kHz Decrease
+define        Mi_8MTV2_Jadro_1A_10kHz_Increase                        L_CTL+L_SHIFT+USB[0x0C]                           //Jadro-1A 10kHz Increase
+define        Mi_8MTV2_Jadro_1A_1kHz_Decrease                         L_CTL+L_SHIFT+USB[0x09]                           //Jadro-1A 1kHz Decrease
+define        Mi_8MTV2_Jadro_1A_1kHz_Increase                         L_CTL+L_SHIFT+USB[0x19]                           //Jadro-1A 1kHz Increase
+define        Mi_8MTV2_Jadro_1A_100Hz_Decrease                        L_CTL+L_SHIFT+USB[0x0A]                           //Jadro-1A 100Hz Decrease
+define        Mi_8MTV2_Jadro_1A_100Hz_Increase                        L_CTL+L_SHIFT+USB[0x05]                           //Jadro-1A 100Hz Increase
+define        Mi_8MTV2_Jadro_1A_Volume_Decrease                       L_CTL+L_SHIFT+USB[0x14]                           //Jadro-1A Volume Decrease
+define        Mi_8MTV2_Jadro_1A_Volume_Increase                       L_CTL+L_SHIFT+USB[0x15]                           //Jadro-1A Volume Increase
+define        Mi_8MTV2_Jadro_1A_Squelch                               L_CTL+L_SHIFT+USB[0x17]                           //Jadro-1A Squelch
+define        Mi_8MTV2_Jadro_1A_Control                               L_CTL+L_SHIFT+USB[0x1C]                           //Jadro-1A Control
+define        Mi_8MTV2_Jadro_1A_Power                                 L_CTL+L_SHIFT+USB[0x18]                           //Jadro-1A Power
+
+
+
+// ARC-9**********************
+
+define        Mi_8MTV2_ARC_9_Volume_Decrease                          L_CTL+L_WIN+USB[0x36]                             //ARC-9, Volume Decrease
+define        Mi_8MTV2_ARC_9_Volume_Increase                          L_CTL+L_WIN+USB[0x37]                             //ARC-9, Volume Increase
+define        Mi_8MTV2_ARC_9_TLF_TLG                                  L_CTL+L_WIN+USB[0x14]                             //ARC-9, TLF/TLG
+define        Mi_8MTV2_ARC_9_Mode_Rotary_Decrease                     L_CTL+L_WIN+USB[0x1A]                             //ARC-9, Mode Rotary Decrease
+define        Mi_8MTV2_ARC_9_Mode_Rotary_Increase                     L_CTL+L_WIN+USB[0x08]                             //ARC-9, Mode Rotary Increase
+define        Mi_8MTV2_ARC_9_Loop_Ant_Left                            L_CTL+L_WIN+USB[0x15]                             //ARC-9, Loop Ant. Left
+define        Mi_8MTV2_ARC_9_Loop_Ant_Right                           L_CTL+L_WIN+USB[0x17]                             //ARC-9, Loop Ant. Right
+define        Mi_8MTV2_ARC_9_Backup_Frequency_Decrease                L_CTL+L_WIN+USB[0x1D]                             //ARC-9, Backup Frequency Decrease
+define        Mi_8MTV2_ARC_9_Backup_Frequency_Increase                L_CTL+L_WIN+USB[0x1B]                             //ARC-9, Backup Frequency Increase
+define        Mi_8MTV2_ARC_9_Backup_Frequency_100_kHz_Decrease        L_CTL+L_WIN+USB[0x06]                             //ARC-9, Backup Frequency 100 kHz Decrease
+define        Mi_8MTV2_ARC_9_Backup_Frequency_100_kHz_Increase        L_CTL+L_WIN+USB[0x19]                             //ARC-9, Backup Frequency 100 kHz Increase
+define        Mi_8MTV2_ARC_9_Backup_Frequency_10_kHz_Decrease         L_CTL+L_WIN+USB[0x05]                             //ARC-9, Backup Frequency 10 kHz Decrease
+define        Mi_8MTV2_ARC_9_Backup_Frequency_10_kHz_Increase         L_CTL+L_WIN+USB[0x11]                             //ARC-9, Backup Frequency 10 kHz Increase
+define        Mi_8MTV2_ARC_9_Main_Frequency_Decrease                  L_CTL+L_WIN+USB[0x04]                             //ARC-9, Main Frequency Decrease
+define        Mi_8MTV2_ARC_9_Main_Frequency_Increase                  L_CTL+L_WIN+USB[0x16]                             //ARC-9, Main Frequency Increase
+define        Mi_8MTV2_ARC_9_Main_Frequency_100_kHz_Decrease          L_CTL+L_WIN+USB[0x07]                             //ARC-9, Main Frequency 100 kHz Decrease
+define        Mi_8MTV2_ARC_9_Main_Frequency_100_kHz_Increase          L_CTL+L_WIN+USB[0x09]                             //ARC-9, Main Frequency 100 kHz Increase
+define        Mi_8MTV2_ARC_9_Main_Frequency_10_kHz_Decrease           L_CTL+L_WIN+USB[0x0A]                             //ARC-9, Main Frequency 10 kHz Decrease
+define        Mi_8MTV2_ARC_9_Main_Frequency_10_kHz_Increase           L_CTL+L_WIN+USB[0x0B]                             //ARC-9, Main Frequency 10 kHz Increase
+
+
+
+// Radio R-863**********************
+
+define        Mi_8MTV2_R_863_10MHz_Decrease                           L_ALT+L_WIN+USB[0x1D]                             //R-863, 10MHz Decrease
+define        Mi_8MTV2_R_863_10MHz_Increase                           L_ALT+L_WIN+USB[0x04]                             //R-863, 10MHz Increase
+define        Mi_8MTV2_R_863_1MHz_Decrease                            L_ALT+L_WIN+USB[0x1B]                             //R-863, 1MHz Decrease
+define        Mi_8MTV2_R_863_1MHz_Increase                            L_ALT+L_WIN+USB[0x16]                             //R-863, 1MHz Increase
+define        Mi_8MTV2_R_863_100kHz_Decrease                          L_ALT+L_WIN+USB[0x06]                             //R-863, 100kHz Decrease
+define        Mi_8MTV2_R_863_100kHz_Increase                          L_ALT+L_WIN+USB[0x07]                             //R-863, 100kHz Increase
+define        Mi_8MTV2_R_863_25kHz_Decrease                           L_ALT+L_WIN+USB[0x19]                             //R-863, 25kHz Decrease
+define        Mi_8MTV2_R_863_25kHz_Increase                           L_ALT+L_WIN+USB[0x09]                             //R-863, 25kHz Increase
+define        Mi_8MTV2_R_863_AM_FM                                    L_ALT+L_WIN+USB[0x14]                             //R-863, AM/FM
+define        Mi_8MTV2_R_863_DIAL_MEMORY                              L_ALT+L_WIN+USB[0x1A]                             //R-863, DIAL/MEMORY
+define        Mi_8MTV2_R_863_Volume_Decrease                          L_ALT+L_WIN+USB[0x08]                             //R-863, Volume Decrease
+define        Mi_8MTV2_R_863_Volume_Increase                          L_ALT+L_WIN+USB[0x15]                             //R-863, Volume Increase
+define        Mi_8MTV2_R_863_Squelch                                  L_ALT+L_WIN+USB[0x17]                             //R-863, Squelch
+define        Mi_8MTV2_R_863_Channel_Decrease                         L_ALT+L_WIN+USB[0x1C]                             //R-863, Channel Decrease
+define        Mi_8MTV2_R_863_Channel_Increase                         L_ALT+L_WIN+USB[0x18]                             //R-863, Channel Increase

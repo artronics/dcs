@@ -1,0 +1,172 @@
+
+
+
+// Cheat**********************
+
+define        Auto_Start                                              L_WIN+USB[0x4A]                                   //Auto Start
+define        Auto_Stop                                               L_WIN+USB[0x4D]                                   //Auto Stop
+define        Recorder_On                                             L_CTL+L_SHIFT+USB[0x15]                           //Recorder On
+define        Recorder_Off                                            L_ALT+L_SHIFT+USB[0x15]                           //Recorder Off
+
+
+
+// General**********************
+
+define        Show_pilot_body                                         R_SHIFT+USB[0x13]                                 //Show pilot body
+define        Catapult_Hook_Up                                        USB[0x18]                                         //Catapult Hook-Up
+
+
+
+// View Cockpit**********************
+
+define        Toggle_Mirrors                                          R_WIN+USB[0x10]                                   //Toggle Mirrors
+
+
+
+// Flight Control**********************
+
+define        Aircraft_Pitch_Down                                     USB[0x52]                                         //Aircraft Pitch Down
+define        Aircraft_Pitch_Up                                       USB[0x51]                                         //Aircraft Pitch Up
+define        Aircraft_Bank_Left                                      USB[0x50]                                         //Aircraft Bank Left
+define        Aircraft_Bank_Right                                     USB[0x4F]                                         //Aircraft Bank Right
+define        Aircraft_Rudder_Left                                    USB[0x1D]                                         //Aircraft Rudder Left
+define        Aircraft_Rudder_Right                                   USB[0x1B]                                         //Aircraft Rudder Right
+
+
+
+// Stick**********************
+
+define        Weapon_Release_Button                                   R_ALT+USB[0x2C]                                   //Weapon Release Button
+define        Gun_Trigger___SECOND_DETENT__Press_to_shoot_            USB[0x2C]                                         //Gun Trigger - SECOND DETENT (Press to shoot)
+define        Trimmer_Switch___PUSH_DESCEND_                          R_CTL+USB[0x33]                                   //Trimmer Switch - PUSH(DESCEND)
+define        Trimmer_Switch___PULL_CLIMB_                            R_CTL+USB[0x37]                                   //Trimmer Switch - PULL(CLIMB)
+define        Trimmer_Switch___LEFT_WING_DOWN                         R_CTL+USB[0x36]                                   //Trimmer Switch - LEFT WING DOWN
+define        Trimmer_Switch___RIGHT_WING_DOWN                        R_CTL+USB[0x38]                                   //Trimmer Switch - RIGHT WING DOWN
+define        Autopilot_Nosewheel_Steering_Disengage__Paddle__Switch  USB[0x04]                                         //Autopilot/Nosewheel Steering Disengage (Paddle) Switch
+define        Undesignate_Nose_Wheel_Steer_Switch                     USB[0x16]                                         //Undesignate/Nose Wheel Steer Switch
+define        Select_Sparrow                                          L_SHIFT+USB[0x1A]                                 //Select Sparrow
+define        Select_Gun                                              L_SHIFT+USB[0x1B]                                 //Select Gun
+define        Select_AMRAAM                                           L_SHIFT+USB[0x07]                                 //Select AMRAAM
+define        Select_Sidewinder                                       L_SHIFT+USB[0x16]                                 //Select Sidewinder
+define        RECCE_Event_Mark_Switch                                 USB[0x15]                                         //RECCE Event Mark Switch
+define        Sensor_Control_Switch___Fwd                             R_ALT+USB[0x33]                                   //Sensor Control Switch - Fwd
+define        Sensor_Control_Switch___Aft                             R_ALT+USB[0x37]                                   //Sensor Control Switch - Aft
+define        Sensor_Control_Switch___Left                            R_ALT+USB[0x36]                                   //Sensor Control Switch - Left
+define        Sensor_Control_Switch___Right                           R_ALT+USB[0x38]                                   //Sensor Control Switch - Right
+define        Control_Stick___HIDE_SHOW                               USB[0x2A]                                         //Control Stick - HIDE/SHOW
+
+
+
+// Throttle Quadrant**********************
+
+define        Throttle_Smoothly__Both____Increase                     USB[0x57]                                         //Throttle Smoothly (Both) - Increase
+define        Throttle_Smoothly__Both____Decrease                     USB[0x56]                                         //Throttle Smoothly (Both) - Decrease
+define        Throttle_Smoothly__Left____Increase                     R_ALT+USB[0x57]                                   //Throttle Smoothly (Left) - Increase
+define        Throttle_Smoothly__Left____Decrease                     R_ALT+USB[0x56]                                   //Throttle Smoothly (Left) - Decrease
+define        Throttle_Smoothly__Right____Increase                    R_SHIFT+USB[0x57]                                 //Throttle Smoothly (Right) - Increase
+define        Throttle_Smoothly__Right____Decrease                    R_SHIFT+USB[0x56]                                 //Throttle Smoothly (Right) - Decrease
+define        Throttle_Step__Both____Increase                         USB[0x4B]                                         //Throttle Step (Both) - Increase
+define        Throttle_Step__Both____Decrease                         USB[0x4E]                                         //Throttle Step (Both) - Decrease
+define        Throttle_Step__Left____Increase                         R_ALT+USB[0x4B]                                   //Throttle Step (Left) - Increase
+define        Throttle_Step__Left____Decrease                         R_ALT+USB[0x4E]                                   //Throttle Step (Left) - Decrease
+define        Throttle_Step__Right____Increase                        R_SHIFT+USB[0x4B]                                 //Throttle Step (Right) - Increase
+define        Throttle_Step__Right____Decrease                        R_SHIFT+USB[0x4E]                                 //Throttle Step (Right) - Decrease
+define        Throttle__Left____IDLE                                  R_ALT+USB[0x4A]                                   //Throttle (Left) - IDLE
+define        Throttle__Left____OFF                                   R_ALT+USB[0x4D]                                   //Throttle (Left) - OFF
+define        Throttle__Right____IDLE                                 R_SHIFT+USB[0x4A]                                 //Throttle (Right) - IDLE
+define        Throttle__Right____OFF                                  R_SHIFT+USB[0x4D]                                 //Throttle (Right) - OFF
+define        Throttle_Finger_Lift__Both____UP_DOWN                   USB[0x27]                                         //Throttle Finger Lift (Both) - UP/DOWN
+
+
+
+// Throttle Grip**********************
+
+define        Speed_Brake_Switch___EXTEND                             L_SHIFT+USB[0x05]                                 //Speed Brake Switch - EXTEND
+define        Speed_Brake_Switch___OFF                                USB[0x05]                                         //Speed Brake Switch - OFF
+define        Speed_Brake_Switch___RETRACT                            L_CTL+USB[0x05]                                   //Speed Brake Switch - RETRACT
+define        Exterior_Lights_Switch___ON_OFF                         USB[0x0F]                                         //Exterior Lights Switch - ON/OFF
+define        COMM_Switch___COMM_1__call_radio_menu_                  R_ALT+USB[0x31]                                   //COMM Switch - COMM 1 (call radio menu)
+define        COMM_Switch___COMM_2__call_radio_menu_                  R_CTL+USB[0x31]                                   //COMM Switch - COMM 2 (call radio menu)
+define        Cage_Uncage_Button                                      USB[0x06]                                         //Cage/Uncage Button
+define        ATC_Engage_Disengage_Switch                             USB[0x17]                                         //ATC Engage/Disengage Switch
+define        Dispense_Switch___Forward_CHAFF__Center_OFF_            USB[0x08]                                         //Dispense Switch - Forward(CHAFF)/Center(OFF)
+define        Dispense_Switch___Aft_FLARE__Center_OFF_                USB[0x07]                                         //Dispense Switch - Aft(FLARE)/Center(OFF)
+define        RAID_FLIR_FOV_Select_Button                             USB[0x0C]                                         //RAID/FLIR FOV Select Button
+define        Throttle_Designator_Controller___Up                     USB[0x33]                                         //Throttle Designator Controller - Up
+define        Throttle_Designator_Controller___Down                   USB[0x37]                                         //Throttle Designator Controller - Down
+define        Throttle_Designator_Controller___Left                   USB[0x36]                                         //Throttle Designator Controller - Left
+define        Throttle_Designator_Controller___Right                  USB[0x38]                                         //Throttle Designator Controller - Right
+define        Throttle_Designator_Controller___Depress                USB[0x28]                                         //Throttle Designator Controller - Depress
+define        Radar_Elevation_Control___Up                            USB[0x2E]                                         //Radar Elevation Control - Up
+define        Radar_Elevation_Control___Down                          USB[0x2D]                                         //Radar Elevation Control - Down
+
+
+
+// Systems**********************
+
+define        Eject__3_times_                                         L_CTL+USB[0x08]                                   //Eject (3 times)
+define        Wheel_Brake___ON_OFF                                    USB[0x1A]                                         //Wheel Brake - ON/OFF
+define        Wheel_Brake_Left___ON_OFF                               L_CTL+USB[0x1A]                                   //Wheel Brake Left - ON/OFF
+define        Wheel_Brake_Right___ON_OFF                              L_ALT+USB[0x1A]                                   //Wheel Brake Right - ON/OFF
+
+
+
+// Instrument Panel**********************
+
+define        Master_Mode_Button___A_A                                USB[0x1E]                                         //Master Mode Button - A/A
+define        Master_Mode_Button___A_G                                USB[0x1F]                                         //Master Mode Button - A/G
+define        Master_Arm_Switch___ARM_SAFE                            USB[0x10]                                         //Master Arm Switch - ARM/SAFE
+define        MASTER_CAUTION_Reset_Button                             USB[0x11]                                         //MASTER CAUTION Reset Button
+
+
+
+// Left Vertical Panel**********************
+
+define        Landing_Gear_Control_Handle___UP_DOWN                   USB[0x0A]                                         //Landing Gear Control Handle - UP/DOWN
+define        Landing_Gear_Control_Handle___UP                        L_CTL+USB[0x0A]                                   //Landing Gear Control Handle - UP
+define        Landing_Gear_Control_Handle___DOWN                      L_SHIFT+USB[0x0A]                                 //Landing Gear Control Handle - DOWN
+define        FLAP_Switch___Up                                        L_SHIFT+L_ALT+USB[0x09]                           //FLAP Switch - Up
+define        FLAP_Switch___Down                                      L_CTL+L_ALT+USB[0x09]                             //FLAP Switch - Down
+define        FLAP_Switch___AUTO                                      USB[0x09]                                         //FLAP Switch - AUTO
+define        FLAP_Switch___HALF                                      L_SHIFT+USB[0x09]                                 //FLAP Switch - HALF
+define        FLAP_Switch___FULL                                      L_CTL+USB[0x09]                                   //FLAP Switch - FULL
+define        Emergency_Parking_Brake_Handle___CCW                    L_CTL+USB[0x13]                                   //Emergency/Parking Brake Handle - CCW
+define        Emergency_Parking_Brake_Handle___CW                     L_ALT+USB[0x13]                                   //Emergency/Parking Brake Handle - CW
+define        Emergency_Parking_Brake_Handle___PULL                   R_CTL+USB[0x13]                                   //Emergency/Parking Brake Handle - PULL
+define        Emergency_Parking_Brake_Handle___STOW                   R_ALT+USB[0x13]                                   //Emergency/Parking Brake Handle - STOW
+
+
+
+// Right Vertical Panel**********************
+
+define        Arresting_Hook_Handle___Cycle                           USB[0x0B]                                         //Arresting Hook Handle - Cycle
+define        Wing_Fold_Control_Handle___PULL_STOW                    USB[0x12]                                         //Wing Fold Control Handle - PULL/STOW
+define        Wing_Fold_Control_Handle___CCW_Left                     R_SHIFT+USB[0x12]                                 //Wing Fold Control Handle - CCW/Left
+define        Wing_Fold_Control_Handle___CW_Right                     R_CTL+USB[0x12]                                   //Wing Fold Control Handle - CW/Right
+
+
+
+// Left Console**********************
+
+define        T_O_TRIM_Button                                         USB[0x19]                                         //T/O TRIM Button
+
+
+
+// Right Wall**********************
+
+define        Canopy___OPEN_CLOSE                                     L_CTL+USB[0x06]                                   //Canopy - OPEN/CLOSE
+define        FCS_BIT_Switch                                          USB[0x1C]                                         //FCS BIT Switch
+
+
+
+// Sensors**********************
+
+define        Toggle_goggles                                          R_SHIFT+USB[0x0B]                                 //Toggle goggles
+define        Gain_goggles_up                                         R_SHIFT+R_CTL+USB[0x0B]                           //Gain goggles up
+define        Gain_goggles_down                                       R_SHIFT+R_ALT+USB[0x0B]                           //Gain goggles down
+
+
+
+// Communications**********************
+
+define        Pilot_Salute                                            L_SHIFT+L_CTL+USB[0x16]                           //Pilot Salute
