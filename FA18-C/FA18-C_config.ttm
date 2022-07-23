@@ -1,0 +1,7 @@
+define MOUSE_MID_DZ 10
+define MOUSE_CURVE 3
+define MOUSE_SCALE -4
+
+define THR_SLEW_MID_DZ 0
+define THR_SLEW_CURVE 0
+define THR_SLEW_SCALE 0

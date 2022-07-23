@@ -1,6 +1,7 @@
 include "bindings/general.ttm"
 include "bindings/FA18-C/FA18-C_default.ttm"
 include "target.tmh"
+include "FA18-C_config.ttm"
 
 int main()
 {
@@ -27,7 +28,7 @@ int main()
 
 	SetShiftButton(&Throttle, CHF, &Throttle, 0, FLAPD, 0);
 
-    MapAxis();
+    map_axis();
 
 	MapKeyIOUMD(&Joystick, S2, 0, 0, 0, PULSE+R_ALT+SPC, 0, 0);
 	MapKeyIOUMD(&Joystick, TG2, 0, 0, 0, SPC, 0, 0);
@@ -47,7 +48,6 @@ int main()
 	MapKeyIOUMD(&Joystick, H1D, 0, 0, KP2, PULSE+R_CTL+'.', 0, 0);
 	MapKeyIOUMD(&Joystick, H1L, 0, 0, KP4, PULSE+R_CTL+',', 0, 0);
 	MapKeyIOUMD(&Joystick, H1R, 0, 0, KP6, PULSE+R_CTL+'/', 0, 0);
-	MapKeyIOUMD(&Throttle, SC, 0, 0, 0, PULSE+USB[40], 0, 0);
 
 }
 int EventHandle(int type, alias o, int x)
@@ -55,7 +55,7 @@ int EventHandle(int type, alias o, int x)
 	DefaultMapping(&o, x);
 }
 
-int MapAxis() {
+int map_axis() {
     // Joystick
 	MapAxis(&Joystick, JOYX, DX_X_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
 	SetSCurve(&Joystick, JOYX, 0, 3, 0, 2, 0);
@@ -63,13 +63,8 @@ int MapAxis() {
 	SetSCurve(&Joystick, JOYY, 0, 3, 0, 2, 0);
 
     // Throttle
-	KeyAxis(&Throttle, SCX, 'om', AXMAP2( LIST( 0, 40, 60 ), USB[54], 0, USB[56] ));
-	KeyAxis(&Throttle, SCY, 'om', AXMAP2( LIST( 0, 40, 60 ), USB[51], 0, USB[55] ));
+    map_throttle_slew();
 
-	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
-	SetSCurve(&Throttle, SCX, 0, 0, 0, 0, 0);
-	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
-	SetSCurve(&Throttle, SCY, 0, 0, 0, 0, 0);
 	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
 	SetSCurve(&Throttle, THR_RIGHT, 0, 0, 0, 2, 0);
 	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
@@ -78,8 +73,27 @@ int MapAxis() {
 	SetSCurve(&Throttle, THR_FC, 0, 0, 0, 0, 0);
 }
 
-// Primary layer (OM) mappings. 
-// The goal is to keep this layer close to the real aircraft, whilst respect the default mappings.
-int MapPrimary() {
+//int map_mouse(alias dev, int x_axis, int y_axis) {
+int map_mouse() {
+    KeyAxis(&Throttle, SCX, '', AXMAP1('','','') );
+    KeyAxis(&Throttle, SCY, '', AXMAP1('','','') );
 
+    MapAxis(&Throttle, SCX, MOUSE_X_AXIS, AXIS_NORMAL, MAP_RELATIVE);
+    SetSCurve(&Throttle, SCX, 0, MOUSE_MID_DZ, 0, MOUSE_CURVE, MOUSE_SCALE);
+
+    MapAxis(&Throttle, SCY, MOUSE_Y_AXIS, AXIS_NORMAL, MAP_RELATIVE);
+    SetSCurve(&Throttle, SCY, 0, MOUSE_MID_DZ, 0, MOUSE_CURVE, MOUSE_SCALE);
+}
+
+int map_throttle_slew() {
+	MapKeyIOUMD(&Throttle, SC, 0, 0, 0, PULSE+USB[40], 0, 0);
+
+	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, SCX, 0, THR_SLEW_MID_DZ, 0, THR_SLEW_CURVE, THR_SLEW_SCALE);
+
+	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+	SetSCurve(&Throttle, SCY, 0, THR_SLEW_MID_DZ, 0, THR_SLEW_CURVE, THR_SLEW_SCALE);
+
+	KeyAxis(&Throttle, SCX, 'om', AXMAP2( LIST( 0, 40, 60 ), USB[54], 0, USB[56] ));
+	KeyAxis(&Throttle, SCY, 'om', AXMAP2( LIST( 0, 40, 60 ), USB[51], 0, USB[55] ));
 }
