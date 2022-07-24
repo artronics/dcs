@@ -1,5 +1,4 @@
-include "bindings/general.ttm"
-include "bindings/FA18-C/FA18-C_default.ttm"
+include "../bindings/FA18-C_sim.ttm"
 include "target.tmh"
 include "FA18-C_config.ttm"
 
@@ -30,12 +29,12 @@ int main()
 
     map_axis();
 
-	MapKeyIOUMD(&Joystick, S2, 0, 0, 0, PULSE+R_ALT+SPC, 0, 0);
-	MapKeyIOUMD(&Joystick, TG2, 0, 0, 0, SPC, 0, 0);
-	MapKeyIOUMD(&Joystick, H2U, 0, 0, PULSE+F1, PULSE+R_ALT+';', 0, 0);
-	MapKeyIOUMD(&Joystick, H2R, 0, 0, PULSE+F10, PULSE+R_ALT+'/', 0, SEQ( PULSE+F9, PULSE+F9));
-	MapKeyIOUMD(&Joystick, H2D, 0, 0, 0, PULSE+R_ALT+'.', 0, 0);
-	MapKeyIOUMD(&Joystick, H2L, 0, 0, PULSE+F2, PULSE+L_ALT+',', 0, 0);
+	MapKeyIOUMD(&Joystick, S2, 0, 0, 0, PULSE+weapon_release, 0, 0);
+	MapKeyIOUMD(&Joystick, TG2, 0, 0, 0, gun_trigger_2nd_detent, 0, 0);
+	MapKeyIOUMD(&Joystick, H2U, 0, 0, PULSE+F1, PULSE+sensor_control_switch_fwd, 0, 0);
+	MapKeyIOUMD(&Joystick, H2R, 0, 0, PULSE+F10, PULSE+sensor_control_switch_right, 0, SEQ( PULSE+F9, PULSE+F9));
+	MapKeyIOUMD(&Joystick, H2D, 0, 0, 0, PULSE+sensor_control_switch_aft, 0, 0);
+	MapKeyIOUMD(&Joystick, H2L, 0, 0, PULSE+F2, PULSE+sensor_control_switch_left, 0, 0);
 	MapKeyIOUMD(&Joystick, H3U, 0, 0, USB[85], 0, 0, 0);
 	MapKeyIOUMD(&Joystick, H3R, 0, 0, PULSE+KP5, 0, 0, 0);
 	MapKeyIOUMD(&Joystick, H3D, 0, 0, USB[84], 0, 0, 0);
@@ -58,15 +57,15 @@ int EventHandle(int type, alias o, int x)
 int map_axis() {
     // Joystick
 	MapAxis(&Joystick, JOYX, DX_X_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
-	SetSCurve(&Joystick, JOYX, 0, 3, 0, 2, 0);
+	SetSCurve(&Joystick, JOYX, 0, 0, 0, 0, 0);
 	MapAxis(&Joystick, JOYY, DX_Y_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
-	SetSCurve(&Joystick, JOYY, 0, 3, 0, 2, 0);
+	SetSCurve(&Joystick, JOYY, 0, 0, 0, 0, 0);
 
     // Throttle
     map_throttle_slew();
 
 	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
-	SetSCurve(&Throttle, THR_RIGHT, 0, 0, 0, 2, 0);
+	SetSCurve(&Throttle, THR_RIGHT, 0, 0, 0, 0, 0);
 	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
 	SetSCurve(&Throttle, THR_LEFT, 0, 0, 0, 0, 0);
 	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);

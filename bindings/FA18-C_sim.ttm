@@ -1,0 +1,9 @@
+include "../bindings/usb.ttm"
+
+// Stick
+define weapon_release R_ALT+USB_SPACE
+define gun_trigger_2nd_detent USB_SPACE
+define sensor_control_switch_fwd R_ALT+USB_SEMICOLON 
+define sensor_control_switch_left R_ALT+USB_COMMA  
+define sensor_control_switch_right R_ALT+USB_SLASH 
+define sensor_control_switch_aft R_ALT+USB_DOT 
