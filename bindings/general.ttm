@@ -1,0 +1,18 @@
+include "../bindings/usb.ttm"
+
+// View
+define view_cockpit USB_F1
+define view_aircraft USB_F2
+define view_map USB_F10
+
+define view_centre     USB_NUM_5
+define view_slow_up    USB_NUM_8
+define view_slow_right USB_NUM_6
+define view_slow_down  USB_NUM_2
+define view_slow_left  USB_NUM_4
+
+define zoom_in USB_NUM_ASTERISK
+define zoom_out USB_NUM_SLASH
+
+// TrackIR
+define trackir_centre USB_F12
