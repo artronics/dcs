@@ -1,4 +1,4 @@
-include "../bindings/usb.ttm"
+// include "../bindings/usb.ttm"
 
 // View
 define view_cockpit USB_F1

@@ -1,4 +1,8 @@
-include "../bindings/FA18-C_sim.ttm" include "../bindings/general.ttm" include "FA18-C_config.ttm" include "target.tmh"
+include "../bindings/usb.ttm"
+include "../bindings/FA18-C_sim.ttm" 
+include "../bindings/general.ttm" 
+include "FA18-C_config.ttm" 
+include "target.tmh"
 
 int main() {
 	Configure(&HCougar, MODE_EXCLUDED);
@@ -40,10 +44,10 @@ int main() {
 	MapKeyIOUMD(&Joystick, H4R, 0, 0, 0, PULSE + select_amraam, 0, 0);
 	MapKeyIOUMD(&Joystick, H4D, 0, 0, 0, select_gun, 0, 0);
 	MapKeyIOUMD(&Joystick, H4L, 0, 0, 0, PULSE + select_sidewinder, 0, 0);
-	MapKeyIOUMD(&Joystick, H1U, 0, 0, view_slow_up, PULSE + trim_up, 0, 0);
-	MapKeyIOUMD(&Joystick, H1D, 0, 0, view_slow_down, PULSE + trim_down, 0, 0);
-	MapKeyIOUMD(&Joystick, H1L, 0, 0, view_slow_left, PULSE + trim_left, 0, 0);
-	MapKeyIOUMD(&Joystick, H1R, 0, 0, view_slow_right, PULSE + trim_right, 0, 0);
+	MapKeyIOUMD(&Joystick, H1U, 0, 0, view_slow_up, trim_up, 0, 0);
+	MapKeyIOUMD(&Joystick, H1D, 0, 0, view_slow_down, trim_down, 0, 0);
+	MapKeyIOUMD(&Joystick, H1L, 0, 0, view_slow_left, trim_left, 0, 0);
+	MapKeyIOUMD(&Joystick, H1R, 0, 0, view_slow_right,trim_right, 0, 0);
 }
 
 int EventHandle(int type, alias o, int x) {

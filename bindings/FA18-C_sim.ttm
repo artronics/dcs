@@ -1,4 +1,4 @@
-include "../bindings/usb.ttm"
+// include "../bindings/usb.ttm"
 
 // Stick
 define weapon_release R_ALT+USB_SPACE
