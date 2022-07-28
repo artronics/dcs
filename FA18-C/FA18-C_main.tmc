@@ -29,29 +29,36 @@ int main() {
 	SetShiftButton(&Throttle, CHF, &Throttle, 0, FLAPD, 0);
 
 	map_axis();
-
-	MapKeyIOUMD(&Joystick, S2, 0, 0, 0, PULSE + weapon_release, 0, 0);
-	MapKeyIOUMD(&Joystick, TG2, 0, 0, 0, gun_trigger_2nd_detent, 0, 0);
-	MapKeyIOUMD(&Joystick, H2U, 0, 0, PULSE + view_cockpit, PULSE + sensor_control_switch_fwd, 0, 0);
-	MapKeyIOUMD(&Joystick, H2R, 0, 0, PULSE + view_map, PULSE + sensor_control_switch_right, 0, SEQ(PULSE + F9, PULSE + F9));
-	MapKeyIOUMD(&Joystick, H2D, 0, 0, 0, PULSE + sensor_control_switch_aft, 0, 0);
-	MapKeyIOUMD(&Joystick, H2L, 0, 0, PULSE + view_aircraft, PULSE + sensor_control_switch_left, 0, 0);
-	MapKeyIOUMD(&Joystick, H3U, 0, 0, zoom_in, 0, 0, 0);
-	MapKeyIOUMD(&Joystick, H3R, 0, 0, PULSE + view_centre, 0, 0, 0);
-	MapKeyIOUMD(&Joystick, H3D, 0, 0, zoom_out, 0, 0, 0);
-	MapKeyIOUMD(&Joystick, H3L, 0, 0, PULSE + trackir_centre, 0, 0, 0);
-	MapKeyIOUMD(&Joystick, H4U, 0, 0, 0, PULSE + select_sparrow, 0, 0);
-	MapKeyIOUMD(&Joystick, H4R, 0, 0, 0, PULSE + select_amraam, 0, 0);
-	MapKeyIOUMD(&Joystick, H4D, 0, 0, 0, select_gun, 0, 0);
-	MapKeyIOUMD(&Joystick, H4L, 0, 0, 0, PULSE + select_sidewinder, 0, 0);
-	MapKeyIOUMD(&Joystick, H1U, 0, 0, view_slow_up, trim_up, 0, 0);
-	MapKeyIOUMD(&Joystick, H1D, 0, 0, view_slow_down, trim_down, 0, 0);
-	MapKeyIOUMD(&Joystick, H1L, 0, 0, view_slow_left, trim_left, 0, 0);
-	MapKeyIOUMD(&Joystick, H1R, 0, 0, view_slow_right,trim_right, 0, 0);
+	map_stick();
 }
 
 int EventHandle(int type, alias o, int x) {
 	DefaultMapping(&o, x);
+}
+
+int map_stick() {
+	MapKeyIOUMD(&Joystick, H1U, 0, 0, view_slow_up, trim_up, 0, 0);
+	MapKeyIOUMD(&Joystick, H1R, 0, 0, view_slow_right,trim_right, 0, 0);
+	MapKeyIOUMD(&Joystick, H1D, 0, 0, view_slow_down, trim_down, 0, 0);
+	MapKeyIOUMD(&Joystick, H1L, 0, 0, view_slow_left, trim_left, 0, 0);
+
+	MapKeyIOUMD(&Joystick, H2U, 0, 0, PULSE + view_cockpit, PULSE + sensor_control_switch_fwd, 0, 0);
+	MapKeyIOUMD(&Joystick, H2R, 0, 0, PULSE + view_map, PULSE + sensor_control_switch_right, 0, SEQ(PULSE + F9, PULSE + F9));
+	MapKeyIOUMD(&Joystick, H2D, 0, 0, 0, PULSE + sensor_control_switch_aft, 0, 0);
+	MapKeyIOUMD(&Joystick, H2L, 0, 0, PULSE + view_aircraft, PULSE + sensor_control_switch_left, 0, 0);
+
+	MapKeyIOUMD(&Joystick, H3U, 0, 0, zoom_in, 0, 0, 0);
+	MapKeyIOUMD(&Joystick, H3R, 0, 0, PULSE + view_centre, 0, 0, 0);
+	MapKeyIOUMD(&Joystick, H3D, 0, 0, zoom_out, 0, 0, 0);
+	MapKeyIOUMD(&Joystick, H3L, 0, 0, PULSE + trackir_centre, 0, 0, 0);
+
+	MapKeyIOUMD(&Joystick, H4U, 0, 0, 0, PULSE + select_sparrow, 0, 0);
+	MapKeyIOUMD(&Joystick, H4R, 0, 0, 0, PULSE + select_amraam, 0, 0);
+	MapKeyIOUMD(&Joystick, H4D, 0, 0, 0, select_gun, 0, 0);
+	MapKeyIOUMD(&Joystick, H4L, 0, 0, 0, PULSE + select_sidewinder, 0, 0);
+
+	MapKeyIOUMD(&Joystick, S2, 0, 0, 0, PULSE + weapon_release, 0, 0);
+	MapKeyIOUMD(&Joystick, TG2, 0, 0, 0, gun_trigger_2nd_detent, 0, 0);
 }
 
 int map_axis() {
